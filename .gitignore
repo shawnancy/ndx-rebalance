@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+dist/
+web/index.html
+/data/ndx_data.json.bak
+.DS_Store

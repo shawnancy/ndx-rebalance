@@ -1,0 +1,26 @@
+{
+  "asof": "2026-09-17T12:00:00Z",
+  "sources": {
+    "list": "mock（本文件用于 build.py 兜底/开发测试，非真实成分股全量清单）",
+    "fund": "mock（股本/成交额为示意性估算）",
+    "weight": "mock，权重数字借用本页「数据校验」段已核对过的 QQQ 实际权重（NVDA/AAPL/MSFT/AMZN/AVGO/MU/AMD/TSLA）",
+    "weight_asof": "2026-09-16"
+  },
+  "aum_bn": 1700,
+  "notes": [
+    "这是 mock 数据，只有 8 只股票，供 build.py 在 ../data/ndx_data.json 不存在时兜底使用，也用于开发自测。",
+    "真实纳指 100 全量成分股 JSON 由另一 agent 并行生成，路径 ../data/ndx_data.json，字段 schema 与本文件一致。",
+    "px/tso_m/float_m/adv_bn/mcap_bn 为示意性估算，不是真实行情；w 借用本页 VALIDATION 表已验证过的实际权重数字。",
+    "故意留了三个 null 字段（TSLA.adv_bn / AMD.mcap_bn / MU.w）用来测试页面在缺字段时不崩、显示「无数据」。"
+  ],
+  "stocks": [
+    {"t":"NVDA","name":"NVIDIA Corp","px":183.20,"tso_m":24563.0,"float_m":24200.0,"adv_bn":32.5,"adv10_bn":31.6,"mcap_bn":4500.0,"w":8.51},
+    {"t":"MSFT","name":"Microsoft Corp","px":512.80,"tso_m":7432.0,"float_m":7400.0,"adv_bn":9.8,"adv10_bn":9.4,"mcap_bn":3810.0,"w":6.00},
+    {"t":"AAPL","name":"Apple Inc","px":232.50,"tso_m":15097.0,"float_m":15050.0,"adv_bn":14.2,"adv10_bn":13.9,"mcap_bn":3510.0,"w":7.41},
+    {"t":"AMZN","name":"Amazon.com Inc","px":228.40,"tso_m":10639.0,"float_m":10600.0,"adv_bn":11.6,"adv10_bn":11.1,"mcap_bn":2430.0,"w":4.45},
+    {"t":"AVGO","name":"Broadcom Inc","px":342.10,"tso_m":4693.0,"float_m":4660.0,"adv_bn":8.9,"adv10_bn":8.6,"mcap_bn":1605.0,"w":2.80},
+    {"t":"TSLA","name":"Tesla Inc","px":441.60,"tso_m":3211.0,"float_m":2820.0,"adv_bn":null,"adv10_bn":null,"mcap_bn":1418.0,"w":2.93},
+    {"t":"AMD","name":"Advanced Micro Devices","px":214.70,"tso_m":1616.0,"float_m":1605.0,"adv_bn":6.4,"adv10_bn":6.1,"mcap_bn":null,"w":3.37},
+    {"t":"MU","name":"Micron Technology","px":162.30,"tso_m":1121.0,"float_m":1110.0,"adv_bn":3.1,"adv10_bn":3.0,"mcap_bn":182.0,"w":null}
+  ]
+}

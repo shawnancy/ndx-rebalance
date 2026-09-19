@@ -1,4 +1,4 @@
-<title>纳指调仓权重台</title>
+<title data-i18n="title">纳指调仓权重台</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
 <style>
 :root{
@@ -140,102 +140,105 @@ footer strong{color:var(--ink)}
 #stocktbl .statuschips{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
 #lockupsource{margin:-2px 0 10px}
 #lockupsource a{color:var(--accent)}
+.langtoggle{position:fixed;top:14px;right:16px;z-index:50;font-size:12.5px;padding:6px 11px}
+@media (max-width:480px){.langtoggle{top:8px;right:8px;padding:5px 9px;font-size:12px}}
 </style>
 
+<button type="button" id="langtoggle" class="langtoggle" title="Switch language / 切换语言">EN</button>
 <div class="wrap">
-<p class="eyebrow">Nasdaq-100 · 调仓权重与被动买盘</p>
-<h1>纳指调仓权重台</h1>
-<p class="sub">一只股票解禁之后，能自由买卖的股数变多，纳指给它的份额「权重」就会在下一个调仓日往上调，跟踪指数的基金必须照着买。这个页面算的就是：下一轮调多少、基金要买多少钱、什么时候进出场。默认载入 SpaceX。</p>
+<p class="eyebrow" data-i18n="eyebrow">Nasdaq-100 · 调仓权重与被动买盘</p>
+<h1 data-i18n="h1">纳指调仓权重台</h1>
+<p class="sub" data-i18n="subTop">一只股票解禁之后，能自由买卖的股数变多，纳指给它的份额「权重」就会在下一个调仓日往上调，跟踪指数的基金必须照着买。这个页面算的就是：下一轮调多少、基金要买多少钱、什么时候进出场。默认载入 SpaceX。</p>
 
 <div class="stocksearch">
-  <label for="stocksearch-input">搜美股<span class="term">按代码或公司名过滤下表</span></label>
-  <span class="hint">下面是纳指 100 全部 101 只成分股，默认按权重降序；点任意一行 = 选中它，自动把「参数」栏和下面这张卡换成它——旧股没有解禁表，「下一轮会发生什么」显示持平是对的。这个框只过滤下表，不用下拉。</span>
-  <input id="stocksearch-input" autocomplete="off" placeholder="比如 NVDA 或 英伟达 / NVIDIA">
+  <label for="stocksearch-input" data-i18n="searchLabel">搜美股<span class="term">按代码或公司名过滤下表</span></label>
+  <span class="hint" data-i18n="searchHint">下面是纳指 100 全部 101 只成分股，默认按权重降序；点任意一行 = 选中它，自动把「参数」栏和下面这张卡换成它——旧股没有解禁表，「下一轮会发生什么」显示持平是对的。这个框只过滤下表，不用下拉。</span>
+  <input id="stocksearch-input" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="比如 NVDA 或 英伟达 / NVIDIA">
   <p id="stocksearch-notfound" class="flag" hidden></p>
 </div>
 <div class="chipbar" id="chipbar"></div>
 <div class="tablewrap">
 <table id="stocktbl">
   <thead><tr>
-    <th>代码</th><th>公司</th>
-    <th data-sort="w">权重%<span class="arrow"></span></th>
-    <th data-sort="mcap_bn">市值B<span class="arrow"></span></th>
-    <th data-sort="ipo_date">上市日期<span class="arrow"></span></th>
-    <th>状态</th>
+    <th data-i18n="thTicker">代码</th><th data-i18n="thCompany">公司</th>
+    <th data-sort="w"><span data-i18n="thWeight">权重%</span><span class="arrow"></span></th>
+    <th data-sort="mcap_bn"><span data-i18n="thMcap">市值B</span><span class="arrow"></span></th>
+    <th data-sort="ipo_date"><span data-i18n="thIpoDate">上市日期</span><span class="arrow"></span></th>
+    <th data-i18n="thStatus">状态</th>
   </tr></thead>
   <tbody></tbody>
 </table>
 </div>
 <div id="stocknow" class="stocknow" hidden></div>
 
-<h2>下一轮会发生什么</h2>
+<h2 data-i18n="h2Next">下一轮会发生什么</h2>
 <p class="sub" id="nextline"></p>
 <div class="changes" id="changes"></div>
 
-<h2>解禁阶梯</h2>
-<p class="sub">每一批解禁都会把「能自由买卖的股数」往上垫一层。垫到上市股数的三分之一以后，再解禁也不会增加权重了——这是纳指的「3 倍流通股封顶」规则。</p>
+<h2 data-i18n="h2Ladder">解禁阶梯</h2>
+<p class="sub" data-i18n="ladderSub">每一批解禁都会把「能自由买卖的股数」往上垫一层。垫到上市股数的三分之一以后，再解禁也不会增加权重了——这是纳指的「3 倍流通股封顶」规则。</p>
 <div class="ladder" id="ladder"></div>
 <p class="legend" id="ladderlegend"></p>
 
-<h2>未来各轮调仓</h2>
-<p class="sub">纳指每年 3/6/9/12 月各调一次仓，其中 12 月那次是年度大调。每次都按「参考日」那天的流通股算权重。</p>
+<h2 data-i18n="h2Future">未来各轮调仓</h2>
+<p class="sub" data-i18n="futureSub">纳指每年 3/6/9/12 月各调一次仓，其中 12 月那次是年度大调。每次都按「参考日」那天的流通股算权重。</p>
 <div class="tablewrap">
 <table id="tbl">
   <thead><tr>
-    <th>类型</th><th>参考日<br><span class="term">Reference Date</span></th><th>公告（盘后）</th><th>执行（收盘）</th><th>生效</th>
-    <th>参考日流通</th><th>权重变化</th><th>被动买盘</th><th>÷日均量</th>
+    <th data-i18n="thKind">类型</th><th data-i18n="thRef">参考日<br><span class="term">Reference Date</span></th><th data-i18n="thAnnounce">公告（盘后）</th><th data-i18n="thExecute">执行（收盘）</th><th data-i18n="thEffective">生效</th>
+    <th data-i18n="thRefFloat">参考日流通</th><th data-i18n="thDeltaW">权重变化</th><th data-i18n="thBuy">被动买盘</th><th data-i18n="thAdvDiv">÷日均量</th>
   </tr></thead>
   <tbody></tbody>
 </table>
 </div>
 
-<h2>进出场窗口</h2>
-<p class="sub">历史上有肉的只有「参考日之后 → 官方公告之前」这一段。公告之后再进场，三组数据都没赚到：2023 纳指特别再平衡 +0.14%、3 个单股案例 −2.7%、SpaceX 7 月 −2.3%、9 月公布后三个交易日 −5.1%。</p>
+<h2 data-i18n="h2Windows">进出场窗口</h2>
+<p class="sub" data-i18n="windowsSub">历史上有肉的只有「参考日之后 → 官方公告之前」这一段。公告之后再进场，三组数据都没赚到：2023 纳指特别再平衡 +0.14%、3 个单股案例 −2.7%、SpaceX 7 月 −2.3%、9 月公布后三个交易日 −5.1%。</p>
 <div id="windows"></div>
 
-<h2>纳入检查</h2>
-<p class="sub">输入一家公司的市值，看它插进现有纳指 100 成分股里第几名、够不够新股「快速纳入」的门槛（前 40 名）。年度重构用的 75/100/125 名线规则，以纳指方法论原文为准，这里只给名次。</p>
+<h2 data-i18n="h2Inclusion">纳入检查</h2>
+<p class="sub" data-i18n="inclusionSub">输入一家公司的市值，看它插进现有纳指 100 成分股里第几名、够不够新股「快速纳入」的门槛（前 40 名）。年度重构用的 75/100/125 名线规则，以纳指方法论原文为准，这里只给名次。</p>
 <div class="grid" style="max-width:340px;margin-bottom:12px">
-  <div><label for="incmcap">这家公司的市值<span class="term">（十亿美元）</span></label><span class="hint">按现有成分股市值降序排，算插进第几名</span><input id="incmcap" placeholder="比如 850"></div>
+  <div><label for="incmcap" data-i18n="inclusionLabel">这家公司的市值<span class="term">（十亿美元）</span></label><span class="hint" data-i18n="inclusionHint">按现有成分股市值降序排，算插进第几名</span><input id="incmcap" data-i18n-placeholder="inclusionPlaceholder" placeholder="比如 850"></div>
 </div>
 <div id="incresult"></div>
 
-<h2>参数</h2>
-<p class="sub">SpaceX 的股本和解禁表来自 SEC 424B4 招股书第 259-260 页与 10-Q。改任意一栏，上面立刻重算。</p>
+<h2 data-i18n="h2Params">参数</h2>
+<p class="sub" data-i18n="paramsSub">SpaceX 的股本和解禁表来自 SEC 424B4 招股书第 259-260 页与 10-Q。改任意一栏，上面立刻重算。</p>
 <form id="form" onsubmit="return false">
 <fieldset>
-  <legend>这只股票</legend>
+  <legend data-i18n="legendStock">这只股票</legend>
   <div class="grid">
-    <div><label for="ticker">代码</label><span class="hint">交易所代码</span><input id="ticker" value="SPCX"></div>
-    <div><label for="asof">算到哪一天</label><span class="hint">用来判断哪些解禁已经发生</span><input id="asof" value="2026-09-15"></div>
-    <div><label for="price">股价（美元）</label><span class="hint">权重跟股价同向变动，涨价权重也涨</span><input id="price" value="143.49"></div>
-    <div><label for="listed">上市的那类股票一共多少股<span class="term">（百万股 · TSO）</span></label><span class="hint">只数在交易所挂牌的那一类。SpaceX 的 B 类股不挂牌，所以不算</span><input id="listed" value="7607"></div>
-    <div><label for="base">上市首日能自由买卖多少股<span class="term">（百万股 · 自由流通 / free float）</span></label><span class="hint">IPO 卖出去的那部分，含承销商超额配售「绿鞋」</span><input id="base" value="638.9"></div>
+    <div><label for="ticker" data-i18n="labelTicker">代码</label><span class="hint" data-i18n="hintTicker">交易所代码</span><input id="ticker" value="SPCX"></div>
+    <div><label for="asof" data-i18n="labelAsof">算到哪一天</label><span class="hint" data-i18n="hintAsof">用来判断哪些解禁已经发生</span><input id="asof" value="2026-09-15"></div>
+    <div><label for="price" data-i18n="labelPrice">股价（美元）</label><span class="hint" data-i18n="hintPrice">权重跟股价同向变动，涨价权重也涨</span><input id="price" value="143.49"></div>
+    <div><label for="listed" data-i18n="labelListed">上市的那类股票一共多少股<span class="term">（百万股 · TSO）</span></label><span class="hint" data-i18n="hintListed">只数在交易所挂牌的那一类。SpaceX 的 B 类股不挂牌，所以不算</span><input id="listed" value="7607"></div>
+    <div><label for="base" data-i18n="labelBase">上市首日能自由买卖多少股<span class="term">（百万股 · 自由流通 / free float）</span></label><span class="hint" data-i18n="hintBase">IPO 卖出去的那部分，含承销商超额配售「绿鞋」</span><input id="base" value="638.9"></div>
   </div>
 </fieldset>
 <fieldset>
-  <legend>指数环境</legend>
+  <legend data-i18n="legendIndexEnv">指数环境</legend>
   <div class="grid">
-    <div><label for="aum">跟着纳指的钱有多少<span class="term">（十亿美元 · 跟踪资产）</span></label><span class="hint">这些钱必须按权重被动买卖，权重涨多少它们就得买多少</span><input id="aum" value="1700"></div>
-    <div><label for="adv">这只股票平时一天成交多少钱<span class="term">（十亿美元 · 日均成交额 / ADV）</span></label><span class="hint">用来判断买盘相对流动性算不算大</span><input id="adv" value="11.47"></div>
-    <div><label for="recog">解禁的股票有几成被算作自由流通</label><span class="hint">纳斯达克没公开这个口径，默认全算（1.0）。调仓后可用实际权重反推</span><input id="recog" value="1.0"></div>
+    <div><label for="aum" data-i18n="labelAum">跟着纳指的钱有多少<span class="term">（十亿美元 · 跟踪资产）</span></label><span class="hint" data-i18n="hintAum">这些钱必须按权重被动买卖，权重涨多少它们就得买多少</span><input id="aum" value="1700"></div>
+    <div><label for="adv" data-i18n="labelAdv">这只股票平时一天成交多少钱<span class="term">（十亿美元 · 日均成交额 / ADV）</span></label><span class="hint" data-i18n="hintAdv">用来判断买盘相对流动性算不算大</span><input id="adv" value="11.47"></div>
+    <div><label for="recog" data-i18n="labelRecog">解禁的股票有几成被算作自由流通</label><span class="hint" data-i18n="hintRecog">纳斯达克没公开这个口径，默认全算（1.0）。调仓后可用实际权重反推</span><input id="recog" value="1.0"></div>
   </div>
 </fieldset>
 <fieldset>
-  <legend>锚点 · 一次官方公布过的权重</legend>
-  <p class="hint" style="margin:-4px 0 12px">所有权重都按「相对这个锚点」算。这样能约掉两个查不到的数：指数总市值，和纳指把巨头超额权重分给中小票的「权重封顶再分配」。为什么必须这么做，见最下面的校验。</p>
+  <legend data-i18n="legendAnchor">锚点 · 一次官方公布过的权重</legend>
+  <p class="hint" style="margin:-4px 0 12px" data-i18n="anchorHint">所有权重都按「相对这个锚点」算。这样能约掉两个查不到的数：指数总市值，和纳指把巨头超额权重分给中小票的「权重封顶再分配」。为什么必须这么做，见最下面的校验。</p>
   <div class="grid">
-    <div><label for="aref">锚点是哪个参考日</label><input id="aref" value="2026-08-31"></div>
-    <div><label for="aflo">那天能自由买卖多少股<span class="term">（百万股）</span></label><input id="aflo" value="1869.4"></div>
-    <div><label for="apx">那天的股价</label><input id="apx" value="143.69"></div>
-    <div><label for="aw">官方公布的权重<span class="term">（%）</span></label><input id="aw" value="2.82"></div>
+    <div><label for="aref" data-i18n="labelAref">锚点是哪个参考日</label><input id="aref" value="2026-08-31"></div>
+    <div><label for="aflo" data-i18n="labelAflo">那天能自由买卖多少股<span class="term">（百万股）</span></label><input id="aflo" value="1869.4"></div>
+    <div><label for="apx" data-i18n="labelApx">那天的股价</label><input id="apx" value="143.69"></div>
+    <div><label for="aw" data-i18n="labelAw">官方公布的权重<span class="term">（%）</span></label><input id="aw" value="2.82"></div>
   </div>
 </fieldset>
 <fieldset>
-  <legend>解禁表</legend>
+  <legend data-i18n="legendUnlocks">解禁表</legend>
   <div>
-    <label for="unlocks">每行一批：日期, 股数（百万）</label>
-    <span class="hint">必须包含已经发生的批次，否则算不出任意一天的累计流通股。来源：招股书「Shares Eligible for Future Sale」那张表</span>
+    <label for="unlocks" data-i18n="labelUnlocks">每行一批：日期, 股数（百万）</label>
+    <span class="hint" data-i18n="hintUnlocks">必须包含已经发生的批次，否则算不出任意一天的累计流通股。来源：招股书「Shares Eligible for Future Sale」那张表</span>
     <p id="lockupsource" class="hint"></p>
     <textarea id="unlocks">2026-08-06, 911.5
 2026-08-20, 319.0
@@ -253,60 +256,60 @@ footer strong{color:var(--ink)}
 2027-06-12, 351.9</textarea>
   </div>
   <div class="row" style="margin-top:14px">
-    <button class="primary" id="calc">重新计算</button>
-    <button id="preset-spcx">恢复 SpaceX</button>
-    <button id="preset-blank">新股空白模板</button>
+    <button class="primary" id="calc" data-i18n="btnCalc">重新计算</button>
+    <button id="preset-spcx" data-i18n="btnPresetSpcx">恢复 SpaceX</button>
+    <button id="preset-blank" data-i18n="btnPresetBlank">新股空白模板</button>
   </div>
 </fieldset>
 </form>
 
-<h2>名词对照</h2>
-<p class="sub">左边是大白话，蓝色是对应的专业术语。</p>
-<dl class="glossary">
-  <div><dt>能自由买卖的股数<span>自由流通股 / free float</span></dt><dd>总股本里真正在市面上流通的部分。创始人、员工没解禁的股票不算在内。</dd></div>
-  <div><dt>挂牌那类股票的总股数<span>TSO / total shares outstanding</span></dt><dd>纳指只数在交易所挂牌交易的那一类股票。像 SpaceX 的 B 类股不挂牌，就不进这个数。</dd></div>
-  <div><dt>算进指数的市值<span>修正市值 / Modified Market Cap</span></dt><dd>股价 × min(挂牌总股数, 3 × 自由流通股)。不是按公司总市值算。</dd></div>
-  <div><dt>3 倍流通股封顶<span>low-float cap</span></dt><dd>新股流通盘太小时，纳指最多按「3 倍自由流通」算它的市值，防止小流通的巨头一上来就占很大份额。流通股涨到挂牌股数的三分之一以后，这条就不再起作用。</dd></div>
-  <div><dt>数流通股的那一天<span>参考日 / Reference Date</span></dt><dd>3/6/9 月调仓看 2/5/8 月最后一个交易日；12 月年度大调看 11 月最后一个交易日。这天之后才解禁的股票，要等下一轮才算。</dd></div>
-  <div><dt>官方把新权重发出来<span>公告日 / Announcement</span></dt><dd>生效日往前数第 6 个交易日的收盘之后。历史上涨幅在这之前就走完了。</dd></div>
-  <div><dt>基金照着新权重买卖的那一刻<span>执行日 / Rebalance</span></dt><dd>3/6/9/12 月第三个周五的收盘竞价，下一个交易日开盘新权重正式生效。</dd></div>
-  <div><dt>这只股票在指数里占的份额<span>权重 / Weight</span></dt><dd>用「百分点」比较变化：从 2.82% 变成 3.82%，是涨了 1.00 个百分点（pp），不是涨了 1%。</dd></div>
-  <div><dt>指数基金不得不买的钱<span>被动买盘 / passive demand</span></dt><dd>权重变化 × 跟着指数的资产规模。这笔钱不挑价格、必须在执行日收盘成交。</dd></div>
-  <div><dt>禁售期到期<span>解禁 / lockup expiration</span></dt><dd>IPO 时约定内部人多久不能卖，到期后这批股票变成可自由买卖，流通股因此跳升。</dd></div>
-  <div><dt>承销商的超额配售<span>绿鞋 / greenshoe</span></dt><dd>IPO 时可以多卖最多 15% 的股票，行使了就计入初始流通股。</dd></div>
-  <div><dt>新股插队进指数<span>快速纳入 / Fast Entry</span></dt><dd>市值排进现有成分股前 40 的新股，上市第 7 天评估、第 10 天盘后公告、第 15 个交易日后进指数，不用等年度重构。</dd></div>
-  <div><dt>把巨头的超额份额分给其他股票<span>权重封顶再分配 / capping</span></dt><dd>单家超 24% 压到 20%；权重超 4.5% 的公司合计超 48% 时，整组压到 40%。被压下来的份额按比例分给其余成分股。</dd></div>
-  <div><dt>拿一次官方数据当基准<span>锚点（本页自定义，非官方术语）</span></dt><dd>用某次公布过的权重当分母，只算相对变化，避开查不到的指数总市值。</dd></div>
+<h2 data-i18n="h2Glossary">名词对照</h2>
+<p class="sub" data-i18n="glossarySub">左边是大白话，蓝色是对应的专业术语。</p>
+<dl class="glossary" id="glossary">
+  <div><dt data-i18n="gl1dt">能自由买卖的股数<span>自由流通股 / free float</span></dt><dd data-i18n="gl1dd">总股本里真正在市面上流通的部分。创始人、员工没解禁的股票不算在内。</dd></div>
+  <div><dt data-i18n="gl2dt">挂牌那类股票的总股数<span>TSO / total shares outstanding</span></dt><dd data-i18n="gl2dd">纳指只数在交易所挂牌交易的那一类股票。像 SpaceX 的 B 类股不挂牌，就不进这个数。</dd></div>
+  <div><dt data-i18n="gl3dt">算进指数的市值<span>修正市值 / Modified Market Cap</span></dt><dd data-i18n="gl3dd">股价 × min(挂牌总股数, 3 × 自由流通股)。不是按公司总市值算。</dd></div>
+  <div><dt data-i18n="gl4dt">3 倍流通股封顶<span>low-float cap</span></dt><dd data-i18n="gl4dd">新股流通盘太小时，纳指最多按「3 倍自由流通」算它的市值，防止小流通的巨头一上来就占很大份额。流通股涨到挂牌股数的三分之一以后，这条就不再起作用。</dd></div>
+  <div><dt data-i18n="gl5dt">数流通股的那一天<span>参考日 / Reference Date</span></dt><dd data-i18n="gl5dd">3/6/9 月调仓看 2/5/8 月最后一个交易日；12 月年度大调看 11 月最后一个交易日。这天之后才解禁的股票，要等下一轮才算。</dd></div>
+  <div><dt data-i18n="gl6dt">官方把新权重发出来<span>公告日 / Announcement</span></dt><dd data-i18n="gl6dd">生效日往前数第 6 个交易日的收盘之后。历史上涨幅在这之前就走完了。</dd></div>
+  <div><dt data-i18n="gl7dt">基金照着新权重买卖的那一刻<span>执行日 / Rebalance</span></dt><dd data-i18n="gl7dd">3/6/9/12 月第三个周五的收盘竞价，下一个交易日开盘新权重正式生效。</dd></div>
+  <div><dt data-i18n="gl8dt">这只股票在指数里占的份额<span>权重 / Weight</span></dt><dd data-i18n="gl8dd">用「百分点」比较变化：从 2.82% 变成 3.82%，是涨了 1.00 个百分点（pp），不是涨了 1%。</dd></div>
+  <div><dt data-i18n="gl9dt">指数基金不得不买的钱<span>被动买盘 / passive demand</span></dt><dd data-i18n="gl9dd">权重变化 × 跟着指数的资产规模。这笔钱不挑价格、必须在执行日收盘成交。</dd></div>
+  <div><dt data-i18n="gl10dt">禁售期到期<span>解禁 / lockup expiration</span></dt><dd data-i18n="gl10dd">IPO 时约定内部人多久不能卖，到期后这批股票变成可自由买卖，流通股因此跳升。</dd></div>
+  <div><dt data-i18n="gl11dt">承销商的超额配售<span>绿鞋 / greenshoe</span></dt><dd data-i18n="gl11dd">IPO 时可以多卖最多 15% 的股票，行使了就计入初始流通股。</dd></div>
+  <div><dt data-i18n="gl12dt">新股插队进指数<span>快速纳入 / Fast Entry</span></dt><dd data-i18n="gl12dd">市值排进现有成分股前 40 的新股，上市第 7 天评估、第 10 天盘后公告、第 15 个交易日后进指数，不用等年度重构。</dd></div>
+  <div><dt data-i18n="gl13dt">把巨头的超额份额分给其他股票<span>权重封顶再分配 / capping</span></dt><dd data-i18n="gl13dd">单家超 24% 压到 20%；权重超 4.5% 的公司合计超 48% 时，整组压到 40%。被压下来的份额按比例分给其余成分股。</dd></div>
+  <div><dt data-i18n="gl14dt">拿一次官方数据当基准<span>锚点（本页自定义，非官方术语）</span></dt><dd data-i18n="gl14dd">用某次公布过的权重当分母，只算相对变化，避开查不到的指数总市值。</dd></div>
 </dl>
 
-<h2>数据校验：为什么只报变化、不报绝对权重</h2>
-<p class="sub">2026-09-16 拿 90 只纳指成分股做端到端对账：用「修正市值 ÷ 指数总市值」直接算绝对权重，和 QQQ 公布的实际权重比，误差大到不能用。</p>
+<h2 data-i18n="h2Validation">数据校验：为什么只报变化、不报绝对权重</h2>
+<p class="sub" data-i18n="validationSub">2026-09-16 拿 90 只纳指成分股做端到端对账：用「修正市值 ÷ 指数总市值」直接算绝对权重，和 QQQ 公布的实际权重比，误差大到不能用。</p>
 <div class="verdict">
-  <div><div class="m">直接算（修正市值 ÷ 指数总市值）</div><div class="e bad">误差 59%</div><div class="m">NVDA 算 13.54%，实际 8.51%</div></div>
-  <div><div class="m">补上权重封顶再分配</div><div class="e">误差 12.1%</div><div class="m">方向对了，AVGO 仍差 42.6%</div></div>
-  <div><div class="m">比例法（本页采用）</div><div class="e ok">约掉未知量</div><div class="m">只算同一只股票两个参考日之比</div></div>
+  <div><div class="m" data-i18n="v1m">直接算（修正市值 ÷ 指数总市值）</div><div class="e bad" data-i18n="v1e">误差 59%</div><div class="m" data-i18n="v1m2">NVDA 算 13.54%，实际 8.51%</div></div>
+  <div><div class="m" data-i18n="v2m">补上权重封顶再分配</div><div class="e" data-i18n="v2e">误差 12.1%</div><div class="m" data-i18n="v2m2">方向对了，AVGO 仍差 42.6%</div></div>
+  <div><div class="m" data-i18n="v3m">比例法（本页采用）</div><div class="e ok" data-i18n="v3e">约掉未知量</div><div class="m" data-i18n="v3m2">只算同一只股票两个参考日之比</div></div>
 </div>
 <div class="tablewrap">
 <table id="vtbl">
-  <thead><tr><th>代码</th><th>公司</th><th>直接算</th><th>补封顶后</th><th>QQQ 实际</th><th>差（百分点）</th></tr></thead>
+  <thead><tr><th data-i18n="vthTicker">代码</th><th data-i18n="vthCompany">公司</th><th data-i18n="vthRaw">直接算</th><th data-i18n="vthCapped">补封顶后</th><th data-i18n="vthActual">QQQ 实际</th><th data-i18n="vthDiff">差（百分点）</th></tr></thead>
   <tbody></tbody>
 </table>
 </div>
 <ul class="notes">
-  <li><strong>为什么直接算会错：</strong>原始修正市值算出来前五大合计 45.9%，越过 40% 红线，纳指规则会把巨头的超额权重按比例分给其余成分股，所以巨头被高估、中小票被低估。</li>
-  <li><strong>补上封顶后为什么还差：</strong>①指数只在调仓日重新封顶，之后权重随股价漂移，而这里是拿当天数据重新封一次顶，口径不同；②成分股名单是近似的 90 只，有漏有多，总市值就不准。</li>
-  <li><strong>所以本页只报同一只股票的权重变化和买盘金额。</strong>SpaceX 12 月那轮 = 2.82% × 7607 ÷ 5608 = 3.83%，和另一条路径算出来的一致。</li>
+  <li><strong data-i18n="note1strong">为什么直接算会错：</strong><span data-i18n="note1text">原始修正市值算出来前五大合计 45.9%，越过 40% 红线，纳指规则会把巨头的超额权重按比例分给其余成分股，所以巨头被高估、中小票被低估。</span></li>
+  <li><strong data-i18n="note2strong">补上封顶后为什么还差：</strong><span data-i18n="note2text">①指数只在调仓日重新封顶，之后权重随股价漂移，而这里是拿当天数据重新封一次顶，口径不同；②成分股名单是近似的 90 只，有漏有多，总市值就不准。</span></li>
+  <li><strong data-i18n="note3strong">所以本页只报同一只股票的权重变化和买盘金额。</strong><span data-i18n="note3text">SpaceX 12 月那轮 = 2.82% × 7607 ÷ 5608 = 3.83%，和另一条路径算出来的一致。</span></li>
 </ul>
 
-<h2>换一只新股怎么用</h2>
+<h2 data-i18n="h2Howto">换一只新股怎么用</h2>
 <ul class="notes">
-  <li>招股书出来后抄三样：挂牌那类股票的总股数、IPO 初始流通股（含绿鞋）、完整解禁表。</li>
-  <li>等它第一次进指数、纳斯达克公布权重后，把那次的「参考日流通 / 当时股价 / 官方权重」填进锚点。</li>
-  <li>只盯权重变化 ≥ 0.3 个百分点的那一轮，小于这个数不值得做。</li>
-  <li>按窗口进出，逐条核对放弃条件。</li>
+  <li data-i18n="howto1">招股书出来后抄三样：挂牌那类股票的总股数、IPO 初始流通股（含绿鞋）、完整解禁表。</li>
+  <li data-i18n="howto2">等它第一次进指数、纳斯达克公布权重后，把那次的「参考日流通 / 当时股价 / 官方权重」填进锚点。</li>
+  <li data-i18n="howto3">只盯权重变化 ≥ 0.3 个百分点的那一轮，小于这个数不值得做。</li>
+  <li data-i18n="howto4">按窗口进出，逐条核对放弃条件。</li>
 </ul>
 
-<footer>
+<footer id="footer" data-i18n="footer">
   <strong>成色</strong>：日程与 3 倍封顶公式 =【实测·规则原文，已用真实公告日核对】；锚点之外的权重外推、未来股价、解禁股被认定为自由流通的比例 =【假设】。<br>
   <strong>已知限制</strong>：锚点会过期（其他成分股涨跌、指数增删成分股都会让它偏移），每次官方公布新权重后要更新；股价按当前价固定；成分股快照里的自由流通是 Yahoo 自估口径（双重股权如 GOOGL/GOOG 会合并两类，可能大于该类挂牌股数），不是纳斯达克认定值；挂牌股数增长（如双重股权转换）未建模；休市日表写到 2027 年底。<br>
   <strong>收益证据很薄</strong>：能赚钱的那一段只有 SpaceX 2026 年 9 月一个成功样本（超额 +6.5%），2023 年那次扣掉风格轮动只剩约 1.5%。这个页面算的是日程和金额，不是胜率。<br>
@@ -316,6 +319,274 @@ footer strong{color:var(--ink)}
 
 <script>/*__NDX_DATA__*/</script>
 <script>
+/* ================= i18n ================= */
+let LANG='zh';
+const I18N_EN={
+title:"Nasdaq-100 Rebalance Weight Desk",
+eyebrow:"Nasdaq-100 · Rebalance Weight &amp; Passive Demand",
+h1:"Nasdaq-100 Rebalance Weight Desk",
+subTop:"After a stock&#39;s lockup expires, more shares become freely tradeable, so Nasdaq bumps up its share of the index &mdash; its &ldquo;weight&rdquo; &mdash; at the next rebalance, and funds tracking the index have to buy accordingly. This page works out exactly that: how much the weight moves next, how much money funds have to buy, and when to get in and out. Loads SpaceX by default.",
+searchLabel:'Search a US stock<span class="term">filter the table below by ticker or company name</span>',
+searchHint:'Below are all 101 Nasdaq-100 constituents, sorted by weight descending by default; click any row to select it &mdash; it swaps the &ldquo;Parameters&rdquo; panel and the card below to that stock. Older stocks have no lockup table, so seeing &ldquo;flat&rdquo; under &ldquo;What happens next&rdquo; is expected behavior. This box only filters the table below, no dropdown.',
+searchPlaceholder:"e.g. NVDA or NVIDIA",
+thTicker:"Ticker", thCompany:"Company", thWeight:"Weight %", thMcap:"Mkt Cap ($B)", thIpoDate:"IPO Date", thStatus:"Status",
+h2Next:"What happens next",
+h2Ladder:"Lockup ladder",
+ladderSub:'Each lockup batch adds another layer to the &ldquo;freely tradeable shares&rdquo; count. Once that reaches one-third of shares outstanding, further unlocks stop adding weight &mdash; that&#39;s the Nasdaq &ldquo;3&times; free-float cap&rdquo; rule.',
+h2Future:"Upcoming rebalances",
+futureSub:'Nasdaq-100 rebalances four times a year in March/June/September/December, with December being the annual reconstitution. Each one prices weight off the free float on that round&#39;s &ldquo;reference date.&rdquo;',
+thKind:"Type", thRef:'Reference Date<br><span class="term">Reference Date</span>', thAnnounce:"Announcement (after close)", thExecute:"Execution (at close)", thEffective:"Effective",
+thRefFloat:"Free float on ref. date", thDeltaW:"Weight change", thBuy:"Passive buying", thAdvDiv:"&divide; ADV",
+h2Windows:"Entry / exit window",
+windowsSub:'Historically the only window with any edge is &ldquo;after the reference date &rarr; before the official announcement.&rdquo; Getting in after the announcement hasn&#39;t worked in any of the three data sets: the 2023 Nasdaq special rebalance +0.14%, 3 single-stock cases &minus;2.7%, SpaceX in July &minus;2.3%, and the three trading days after the September announcement &minus;5.1%.',
+h2Inclusion:"Inclusion check",
+inclusionSub:'Enter a company&#39;s market cap to see where it would rank among current Nasdaq-100 constituents, and whether it clears the &ldquo;Fast Entry&rdquo; bar for new listings (top 40). The 75/100/125 rank-line rules used for annual reconstitution follow the official Nasdaq-100 methodology text &mdash; this tool only gives you the rank.',
+inclusionLabel:'Market cap of this company<span class="term">(billions of USD)</span>',
+inclusionHint:"Ranked against current constituents by market cap, descending",
+inclusionPlaceholder:"e.g. 850",
+h2Params:"Parameters",
+paramsSub:"SpaceX&#39;s share counts and lockup schedule come from SEC Form 424B4 (pp. 259&ndash;260) and 10-Q filings. Edit any field and the numbers above recalculate instantly.",
+legendStock:"This stock",
+labelTicker:"Ticker", hintTicker:"Exchange ticker symbol",
+labelAsof:"As of date", hintAsof:"Used to determine which lockup batches have already happened",
+labelPrice:"Share price (USD)", hintPrice:"Weight moves with price &mdash; a higher price means a higher weight too",
+labelListed:'Total shares outstanding of the listed class<span class="term">(millions of shares &middot; TSO)</span>', hintListed:"Only the class actually listed on the exchange. SpaceX&#39;s Class B shares aren&#39;t listed, so they don&#39;t count.",
+labelBase:'Freely tradeable shares on IPO day<span class="term">(millions of shares &middot; free float)</span>', hintBase:'The portion sold in the IPO, including the underwriters&#39; over-allotment (&ldquo;greenshoe&rdquo;)',
+legendIndexEnv:"Index environment",
+labelAum:'Assets tracking the index<span class="term">(billions of USD &middot; AUM)</span>', hintAum:"This money has to be bought and sold passively by weight &mdash; whatever the weight change is, they must buy that much",
+labelAdv:'Average daily dollar volume for this stock<span class="term">(billions of USD &middot; ADV)</span>', hintAdv:"Used to judge whether the buying is large relative to normal liquidity",
+labelRecog:"Share of unlocked stock counted as free float", hintRecog:"Nasdaq doesn&#39;t publish this ratio &mdash; defaults to counting it all (1.0). Can be backed out from the actual weight after a rebalance.",
+legendAnchor:"Anchor &middot; a weight officially published once",
+anchorHint:'All weights are calculated &ldquo;relative to this anchor.&rdquo; That cancels out two numbers you can&#39;t look up: the index&#39;s total market cap, and Nasdaq&#39;s &ldquo;weight capping &amp; redistribution,&rdquo; which shifts excess weight from giants to smaller names. See the validation section further down for why this is necessary.',
+labelAref:"Which reference date is the anchor",
+labelAflo:'Freely tradeable shares that day<span class="term">(millions of shares)</span>',
+labelApx:"Share price that day",
+labelAw:'Officially published weight<span class="term">(%)</span>',
+legendUnlocks:"Lockup schedule",
+labelUnlocks:"One batch per line: date, shares (millions)",
+hintUnlocks:'Must include batches that already happened, or there&#39;s no way to compute cumulative free float for any given day. Source: the prospectus&#39;s &ldquo;Shares Eligible for Future Sale&rdquo; table.',
+btnCalc:"Recalculate", btnPresetSpcx:"Restore SpaceX", btnPresetBlank:"Blank template for a new stock",
+h2Glossary:"Glossary",
+glossarySub:"Plain words on the left, the matching technical term in blue on the right.",
+gl1dt:'Shares actually tradeable<span>free float</span>', gl1dd:"The portion of total shares actually circulating in the market. Founders&#39; and employees&#39; still-locked shares don&#39;t count.",
+gl2dt:'Total shares of the listed class<span>TSO / total shares outstanding</span>', gl2dd:"Nasdaq only counts the class of shares actually listed on the exchange &mdash; SpaceX&#39;s Class B shares aren&#39;t listed, so they don&#39;t go into this number.",
+gl3dt:'Market cap that counts toward the index<span>modified market cap</span>', gl3dd:"Price &times; min(shares outstanding of the listed class, 3 &times; free float). Not the company&#39;s full market cap.",
+gl4dt:'3&times; free-float cap<span>low-float cap</span>', gl4dd:"When a new stock&#39;s float is too small, Nasdaq caps its market cap at 3&times; free float, so it can&#39;t grab an outsized weight the moment it lists. Once free float reaches one-third of shares outstanding, this rule stops applying.",
+gl5dt:'The day free float gets counted<span>reference date</span>', gl5dd:"March/June/September rebalances look at the last trading day of February/May/August; the December annual reconstitution looks at the last trading day of November. A lockup expiring after this date has to wait for the next round.",
+gl6dt:'When the new weight goes out officially<span>announcement (after close)</span>', gl6dd:"After the close, 6 trading days before the effective date. Historically most of the move has already happened by this point.",
+gl7dt:'The moment funds actually trade the new weight<span>rebalance execution (closing auction)</span>', gl7dd:"The closing auction on the third Friday of March/June/September/December; the new weight officially takes effect at the open the next trading day.",
+gl8dt:"This stock&#39;s share of the index<span>index weight</span>", gl8dd:'Compare changes in &ldquo;percentage points&rdquo;: going from 2.82% to 3.82% is up 1.00 percentage points (pp), not up 1%.',
+gl9dt:'Money index funds are forced to buy<span>passive demand / forced index buying</span>', gl9dd:"Weight change &times; total assets tracking the index (AUM). This money isn&#39;t price-sensitive and has to trade at the close on execution day.",
+gl10dt:'Lockup expiring<span>lockup expiration</span>', gl10dd:"The period during which IPO insiders agreed not to sell. Once it expires, that batch becomes freely tradeable and free float jumps.",
+gl11dt:"Underwriters&#39; over-allotment<span>greenshoe</span>", gl11dd:"Underwriters can sell up to 15% more shares in an IPO; if exercised, it&#39;s counted in the initial free float.",
+gl12dt:'New stock jumping the queue into the index<span>Fast Entry</span>', gl12dd:"A new listing ranking in the top 40 of current constituents by market cap gets evaluated on trading day 7, announced after the close on day 10, and added to the index after the 15th trading day &mdash; no need to wait for annual reconstitution.",
+gl13dt:"Redistributing a giant&#39;s excess weight to other stocks<span>weight capping &amp; redistribution</span>", gl13dd:"Any single name over 24% gets capped to 20%; if names weighted over 4.5% together exceed 48%, the whole group gets capped to 40%. The weight shaved off gets redistributed pro-rata to the rest of the constituents.",
+gl14dt:'Using one official data point as a baseline<span>anchor (coined for this page, not an official term)</span>', gl14dd:"Uses a weight published once as the denominator, so the page only ever computes relative change &mdash; sidestepping the index&#39;s total market cap, which you can&#39;t look up.",
+h2Validation:"Data validation: why this page reports only change, not absolute weight",
+validationSub:'End-to-end reconciliation on 2026-09-16 across 90 Nasdaq-100 constituents: computing absolute weight directly as &ldquo;modified market cap &divide; index total market cap&rdquo; and comparing against QQQ&#39;s published actual weights &mdash; the error is too large to be usable.',
+v1m:"Direct calc (modified mkt cap &divide; index total mkt cap)", v1e:"59% error", v1m2:"NVDA computes to 13.54%, actual is 8.51%",
+v2m:"Adding weight capping &amp; redistribution", v2e:"12.1% error", v2m2:"Right direction, but AVGO is still off by 42.6%",
+v3m:"Ratio method (used on this page)", v3e:"Cancels out the unknowns", v3m2:"Only computes the ratio between the same stock&#39;s weight on two reference dates",
+vthTicker:"Ticker", vthCompany:"Company", vthRaw:"Direct calc", vthCapped:"After capping", vthActual:"QQQ actual", vthDiff:"Diff (pp)",
+note1strong:"Why the direct calculation is wrong:", note1text:"Raw modified market caps put the top 5 at a combined 45.9%, over the 40% red line &mdash; Nasdaq&#39;s rule then redistributes the giants&#39; excess weight proportionally to the rest of the constituents, so giants get overstated and smaller names get understated.",
+note2strong:"Why it&#39;s still off after adding capping:", note2text:"&#9312; the index only re-caps on rebalance days, then lets weight drift with price afterward &mdash; but this recalculation re-caps using today&#39;s data, a different basis; &#9313; the constituent list here is an approximation of 90 names, with some missing and some extra, so the total market cap is off.",
+note3strong:"So this page only reports the change in weight and the dollar amount of buying for the same stock.", note3text:"SpaceX&#39;s December round = 2.82% &times; 7607 &divide; 5608 = 3.83%, consistent with the other calculation path.",
+h2Howto:"How to use this for a new stock",
+howto1:"Once the prospectus is out, copy three numbers: total shares outstanding of the listed class, initial IPO free float (including the greenshoe), and the full lockup schedule.",
+howto2:'Once it&#39;s first added to the index and Nasdaq publishes a weight, fill that round&#39;s &ldquo;reference-date free float / share price then / official weight&rdquo; into the anchor fields.',
+howto3:"Only pay attention to rounds where the weight change is &ge; 0.3 percentage points &mdash; anything smaller isn&#39;t worth trading.",
+howto4:"Trade the window, and check off every walk-away condition one by one.",
+footer:'<strong>Confidence</strong>: the schedule and the 3&times; cap formula = [tested against the official methodology text, verified with real announcement dates]; weight extrapolation beyond the anchor, future share prices, and the recognized share of unlocked stock counted as free float = [assumption].<br>\n  <strong>Known limitations</strong>: the anchor goes stale (other constituents moving, or the index adding/dropping names, both drift it) and needs updating every time Nasdaq publishes a new weight; the share price is held fixed at the current price; free float in the constituent snapshot is Yahoo&#39;s self-estimated figure (dual-class structures like GOOGL/GOOG can merge the two classes, sometimes exceeding that class&#39;s own share count) &mdash; not Nasdaq&#39;s recognized figure; growth in shares outstanding (e.g. from dual-class conversions) isn&#39;t modeled; the holiday calendar runs through the end of 2027.<br>\n  <strong>The profitability evidence is thin</strong>: the only case that actually confirms &ldquo;getting in early makes money&rdquo; is SpaceX in September 2026 (+6.5% excess return) &mdash; the 2023 special rebalance nets out to only about +1.5% after backing out style rotation. This page computes schedule and dollar amounts, not a win rate.<br>\n  Data: SEC EDGAR (424B4 / 10-Q / 13G), Nasdaq-100 Index Methodology 2026, Yahoo Finance (share counts / volume), api.nasdaq.com (constituent list), zacks.com (QQQ holdings weight &mdash; AAPL differs by &plusmn;0.4 percentage points from other sources). Not investment advice.'
+};
+const I18N_EN_PLACEHOLDER={
+searchPlaceholder:"e.g. NVDA or NVIDIA", inclusionPlaceholder:"e.g. 850"
+};
+const STATIC_ORIG={};
+function captureStaticOrig(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    STATIC_ORIG[k]=el.tagName==='TITLE'?el.textContent:el.innerHTML;
+  });
+}
+function applyStaticI18N(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    const val = LANG==='en' ? (I18N_EN[k]!=null?I18N_EN[k]:STATIC_ORIG[k]) : STATIC_ORIG[k];
+    if(el.tagName==='TITLE') el.textContent=val; else el.innerHTML=val;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+    const k=el.getAttribute('data-i18n-placeholder');
+    if(!el.dataset.origPh) el.dataset.origPh=el.getAttribute('placeholder')||'';
+    el.setAttribute('placeholder', LANG==='en' ? (I18N_EN_PLACEHOLDER[k]!=null?I18N_EN_PLACEHOLDER[k]:el.dataset.origPh) : el.dataset.origPh);
+  });
+  const btn=document.getElementById('langtoggle'); if(btn) btn.textContent = LANG==='en'?'中':'EN';
+  document.documentElement.lang = LANG==='en'?'en':'zh-CN';
+}
+/* 动态生成内容的双语字典: zh 是原文, en 是对照英文; t(key,...args) 按当前 LANG 取值, 值是函数则调用 */
+const T={
+kindAnnual:{zh:"年度重构",en:"Annual reconstitution"},
+kindQuarterly:{zh:"季度调仓",en:"Quarterly rebalance"},
+srcProspectus:{zh:"招股书",en:"prospectus"},
+srcYahooEst:{zh:"Yahoo 自估",en:"Yahoo estimate"},
+noData:{zh:"无数据",en:"No data"},
+nextLine:{zh:(r,k,a,e)=>`下一个数流通股的日子是 <b class="mono">${r}</b>（${k}），<b class="mono">${a}</b> 盘后公布新权重，<b class="mono">${e}</b> 收盘基金照着买。`,
+          en:(r,k,a,e)=>`The next day free float gets counted is <b class="mono">${r}</b> (${k}); the new weight is announced after the close on <b class="mono">${a}</b>, and funds trade it at the close on <b class="mono">${e}</b>.`},
+ccFloatK:{zh:"能自由买卖的股数",en:"Freely tradeable shares"},
+ccFloatB:{zh:"自由流通",en:"free float"},
+ccDeltaUp:{zh:n=>`↑ +${n}M`, en:n=>`↑ +${n}M`},
+ccFlat:{zh:"持平",en:"Flat"},
+ccFloatNote:{zh:"参考日之前解禁的才算进去",en:"Only unlocks before the reference date count"},
+ccWeightK:{zh:"指数里的份额",en:"Its share of the index"},
+ccWeightB:{zh:"权重",en:"weight"},
+ccWeightDeltaUp:{zh:n=>`↑ +${n} 个百分点`, en:n=>`↑ +${n} pp`},
+ccWeightFlat:{zh:"持平（3 倍封顶已不起作用）",en:"Flat (3× cap no longer binding)"},
+ccWeightNoteCapped:{zh:"仍被 3 倍流通股规则压着",en:"Still capped by the 3× free-float rule"},
+ccWeightNoteUncapped:{zh:"已不受 3 倍规则限制",en:"No longer limited by the 3× rule"},
+ccBuyK:{zh:"指数基金必须买",en:"What index funds must buy"},
+ccBuyB:{zh:"被动买盘",en:"passive demand"},
+ccBuyToUp:{zh:b=>`${b}B`, en:b=>`$${b}B`},
+ccBuyToFlat:{zh:"0",en:"$0"},
+ccBuyFromUp:{zh:"美元",en:""},
+ccBuyFromFlat:{zh:"",en:""},
+ccBuyDeltaUp:{zh:d=>`≈ ${d} 天成交额`, en:d=>`≈ ${d} days of ADV`},
+ccBuyFlat:{zh:"无新增买盘",en:"No new buying"},
+ccBuyNote:{zh:a=>`按跟踪资产 ${a}B 美元换算`, en:a=>`Based on $${a}B in assets tracking the index`},
+ladderFirst:{zh:"上市首日",en:"IPO day"},
+ladderCum:{zh:"累计可交易",en:"Cumulative tradeable"},
+ladderDone:{zh:"已发生",en:"Already happened"},
+ladderCross:{zh:"越过 3 倍上限，之后解禁不再加权重",en:"Crosses the 3× cap — later unlocks stop adding weight"},
+ladderPending:{zh:"未发生",en:"Not yet"},
+ladderLegend:{zh:(c,l)=>`竖线 = 3 倍规则上限 ${c} 股（挂牌股数 ${l} 的三分之一）。灰色行已经发生。`,
+              en:(c,l)=>`Vertical line = the 3× rule's cap at ${c} shares (one-third of the ${l} shares outstanding). Gray rows have already happened.`},
+chipCap:{zh:"3倍封顶",en:"3× cap"},
+chipPriced:{zh:"已定价",en:"Priced in"},
+tblWeightUp:{zh:(p,w,d)=>`${p} → ${w}% ↑ +${d}`, en:(p,w,d)=>`${p} → ${w}% ↑ +${d}`},
+tblWeightFlat:{zh:w=>`${w}%　持平`, en:w=>`${w}%  Flat`},
+tblAdvDays:{zh:d=>`${d}天`, en:d=>`${d}d`},
+winTitle:{zh:(r,p,w,d,b,dy)=>`${r} 这轮 · 权重 ${p}% → ${w}%（↑ +${d} 个百分点）· 被动买盘约 ${b}B 美元（${dy} 天成交额）`,
+          en:(r,p,w,d,b,dy)=>`${r} round · weight ${p}% → ${w}% (↑ +${d} pp) · passive buying ≈ $${b}B (${dy} days of ADV)`},
+winEntry:{zh:"进场窗口",en:"Entry window"},
+winEntryVal:{zh:(a,b)=>`${a} ~ ${b}`, en:(a,b)=>`${a} ~ ${b}`},
+winExitLatest:{zh:"离场最晚",en:"Exit no later than"},
+winExitLatestVal:{zh:d=>`${d}（公告日）`, en:d=>`${d} (announcement day)`},
+winNeverHold:{zh:"绝不持有到",en:"Never hold through"},
+winNeverHoldVal:{zh:d=>`${d}（执行日）之后`, en:d=>`after ${d} (execution day)`},
+winFlag:{zh:(d,n)=>`放弃条件：窗口内有解禁 ${d}，${n}M 股`, en:(d,n)=>`Walk-away trigger: a lockup expires inside the window on ${d}, ${n}M shares`},
+winGeneralNote:{zh:"通用放弃条件：到公告日前已大涨（埋伏盘已满）／窗口内夹着财报／权重变化 &lt; 0.3 个百分点",
+                en:"General walk-away conditions: already ran up hard before the announcement (front-running already priced in) / an earnings report falls inside the window / weight change &lt; 0.3 percentage points"},
+winNone:{zh:"未来五轮里没有值得做的调仓 —— 3 倍规则封顶后，再解禁也不会提高权重。",
+         en:"None of the next five rebalances are worth trading — once the 3× cap binds, further unlocks stop raising the weight."},
+chipCapActive:{zh:"封顶区",en:"In cap zone"},
+chipRecent:{zh:"近2年",en:"Listed <2y"},
+chipLockup:{zh:"解禁表",en:"Has lockup data"},
+noMatch:{zh:"没有匹配的股票",en:"No matching stocks"},
+filterCap:{zh:"还在 3 倍封顶区",en:"Still in the 3× cap zone"},
+filterRecent:{zh:"近 2 年上市",en:"Listed in the last 2 years"},
+filterLockup:{zh:"有解禁表",en:"Has a lockup schedule"},
+filterTop20:{zh:"权重前 20",en:"Top 20 by weight"},
+showAll:{zh:(t,p)=>`显示全部 ${t} 只（现在只露前 ${p} 只，搜索或筛选也会展开）`, en:(t,p)=>`Show all ${t} (currently showing the top ${p}; searching or filtering also expands the list)`},
+showLess:{zh:p=>`收起，只看前 ${p} 只`, en:p=>`Collapse to just the top ${p}`},
+lsNone:{zh:"招股书里没抽到解禁表，可手填。",en:"No lockup schedule was extracted from the prospectus — you can fill it in by hand."},
+lsNoneWithReason:{zh:(w,c)=>`招股书里没抽到解禁表，可手填${w}${c}`, en:(w,c)=>`No lockup schedule was extracted from the prospectus — you can fill it in by hand${w}${c}`},
+lsWarnPrefix:{zh:"：",en:": "},
+lsConfSuffix:{zh:c=>`（置信度 ${c}）`, en:c=>` (confidence: ${c})`},
+lsSrcForm:{zh:f=>`来自 SEC ${f}`, en:f=>`From SEC ${f}`},
+lsSrcGeneric:{zh:"来自招股书",en:"From the prospectus"},
+lsFiled:{zh:f=>`（${f} 申报）`, en:f=>` (filed ${f})`},
+lsManual:{zh:" · 人工核对版",en:" · manually verified"},
+lsAuto:{zh:c=>` · haiku 自动抽取，置信度 ${c}，日期以原文为准`, en:c=>` · auto-extracted by haiku, confidence ${c}, dates follow the original filing`},
+lsLink:{zh:" · 查看原文",en:" · view source"},
+lsEst:{zh:n=>` · ${n} 批日期为估计`, en:n=>` · ${n} batch(es) with estimated dates`},
+lsDropped:{zh:n=>` · ${n} 批原文没给日期已略过`, en:n=>` · ${n} batch(es) skipped (no date in the original filing)`},
+snTitle:{zh:(t,n)=>`${t}${n?'　'+n:''} 现在这只股票`, en:(t,n)=>`${t}${n?' '+n:''} right now`},
+snHint:{zh:(a,s)=>`数据截至 ${a} · 权重来源：${s}`, en:(a,s)=>`Data as of ${a} · weight source: ${s}`},
+snRankVal:{zh:(r,t)=>`第 ${r} / ${t}`, en:(r,t)=>`#${r} of ${t}`},
+snWeightNote:{zh:"纳指公布的份额，不是本页外推",en:"The share Nasdaq has published, not extrapolated by this page"},
+snHoldK:{zh:"指数基金现在拿着它多少钱",en:"How much index funds currently hold of it"},
+snHoldB:{zh:"被动持仓",en:"passive holdings"},
+snHoldNote:{zh:a=>`权重% × 跟踪资产（${a}B）`, en:a=>`weight% × assets tracking the index ($${a}B)`},
+snRankK:{zh:"市值排第几",en:"Market cap rank"},
+snRankB:{zh:"市值排名",en:"market cap rank"},
+snRankNote:{zh:"在有市值数据的成分股里排序",en:"Ranked among constituents that have market cap data"},
+snAdvK:{zh:"平时一天成交多少钱",en:"Typical daily dollar volume"},
+snAdvB:{zh:"日均成交额 / ADV",en:"average daily dollar volume / ADV"},
+snAdvNote:{zh:"用来判断被动持仓相对流动性算不算大",en:"Used to judge whether the passive holdings are large relative to normal liquidity"},
+snDaysK:{zh:"这笔持仓要几天成交额才能建完",en:"Days of ADV to build this position"},
+snDaysB:{zh:"持仓 ÷ ADV",en:"holdings ÷ ADV"},
+snDaysVal:{zh:d=>`${d} 天`, en:d=>`${d} days`},
+snDaysNote:{zh:"被动持仓 ÷ 日均成交额",en:"passive holdings ÷ average daily dollar volume"},
+snCapK:{zh:"3 倍流通股封顶",en:"3× free-float cap"},
+snCapB:{zh:"low-float cap",en:"low-float cap"},
+snCapYes:{zh:"生效",en:"Binding"},
+snCapNo:{zh:"不生效",en:"Not binding"},
+snCapNote:{zh:(f,t,s,active)=>`自由流通×3　${f}M 对比 挂牌股数　${t}M（${s}口径）${active===null?'':(active?'。还在封顶区：流通股每多 1 股，算进指数的市值多 3 股，下面的情景才会动权重':'。已过封顶线：流通股再怎么变都不改权重，情景填了也不动；权重只随股价和挂牌股数变')}`,
+           en:(f,t,s,active)=>`Free float × 3 = ${f}M vs. shares outstanding = ${t}M (${s} basis)${active===null?'':(active?'. Still in the cap zone: every extra share of free float adds 3 shares to the market cap that counts toward the index, so the scenario box below will move the weight':'. Past the cap line: no matter how free float changes the weight won’t move — filling in the scenario box won’t do anything; weight only moves with price and shares outstanding')}`},
+snScenarioLegend:{zh:"情景",en:"Scenario"},
+snScenarioLabel:{zh:'假如能自由买卖的股数变化<span class="term">（百万股）</span>', en:'If freely tradeable shares change by<span class="term">(millions of shares)</span>'},
+snScenarioHint:{zh:"解禁/增发填正数，回购填负数；写成解禁表里的一行，日期取数据截至日的下一个交易日。清空这栏 = 撤掉这行。上面「下一轮会发生什么」和「未来各轮调仓」会跟着重算",
+                en:"Enter a positive number for an unlock/issuance, negative for a buyback; it gets added as one line in the lockup schedule, dated the next trading day after the as-of date. Clear this field to remove that line. “What happens next” and “Upcoming rebalances” above recalculate accordingly."},
+snScenarioPlaceholder:{zh:"比如 1000 或 -200",en:"e.g. 1000 or -200"},
+nfMessage:{zh:(q,liveUrl)=>`${q} 不在纳指 100 成分股里；`+(liveUrl?`线上版 <a href="${liveUrl}" target="_blank" rel="noopener">${liveUrl.replace(/^https?:\/\//,'')}</a> 可实时查任意美股。`:'线上版可实时查任意美股。'),
+           en:(q,liveUrl)=>`${q} isn't one of the Nasdaq-100 constituents; `+(liveUrl?`the live version at <a href="${liveUrl}" target="_blank" rel="noopener">${liveUrl.replace(/^https?:\/\//,'')}</a> can look up any US stock in real time.`:"a live, real-time lookup for any US stock isn't configured here."),},
+nfSearching:{zh:q=>`${q} 不在本地成分股列表里，正在联网查……`, en:q=>`${q} isn't in the local constituent list — looking it up online…`},
+nfFailed:{zh:(q,e)=>`${q} 联网查询失败（${e}），本地成分股列表里也没有。`, en:(q,e)=>`${q}: the online lookup failed (${e}), and it's not in the local constituent list either.`},
+incRankLabel:{zh:"插进第几名",en:"Where it would rank"},
+incRankVal:{zh:(r,t)=>`第 ${r} / ${t}`, en:(r,t)=>`#${r} of ${t}`},
+incFastYes:{zh:"进了前 40",en:"Makes the top 40"},
+incFastNo:{zh:"未进前 40",en:"Doesn't make the top 40"},
+incFastEntryLabel:{zh:'快速纳入门槛 <span class="term">Fast Entry</span>', en:'Fast Entry threshold <span class="term">Fast Entry</span>'},
+incFastEntryYes:{zh:"达标",en:"Meets it"},
+incFastEntryNo:{zh:"不达标",en:"Doesn't meet it"},
+incFastEntryNote:{zh:l=>`前 40 名市值线 ${l}`, en:l=>`Top-40 market-cap line: ${l}`},
+incRankLineLabel:{zh:"第 75 / 第 100（或末位）名市值线",en:"#75 / #100 (or last) market-cap line"},
+incFmtLine:{zh:(m,t)=>`${m}B（${t}）`, en:(m,t)=>`$${m}B (${t})`},
+incFmtLineNone:{zh:"—（成分股不够这么多）",en:"— (fewer constituents than that)"},
+incHint:{zh:"年度重构的名次规则（75/100/125 名线）以纳指方法论原文为准，本页只给名次。",
+         en:"The rank-line rules for annual reconstitution (75/100/125) follow the official Nasdaq-100 methodology text — this page only gives you the rank."},
+};
+function t(key,...args){
+  const e=T[key]; if(!e) return key;
+  const v=e[LANG];
+  return typeof v==='function' ? v(...args) : v;
+}
+function kindLabel(k){ return k==='年度重构' ? t('kindAnnual') : t('kindQuarterly'); }
+const SOURCE_NOTE_MAP={'QQQ实际持仓表, 内嵌JS':'QQQ actual holdings table, embedded JS'};
+function trSourceText(s){
+  if(LANG!=='en'||!s) return s;
+  let out=String(s);
+  for(const k in SOURCE_NOTE_MAP) out=out.split(k).join(SOURCE_NOTE_MAP[k]);
+  out=out.replace(/[一-鿿]+/g,'').replace(/[（(]\s*[，,]?\s*[）)]/g,'').replace(/\s{2,}/g,' ').trim();
+  return out;
+}
+function setLang(l){
+  LANG=l;
+  try{ localStorage.setItem('ndx_lang', l); }catch(e){}
+  applyStaticI18N();
+  render();
+  renderChipbar();
+  renderStockTable();
+  if(document.getElementById('lockupsource')) renderLockupSource(document.getElementById('ticker').value.trim(), lockupFor(document.getElementById('ticker').value.trim()));
+  const box=document.getElementById('stocknow');
+  if(selectedTicker && box && !box.hidden){ const s=findStock(selectedTicker); if(s) renderStockNow(s); }
+  const iv=document.getElementById('incmcap');
+  if(iv && iv.value.trim()!=='') iv.dispatchEvent(new Event('input'));
+}
+function initLang(){
+  captureStaticOrig();
+  let l='zh';
+  try{
+    const qp=new URLSearchParams(location.search).get('lang');
+    const stored=localStorage.getItem('ndx_lang');
+    if(qp==='en'||qp==='zh') l=qp;
+    else if(stored==='en'||stored==='zh') l=stored;
+  }catch(e){}
+  LANG=l;
+  applyStaticI18N();
+  const btn=document.getElementById('langtoggle');
+  if(btn) btn.addEventListener('click',()=>setLang(LANG==='en'?'zh':'en'));
+}
+initLang();
+/* ================= /i18n ================= */
 const HOLIDAYS=new Set(["2026-01-01","2026-01-19","2026-02-16","2026-04-03","2026-05-25","2026-06-19","2026-07-03","2026-09-07","2026-11-26","2026-12-25","2027-01-01","2027-01-18","2027-02-15","2027-03-26","2027-05-31","2027-06-18","2027-07-05","2027-09-06","2027-11-25","2027-12-24"]);
 const iso=d=>d.toISOString().slice(0,10);
 const mk=s=>new Date(s+"T00:00:00Z");
@@ -364,29 +635,28 @@ function render(){
   if(next){
     const up=next.dw>=0.005;
     document.getElementById('nextline').innerHTML=
-      `下一个数流通股的日子是 <b class="mono">${iso(next.s.ref)}</b>（${next.s.kind}），`+
-      `<b class="mono">${iso(next.s.announce)}</b> 盘后公布新权重，<b class="mono">${iso(next.s.execute)}</b> 收盘基金照着买。`;
+      t('nextLine', iso(next.s.ref), kindLabel(next.s.kind), iso(next.s.announce), iso(next.s.execute));
     box.innerHTML=`
-      <div class="change"><div class="k">能自由买卖的股数 <b>自由流通</b></div>
+      <div class="change"><div class="k">${t('ccFloatK')} <b>${t('ccFloatB')}</b></div>
         <div class="arrowline"><span class="from">${num(next.prevFl,0)}M</span><span class="arw">→</span><span class="to">${num(next.fl,0)}M</span></div>
-        <div class="delta ${next.fl>next.prevFl?'':'flat'}">${next.fl>next.prevFl?'↑ +'+num(next.fl-next.prevFl,0)+'M':'持平'}</div>
-        <div class="note">参考日之前解禁的才算进去</div></div>
-      <div class="change"><div class="k">指数里的份额 <b>权重</b></div>
+        <div class="delta ${next.fl>next.prevFl?'':'flat'}">${next.fl>next.prevFl?t('ccDeltaUp',num(next.fl-next.prevFl,0)):t('ccFlat')}</div>
+        <div class="note">${t('ccFloatNote')}</div></div>
+      <div class="change"><div class="k">${t('ccWeightK')} <b>${t('ccWeightB')}</b></div>
         <div class="arrowline"><span class="from">${num(next.prevW)}%</span><span class="arw">${up?'→':'→'}</span><span class="to">${num(next.w)}%</span></div>
-        <div class="delta ${up?'':'flat'}">${up?'↑ +'+num(next.dw)+' 个百分点':'持平（3 倍封顶已不起作用）'}</div>
-        <div class="note">${next.capped?'仍被 3 倍流通股规则压着':'已不受 3 倍规则限制'}</div></div>
-      <div class="change"><div class="k">指数基金必须买 <b>被动买盘</b></div>
-        <div class="arrowline"><span class="to">${up?num(next.buy,1)+'B':'0'}</span><span class="from">${up?'美元':''}</span></div>
-        <div class="delta ${up?'':'flat'}">${up?'≈ '+num(next.buy/c.adv,1)+' 天成交额':'无新增买盘'}</div>
-        <div class="note">按跟踪资产 ${num(c.aum,0)}B 美元换算</div></div>`;
+        <div class="delta ${up?'':'flat'}">${up?t('ccWeightDeltaUp',num(next.dw)):t('ccWeightFlat')}</div>
+        <div class="note">${next.capped?t('ccWeightNoteCapped'):t('ccWeightNoteUncapped')}</div></div>
+      <div class="change"><div class="k">${t('ccBuyK')} <b>${t('ccBuyB')}</b></div>
+        <div class="arrowline"><span class="to">${up?t('ccBuyToUp',num(next.buy,1)):t('ccBuyToFlat')}</span><span class="from">${up?t('ccBuyFromUp'):t('ccBuyFromFlat')}</span></div>
+        <div class="delta ${up?'':'flat'}">${up?t('ccBuyDeltaUp',num(next.buy/c.adv,1)):t('ccBuyFlat')}</div>
+        <div class="note">${t('ccBuyNote',num(c.aum,0))}</div></div>`;
   }
 
   /* —— 解禁阶梯 —— */
   const maxFl=Math.max(c.listed/3*1.25, floatAt(c.unlocks.length?c.unlocks[c.unlocks.length-1].d:c.today));
   let run=c.base, crossed=false;
-  const lines=[`<div class="lrow done"><div class="n">上市首日</div><div class="n">+${num(c.base,0)}M</div>
+  const lines=[`<div class="lrow done"><div class="n">${t('ladderFirst')}</div><div class="n">+${num(c.base,0)}M</div>
       <div class="bar"><i style="width:${c.base/maxFl*100}%"></i><span class="capmark" style="left:${capLine/maxFl*100}%"></span></div>
-      <div class="lend">${num(c.base,0)}M<small>累计可交易</small></div></div>`];
+      <div class="lend">${num(c.base,0)}M<small>${t('ladderCum')}</small></div></div>`];
   for(const u of c.unlocks){
     const before=run; run+=u.sh;
     const cross=!crossed && before<capLine && run>=capLine; if(cross) crossed=true;
@@ -394,21 +664,21 @@ function render(){
     lines.push(`<div class="lrow ${done?'done':''} ${cross?'capline':''}">
       <div class="n">${iso(u.d)}</div><div class="n">+${num(u.sh,0)}M</div>
       <div class="bar"><i style="width:${Math.min(100,run/maxFl*100)}%"></i><span class="capmark" style="left:${capLine/maxFl*100}%"></span></div>
-      <div class="lend">${num(run,0)}M<small>${done?'已发生':(cross?'越过 3 倍上限，之后解禁不再加权重':'未发生')}</small></div></div>`);
+      <div class="lend">${num(run,0)}M<small>${done?t('ladderDone'):(cross?t('ladderCross'):t('ladderPending'))}</small></div></div>`);
   }
   document.getElementById('ladder').innerHTML=lines.join('');
   document.getElementById('ladderlegend').innerHTML=
-    `竖线 = 3 倍规则上限 <span class="mono">${num(capLine,0)}M</span> 股（挂牌股数 ${num(c.listed,0)}M 的三分之一）。灰色行已经发生。`;
+    t('ladderLegend', `<span class="mono">${num(capLine,0)}M</span>`, num(c.listed,0)+'M');
 
   /* —— 各轮调仓表 —— */
   document.querySelector('#tbl tbody').innerHTML=rows.map(r=>{
     const past=r.s.ref<=c.today, act=!past&&r.dw>=0.005;
     return `<tr class="${past?'past':(act?'hit':'')}">
-      <td>${r.s.kind}${r.capped?'<span class="chip cap">3倍封顶</span>':''}${past?'<span class="chip">已定价</span>':''}</td>
+      <td>${kindLabel(r.s.kind)}${r.capped?'<span class="chip cap">'+t('chipCap')+'</span>':''}${past?'<span class="chip">'+t('chipPriced')+'</span>':''}</td>
       <td class="n">${iso(r.s.ref)}</td><td class="n">${iso(r.s.announce)}</td><td class="n">${iso(r.s.execute)}</td><td class="n">${iso(r.s.effective)}</td>
       <td class="n">${num(r.fl,0)}M</td>
-      <td class="n ${act?'up':'flat'}">${act?num(r.prevW)+' → '+num(r.w)+'% ↑ +'+num(r.dw):num(r.w)+'%　持平'}</td>
-      <td class="n">${act?num(r.buy,1)+'B':'—'}</td><td class="n">${act&&c.adv?num(r.buy/c.adv,1)+'天':'—'}</td></tr>`;
+      <td class="n ${act?'up':'flat'}">${act?t('tblWeightUp',num(r.prevW),num(r.w),num(r.dw)):t('tblWeightFlat',num(r.w))}</td>
+      <td class="n">${act?num(r.buy,1)+'B':'—'}</td><td class="n">${act&&c.adv?t('tblAdvDays',num(r.buy/c.adv,1)):'—'}</td></tr>`;
   }).join('');
 
   /* —— 窗口 —— */
@@ -416,13 +686,13 @@ function render(){
   document.getElementById('windows').innerHTML = acts.length ? acts.map(r=>{
     const a=nextTD(addD(r.s.ref,1)), b=shiftTD(r.s.announce,-1);
     const clash=c.unlocks.filter(u=>u.d>=a&&u.d<=r.s.execute);
-    return `<div class="win"><h3>${iso(r.s.ref)} 这轮 · 权重 ${num(r.prevW)}% → ${num(r.w)}%（↑ +${num(r.dw)} 个百分点）· 被动买盘约 ${num(r.buy,1)}B 美元（${num(r.buy/c.adv,1)} 天成交额）</h3>
-      <dl><dt>进场窗口</dt><dd>${iso(a)} ~ ${iso(b)}</dd>
-      <dt>离场最晚</dt><dd>${iso(r.s.announce)}（公告日）</dd>
-      <dt>绝不持有到</dt><dd>${iso(r.s.execute)}（执行日）之后</dd></dl>
-      ${clash.map(u=>`<div class="flag">放弃条件：窗口内有解禁 ${iso(u.d)}，${num(u.sh,0)}M 股</div>`).join('')}
-      <div style="margin-top:9px;font-size:13px;color:var(--muted)">通用放弃条件：到公告日前已大涨（埋伏盘已满）／窗口内夹着财报／权重变化 &lt; 0.3 个百分点</div></div>`;
-  }).join('') : '<p class="none">未来五轮里没有值得做的调仓 —— 3 倍规则封顶后，再解禁也不会提高权重。</p>';
+    return `<div class="win"><h3>${t('winTitle', iso(r.s.ref), num(r.prevW), num(r.w), num(r.dw), num(r.buy,1), num(r.buy/c.adv,1))}</h3>
+      <dl><dt>${t('winEntry')}</dt><dd>${t('winEntryVal', iso(a), iso(b))}</dd>
+      <dt>${t('winExitLatest')}</dt><dd>${t('winExitLatestVal', iso(r.s.announce))}</dd>
+      <dt>${t('winNeverHold')}</dt><dd>${t('winNeverHoldVal', iso(r.s.execute))}</dd></dl>
+      ${clash.map(u=>`<div class="flag">${t('winFlag', iso(u.d), num(u.sh,0))}</div>`).join('')}
+      <div style="margin-top:9px;font-size:13px;color:var(--muted)">${t('winGeneralNote')}</div></div>`;
+  }).join('') : `<p class="none">${t('winNone')}</p>`;
 }
 const VALIDATION=[
  {t:"NVDA",name:"NVIDIA",raw:13.54,capped:7.32,actual:8.51},{t:"AAPL",name:"Apple",raw:12.78,capped:6.91,actual:7.41},
@@ -454,7 +724,7 @@ renderLockupSource(document.getElementById('ticker').value.trim(), lockupFor(doc
 function ndxStocks(){ try{ return (typeof NDX_DATA!=='undefined' && NDX_DATA.stocks) || []; }catch(e){ return []; } }
 function ndxMeta(){ try{ return (typeof NDX_DATA!=='undefined' && NDX_DATA) || {}; }catch(e){ return {}; } }
 function findStock(t){ const q=String(t||'').trim().toUpperCase(); return ndxStocks().find(s=>s.t===q); }
-function fmtOrNA(v,suffix,d){ d=d==null?2:d; return v==null?'<span class="none" style="padding:0;display:inline">无数据</span>':(num(v,d)+(suffix||'')); }
+function fmtOrNA(v,suffix,d){ d=d==null?2:d; return v==null?`<span class="none" style="padding:0;display:inline">${t('noData')}</span>`:(num(v,d)+(suffix||'')); }
 
 /* 复用 schedule()：找「最近一个已经过去的参考日」，逻辑与 render() 里的 lastRef 计算完全一致，只是抽出来给搜索功能单独调用 */
 function lastRefOnOrBefore(d){
@@ -483,25 +753,26 @@ function floatTsoFor(s){
 }
 function lockupFor(t){ const m=ndxMeta(); return (m.lockups && m.lockups[t]) || null; }
 
-function renderLockupSource(t, lockup){
+function renderLockupSource(tk, lockup){
   const el=document.getElementById('lockupsource');
   if(!el) return;
-  if(!lockup){ el.innerHTML='招股书里没抽到解禁表，可手填。'; return; }
+  if(!lockup){ el.innerHTML=t('lsNone'); return; }
   const hasUnlocks = Array.isArray(lockup.unlocks) && lockup.unlocks.length>0;
   if(!hasUnlocks){
-    const warn=(lockup.warnings&&lockup.warnings.length)?'：'+lockup.warnings.join('；'):'';
-    const conf=lockup.confidence?'（置信度 '+lockup.confidence+'）':'';
-    el.innerHTML=`招股书里没抽到解禁表，可手填${warn}${conf}`;
+    const _ws=(lockup.warnings||[]).filter(w=>LANG!=='en'||!/[\u4e00-\u9fff]/.test(w));
+    const warn=_ws.length?t('lsWarnPrefix')+_ws.join(LANG==='en'?'; ':'；'):(LANG==='en'&&lockup.warnings&&lockup.warnings.length?' (extractor notes available in the Chinese view)':'');
+    const conf=lockup.confidence?t('lsConfSuffix',lockup.confidence):'';
+    el.innerHTML=t('lsNoneWithReason', warn, conf);
     return;
   }
   const estCount=lockup.unlocks.filter(u=>u.d_estimated).length;
-  const src=lockup.form?('来自 SEC '+lockup.form):'来自招股书';
-  const filed=lockup.filed?`（${lockup.filed} 申报）`:'';
-  const conf=lockup.manual?' · 人工核对版':(lockup.confidence?` · haiku 自动抽取，置信度 ${lockup.confidence}，日期以原文为准`:'');
+  const src=lockup.form?t('lsSrcForm',lockup.form):t('lsSrcGeneric');
+  const filed=lockup.filed?t('lsFiled',lockup.filed):'';
+  const conf=lockup.manual?t('lsManual'):(lockup.confidence?t('lsAuto',lockup.confidence):'');
   const nullD=lockup.unlocks.filter(u=>!u.d||u.sh_m==null).length;
-  const link=lockup.source_url?` · <a href="${lockup.source_url}" target="_blank" rel="noopener">查看原文</a>`:'';
-  const est=estCount?` · ${estCount} 批日期为估计`:'';
-  const dropped=nullD?` · ${nullD} 批原文没给日期已略过`:'';
+  const link=lockup.source_url?` · <a href="${lockup.source_url}" target="_blank" rel="noopener">${LANG==='en'?'view source':'查看原文'}</a>`:'';
+  const est=estCount?t('lsEst',estCount):'';
+  const dropped=nullD?t('lsDropped',nullD):'';
   el.innerHTML=`${src}${filed}${conf}${link}${est}${dropped}`;
 }
 
@@ -521,10 +792,10 @@ function top20Set(){
   return new Set(withW.slice(0,20).map(s=>s.t));
 }
 const FILTER_DEFS=[
-  {key:'cap',    label:'还在 3 倍封顶区', test:(s,f)=>f.capActive},
-  {key:'recent', label:'近 2 年上市',     test:(s,f)=>f.recent},
-  {key:'lockup', label:'有解禁表',        test:(s,f)=>f.hasLockup},
-  {key:'top20',  label:'权重前 20',       test:(s,f,top20)=>top20.has(s.t)},
+  {key:'cap',    labelKey:'filterCap',    test:(s,f)=>f.capActive},
+  {key:'recent', labelKey:'filterRecent', test:(s,f)=>f.recent},
+  {key:'lockup', labelKey:'filterLockup', test:(s,f)=>f.hasLockup},
+  {key:'top20',  labelKey:'filterTop20',  test:(s,f,top20)=>top20.has(s.t)},
 ];
 
 function renderChipbar(){
@@ -533,7 +804,7 @@ function renderChipbar(){
   const counts=Object.fromEntries(FILTER_DEFS.map(fd=>
     [fd.key, ndxStocks().filter(s=>fd.test(s,stockFlags(s),top20)).length]));
   box.innerHTML=FILTER_DEFS.map(fd=>
-    `<span class="fchip${activeFilters.has(fd.key)?' active':''}" data-k="${fd.key}">${fd.label} <span class="cnt">(${counts[fd.key]})</span></span>`
+    `<span class="fchip${activeFilters.has(fd.key)?' active':''}" data-k="${fd.key}">${t(fd.labelKey)} <span class="cnt">(${counts[fd.key]})</span></span>`
   ).join('');
   box.querySelectorAll('.fchip').forEach(el=>el.addEventListener('click',()=>{
     const k=el.dataset.k;
@@ -574,9 +845,9 @@ function renderStockTable(){
   if(collapsed) rows=rows.slice(0,TABLE_PREVIEW);
   tbody.innerHTML = (rows.length ? rows.map(({s,f})=>{
     const chips=[];
-    if(f.capActive) chips.push('<span class="chip cap">封顶区</span>');
-    if(f.recent) chips.push('<span class="chip">近2年</span>');
-    if(f.hasLockup) chips.push('<span class="chip">解禁表</span>');
+    if(f.capActive) chips.push(`<span class="chip cap">${t('chipCapActive')}</span>`);
+    if(f.recent) chips.push(`<span class="chip">${t('chipRecent')}</span>`);
+    if(f.hasLockup) chips.push(`<span class="chip">${t('chipLockup')}</span>`);
     return `<tr data-t="${s.t}" class="${s.t===selectedTicker?'selected':''}">
       <td class="mono">${s.t}</td>
       <td class="name">${s.name||''}</td>
@@ -585,9 +856,9 @@ function renderStockTable(){
       <td class="n">${s.ipo_date||'—'}</td>
       <td><div class="statuschips">${chips.join('')||'<span class="none" style="padding:0">—</span>'}</div></td>
     </tr>`;
-  }).join('') : '<tr><td colspan="6" class="none">没有匹配的股票</td></tr>')
-    + (collapsed ? `<tr class="morerow"><td colspan="6"><button type="button" id="showall">显示全部 ${total} 只（现在只露前 ${TABLE_PREVIEW} 只，搜索或筛选也会展开）</button></td></tr>` : '')
-    + (!collapsed && showAllRows && !q && activeFilters.size===0 ? `<tr class="morerow"><td colspan="6"><button type="button" id="showless">收起，只看前 ${TABLE_PREVIEW} 只</button></td></tr>` : '');
+  }).join('') : `<tr><td colspan="6" class="none">${t('noMatch')}</td></tr>`)
+    + (collapsed ? `<tr class="morerow"><td colspan="6"><button type="button" id="showall">${t('showAll',total,TABLE_PREVIEW)}</button></td></tr>` : '')
+    + (!collapsed && showAllRows && !q && activeFilters.size===0 ? `<tr class="morerow"><td colspan="6"><button type="button" id="showless">${t('showLess',TABLE_PREVIEW)}</button></td></tr>` : '');
   tbody.querySelectorAll('tr[data-t]').forEach(tr=>tr.addEventListener('click',()=>pickStock(tr.dataset.t)));
   const sa=document.getElementById('showall'); if(sa) sa.addEventListener('click',()=>{showAllRows=true;renderStockTable();});
   const sl=document.getElementById('showless'); if(sl) sl.addEventListener('click',()=>{showAllRows=false;renderStockTable();});
@@ -643,27 +914,29 @@ function renderStockNow(s){
   const ft=floatTsoFor(s); const capActive=(ft.fl!=null&&ft.tso!=null)?(ft.fl*3<ft.tso):null;
   const days=(holdBn!=null&&s.adv_bn)?(holdBn/s.adv_bn):null;
   box.hidden=false;
+  const srcLabel=trSourceText((meta.sources&&meta.sources.weight)||'—');
+  const ftSrcLabel=ft.src==='招股书'?t('srcProspectus'):t('srcYahooEst');
   box.innerHTML=`
-    <h3>${s.t}${s.name?'　'+s.name:''} 现在这只股票<span class="hint">数据截至 ${meta.asof?String(meta.asof).slice(0,10):'—'} · 权重来源：${(meta.sources&&meta.sources.weight)||'—'}</span></h3>
+    <h3>${t('snTitle', s.t, s.name||'')}<span class="hint">${t('snHint', meta.asof?String(meta.asof).slice(0,10):'—', srcLabel)}</span></h3>
     <div class="changes">
-      <div class="change"><div class="k">指数里的份额 <b class="term">权重</b></div><div class="to">${fmtOrNA(s.w,'%')}</div>
-        <div class="note">纳指公布的份额，不是本页外推</div></div>
-      <div class="change"><div class="k">指数基金现在拿着它多少钱 <b class="term">被动持仓</b></div><div class="to">${fmtOrNA(holdBn,'B')}</div>
-        <div class="note">权重% × 跟踪资产${aum!=null?'（'+num(aum,0)+'B）':''}</div></div>
-      <div class="change"><div class="k">市值排第几 <b class="term">市值排名</b></div><div class="to">${rankIdx>=0?('第 '+(rankIdx+1)+' / '+withMcap.length):'<span class="none" style="padding:0;display:inline">无数据</span>'}</div>
-        <div class="note">在有市值数据的成分股里排序</div></div>
-      <div class="change"><div class="k">平时一天成交多少钱 <b class="term">日均成交额 / ADV</b></div><div class="to">${fmtOrNA(s.adv_bn,'B')}</div>
-        <div class="note">用来判断被动持仓相对流动性算不算大</div></div>
-      <div class="change"><div class="k">这笔持仓要几天成交额才能建完 <b class="term">持仓 ÷ ADV</b></div><div class="to">${days!=null?num(days,1)+' 天':'<span class="none" style="padding:0;display:inline">无数据</span>'}</div>
-        <div class="note">被动持仓 ÷ 日均成交额</div></div>
-      <div class="change"><div class="k">3 倍流通股封顶 <b class="term">low-float cap</b></div><div class="to">${capActive==null?'<span class="none" style="padding:0;display:inline">无数据</span>':(capActive?'生效':'不生效')}</div>
-        <div class="note">自由流通×3${ft.fl!=null?'　'+num(ft.fl*3,0)+'M':''} 对比 挂牌股数${ft.tso!=null?'　'+num(ft.tso,0)+'M':''}（${ft.src}口径）${capActive==null?'':(capActive?'。还在封顶区：流通股每多 1 股，算进指数的市值多 3 股，下面的情景才会动权重':'。已过封顶线：流通股再怎么变都不改权重，情景填了也不动；权重只随股价和挂牌股数变')}</div></div>
+      <div class="change"><div class="k">${t('ccWeightK')} <b class="term">${t('ccWeightB')}</b></div><div class="to">${fmtOrNA(s.w,'%')}</div>
+        <div class="note">${t('snWeightNote')}</div></div>
+      <div class="change"><div class="k">${t('snHoldK')} <b class="term">${t('snHoldB')}</b></div><div class="to">${fmtOrNA(holdBn,'B')}</div>
+        <div class="note">${aum!=null?t('snHoldNote',num(aum,0)):t('snHoldNote','—')}</div></div>
+      <div class="change"><div class="k">${t('snRankK')} <b class="term">${t('snRankB')}</b></div><div class="to">${rankIdx>=0?t('snRankVal',rankIdx+1,withMcap.length):`<span class="none" style="padding:0;display:inline">${t('noData')}</span>`}</div>
+        <div class="note">${t('snRankNote')}</div></div>
+      <div class="change"><div class="k">${t('snAdvK')} <b class="term">${t('snAdvB')}</b></div><div class="to">${fmtOrNA(s.adv_bn,'B')}</div>
+        <div class="note">${t('snAdvNote')}</div></div>
+      <div class="change"><div class="k">${t('snDaysK')} <b class="term">${t('snDaysB')}</b></div><div class="to">${days!=null?t('snDaysVal',num(days,1)):`<span class="none" style="padding:0;display:inline">${t('noData')}</span>`}</div>
+        <div class="note">${t('snDaysNote')}</div></div>
+      <div class="change"><div class="k">${t('snCapK')} <b class="term">${t('snCapB')}</b></div><div class="to">${capActive==null?`<span class="none" style="padding:0;display:inline">${t('noData')}</span>`:(capActive?t('snCapYes'):t('snCapNo'))}</div>
+        <div class="note">${t('snCapNote', ft.fl!=null?num(ft.fl*3,0)+'M':'—', ft.tso!=null?num(ft.tso,0)+'M':'—', ftSrcLabel, capActive)}</div></div>
     </div>
     <fieldset style="margin-top:14px">
-      <legend>情景</legend>
-      <label for="scenario">假如能自由买卖的股数变化<span class="term">（百万股）</span></label>
-      <span class="hint">解禁/增发填正数，回购填负数；写成解禁表里的一行，日期取数据截至日的下一个交易日。清空这栏 = 撤掉这行。上面「下一轮会发生什么」和「未来各轮调仓」会跟着重算</span>
-      <input id="scenario" placeholder="比如 1000 或 -200">
+      <legend>${t('snScenarioLegend')}</legend>
+      <label for="scenario">${t('snScenarioLabel')}</label>
+      <span class="hint">${t('snScenarioHint')}</span>
+      <input id="scenario" placeholder="${t('snScenarioPlaceholder')}">
     </fieldset>`;
   document.getElementById('scenario').addEventListener('change',onScenarioChange);
   document.getElementById('scenario').addEventListener('keyup',e=>{if(e.key==='Enter')onScenarioChange();});
@@ -693,12 +966,11 @@ function notFound(q){
   document.getElementById('stocknow').hidden=true;
   const box=document.getElementById('stocksearch-notfound');
   box.hidden=false;
-  const liveUrl=(typeof window.NDX_LIVE_URL==='string'&&window.NDX_LIVE_URL)?window.NDX_LIVE_URL:'';
-  box.innerHTML=q.replace(/[<>&]/g,'')+' 不在纳指 100 成分股里；'
-    +(liveUrl?('线上版 <a href="'+liveUrl.replace(/"/g,'')+'" target="_blank" rel="noopener">'+liveUrl.replace(/^https?:\/\//,'')+'</a> 可实时查任意美股。')
-             :'线上版可实时查任意美股。');
+  const qClean=q.replace(/[<>&]/g,'');
+  const liveUrl=(typeof window.NDX_LIVE_URL==='string'&&window.NDX_LIVE_URL)?window.NDX_LIVE_URL.replace(/"/g,''):'';
+  box.innerHTML=t('nfMessage', qClean, liveUrl);
   if(typeof window.NDX_API==='string' && window.NDX_API){
-    box.textContent=q+' 不在本地成分股列表里，正在联网查……';
+    box.textContent=t('nfSearching', q);
     fetch(window.NDX_API.replace(/\/$/,'')+'/api/stock?t='+encodeURIComponent(q))
       .then(r=>{ if(!r.ok) throw new Error('http '+r.status); return r.json(); })
       .then(s=>{
@@ -707,7 +979,7 @@ function notFound(q){
         fillFormFromStock(s);
         renderStockNow(s);
       })
-      .catch(err=>{ box.textContent=q+' 联网查询失败（'+err.message+'），本地成分股列表里也没有。'; });
+      .catch(err=>{ box.textContent=t('nfFailed', q, err.message); });
   }
 }
 
@@ -751,12 +1023,12 @@ document.getElementById('incmcap').addEventListener('input',()=>{
   const fast=rank<=40;
   const at=n=>withMcap[n-1];
   const line40=at(40), line75=at(75), line100=at(100)||withMcap[withMcap.length-1];
-  const fmtLine=x=>x?(num(x.mcap_bn,0)+'B（'+x.t+'）'):'—（成分股不够这么多）';
+  const fmtLine=x=>x?t('incFmtLine',num(x.mcap_bn,0),x.t):t('incFmtLineNone');
   box.innerHTML=`<div class="verdict">
-      <div><div class="m">插进第几名</div><div class="e">第 ${rank} / ${withMcap.length}</div><div class="m">${fast?'进了前 40':'未进前 40'}</div></div>
-      <div><div class="m">快速纳入门槛 <span class="term">Fast Entry</span></div><div class="e ${fast?'ok':'bad'}">${fast?'达标':'不达标'}</div><div class="m">前 40 名市值线 ${fmtLine(line40)}</div></div>
-      <div><div class="m">第 75 / 第 100（或末位）名市值线</div><div class="e" style="font-size:14px">${fmtLine(line75)}</div><div class="m">${fmtLine(line100)}</div></div>
+      <div><div class="m">${t('incRankLabel')}</div><div class="e">${t('incRankVal',rank,withMcap.length)}</div><div class="m">${fast?t('incFastYes'):t('incFastNo')}</div></div>
+      <div><div class="m">${t('incFastEntryLabel')}</div><div class="e ${fast?'ok':'bad'}">${fast?t('incFastEntryYes'):t('incFastEntryNo')}</div><div class="m">${t('incFastEntryNote',fmtLine(line40))}</div></div>
+      <div><div class="m">${t('incRankLineLabel')}</div><div class="e" style="font-size:14px">${fmtLine(line75)}</div><div class="m">${fmtLine(line100)}</div></div>
     </div>
-    <p class="hint">年度重构的名次规则（75/100/125 名线）以纳指方法论原文为准，本页只给名次。</p>`;
+    <p class="hint">${t('incHint')}</p>`;
 });
 </script>

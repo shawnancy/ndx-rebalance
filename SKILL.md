@@ -1,6 +1,6 @@
 ---
 name: ndx-rebalance
-description: 算纳指 100 (Nasdaq-100 / NDX / QQQ) 因解禁、增发、回购等股本变化导致的调仓权重变化、被动基金买盘金额、进出场窗口；抓 101 只成分股快照；查任意美股是否满足 Fast Entry 快速纳入门槛。触发词：纳指/纳斯达克100/Nasdaq-100/QQQ/调仓/再平衡/rebalance/权重变化/被动买盘/解禁/lockup/unlock/Fast Entry/快速纳入/纳入检查/index inclusion/低流通封顶。
+description: 算纳指 100 (Nasdaq-100 / NDX / QQQ) 因解禁、增发、回购等股本变化导致的调仓权重变化、被动基金买盘金额、进出场窗口；抓 101 只成分股快照；查任意美股是否满足 Fast Entry 快速纳入门槛。触发词：纳指/纳斯达克100/Nasdaq-100/QQQ/调仓/再平衡/rebalance/权重变化/被动买盘/解禁/lockup/unlock/Fast Entry/快速纳入/纳入检查/index inclusion/低流通封顶。English triggers: Nasdaq-100 rebalance, index weight change, lockup expiration, passive demand, Fast Entry threshold check.
 ---
 
 # ndx-rebalance · 纳指 100 调仓权重台

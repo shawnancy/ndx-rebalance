@@ -1,5 +1,7 @@
 # ndx-rebalance · 纳指 100 调仓权重台
 
+English: [README_EN.md](README_EN.md)
+
 算「某只股票因为解禁/股本变化，下一个参考日权重会涨多少、被动基金要买多少钱、什么时候进出场」。
 一套可以直接当 [Claude Code Skill](https://docs.claude.com/en/docs/claude-code) 装的小工具，也可以脱离 Claude 单独跑 Python 脚本。
 

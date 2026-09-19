@@ -84,8 +84,9 @@ python3 scripts/fetch_ndx.py --skip-fund      # 只拉名单+权重, 不跑 yfin
 ### 3. 建网页（搜美股 / 情景计算 / 纳入检查）
 
 ```bash
-cd web && python3 build.py                              # 生成 web/index.html, 内联 ../data/ndx_data.json
-python3 build.py --api https://your-api.example.com --live-url https://your-api.example.com --out dist/index_live.html
+cd web && python3 build.py --standalone                 # 生成 web/index.html(可直接双击打开), 内联 ../data/ndx_data.json
+# 不加 --standalone 的产物是 Claude Artifact 格式(无 head), 直接用浏览器打开会因缺 charset 显示乱码
+python3 build.py --standalone --api https://your-api.example.com --live-url https://your-api.example.com --out dist/index_live.html
 ```
 
 `--api` 注入 `window.NDX_API`，页面搜不到成分股时会拿这个地址实时查任意美股；

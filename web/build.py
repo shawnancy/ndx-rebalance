@@ -42,6 +42,7 @@ def main():
     ap.add_argument("--api", default="", help="线上版: 注入 window.NDX_API=该URL, 搜不到成分股时实时查")
     ap.add_argument("--live-url", default="", help="搜不到成分股时提示里带的线上版链接; 不传则只显示纯文字, 不带链接")
     ap.add_argument("--out", default=str(OUT), help="输出路径, 默认 index.html")
+    ap.add_argument("--standalone", action="store_true", help="本地直接打开或部署到自己服务器时加: 套完整 doctype/head(charset utf-8 + 手机 viewport), 否则浏览器可能猜错编码显示乱码。发 Claude Artifact 时不要加")
     args = ap.parse_args()
     out_path = pathlib.Path(args.out)
     data, src, path = load_data()
@@ -59,6 +60,10 @@ def main():
     if args.live_url:
         snippet = "window.NDX_LIVE_URL=" + json.dumps(args.live_url) + ";" + snippet
     out = tpl.replace(PLACEHOLDER, snippet, 1)
+    if args.standalone:
+        out = ("<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"utf-8\">"
+               "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
+               "<meta name=\"color-scheme\" content=\"light dark\"></head><body>" + out + "</body></html>")
     out_path.write_text(out, encoding="utf-8")
     print(f"[build] 写入 {out_path}" + (f" (NDX_API={args.api})" if args.api else "") + (f" (NDX_LIVE_URL={args.live_url})" if args.live_url else ""))
     print(f"[build] 数据源={src}（{path}）, asof={data.get('asof')}, {len(stocks)} 只成分股: {tickers}")

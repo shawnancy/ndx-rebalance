@@ -74,13 +74,13 @@ python3 fetch_ndx.py --ticker AMD
 
 ```bash
 cd ../web
-python3 build.py
+python3 build.py --standalone      # 本地打开/自部署必加, 否则浏览器猜错编码显示乱码; 发 Artifact 才不加
 ```
 预期：生成 `index.html`，内联 `../data/ndx_data.json` 的 101 只成分股数据，可以直接用浏览器打开，
 也可以发布成 Claude Artifact（纯静态，不发外部请求）。
 
 ```bash
-python3 build.py --api https://your-api.example.com --live-url https://your-api.example.com --out dist/index_live.html
+python3 build.py --standalone --api https://your-api.example.com --live-url https://your-api.example.com --out dist/index_live.html
 ```
 预期：生成的文件里含 `window.NDX_API="https://your-api.example.com"`；页面搜不到成分股时会
 实时查询这个地址。不传 `--live-url` 时，搜不到成分股只显示「线上版可实时查任意美股」纯文字，

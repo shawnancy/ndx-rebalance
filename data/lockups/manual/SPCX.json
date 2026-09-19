@@ -1,0 +1,112 @@
+{
+ "t": "SPCX",
+ "cik": 1181412,
+ "form": "424B4",
+ "filed": "2026-06-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+ "listed_shares_m": 7607,
+ "float_base_m": 638.9,
+ "unlocks": [
+  {
+   "d": "2026-08-06",
+   "sh_m": 911.5,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-08-20",
+   "sh_m": 319.0,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-09-09",
+   "sh_m": 319.0,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-09-10",
+   "sh_m": 59.1,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-09-24",
+   "sh_m": 328.4,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-10-09",
+   "sh_m": 328.4,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-10-26",
+   "sh_m": 328.4,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2026-11-05",
+   "sh_m": 1300.0,
+   "note": "",
+   "d_estimated": true
+  },
+  {
+   "d": "2026-12-08",
+   "sh_m": 797.6,
+   "note": "",
+   "d_estimated": false
+  },
+  {
+   "d": "2027-02-10",
+   "sh_m": 351.9,
+   "note": "",
+   "d_estimated": true
+  },
+  {
+   "d": "2027-03-18",
+   "sh_m": 176.0,
+   "note": "",
+   "d_estimated": true
+  },
+  {
+   "d": "2027-05-05",
+   "sh_m": 351.9,
+   "note": "",
+   "d_estimated": true
+  },
+  {
+   "d": "2027-05-17",
+   "sh_m": 176.0,
+   "note": "",
+   "d_estimated": true
+  },
+  {
+   "d": "2027-06-12",
+   "sh_m": 351.9,
+   "note": "",
+   "d_estimated": false
+  }
+ ],
+ "extracted_by": "manual (人工核对 424B4 第259-260页 + 10-Q)",
+ "extracted_at": "2026-09-15",
+ "confidence": "high",
+ "warnings": [
+  "11/05 及 2027 财报后批次的日期按第三方预估财报日推算",
+  "12/08 批取招股书条件分支的保守值 797.6M"
+ ],
+ "price": 143.49,
+ "asof": "2026-09-15",
+ "adv_bn": 11.47,
+ "anchor": {
+  "ref": "2026-08-31",
+  "float_m": 1869.4,
+  "px": 143.69,
+  "w": 2.82
+ },
+ "_note": "price/asof/adv_bn/anchor 与 spcx.json 同一时间切片, 页面选中时整套覆盖; 自动抽取版没有这些字段, 页面用快照值"
+}

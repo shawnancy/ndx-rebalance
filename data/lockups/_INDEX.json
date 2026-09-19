@@ -1,0 +1,85 @@
+{
+  "generated": "2026-09-19T11:38:29Z",
+  "tickers": [
+    {
+      "t": "ALAB",
+      "filed": "2024-03-21",
+      "form": "424B4",
+      "n_unlocks": 2,
+      "confidence": "medium",
+      "error": null
+    },
+    {
+      "t": "ARM",
+      "filed": null,
+      "form": null,
+      "n_unlocks": 0,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "CRCL",
+      "filed": "2025-08-15",
+      "form": "424B4",
+      "n_unlocks": 5,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "CRWV",
+      "filed": "2025-03-31",
+      "form": "424B4",
+      "n_unlocks": 3,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "FIG",
+      "filed": "2025-07-31",
+      "form": "424B4",
+      "n_unlocks": 2,
+      "confidence": "medium",
+      "error": null
+    },
+    {
+      "t": "HONA",
+      "filed": "2026-07-13",
+      "form": "424B3",
+      "n_unlocks": 0,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "KLAR",
+      "filed": "2025-09-10",
+      "form": "424B4",
+      "n_unlocks": 0,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "NBIS",
+      "filed": "2011-05-24",
+      "form": "424B1",
+      "n_unlocks": 3,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "SNDK",
+      "filed": "2025-06-06",
+      "form": "424B4",
+      "n_unlocks": 0,
+      "confidence": "low",
+      "error": null
+    },
+    {
+      "t": "SPCX",
+      "filed": "2026-06-12",
+      "form": "424B4",
+      "n_unlocks": 16,
+      "confidence": "high",
+      "error": null
+    }
+  ]
+}

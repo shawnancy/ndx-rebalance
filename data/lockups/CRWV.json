@@ -1,0 +1,56 @@
+{
+  "t": "CRWV",
+  "cik": 1769628,
+  "form": "424B4",
+  "filed": "2025-03-31",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
+  "listed_shares_m": 346.0,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": 0.727342,
+      "note": "锁定期内例外，税收代扣卖出交易最多约727.3k股",
+      "d_estimated": false
+    },
+    {
+      "d": null,
+      "sh_m": 0.96314,
+      "note": "Q1财报后次交易日，员工及服务商RSU释放（须股价>IPO价125%）",
+      "d_estimated": false
+    },
+    {
+      "d": null,
+      "sh_m": null,
+      "note": "Q2财报后次交易日或发行后第180天（以早者），所有剩余股份释放",
+      "d_estimated": false
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:25:27Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": false,
+    "sum_m": 1.7,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "摘录缺招股书发行日期/上市日期，无法将'Q1/Q2财报后'、'180天后'等相对日期转为日历日期",
+    "第三批解禁股数为'所有剩余股份'(All remaining shares)，未给具体数值",
+    "第二批有股价触发条件：财报后10交易日窗口需5天收盘价≥IPO价的125%，不满足则不释放",
+    "摘录未提供IPO基础发行量(float_base_m)",
+    "listed_shares_m(346.0M)系上市完成后Class A已发行数，包含同步配股后"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      890437,
+      905437
+    ],
+    "n_lockup_windows_total": 18,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1207407
+  }
+}

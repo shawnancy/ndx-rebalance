@@ -1,0 +1,69 @@
+{
+  "t": "CRCL",
+  "cik": 1876042,
+  "form": "424B4",
+  "filed": "2025-08-15",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525181916/d839239d424b4.htm",
+  "listed_shares_m": 211.6,
+  "float_base_m": 50.6,
+  "unlocks": [
+    {
+      "d": "2025-08-13",
+      "sh_m": 8.0,
+      "note": "JPMorgan早期释放-售股股东,IPO发行关联",
+      "d_estimated": false
+    },
+    {
+      "d": "2025-08-13",
+      "sh_m": 1.9,
+      "note": "JPMorgan早期释放-非管理层员工(up to上限)",
+      "d_estimated": false
+    },
+    {
+      "d": "2025-08-15",
+      "sh_m": 0.033608,
+      "note": "JPMorgan早期释放-高管期权行权",
+      "d_estimated": false
+    },
+    {
+      "d": "2025-09-11",
+      "sh_m": 10.0,
+      "note": "可选早期释放上限,满足特定条件可在招股书后30天释放",
+      "d_estimated": true
+    },
+    {
+      "d": "2025-11-12",
+      "sh_m": 198.1,
+      "note": "主要解禁约198.1M股,触发条件:min(IPO后180天,Q3财报公告后第二交易日)",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:19:13Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 218.0,
+    "sum_le_listed": false
+  },
+  "confidence": "low",
+  "warnings": [
+    "IPO prospectus日期未明确给出,根据'8月13日NYSE交易开始'推断为2025-08-12,导致第4、5项日期为估算值",
+    "Q3(至9月30日)财报公告日期未在摘录中给出,根据典型IPO后财报时间表(季度结束后30-45天)估计为11月初,第二交易日推估为2025-11-12",
+    "198.1M主要解禁的确切日期依赖于财报公告日和180天截止(2026-02-10)的较早者,若财报公告延迟可能推迟至2月",
+    "1.9M和10M均为'up to'表述的上限,实际释放数量可能低于标记值",
+    "IPO的39.1M和此次发行的11.5M(含绿鞋)用于计算float_base,绿鞋若不完全行使实际流通量低于50.6M",
+    "摘录未包含underwriting详细条款,第4项的'certain early release conditions'具体内容未知"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      832566,
+      842280
+    ],
+    "n_lockup_windows_total": 6,
+    "n_extra_windows_included": 1,
+    "excerpt_chars": 15021,
+    "html_flat_chars": 1221669
+  }
+}

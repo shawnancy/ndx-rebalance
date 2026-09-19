@@ -1,0 +1,30 @@
+{
+  "t": "HONA",
+  "cik": 2089271,
+  "form": "424B3",
+  "filed": "2026-07-13",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2089271/000119312526302021/d132076d424b3.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:16:33Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文摘录为空，未提供任何解禁表相关内容"
+  ],
+  "_extract_meta": {
+    "section_found": false,
+    "section_range": null,
+    "n_lockup_windows_total": 0,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 0,
+    "html_flat_chars": 891926
+  }
+}

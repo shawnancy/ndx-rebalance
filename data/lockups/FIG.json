@@ -1,0 +1,50 @@
+{
+  "t": "FIG",
+  "cik": 1579878,
+  "form": "424B4",
+  "filed": "2025-07-31",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828025037014/figma424b4.htm",
+  "listed_shares_m": 407.68,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": "2025-05-16",
+      "sh_m": 11.4,
+      "note": "员工及服务提供者持股,需满足Q1财报后且NYSE收盘价上升≥25%条件",
+      "d_estimated": true
+    },
+    {
+      "d": "2025-08-15",
+      "sh_m": 396.28,
+      "note": "所有剩余被锁定股票(除11.4M员工股票),取Q2财报后或发行后180天较早者",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:21:06Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 407.7,
+    "sum_le_listed": true
+  },
+  "confidence": "medium",
+  "warnings": [
+    "原文未提供IPO确切日期,本估计假设IPO在2025年4月中旬,所有日期均为估计值",
+    "原文未明确IPO新发行股数(float_base_m),该部分股票IPO时即可自由交易,不计入锁定期安排",
+    "第二批股数396.28M为理论值(407.68M - 11.4M),实际包括创始人、董事、VC等各类被锁定股东,分类细节原文未述",
+    "第一批解禁附加股价条件(收盘价需超IPO价25%),为独立触发条件非日期条件",
+    "RSU sell-to-cover最多8.0M股可在整个180天锁定期内任意时间进行税收预扣,无确定日期未列为单独批次"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      765225,
+      780225
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1046755
+  }
+}

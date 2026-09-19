@@ -152,6 +152,17 @@ def round2(x):
     return round(x, 2) if isinstance(x, (int, float)) else None
 
 
+def ipo_date_from_info(info: dict):
+    """firstTradeDateMilliseconds(毫秒 epoch) -> ISO 日期字符串, 拿不到返回 None"""
+    ms = info.get("firstTradeDateMilliseconds")
+    if not ms:
+        return None
+    try:
+        return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
+    except (ValueError, OSError, OverflowError):
+        return None
+
+
 def build_stock_record(symbol: str, info: dict, weight: float, nasdaq_row: dict) -> dict:
     px = info.get("regularMarketPrice") or info.get("currentPrice") or info.get("previousClose")
     name = info.get("shortName") or (nasdaq_row or {}).get("companyName")
@@ -178,6 +189,7 @@ def build_stock_record(symbol: str, info: dict, weight: float, nasdaq_row: dict)
         "adv10_bn": round2(adv10_bn),
         "mcap_bn": round2(mcap_bn),
         "w": round2(weight) if weight is not None else None,
+        "ipo_date": ipo_date_from_info(info),
     }
 
 
@@ -210,7 +222,7 @@ def run_full(skip_fund: bool = False):
                 "t": s,
                 "name": (row or {}).get("companyName"),
                 "px": round2((row or {}).get("lastSalePrice")),
-                "tso_m": None, "float_m": None, "adv_bn": None, "adv10_bn": None,
+                "tso_m": None, "float_m": None, "adv_bn": None, "adv10_bn": None, "ipo_date": None,
                 "mcap_bn": round2((row or {}).get("marketCap") / 1e9) if (row and row.get("marketCap")) else None,
                 "w": round2(weights.get(s)) if s in weights else None,
             })
@@ -225,7 +237,7 @@ def run_full(skip_fund: bool = False):
                     "t": s,
                     "name": (row or {}).get("companyName"),
                     "px": round2((row or {}).get("lastSalePrice")),
-                    "tso_m": None, "float_m": None, "adv_bn": None, "adv10_bn": None,
+                    "tso_m": None, "float_m": None, "adv_bn": None, "adv10_bn": None, "ipo_date": None,
                     "mcap_bn": round2((row or {}).get("marketCap") / 1e9) if (row and row.get("marketCap")) else None,
                     "w": round2(weights.get(s)) if s in weights else None,
                 })

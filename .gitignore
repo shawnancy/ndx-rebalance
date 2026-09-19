@@ -4,4 +4,5 @@ __pycache__/
 dist/
 web/index.html
 /data/ndx_data.json.bak
+data/lockups/_cache/
 .DS_Store

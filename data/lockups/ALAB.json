@@ -1,0 +1,49 @@
+{
+  "t": "ALAB",
+  "cik": 1736297,
+  "form": "424B4",
+  "filed": "2024-03-21",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1736297/000119312524073873/d285484d424b4.htm",
+  "listed_shares_m": 152.5,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": "2024-05-17",
+      "sh_m": 5.9,
+      "note": "员工持股解禁(不含高管和董事)，需满足NASDAQ收盘价≥IPO价格×125%",
+      "d_estimated": true
+    },
+    {
+      "d": "2024-08-12",
+      "sh_m": 146.6,
+      "note": "剩余全部可售股份，解禁日为二季财报后第二交易日或发行后180天中较晚者，受Rule 144 affiliate限制",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:16:22Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 152.5,
+    "sum_le_listed": true
+  },
+  "confidence": "medium",
+  "warnings": [
+    "原文无明确IPO/prospectus日期，日期基于2023-12-31财报日期和美股行业惯例估算（假定prospectus date为2024-02-01，Q1财报约2024-05-14发布，Q2财报约2024-08-08发布）",
+    "第一批解禁(5.9M)条件：股价需在财报发布后10个交易日内至少5天保持≥IPO价×125%",
+    "第二批股数146.6M为推算值（152.5M总股数−5.9M第一批）",
+    "float_base_m（IPO具体发行股数）原文未提及，无法确定是否含绿鞋"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      552032,
+      567032
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 731751
+  }
+}

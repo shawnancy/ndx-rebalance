@@ -1,0 +1,280 @@
+{
+  "t": "SPCX",
+  "cik": 1181412,
+  "form": "424B4",
+  "filed": "2026-06-12",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+  "listed_shares_m": 7380.19691,
+  "float_base_m": 555.555555,
+  "unlocks": [
+    {
+      "d": "2026-08-15",
+      "sh_m": 911.5,
+      "note": "首份财报发布后第二个交易日释放，若股价比IPO价涨30%可额外释放455.8M",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-08-20",
+      "sh_m": 319.0,
+      "note": "发行后第70天，180天解禁期释放7%，Affiliate除外",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-09",
+      "sh_m": 319.0,
+      "note": "发行后第90天，180天解禁期释放7%，Affiliate除外",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-10",
+      "sh_m": 59.1,
+      "note": "发行后第91天，Affiliate持股释放",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-24",
+      "sh_m": 328.4,
+      "note": "发行后第105天，180天解禁期释放7%",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-10-09",
+      "sh_m": 328.4,
+      "note": "发行后第120天，180天解禁期释放7%",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-10-24",
+      "sh_m": 328.4,
+      "note": "发行后第135天，180天解禁期释放7%",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-10-29",
+      "sh_m": 1300.0,
+      "note": "Q3财报(截至2026年9月30日)发布后第二个交易日，释放28%",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-12-08",
+      "sh_m": 328.4,
+      "note": "发行后第180天，解禁期满释放剩余股份(若额外释放已生效则328.4M否则797.6M)",
+      "d_estimated": false
+    },
+    {
+      "d": "2027-02-18",
+      "sh_m": 351.9,
+      "note": "Q4财报(截至2026年12月31日)发布后第二个交易日，非Musk扩展锁定期释放20%",
+      "d_estimated": true
+    },
+    {
+      "d": "2027-03-18",
+      "sh_m": 176.0,
+      "note": "发行后第280天，非Musk扩展锁定期释放10%",
+      "d_estimated": false
+    },
+    {
+      "d": "2027-05-17",
+      "sh_m": 176.0,
+      "note": "发行后第340天，非Musk扩展锁定期释放10%",
+      "d_estimated": false
+    },
+    {
+      "d": "2027-05-20",
+      "sh_m": 351.9,
+      "note": "Q1财报(截至2027年3月31日)发布后第二个交易日，非Musk扩展锁定期释放20%",
+      "d_estimated": true
+    },
+    {
+      "d": "2027-06-12",
+      "sh_m": 351.9,
+      "note": "发行后第366天，非Musk扩展锁定期释放20%",
+      "d_estimated": false
+    },
+    {
+      "d": "2027-06-12",
+      "sh_m": 6400.0,
+      "note": "发行后第366天，Musk全部持股解禁(含Class B可转换股和期权)",
+      "d_estimated": false
+    },
+    {
+      "d": "2027-08-18",
+      "sh_m": 351.9,
+      "note": "Q2财报(截至2027年6月30日)发布后第二个交易日，扩展锁定期剩余股份释放",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:11:36Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 12381.8,
+    "sum_le_listed": false,
+    "vs_manual": {
+      "matched": 9,
+      "value_matched": 13,
+      "total_manual": 14,
+      "diff": [
+        {
+          "manual_d": "2026-08-06",
+          "manual_sh_m": 911.5,
+          "haiku_d": "2026-08-15",
+          "haiku_sh_m": 911.5,
+          "date_diff_days": 9,
+          "sh_diff_m": 0.0,
+          "hit": false,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-08-20",
+          "manual_sh_m": 319.0,
+          "haiku_d": "2026-08-20",
+          "haiku_sh_m": 319.0,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-09-09",
+          "manual_sh_m": 319.0,
+          "haiku_d": "2026-09-09",
+          "haiku_sh_m": 319.0,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-09-10",
+          "manual_sh_m": 59.1,
+          "haiku_d": "2026-09-10",
+          "haiku_sh_m": 59.1,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-09-24",
+          "manual_sh_m": 328.4,
+          "haiku_d": "2026-09-24",
+          "haiku_sh_m": 328.4,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-10-09",
+          "manual_sh_m": 328.4,
+          "haiku_d": "2026-10-09",
+          "haiku_sh_m": 328.4,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-10-26",
+          "manual_sh_m": 328.4,
+          "haiku_d": "2026-10-24",
+          "haiku_sh_m": 328.4,
+          "date_diff_days": 2,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-11-05",
+          "manual_sh_m": 1300.0,
+          "haiku_d": "2026-10-29",
+          "haiku_sh_m": 1300.0,
+          "date_diff_days": 7,
+          "sh_diff_m": 0.0,
+          "hit": false,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2026-12-08",
+          "manual_sh_m": 797.6,
+          "haiku_d": "2026-12-08",
+          "haiku_sh_m": 328.4,
+          "date_diff_days": 0,
+          "sh_diff_m": -469.2,
+          "hit": false,
+          "matched_via": "date"
+        },
+        {
+          "manual_d": "2027-02-10",
+          "manual_sh_m": 351.9,
+          "haiku_d": "2027-02-18",
+          "haiku_sh_m": 351.9,
+          "date_diff_days": 8,
+          "sh_diff_m": 0.0,
+          "hit": false,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2027-03-18",
+          "manual_sh_m": 176.0,
+          "haiku_d": "2027-03-18",
+          "haiku_sh_m": 176.0,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2027-05-05",
+          "manual_sh_m": 351.9,
+          "haiku_d": "2027-05-20",
+          "haiku_sh_m": 351.9,
+          "date_diff_days": 15,
+          "sh_diff_m": 0.0,
+          "hit": false,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2027-05-17",
+          "manual_sh_m": 176.0,
+          "haiku_d": "2027-05-17",
+          "haiku_sh_m": 176.0,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        },
+        {
+          "manual_d": "2027-06-12",
+          "manual_sh_m": 351.9,
+          "haiku_d": "2027-06-12",
+          "haiku_sh_m": 351.9,
+          "date_diff_days": 0,
+          "sh_diff_m": 0.0,
+          "hit": true,
+          "matched_via": "value"
+        }
+      ]
+    }
+  },
+  "confidence": "high",
+  "warnings": [
+    "First Earnings Release Date未在摘录中明确定义，基于标准Q2财报发布周期(45-60天)估算为8月中旬",
+    "所有季度财报发布日期基于标准企业报告周期(40-60天)的合理估算，实际发布日期可能有所偏差",
+    "第一批911.5M释放存在条件分支(Additional Release Shares)：仅记录基础批次，条件分支已在note中说明",
+    "Day 180释放(328.4M)存在条件分支：若前期额外释放未生效则为797.6M，基础情形记录328.4M"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      1006017,
+      1021017
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1472659
+  }
+}

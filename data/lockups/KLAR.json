@@ -1,0 +1,36 @@
+{
+  "t": "KLAR",
+  "cik": 2003292,
+  "form": "424B4",
+  "filed": "2025-09-10",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2003292/000200329225000052/klarnagroupplc424b4.htm",
+  "listed_shares_m": 377.255045,
+  "float_base_m": 34.311274,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:21:34Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文摘录中缺少具体的解禁日期表(Earliest Date/Approximate Number of Shares两列组合)",
+    "文中提及180天市场静沉期后解禁但未给出具体日历日期和解禁股数数字",
+    "IPO基础发行量为34.311274M，原文未提及over-allotment绿鞋数据",
+    "摘录在'our ordinary shares will be available for sale in the public market as follows:'后被截断，表格内容缺失"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      1084975,
+      1099975
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1405830
+  }
+}

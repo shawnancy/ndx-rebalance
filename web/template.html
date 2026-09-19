@@ -120,6 +120,26 @@ footer strong{color:var(--ink)}
 .stocknow h3 .hint{display:inline;margin:0;font-size:11.5px}
 .stocknow .changes{margin-bottom:0}
 .stocknow .changes .to{font-size:19px}
+
+/* 成分股一览表 + 筛选片 */
+.chipbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.fchip{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;user-select:none}
+.fchip:hover{border-color:var(--accent);color:var(--ink)}
+.fchip.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+.fchip .cnt{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+#stocktbl th[data-sort]{cursor:pointer;user-select:none}
+#stocktbl th[data-sort]:hover{color:var(--ink)}
+#stocktbl th .arrow{display:inline-block;margin-left:3px;font-size:10px}
+#stocktbl tbody tr{cursor:pointer}
+#stocktbl tbody tr:hover td{background:var(--surface-2)}
+#stocktbl tbody tr.selected td{background:var(--accent-soft)}
+#stocktbl tr.morerow td{text-align:center;padding:8px;cursor:default;background:var(--surface-2)}
+#stocktbl tr.morerow button{font-size:12.5px}
+#stocktbl tr.morerow:hover td{background:var(--surface-2)}
+#stocktbl td.name{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#stocktbl .statuschips{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+#lockupsource{margin:-2px 0 10px}
+#lockupsource a{color:var(--accent)}
 </style>
 
 <div class="wrap">
@@ -128,11 +148,23 @@ footer strong{color:var(--ink)}
 <p class="sub">一只股票解禁之后，能自由买卖的股数变多，纳指给它的份额「权重」就会在下一个调仓日往上调，跟踪指数的基金必须照着买。这个页面算的就是：下一轮调多少、基金要买多少钱、什么时候进出场。默认载入 SpaceX。</p>
 
 <div class="stocksearch">
-  <label for="stocksearch-input">搜美股<span class="term">按代码或公司名</span></label>
-  <span class="hint">在下面纳指 100 成分股里选一只，自动把「参数」栏和下面这张卡换成它；旧股没有解禁表，「下一轮会发生什么」显示持平是对的。</span>
+  <label for="stocksearch-input">搜美股<span class="term">按代码或公司名过滤下表</span></label>
+  <span class="hint">下面是纳指 100 全部 101 只成分股，默认按权重降序；点任意一行 = 选中它，自动把「参数」栏和下面这张卡换成它——旧股没有解禁表，「下一轮会发生什么」显示持平是对的。这个框只过滤下表，不用下拉。</span>
   <input id="stocksearch-input" autocomplete="off" placeholder="比如 NVDA 或 英伟达 / NVIDIA">
-  <div id="stocksearch-dropdown" class="dropdown" hidden></div>
   <p id="stocksearch-notfound" class="flag" hidden></p>
+</div>
+<div class="chipbar" id="chipbar"></div>
+<div class="tablewrap">
+<table id="stocktbl">
+  <thead><tr>
+    <th>代码</th><th>公司</th>
+    <th data-sort="w">权重%<span class="arrow"></span></th>
+    <th data-sort="mcap_bn">市值B<span class="arrow"></span></th>
+    <th data-sort="ipo_date">上市日期<span class="arrow"></span></th>
+    <th>状态</th>
+  </tr></thead>
+  <tbody></tbody>
+</table>
 </div>
 <div id="stocknow" class="stocknow" hidden></div>
 
@@ -204,6 +236,7 @@ footer strong{color:var(--ink)}
   <div>
     <label for="unlocks">每行一批：日期, 股数（百万）</label>
     <span class="hint">必须包含已经发生的批次，否则算不出任意一天的累计流通股。来源：招股书「Shares Eligible for Future Sale」那张表</span>
+    <p id="lockupsource" class="hint"></p>
     <textarea id="unlocks">2026-08-06, 911.5
 2026-08-20, 319.0
 2026-09-09, 319.0
@@ -409,8 +442,12 @@ document.getElementById('preset-blank').addEventListener('click',()=>{
   set('ticker','NEWCO'); set('price','100'); set('listed','1000'); set('base','100');
   set('aflo','100'); set('apx','100'); set('aw','0.50'); set('aref','2027-02-26');
   set('unlocks','2027-03-15, 200\n2027-05-20, 300'); render();
+  if(typeof selectedTicker!=='undefined'){ selectedTicker=null; }
+  const lsEl=document.getElementById('lockupsource'); if(lsEl) lsEl.innerHTML='';
+  if(typeof renderStockTable==='function') renderStockTable();
 });
 render();
+renderLockupSource(document.getElementById('ticker').value.trim(), lockupFor(document.getElementById('ticker').value.trim()));
 
 /* ================= 搜美股 / 这只股票现在 / 情景 / 纳入检查 ================= */
 /* 只加调用，不改上面引擎函数(schedule/upcoming/weightOf/cappedShares/render)里的公式 */
@@ -428,44 +465,171 @@ function lastRefOnOrBefore(d){
   return lastRef;
 }
 
-function searchMatch(q){
-  q=String(q||'').trim().toLowerCase(); if(!q) return [];
-  return ndxStocks().filter(s=>s.t.toLowerCase().includes(q)||(s.name&&s.name.toLowerCase().includes(q))).slice(0,8);
+let scenarioDate=null, selectedTicker=null;
+let sortState={key:'w', dir:-1};      // 默认权重降序
+let activeFilters=new Set();          // 筛选片(叠加/AND)
+let showAllRows=false;                // 一览表默认只露前 15 行, 搜索/筛选/点「显示全部」时展开
+const TABLE_PREVIEW=15;
+
+/* ---- 解禁表(data/lockups/*.json, build.py 合并进 NDX_DATA.lockups) ---- */
+/* 有招股书解禁表时, 用 IPO 初始流通+已发生解禁 算今天的自由流通, 挂牌股数用招股书值; 没有则退 yfinance 自估 */
+function floatTsoFor(s){
+  const L=lockupFor(s.t), today=new Date().toISOString().slice(0,10);
+  if(L && L.float_base_m!=null && Array.isArray(L.unlocks) && L.unlocks.length){
+    const fl=L.float_base_m+L.unlocks.filter(u=>u.d&&u.d<=today&&u.sh_m!=null).reduce((a,u)=>a+u.sh_m,0);
+    return {fl, tso:(L.listed_shares_m!=null?L.listed_shares_m:s.tso_m), src:'招股书'};
+  }
+  return {fl:s.float_m, tso:s.tso_m, src:'Yahoo 自估'};
+}
+function lockupFor(t){ const m=ndxMeta(); return (m.lockups && m.lockups[t]) || null; }
+
+function renderLockupSource(t, lockup){
+  const el=document.getElementById('lockupsource');
+  if(!el) return;
+  if(!lockup){ el.innerHTML='招股书里没抽到解禁表，可手填。'; return; }
+  const hasUnlocks = Array.isArray(lockup.unlocks) && lockup.unlocks.length>0;
+  if(!hasUnlocks){
+    const warn=(lockup.warnings&&lockup.warnings.length)?'：'+lockup.warnings.join('；'):'';
+    const conf=lockup.confidence?'（置信度 '+lockup.confidence+'）':'';
+    el.innerHTML=`招股书里没抽到解禁表，可手填${warn}${conf}`;
+    return;
+  }
+  const estCount=lockup.unlocks.filter(u=>u.d_estimated).length;
+  const src=lockup.form?('来自 SEC '+lockup.form):'来自招股书';
+  const filed=lockup.filed?`（${lockup.filed} 申报）`:'';
+  const conf=lockup.manual?' · 人工核对版':(lockup.confidence?` · haiku 自动抽取，置信度 ${lockup.confidence}，日期以原文为准`:'');
+  const nullD=lockup.unlocks.filter(u=>!u.d||u.sh_m==null).length;
+  const link=lockup.source_url?` · <a href="${lockup.source_url}" target="_blank" rel="noopener">查看原文</a>`:'';
+  const est=estCount?` · ${estCount} 批日期为估计`:'';
+  const dropped=nullD?` · ${nullD} 批原文没给日期已略过`:'';
+  el.innerHTML=`${src}${filed}${conf}${link}${est}${dropped}`;
 }
 
-let ddList=[], ddIndex=-1, scenarioDate=null;
+/* ---- 一览表：筛选片(每片独立算「还在封顶区/近2年上市/有解禁表/权重前20」) ---- */
+function stockFlags(s){
+  const _ft=floatTsoFor(s); const capActive=(_ft.fl!=null&&_ft.tso!=null)?(_ft.fl*3<_ft.tso):false;
+  let recent=false;
+  if(s.ipo_date){
+    const ipo=mk(s.ipo_date), cutoff=addD(new Date(),-730);
+    recent = ipo.getTime()>=cutoff.getTime();
+  }
+  const _L=lockupFor(s.t); const hasLockup=!!(_L&&Array.isArray(_L.unlocks)&&_L.unlocks.some(u=>u.d&&u.sh_m!=null));
+  return {capActive,recent,hasLockup};
+}
+function top20Set(){
+  const withW=ndxStocks().filter(s=>s.w!=null).slice().sort((a,b)=>b.w-a.w);
+  return new Set(withW.slice(0,20).map(s=>s.t));
+}
+const FILTER_DEFS=[
+  {key:'cap',    label:'还在 3 倍封顶区', test:(s,f)=>f.capActive},
+  {key:'recent', label:'近 2 年上市',     test:(s,f)=>f.recent},
+  {key:'lockup', label:'有解禁表',        test:(s,f)=>f.hasLockup},
+  {key:'top20',  label:'权重前 20',       test:(s,f,top20)=>top20.has(s.t)},
+];
 
-function renderDropdown(list){
-  ddList=list; ddIndex=-1;
-  const dd=document.getElementById('stocksearch-dropdown');
-  if(!list.length){dd.hidden=true;dd.innerHTML='';return;}
-  dd.hidden=false;
-  dd.innerHTML=list.map(s=>`<div class="opt" data-t="${s.t}">
-    <span class="n mono">${s.t}</span><span class="nm">${s.name||''}</span>
-    <span class="n mono">${s.w!=null?num(s.w)+'%':'—'}</span><span class="n mono">${s.mcap_bn!=null?num(s.mcap_bn,0)+'B':'—'}</span></div>`).join('');
+function renderChipbar(){
+  const box=document.getElementById('chipbar'); if(!box) return;
+  const top20=top20Set();
+  const counts=Object.fromEntries(FILTER_DEFS.map(fd=>
+    [fd.key, ndxStocks().filter(s=>fd.test(s,stockFlags(s),top20)).length]));
+  box.innerHTML=FILTER_DEFS.map(fd=>
+    `<span class="fchip${activeFilters.has(fd.key)?' active':''}" data-k="${fd.key}">${fd.label} <span class="cnt">(${counts[fd.key]})</span></span>`
+  ).join('');
+  box.querySelectorAll('.fchip').forEach(el=>el.addEventListener('click',()=>{
+    const k=el.dataset.k;
+    if(activeFilters.has(k)) activeFilters.delete(k); else activeFilters.add(k);
+    renderChipbar(); renderStockTable();
+  }));
 }
-function highlightDD(){
-  document.querySelectorAll('#stocksearch-dropdown .opt').forEach((el,i)=>el.classList.toggle('active',i===ddIndex));
+
+function updateSortArrows(){
+  document.querySelectorAll('#stocktbl th[data-sort]').forEach(th=>{
+    const arrow=th.querySelector('.arrow');
+    if(!arrow) return;
+    arrow.textContent = th.dataset.sort===sortState.key ? (sortState.dir===1?'▲':'▼') : '';
+  });
 }
+
+function renderStockTable(){
+  const tbody=document.querySelector('#stocktbl tbody'); if(!tbody) return;
+  const q=stocksearchInput.value.trim().toLowerCase();
+  const top20=top20Set();
+  let rows=ndxStocks().map(s=>({s,f:stockFlags(s)}));
+  if(q) rows=rows.filter(r=>r.s.t.toLowerCase().includes(q)||(r.s.name&&r.s.name.toLowerCase().includes(q)));
+  for(const k of activeFilters){
+    const fd=FILTER_DEFS.find(x=>x.key===k);
+    if(fd) rows=rows.filter(r=>fd.test(r.s,r.f,top20));
+  }
+  const {key,dir}=sortState;
+  rows.sort((a,b)=>{
+    const av=a.s[key], bv=b.s[key];
+    if(av==null&&bv==null) return 0;
+    if(av==null) return 1;   // 空值永远排最后，跟排序方向无关
+    if(bv==null) return -1;
+    if(av<bv) return -1*dir;
+    if(av>bv) return 1*dir;
+    return 0;
+  });
+  const total=rows.length, collapsed=(!q && activeFilters.size===0 && !showAllRows && total>TABLE_PREVIEW);
+  if(collapsed) rows=rows.slice(0,TABLE_PREVIEW);
+  tbody.innerHTML = (rows.length ? rows.map(({s,f})=>{
+    const chips=[];
+    if(f.capActive) chips.push('<span class="chip cap">封顶区</span>');
+    if(f.recent) chips.push('<span class="chip">近2年</span>');
+    if(f.hasLockup) chips.push('<span class="chip">解禁表</span>');
+    return `<tr data-t="${s.t}" class="${s.t===selectedTicker?'selected':''}">
+      <td class="mono">${s.t}</td>
+      <td class="name">${s.name||''}</td>
+      <td class="n">${s.w!=null?num(s.w)+'%':'—'}</td>
+      <td class="n">${s.mcap_bn!=null?num(s.mcap_bn,0):'—'}</td>
+      <td class="n">${s.ipo_date||'—'}</td>
+      <td><div class="statuschips">${chips.join('')||'<span class="none" style="padding:0">—</span>'}</div></td>
+    </tr>`;
+  }).join('') : '<tr><td colspan="6" class="none">没有匹配的股票</td></tr>')
+    + (collapsed ? `<tr class="morerow"><td colspan="6"><button type="button" id="showall">显示全部 ${total} 只（现在只露前 ${TABLE_PREVIEW} 只，搜索或筛选也会展开）</button></td></tr>` : '')
+    + (!collapsed && showAllRows && !q && activeFilters.size===0 ? `<tr class="morerow"><td colspan="6"><button type="button" id="showless">收起，只看前 ${TABLE_PREVIEW} 只</button></td></tr>` : '');
+  tbody.querySelectorAll('tr[data-t]').forEach(tr=>tr.addEventListener('click',()=>pickStock(tr.dataset.t)));
+  const sa=document.getElementById('showall'); if(sa) sa.addEventListener('click',()=>{showAllRows=true;renderStockTable();});
+  const sl=document.getElementById('showless'); if(sl) sl.addEventListener('click',()=>{showAllRows=false;renderStockTable();});
+  updateSortArrows();
+}
+
+document.querySelectorAll('#stocktbl th[data-sort]').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const k=th.dataset.sort;
+    if(sortState.key===k) sortState.dir*=-1; else { sortState.key=k; sortState.dir=-1; }
+    renderStockTable();
+  });
+});
 
 function fillFormFromStock(s){
   const set=(id,v)=>{ if(v!=null) document.getElementById(id).value=v; };
   const meta=ndxMeta();
   set('ticker',s.t);
-  set('price',s.px);
-  set('listed',s.tso_m);
-  set('base',s.float_m);
-  set('adv',s.adv_bn);
+  /* 第一步: 一律按成分股快照填满(价格/股本/ADV/日期/锚点), 锚点=最近一个已过去的参考日 + 当前 QQQ 权重 */
+  set('price',s.px); set('listed',s.tso_m); set('base',s.float_m); set('adv',s.adv_bn);
   const asofStr = meta.asof ? String(meta.asof).slice(0,10) : null;
   if(asofStr) set('asof',asofStr);
   const asofDate = asofStr ? mk(asofStr) : mk(document.getElementById('asof').value.trim());
   const ref = lastRefOnOrBefore(asofDate);
   if(ref) set('aref', iso(ref));
-  set('aflo', s.float_m);
-  set('apx', s.px);
-  set('aw', s.w);
+  set('aflo', s.float_m); set('apx', s.px); set('aw', s.w);
   document.getElementById('unlocks').value='';
+  /* 第二步: 有招股书解禁表的, 用它覆盖股本/初始流通/解禁表(比 yfinance 准) */
+  const lockup=lockupFor(s.t);
+  const hasUnlocks = lockup && Array.isArray(lockup.unlocks) && lockup.unlocks.some(u=>u.d&&u.sh_m!=null);
+  if(hasUnlocks){
+    set('listed', lockup.listed_shares_m!=null ? lockup.listed_shares_m : s.tso_m);
+    set('base',   lockup.float_base_m!=null   ? lockup.float_base_m   : s.float_m);
+    document.getElementById('unlocks').value = lockup.unlocks.filter(u=>u.d&&u.sh_m!=null).map(u=>u.d+', '+Number(u.sh_m).toFixed(1)).join('\n');
+  }
+  /* 第三步: 人工核对版若自带同一时间切片的价格/ADV/日期/锚点, 整套覆盖(SpaceX 默认参数就是这样来的) */
+  if(lockup){
+    set('price',lockup.price); set('adv',lockup.adv_bn); set('asof',lockup.asof);
+    if(lockup.anchor){ set('aref',lockup.anchor.ref); set('aflo',lockup.anchor.float_m); set('apx',lockup.anchor.px); set('aw',lockup.anchor.w); }
+  }
   scenarioDate=null;
+  renderLockupSource(s.t, lockup);
   render();
 }
 
@@ -476,7 +640,7 @@ function renderStockNow(s){
   const holdBn=(s.w!=null&&aum!=null)?(s.w/100*aum):null;
   const withMcap=ndxStocks().filter(x=>x.mcap_bn!=null).sort((a,b)=>b.mcap_bn-a.mcap_bn);
   const rankIdx=s.mcap_bn!=null?withMcap.findIndex(x=>x.t===s.t):-1;
-  const capActive=(s.float_m!=null&&s.tso_m!=null)?(s.float_m*3<s.tso_m):null;
+  const ft=floatTsoFor(s); const capActive=(ft.fl!=null&&ft.tso!=null)?(ft.fl*3<ft.tso):null;
   const days=(holdBn!=null&&s.adv_bn)?(holdBn/s.adv_bn):null;
   box.hidden=false;
   box.innerHTML=`
@@ -493,7 +657,7 @@ function renderStockNow(s){
       <div class="change"><div class="k">这笔持仓要几天成交额才能建完 <b class="term">持仓 ÷ ADV</b></div><div class="to">${days!=null?num(days,1)+' 天':'<span class="none" style="padding:0;display:inline">无数据</span>'}</div>
         <div class="note">被动持仓 ÷ 日均成交额</div></div>
       <div class="change"><div class="k">3 倍流通股封顶 <b class="term">low-float cap</b></div><div class="to">${capActive==null?'<span class="none" style="padding:0;display:inline">无数据</span>':(capActive?'生效':'不生效')}</div>
-        <div class="note">自由流通×3${s.float_m!=null?'　'+num(s.float_m*3,0)+'M':''} 对比 挂牌股数${s.tso_m!=null?'　'+num(s.tso_m,0)+'M':''}${capActive==null?'':(capActive?'。还在封顶区：流通股每多 1 股，算进指数的市值多 3 股，下面的情景才会动权重':'。已过封顶线：流通股再怎么变都不改权重，情景填了也不动；权重只随股价和挂牌股数变')}</div></div>
+        <div class="note">自由流通×3${ft.fl!=null?'　'+num(ft.fl*3,0)+'M':''} 对比 挂牌股数${ft.tso!=null?'　'+num(ft.tso,0)+'M':''}（${ft.src}口径）${capActive==null?'':(capActive?'。还在封顶区：流通股每多 1 股，算进指数的市值多 3 股，下面的情景才会动权重':'。已过封顶线：流通股再怎么变都不改权重，情景填了也不动；权重只随股价和挂牌股数变')}</div></div>
     </div>
     <fieldset style="margin-top:14px">
       <legend>情景</legend>
@@ -526,7 +690,6 @@ function onScenarioChange(){
 }
 
 function notFound(q){
-  document.getElementById('stocksearch-dropdown').hidden=true;
   document.getElementById('stocknow').hidden=true;
   const box=document.getElementById('stocksearch-notfound');
   box.hidden=false;
@@ -551,36 +714,32 @@ function notFound(q){
 function pickStock(t){
   const s=findStock(t);
   if(!s){ notFound(t); return; }
-  document.getElementById('stocksearch-input').value=s.t+(s.name?' '+s.name:'');
-  document.getElementById('stocksearch-dropdown').hidden=true;
+  selectedTicker=s.t;
   document.getElementById('stocksearch-notfound').hidden=true;
   fillFormFromStock(s);
   renderStockNow(s);
+  renderStockTable();
+  const box=document.getElementById('stocknow');
+  if(box && !box.hidden) box.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 const stocksearchInput=document.getElementById('stocksearch-input');
-stocksearchInput.addEventListener('input',e=>{
-  renderDropdown(searchMatch(e.target.value));
+stocksearchInput.addEventListener('input',()=>{
   document.getElementById('stocksearch-notfound').hidden=true;
+  renderStockTable();
 });
 stocksearchInput.addEventListener('keydown',e=>{
-  if(e.key==='ArrowDown'){ if(ddList.length){ e.preventDefault(); ddIndex=(ddIndex+1)%ddList.length; highlightDD(); } }
-  else if(e.key==='ArrowUp'){ if(ddList.length){ e.preventDefault(); ddIndex=(ddIndex-1+ddList.length)%ddList.length; highlightDD(); } }
-  else if(e.key==='Enter'){
+  if(e.key==='Enter'){
     e.preventDefault();
-    if(ddIndex>=0&&ddList[ddIndex]) pickStock(ddList[ddIndex].t);
-    else{
-      const q=e.target.value.trim().toUpperCase();
-      if(q) (findStock(q)?pickStock(q):notFound(q));
-    }
+    const q=e.target.value.trim().toUpperCase();
+    if(!q) return;
+    if(findStock(q)){ pickStock(q); return; }
+    const firstRow=document.querySelector('#stocktbl tbody tr[data-t]');
+    if(firstRow) pickStock(firstRow.dataset.t); else notFound(e.target.value.trim());
   }
 });
-document.getElementById('stocksearch-dropdown').addEventListener('click',e=>{
-  const opt=e.target.closest('.opt'); if(opt) pickStock(opt.dataset.t);
-});
-document.addEventListener('click',e=>{
-  if(!e.target.closest('.stocksearch')) document.getElementById('stocksearch-dropdown').hidden=true;
-});
+renderChipbar();
+renderStockTable();
 
 document.getElementById('incmcap').addEventListener('input',()=>{
   const box=document.getElementById('incresult');

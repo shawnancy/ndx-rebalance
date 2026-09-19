@@ -1,0 +1,56 @@
+{
+  "t": "NBIS",
+  "cik": 1513845,
+  "form": "424B1",
+  "filed": "2011-05-24",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1513845/000104746911005463/a2204298z424b1.htm",
+  "listed_shares_m": 129.2,
+  "float_base_m": 52.174,
+  "unlocks": [
+    {
+      "d": "2011-11-12",
+      "sh_m": null,
+      "note": "公司及其他员工/股东(除创始人Volozh/Segalovich外)180天锁定期满",
+      "d_estimated": true
+    },
+    {
+      "d": "2012-05-15",
+      "sh_m": null,
+      "note": "Ilya Segalovich全部持股及Arkady Volozh一半持股1年锁定期满",
+      "d_estimated": true
+    },
+    {
+      "d": "2013-05-15",
+      "sh_m": null,
+      "note": "Arkady Volozh另一半持股2年锁定期满",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:14:19Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": false,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未明确上市日期(prospectus date具体日期)，解禁日期系基于'As of April 30, 2011'财务数据推断，实际可能偏差数周",
+    "原文未提供各锁定期对应的具体股数细分，仅知道总锁定股数269,073,370股(占83.8%)，无法按批次填充sh_m",
+    "float_base的定义有歧义：原文'52,174,088 shares sold in this offering'与'15,400,000 shares to be sold by us'对应关系不清，前者可能包含卖方股东部分；绿鞋over-allotment未见提及",
+    "Arkady Volozh的'all shares subject to one year, one-half subject to two years'表述存在歧义，理解为一半1年锁定+另一半2年锁定(即两个不同的锁定期档)，但可能还有其他解读",
+    "锁定期可能延长条款：若解禁期末17天内发布财报或重大事件，或宣布将在最后16天发布财报，限制期顺延至财报后18天，实际解禁可能晚于表中日期"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      569295,
+      572764
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 3,
+    "excerpt_chars": 9368,
+    "html_flat_chars": 754073
+  }
+}

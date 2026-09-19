@@ -22,6 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent  # .../ndx_rebalance/web
 DATA_DIR = ROOT.parent / "data"
 REAL = DATA_DIR / "ndx_data.json"
 MOCK = DATA_DIR / "ndx_data.mock.json"
+LOCKUPS_DIR = DATA_DIR / "lockups"
 TEMPLATE = ROOT / "template.html"
 OUT = ROOT / "index.html"
 PLACEHOLDER = "/*__NDX_DATA__*/"
@@ -35,6 +36,36 @@ def load_data():
         print(f"[build] {REAL} 不存在, 用 mock 兜底: {MOCK}")
         return json.loads(MOCK.read_text(encoding="utf-8")), "mock", MOCK
     sys.exit(f"[build] 找不到 {REAL} 也找不到 {MOCK}, 无法生成 index.html")
+
+
+def load_lockups():
+    """合并 data/lockups/*.json (排除 _INDEX.json) -> {TICKER: {...}}。
+    单个文件解析失败只警告跳过, 不中断整体构建(另一个 agent 可能同时在写文件)。"""
+    out = {}
+    if not LOCKUPS_DIR.exists():
+        return out
+    for p in sorted(LOCKUPS_DIR.glob("*.json")):
+        if p.name == "_INDEX.json":
+            continue
+        try:
+            rec = json.loads(p.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"[build] [警告] 解禁表 {p} 解析失败, 跳过: {e}", file=sys.stderr)
+            continue
+        ticker = (rec.get("t") or p.stem).strip().upper()
+        out[ticker] = rec
+    # 人工核对版优先: data/lockups/manual/{T}.json 覆盖同名的自动抽取版
+    man = LOCKUPS_DIR / "manual"
+    if man.exists():
+        for p in sorted(man.glob("*.json")):
+            try:
+                rec = json.loads(p.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"[build] [警告] 人工解禁表 {p} 解析失败, 跳过: {e}", file=sys.stderr)
+                continue
+            rec.setdefault("manual", True)
+            out[(rec.get("t") or p.stem).strip().upper()] = rec
+    return out
 
 
 def main():
@@ -54,6 +85,9 @@ def main():
 
     stocks = data.get("stocks", [])
     tickers = ", ".join(s.get("t", "?") for s in stocks)
+    lockups = load_lockups()
+    data["lockups"] = lockups
+    print(f"[build] 解禁表 {len(lockups)} 只: {', '.join(sorted(lockups)) or '(无)'}")
     snippet = "const NDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";"
     if args.api:
         snippet = "window.NDX_API=" + json.dumps(args.api) + ";" + snippet

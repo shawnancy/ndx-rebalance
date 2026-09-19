@@ -20,15 +20,21 @@ ndx-rebalance/
   scripts/
     ndx_weight_calc.py        核心计算器: 权重/被动买盘/进出场窗口, 附 --selftest
     fetch_ndx.py               抓 101 只成分股快照 (名单/股本/权重三个数据源)
+    fetch_lockup.py             解禁表自动抓取器: SEC 招股书 → claude -p haiku 结构化抽取 → data/lockups/
     api.py                     实时查任意美股的小后端 (标准库 + yfinance)
   web/
-    template.html              网页源文件 (搜美股/情景/纳入检查)
-    build.py                    把 data/ 里的 JSON 内联进 template.html, 生成 index.html
+    template.html              网页源文件 (搜美股一览表/情景/纳入检查/解禁表自动填)
+    build.py                    把 data/ 里的 JSON(含 data/lockups/) 内联进 template.html, 生成 index.html
   configs/
     spcx.json                  示例配置 (SpaceX, 可以照着抄一份新股票的)
   data/
-    ndx_data.json               真实快照样例 (101 只成分股, 见文件里的 asof 字段)
+    ndx_data.json               真实快照样例 (101 只成分股, 见文件里的 asof 字段, 含 ipo_date)
     ndx_data.mock.json          8 只股票的示意数据, build.py 找不到真实数据时的兜底
+    add_ipo_date.py             只给已有 ndx_data.json 逐只补 ipo_date 字段, 不重跑全量抓取
+    lockups/
+      TICKER.json                fetch_lockup.py 自动抽取的解禁表 (ALAB/ARM/CRCL/CRWV/FIG/HONA/KLAR/NBIS/SNDK/SPCX)
+      _INDEX.json                 --build-index 生成的汇总索引
+      manual/TICKER.json          人工核对版, build.py 合并时覆盖同名自动版 (目前只有 SPCX)
   deploy.example.sh            部署到自己 VPS 的模板 (环境变量化, 不含任何真实主机信息)
 ```
 
@@ -53,7 +59,7 @@ ndx-rebalance/
 
 所以工具只报「同一只股票的 Δ权重和买盘金额」，不报任意股票的绝对权重精确值。
 
-## 四条工作流
+## 五条工作流
 
 ### 1. 算某只股票的调仓权重变化
 
@@ -108,6 +114,36 @@ curl 'http://127.0.0.1:8894/api/stock?t=HOOD'
 标准库 + yfinance 写的小后端，单只缓存 10 分钟、QQQ 权重表缓存 1 小时、纳斯达克名单缓存 1 小时，
 每日硬顶 2000 次防刷（真要挡爬虫还得在 nginx 层加 `limit_req`，`deploy.example.sh` 里有片段示例）。
 
+### 5. 解禁表自动抓取（`fetch_lockup.py`）
+
+```bash
+python3 scripts/fetch_lockup.py SPCX                              # 单只: 抓 SEC 招股书解禁表
+python3 scripts/fetch_lockup.py --batch data/ndx_data.json --since 2024-01-01   # 批量: 上市日期 >= since 的成分股全抓
+python3 scripts/fetch_lockup.py --build-index                     # 只重建 data/lockups/_INDEX.json
+```
+
+管线：代码 → CIK（SEC `company_tickers.json`）→ 最近一份 424B4（退 424B1/424B3/S-1/A/S-1）→ 下载
+招股书 → 截「Shares Eligible for Future Sale」章节 + 所有 lock-up 段落上下文（去重，预算约 15000
+字符）→ 喂本机 `claude -p --model claude-haiku-4-5-20251001` 结构化抽取 JSON → 规则校验（日期递增/
+股数为正/总和不超发行总股数/SPCX 与人工答案比对）→ 落盘 `data/lockups/{TICKER}.json`。
+
+**依赖**：`requests`（+ `yfinance`，仅 `--batch` 用）；本机已登录的 `claude` CLI（走订阅登录态，
+`-p` 模式跑 haiku，零 API key 费用）。
+
+**SPCX 验收数字**（14 批人工核对过的标准答案逐批比对）：股数（招股书写死的硬事实）命中 13-14/14；
+日期严格命中（±3 天）9-12/14——很多批次是"财报后第 N 个交易日"这种事件触发型日期，连人工答案自己
+都是估的，不是靠调 prompt 能收敛到 14/14 的问题。
+
+**已知限制**：
+- 事件触发型日期（"财报后第 N 天"）是模型按上下文估算的，不是原文写死的具体日历日。
+- 不是每家公司都有 SpaceX 式多批解禁表——KLAR（Klarna）是标准单一 180 天悬崖式解禁，HONA
+  （Honeywell Aerospace 分拆）压根没有承销商锁定协议，两者返回空 `unlocks` 是正确行为，不是
+  抓取失败。
+- yfinance 的上市日期字段对"改名重新挂牌"的公司会误判——NBIS（Nebius，Yandex N.V. 改名）显示的
+  是 2011 年原始 IPO 招股书，已标 `confidence:low`。
+- `claude -p` 必须带 `--setting-sources ""`，否则会去加载调用者本地项目的 CLAUDE.md/memory 体系
+  拖慢首 token 延迟，实测能挂住 120s+ 无响应。
+
 ## 换一只新股票怎么用（比如某家公司刚上市，还没被纳入指数）
 
 1. 招股书出来后，抄三样：上市类别总股数（10-Q 封面或资产负债表）、IPO 流通股（含绿鞋，招股书封面）、
@@ -144,9 +180,10 @@ curl 'http://127.0.0.1:8894/api/stock?t=HOOD'
 - **同一分钟测的 AAPL 权重，三个源能差 0.4~0.9 个百分点**（zacks 7.01% / yfinance 7.41% /
   stockanalysis.com 7.88%），怀疑是各家用于计算权重的「基金持有股数」刷新节奏不同（AAPL 常年
   持续回购，股数变动频繁），不是权重公式错——但这意味着不敢把权重背书到小数点后两位。
-- **101 只成分股里，情景模拟只对 ARM 这类还在 3 倍封顶区间的股票有意义**，其余大盘股哪怕在
-  网页情景框里填了流通股变化，权重也基本不动（这是规则的正确行为，不是 bug，网页卡片上已经
-  加了提示）。
+- **101 只成分股里，情景模拟只对还在 3 倍封顶区间的股票有意义**（09-16 快照实测不止 ARM 一只，
+  TRI 也满足 `float_m×3<tso_m`，具体几只随快照浮动，别拿某次文档里的数字当断言，页面按当次数据
+  现算），其余大盘股哪怕在网页情景框里填了流通股变化，权重也基本不动（这是规则的正确行为，
+  不是 bug，网页卡片上已经加了提示/筛选片）。
 - **权重加总不到 100%**：QQQ 里剩下 ~0.2%~0.3% 是现金 + CME E-mini NASDAQ 100 期货对冲仓位，
   不是漏抓了股票。
 

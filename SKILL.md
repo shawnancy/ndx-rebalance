@@ -129,7 +129,7 @@ curl 'http://127.0.0.1:8894/api/stock?t=HOOD'
 |---|---|---|---|
 | yfinance float 自估 | 双重股权结构（如 GOOGL/GOOG）float 有时大于该类总股数(TSO) | `floatShares` 是 Yahoo 自估口径，不是纳斯达克认定的自由流通股数；双重股权两类股票分开计 | 别把 `float_m` 当权威数字，只当参考；权威值要从招股书/10-Q 抄 |
 | 权重跨源不一致 | 同一分钟测的 AAPL 权重，zacks 7.01% / yfinance 7.41% / stockanalysis.com 7.88%，差 0.4~0.9pp | 各家计算权重用的「基金持有股数」刷新节奏不同（AAPL 常年持续回购，股数变动频繁），不是权重公式错 | 不要把网页/快照里的权重背书到小数点后两位，当区间估计用 |
-| 情景模拟对大票没反应 | 101 只成分股里，网页「情景」框对多数大盘股填了流通股变化权重也不动 | 这些股票早已不在 3 倍封顶区间，属于规则的正确行为不是 bug（截至这份快照，101 只里只有 ARM 还在封顶区） | 情景模拟只对低流通、刚上市或仍在封顶区的股票有意义，网页卡片上已加提示 |
+| 情景模拟对大票没反应 | 101 只成分股里，网页「情景」框对多数大盘股填了流通股变化权重也不动 | 这些股票早已不在 3 倍封顶区间，属于规则的正确行为不是 bug（09-16 快照实测不止 ARM 一只在封顶区，TRI 也满足；具体几只随快照浮动，页面「还在 3 倍封顶区」筛选片按当次数据现算，别拿某次文档里的数字当断言） | 情景模拟只对低流通、刚上市或仍在封顶区的股票有意义，网页卡片/筛选片上已加提示 |
 | 权重加总不到 100% | QQQ 权重列加总 ~99.7%~99.8% | 剩下的是现金 + CME E-mini NASDAQ 100 期货对冲仓位，不是漏抓了股票 | 正常现象，不用去找「丢了哪只股票」 |
 
 ### 网页测试
@@ -137,6 +137,23 @@ curl 'http://127.0.0.1:8894/api/stock?t=HOOD'
 | 坑 | 症状 | 根因 | 正确做法 |
 |---|---|---|---|
 | 本地裸测手机宽度失真 | 用 DevTools/CDP 模拟 400px 宽，页面退化成桌面版 980px 布局，误判成没做响应式 | 本地生成的 `index.html` 没有 Artifact 平台自带的 `<meta name="viewport">` | 测手机宽度前自己套一层带 viewport meta 的 `<head>` 再测，或直接发到会自动注入 viewport 的平台上测 |
+
+### 解禁表自动抓取器 (`fetch_lockup.py`, 09-19 新增)
+
+用途：代码→CIK(SEC `company_tickers.json`)→最近一份 424B4(退 424B1/424B3/S-1/A/S-1)→
+下载招股书→抽「Shares Eligible for Future Sale」章节+lock-up 段落上下文(~15000字预算)
+→喂本机 `claude -p --model claude-haiku-4-5` 结构化抽取→规则校验→落 `data/lockups/TICKER.json`。
+SPCX 逐批验收(14 批人工标准答案): 股数(硬事实)命中 13-14/14；日期(很多是"财报后第N天"
+事件触发型, 人工答案自己也是估的)严格命中(±3天) 9-12/14, 跑几轮方差就在这个区间, 不是能单靠
+调 prompt 收敛到 14/14 的问题。
+
+| 坑 | 症状 | 根因 | 正确做法 |
+|---|---|---|---|
+| `claude -p` 默认设置会挂住 | 直接 `echo prompt \| claude -p --model haiku --output-format json` 120s+ 无响应, 最后被系统移入后台 | 默认 `--setting-sources` 会加载本项目巨大的 CLAUDE.md/memory 体系(几十KB), 拖垮首token延迟 | 照抄 `x_reply_cn/llm.py` 验证过的配方: `env -u ANTHROPIC_API_KEY claude -p --model <m> --setting-sources "" --system-prompt "<sys>" "<task>"` + `cwd="/tmp"`, 15000字符量级的 prompt 正常在 60-150s 内返回 |
+| haiku 把同日期两批解禁加总合并 | SPCX 2027-06-12 有两条独立记录(扩展锁定期20%的351.9M + Musk个人全部持股6.4B), 首版 prompt 抽出来变成一条 6751.9M | prompt 没明确禁止"同日期合并", haiku 把表格里相邻两行当成了一批的两个分支 | prompt 里显式加规则: "同一天多批必须拆成多条 unlocks, 尤其是某个高管/affiliate 的全部持股这种单独一行, 绝不能和同日期其他批次相加"; 加了这条后 SPCX 严格命中率从 9/14 提到 12/14 |
+| SEC `submissions` 的 `recent` 会让高优先级 form 被漏检 | CRWV 最初抓到的是 2025-09-26 的 424B3(转售说明书, 不含解禁release schedule表), 真正该用的 2025-03-31 IPO 424B4 被漏掉 | `recent` 只覆盖最近约1000条申报; 代码原逻辑"candidates 非空就不查分片(files 字段里的老申报)", 但 `recent` 里凑巧命中了一个优先级更低的 form(424B3), 导致真正优先级最高的 424B4(已滚出 recent, 落在老 shard 里)被跳过 | 判断条件改成"recent 里没有 FORM_PRIORITY 最高优先级(424B4)的命中就必须查分片", 不能因为 recent 里有低优先级命中就提前满足; 查完分片后按 FORM_PRIORITY 顺序重新选 |
+| yfinance `firstTradeDateMilliseconds` 会把"复牌"误判成"新上市" | NBIS(Nebius)首次交易日期显示 2024-10-21, 触发批量抓取, 但抓到的"最近一份424B4/S-1"其实是同一 CIK 下 2011 年 Yandex N.V. 的原始 IPO 招股书, 内容完全不相关 | Nebius 是 Yandex N.V. 剥离俄罗斯业务后改名重新交易(2022-2024 因制裁停牌), 同一法律实体/CIK 延续, 不是一次新的承销发行, 没有 2024 年的解禁招股书可抓; yfinance 的字段语义是"该代码首次有成交记录", 不等于"公司做过 IPO" | 这类"改名/重新挂牌"公司无法靠"最近一份424B4"判断可靠性, 已在输出里标 `confidence:low` + `form/filed` 会明显异常(比批量的 `--since` 早很多), 用前先看 `filed` 字段是否离谱 |
+| 部分公司干脆没有分批释放表 | KLAR(Klarna)/HONA(Honeywell Aerospace spinoff) 抽出来 `unlocks: []` | Klarna 只是标准单一 180 天悬崖式解禁(无分批), 招股书原文压根没有"Earliest Date/Approximate Number of Shares"表; HONA 是股权分派型分拆(spinoff), 全文 0 处 lock-up/lockup 字样, 没有承销商锁定协议 | 空数组 + warnings 说明原因是正确行为, 不是抓取失败; 批量跑之前不要假设"每家上市公司都有 SpaceX 式多批解禁表" |
 
 ## 成色声明
 

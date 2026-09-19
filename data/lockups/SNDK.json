@@ -1,0 +1,31 @@
+{
+  "t": "SNDK",
+  "cik": 2023554,
+  "form": "424B4",
+  "filed": "2025-06-06",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525137164/d934557d424b4.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-19T11:11:50Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文为 lock-up agreement 条款说明性段落，未包含任何具体的解禁日期或解禁股数的释放表",
+    "未找到 Earliest Date / Approximate Number of Shares 等解禁表结构化数据"
+  ],
+  "_extract_meta": {
+    "section_found": false,
+    "section_range": null,
+    "n_lockup_windows_total": 4,
+    "n_extra_windows_included": 4,
+    "excerpt_chars": 9518,
+    "html_flat_chars": 816286
+  }
+}

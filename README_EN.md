@@ -180,11 +180,18 @@ python3 scripts/fetch_ndx.py --ticker AMD      # just one ticker, prints the sam
 python3 scripts/fetch_ndx.py --skip-fund       # list + weights only, skips yfinance (fast, for debugging)
 ```
 
-Three data sources: the constituent list comes from `api.nasdaq.com`, shares outstanding/float/ADV
-come from `yfinance`, and weights are scraped from `zacks.com`'s QQQ actual-holdings table — the
-only source found that's both login-free and gives all 101 weights (Invesco's official download
-returns 406, slickcharts 403, stockanalysis.com's free page caps at the top 25, and
-indexes.nasdaqomx.com requires a login to show the weight column at all).
+Data sources: the constituent list comes from `api.nasdaq.com`; shares outstanding/float/ADV and
+closing prices come from `yfinance`. **Weights are computed here** = QQQ shares held × latest close ÷
+total. Shares held for the top 25 come from `stockanalysis.com` (post-rebalance counts); the rest come
+from `zacks.com`'s QQQ holdings table (all 101, but stale overall — scaled by the median share-count
+ratio across names both sources cover). Invesco's official download returns 406, slickcharts 403, and
+indexes.nasdaqomx.com requires a login.
+
+> Since 2026-09-27 zacks' own weight column is no longer used: its page timestamp is current, but
+> both its weights and share counts are an old snapshot (after the Sep 18 rebalance QQQ actually held
+> 89.8M SPCX shares / 2.65%; zacks still showed 40.8M / 1.24%), and its weights don't even match its
+> own shares × price. Recomputed weights match stockanalysis' same-day self-reported top 25 within
+> 0.03 percentage points.
 
 ### 3. Build the web UI (constituent search / scenario calculator / inclusion check)
 
@@ -280,21 +287,25 @@ another batch's trigger condition.
   total shares outstanding — a known quirk of the data source, not a bug in this tool. Treat
   `float_m` in the snapshot as a reference value, not an authoritative one; pull the real number
   from a prospectus or 10-Q when precision matters.
-- **QQQ weight sources disagree with each other.** Measured within the same minute, AAPL's weight
-  varied by 0.4–0.9 percentage points across sources: zacks 7.01% / yfinance 7.41% /
-  stockanalysis.com 7.88%. Likely cause: each source refreshes its underlying "fund holdings"
-  data on a different cadence (AAPL does continuous buybacks, so its share count moves often).
-  Don't trust any of these weights to two decimal places.
+- **Website "weight" columns go stale, and a fresh timestamp doesn't mean fresh data.** An early
+  test showed AAPL differing by 0.4–0.9 pp across sources; on 2026-09-27 the cause turned out to be
+  that zacks' and yfinance's holdings snapshots were stale overall (SPCX still at 1.24% after the
+  rebalance, actually 2.65%). Weights are now computed as shares held × latest close; names outside
+  the top 25 whose share counts changed in a rebalance can still be off — see
+  `sources.weight_check` in `ndx_data.json` for the cross-source reconciliation.
+- **zacks' holdings table includes a cash row with the ticker `USD`.** Priced through yfinance it
+  resolves to an ETF of the same name and inflates cash to 8%+; the code filters to the Nasdaq-100
+  constituent list.
 - **Only a handful of constituents are currently inside the 3× low-float cap zone** — as of the
   bundled snapshot, ARM, TRI, and SPCX. The scenario simulator on the web UI only moves the
   weight for stocks still in that zone; typing a float change for any other large-cap constituent
   correctly does nothing, because that stock's weight is no longer bound by the low-float cap.
   This set shifts over time as float climbs — don't treat any specific list as permanent, the
   page recomputes it from whatever snapshot is loaded.
-- **`zacks.com`'s QQQ holdings table is the only login-free source that returns all 101 weights.**
-  Invesco's official download returns HTTP 406, slickcharts.com returns 403, stockanalysis.com's
-  free page truncates at the top 25, and indexes.nasdaqomx.com requires a login to show weights
-  at all.
+- **No single login-free source has fresh holdings for all 101 names.** Invesco's official download
+  returns HTTP 406, slickcharts.com returns 403, stockanalysis.com's free page truncates at the top
+  25 (but is fresh), and indexes.nasdaqomx.com requires a login — hence the two-source share-count
+  blend described above.
 
 ## Language toggle
 

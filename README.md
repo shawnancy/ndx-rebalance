@@ -85,9 +85,14 @@ python3 scripts/fetch_ndx.py --ticker AMD     # 只查一只, 打印同 schema �
 python3 scripts/fetch_ndx.py --skip-fund      # 只拉名单+权重, 不跑 yfinance (调试用, 快)
 ```
 
-三个数据源：成分股名单来自 `api.nasdaq.com`，股本/成交量来自 `yfinance`，权重来自 `zacks.com`
-的 QQQ 实际持仓表（唯一一个免登录还能拿到全量 101 只权重的源，invesco 官方下载 406、slickcharts
-403、stockanalysis.com 免费页只给前 25 只、indexes.nasdaqomx.com 需要登录才给权重列）。
+数据源：成分股名单来自 `api.nasdaq.com`，股本/成交量/收盘价来自 `yfinance`；**权重自己算**
+= QQQ 持有股数 × 最近收盘价 ÷ 合计。持有股数前 25 只取 `stockanalysis.com`（调仓后的新数），其余取
+`zacks.com` QQQ 持仓表（全量 101 只，但整体偏旧，按两源重叠股票的股数比中位数缩放）。invesco 官方
+下载 406、slickcharts 403、indexes.nasdaqomx.com 要登录，都用不了。
+
+> 2026-09-27 起不再直接用 zacks 的权重列：页面时间戳是新的，但权重和股数都停在旧快照
+> （SPCX 9/18 调仓后 QQQ 实际持 89.8M 股/2.65%，zacks 仍显示 40.8M 股/1.24%），连它自己的
+> 股数×价都对不上。自算后与 stockanalysis 同日自报的前 25 只对账，最大差 0.03 个百分点。
 
 ### 3. 建网页（搜美股 / 情景计算 / 纳入检查）
 
@@ -179,9 +184,12 @@ python3 scripts/fetch_lockup.py --build-index                     # 只重建 da
 - **yfinance 的 `floatShares` 是 Yahoo 自估口径**，不是纳斯达克认定的自由流通股数；双重股权
   结构（如 GOOGL/GOOG）两类分开计，float 有时会大于该类总股数（TSO），这是 Yahoo 数据本身的
   已知瑕疵，不是本工具算错。
-- **同一分钟测的 AAPL 权重，三个源能差 0.4~0.9 个百分点**（zacks 7.01% / yfinance 7.41% /
-  stockanalysis.com 7.88%），怀疑是各家用于计算权重的「基金持有股数」刷新节奏不同（AAPL 常年
-  持续回购，股数变动频繁），不是权重公式错——但这意味着不敢把权重背书到小数点后两位。
+- **网站上的「权重」列会陈旧，时间戳不代表数据新**：早期测到 AAPL 三源差 0.4~0.9 个百分点，
+  2026-09-27 查清是 zacks/yfinance 的持仓快照整体过期（SPCX 调仓后仍显示 1.24%，实际 2.65%）。
+  现在权重按「持有股数 × 最近收盘」自算；前 25 名以外的股票如果在调仓中改过股数，仍可能偏，
+  `ndx_data.json` 的 `sources.weight_check` 里有两源对账明细。
+- **zacks 持仓表里有现金行，代码叫 `USD`**，拿去 yfinance 查价会查到同名 ETF，现金被算成 8% 多；
+  代码里已按纳斯达克成分股名单过滤。
 - **101 只成分股里，情景模拟只对还在 3 倍封顶区间的股票有意义**（09-16 快照实测不止 ARM 一只，
   TRI 也满足 `float_m×3<tso_m`，具体几只随快照浮动，别拿某次文档里的数字当断言，页面按当次数据
   现算），其余大盘股哪怕在网页情景框里填了流通股变化，权重也基本不动（这是规则的正确行为，
@@ -229,7 +237,7 @@ entry/exit window to act on it — based on the Nasdaq-100 Index Methodology's u
 (min(TSO, 3×float)) rule and its quarterly/annual reference-date schedule. It ships as a Claude
 Code Skill (`SKILL.md`) plus standalone Python scripts: a weight/schedule calculator with a
 15-case self-test, a snapshot fetcher for all 101 constituents (list from `api.nasdaq.com`,
-fundamentals from `yfinance`, weights scraped from `zacks.com`'s QQQ holdings table), a static/
+fundamentals from `yfinance`, weights computed as QQQ shares held × latest close), a static/
 live web UI for searching any US stock and running "what-if" scenarios, and a tiny stdlib+yfinance
 backend for real-time lookups. See the Chinese sections above for full methodology, known data
 caveats (the proportional-weight method vs. the ~59% error of the naive absolute-cap method,

@@ -4,7 +4,7 @@
   GET /api/stock?t=AMD   -> 单只 JSON(同 data/ndx_data.json 里 stocks[] 的 schema, 非成分股 w=null)
   GET /api/status        -> {"ok":true,"cache":N,"weights_asof":...}
 
-缓存: 单只 10 分钟; QQQ 权重表(zacks) 1 小时; 纳斯达克名单 1 小时。
+缓存: 单只 10 分钟; QQQ 权重表(股数×最近收盘自算, 见 fetch_ndx.compute_qqq_weights) 1 小时; 纳斯达克名单 1 小时。
 限流在 nginx 层做(limit_req), 这里只做每日硬顶 2000 次防被刷。
 用法: python3 api.py --port 8894    (与 fetch_ndx.py 放同一目录, 同目录 import)
 """

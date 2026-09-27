@@ -211,7 +211,7 @@ footer strong{color:var(--ink)}
   <div class="grid">
     <div><label for="ticker" data-i18n="labelTicker">代码</label><span class="hint" data-i18n="hintTicker">交易所代码</span><input id="ticker" value="SPCX"></div>
     <div><label for="asof" data-i18n="labelAsof">算到哪一天</label><span class="hint" data-i18n="hintAsof">用来判断哪些解禁已经发生</span><input id="asof" value="2026-09-15"></div>
-    <div><label for="price" data-i18n="labelPrice">股价（美元）</label><span class="hint" data-i18n="hintPrice">权重跟股价同向变动，涨价权重也涨</span><input id="price" value="143.49"></div>
+    <div><label for="price" data-i18n="labelPrice">股价（美元）</label><span class="hint" data-i18n="hintPrice">权重跟股价同向变动，涨价权重也涨</span><input id="price" value="148.68"></div>
     <div><label for="listed" data-i18n="labelListed">上市的那类股票一共多少股<span class="term">（百万股 · TSO）</span></label><span class="hint" data-i18n="hintListed">只数在交易所挂牌的那一类。SpaceX 的 B 类股不挂牌，所以不算</span><input id="listed" value="7607"></div>
     <div><label for="base" data-i18n="labelBase">上市首日能自由买卖多少股<span class="term">（百万股 · 自由流通 / free float）</span></label><span class="hint" data-i18n="hintBase">IPO 卖出去的那部分，含承销商超额配售「绿鞋」</span><input id="base" value="638.9"></div>
   </div>
@@ -220,7 +220,7 @@ footer strong{color:var(--ink)}
   <legend data-i18n="legendIndexEnv">指数环境</legend>
   <div class="grid">
     <div><label for="aum" data-i18n="labelAum">跟着纳指的钱有多少<span class="term">（十亿美元 · 跟踪资产）</span></label><span class="hint" data-i18n="hintAum">这些钱必须按权重被动买卖，权重涨多少它们就得买多少</span><input id="aum" value="1700"></div>
-    <div><label for="adv" data-i18n="labelAdv">这只股票平时一天成交多少钱<span class="term">（十亿美元 · 日均成交额 / ADV）</span></label><span class="hint" data-i18n="hintAdv">用来判断买盘相对流动性算不算大</span><input id="adv" value="11.47"></div>
+    <div><label for="adv" data-i18n="labelAdv">这只股票平时一天成交多少钱<span class="term">（十亿美元 · 日均成交额 / ADV）</span></label><span class="hint" data-i18n="hintAdv">用来判断买盘相对流动性算不算大</span><input id="adv" value="13.41"></div>
     <div><label for="recog" data-i18n="labelRecog">解禁的股票有几成被算作自由流通</label><span class="hint" data-i18n="hintRecog">纳斯达克没公开这个口径，默认全算（1.0）。调仓后可用实际权重反推</span><input id="recog" value="1.0"></div>
   </div>
 </fieldset>
@@ -230,8 +230,8 @@ footer strong{color:var(--ink)}
   <div class="grid">
     <div><label for="aref" data-i18n="labelAref">锚点是哪个参考日</label><input id="aref" value="2026-08-31"></div>
     <div><label for="aflo" data-i18n="labelAflo">那天能自由买卖多少股<span class="term">（百万股）</span></label><input id="aflo" value="1869.4"></div>
-    <div><label for="apx" data-i18n="labelApx">那天的股价</label><input id="apx" value="143.69"></div>
-    <div><label for="aw" data-i18n="labelAw">官方公布的权重<span class="term">（%）</span></label><input id="aw" value="2.82"></div>
+    <div><label for="apx" data-i18n="labelApx">那天的股价</label><input id="apx" value="148.03"></div>
+    <div><label for="aw" data-i18n="labelAw">官方公布的权重<span class="term">（%）</span></label><input id="aw" value="2.65"></div>
   </div>
 </fieldset>
 <fieldset>
@@ -273,7 +273,7 @@ footer strong{color:var(--ink)}
   <div><dt data-i18n="gl5dt">数流通股的那一天<span>参考日 / Reference Date</span></dt><dd data-i18n="gl5dd">3/6/9 月调仓看 2/5/8 月最后一个交易日；12 月年度大调看 11 月最后一个交易日。这天之后才解禁的股票，要等下一轮才算。</dd></div>
   <div><dt data-i18n="gl6dt">官方把新权重发出来<span>公告日 / Announcement</span></dt><dd data-i18n="gl6dd">生效日往前数第 6 个交易日的收盘之后。历史上涨幅在这之前就走完了。</dd></div>
   <div><dt data-i18n="gl7dt">基金照着新权重买卖的那一刻<span>执行日 / Rebalance</span></dt><dd data-i18n="gl7dd">3/6/9/12 月第三个周五的收盘竞价，下一个交易日开盘新权重正式生效。</dd></div>
-  <div><dt data-i18n="gl8dt">这只股票在指数里占的份额<span>权重 / Weight</span></dt><dd data-i18n="gl8dd">用「百分点」比较变化：从 2.82% 变成 3.82%，是涨了 1.00 个百分点（pp），不是涨了 1%。</dd></div>
+  <div><dt data-i18n="gl8dt">这只股票在指数里占的份额<span>权重 / Weight</span></dt><dd data-i18n="gl8dd">用「百分点」比较变化：从 2.65% 变成 3.61%，是涨了 0.96 个百分点（pp），不是涨了 0.96%。</dd></div>
   <div><dt data-i18n="gl9dt">指数基金不得不买的钱<span>被动买盘 / passive demand</span></dt><dd data-i18n="gl9dd">权重变化 × 跟着指数的资产规模。这笔钱不挑价格、必须在执行日收盘成交。</dd></div>
   <div><dt data-i18n="gl10dt">禁售期到期<span>解禁 / lockup expiration</span></dt><dd data-i18n="gl10dd">IPO 时约定内部人多久不能卖，到期后这批股票变成可自由买卖，流通股因此跳升。</dd></div>
   <div><dt data-i18n="gl11dt">承销商的超额配售<span>绿鞋 / greenshoe</span></dt><dd data-i18n="gl11dd">IPO 时可以多卖最多 15% 的股票，行使了就计入初始流通股。</dd></div>
@@ -298,7 +298,7 @@ footer strong{color:var(--ink)}
 <ul class="notes">
   <li><strong data-i18n="note1strong">为什么直接算会错：</strong><span data-i18n="note1text">原始修正市值算出来前五大合计 45.9%，越过 40% 红线，纳指规则会把巨头的超额权重按比例分给其余成分股，所以巨头被高估、中小票被低估。</span></li>
   <li><strong data-i18n="note2strong">补上封顶后为什么还差：</strong><span data-i18n="note2text">①指数只在调仓日重新封顶，之后权重随股价漂移，而这里是拿当天数据重新封一次顶，口径不同；②成分股名单是近似的 90 只，有漏有多，总市值就不准。</span></li>
-  <li><strong data-i18n="note3strong">所以本页只报同一只股票的权重变化和买盘金额。</strong><span data-i18n="note3text">SpaceX 12 月那轮 = 2.82% × 7607 ÷ 5608 = 3.83%，和另一条路径算出来的一致。</span></li>
+  <li><strong data-i18n="note3strong">所以本页只报同一只股票的权重变化和买盘金额。</strong><span data-i18n="note3text">SpaceX 12 月那轮 = 2.65%（9/18 调仓后实际持仓）× 7607 ÷ 5608 = 3.59%（按锚点当天股价；页面按最新股价折算后约 3.61%）。</span></li>
 </ul>
 
 <h2 data-i18n="h2Howto">换一只新股怎么用</h2>
@@ -313,7 +313,7 @@ footer strong{color:var(--ink)}
   <strong>成色</strong>：日程与 3 倍封顶公式 =【实测·规则原文，已用真实公告日核对】；锚点之外的权重外推、未来股价、解禁股被认定为自由流通的比例 =【假设】。<br>
   <strong>已知限制</strong>：锚点会过期（其他成分股涨跌、指数增删成分股都会让它偏移），每次官方公布新权重后要更新；股价按当前价固定；成分股快照里的自由流通是 Yahoo 自估口径（双重股权如 GOOGL/GOOG 会合并两类，可能大于该类挂牌股数），不是纳斯达克认定值；挂牌股数增长（如双重股权转换）未建模；休市日表写到 2027 年底。<br>
   <strong>收益证据很薄</strong>：能赚钱的那一段只有 SpaceX 2026 年 9 月一个成功样本（超额 +6.5%），2023 年那次扣掉风格轮动只剩约 1.5%。这个页面算的是日程和金额，不是胜率。<br>
-  数据：SEC EDGAR（424B4 / 10-Q / 13G）、Nasdaq-100 Index Methodology 2026、Yahoo Finance（股本/成交量）、api.nasdaq.com（成分股名单）、zacks.com（QQQ 持仓权重，AAPL 与其他源有 ±0.4 个百分点分歧）。不构成投资建议。
+  数据：SEC EDGAR（424B4 / 10-Q / 13G）、Nasdaq-100 Index Methodology 2026、Yahoo Finance（股本/成交量）、api.nasdaq.com（成分股名单）、QQQ 持仓权重=持有股数×最近收盘自算（股数取 stockanalysis.com 前 25 只 + zacks.com 其余；zacks 自带的权重列已陈旧，不用）。不构成投资建议。
 </footer>
 </div>
 
@@ -375,7 +375,7 @@ gl4dt:'3&times; free-float cap<span>low-float cap</span>', gl4dd:"When a new sto
 gl5dt:'The day free float gets counted<span>reference date</span>', gl5dd:"March/June/September rebalances look at the last trading day of February/May/August; the December annual reconstitution looks at the last trading day of November. A lockup expiring after this date has to wait for the next round.",
 gl6dt:'When the new weight goes out officially<span>announcement (after close)</span>', gl6dd:"After the close, 6 trading days before the effective date. Historically most of the move has already happened by this point.",
 gl7dt:'The moment funds actually trade the new weight<span>rebalance execution (closing auction)</span>', gl7dd:"The closing auction on the third Friday of March/June/September/December; the new weight officially takes effect at the open the next trading day.",
-gl8dt:"This stock&#39;s share of the index<span>index weight</span>", gl8dd:'Compare changes in &ldquo;percentage points&rdquo;: going from 2.82% to 3.82% is up 1.00 percentage points (pp), not up 1%.',
+gl8dt:"This stock&#39;s share of the index<span>index weight</span>", gl8dd:'Compare changes in &ldquo;percentage points&rdquo;: going from 2.65% to 3.61% is up 0.96 percentage points (pp), not up 0.96%.',
 gl9dt:'Money index funds are forced to buy<span>passive demand / forced index buying</span>', gl9dd:"Weight change &times; total assets tracking the index (AUM). This money isn&#39;t price-sensitive and has to trade at the close on execution day.",
 gl10dt:'Lockup expiring<span>lockup expiration</span>', gl10dd:"The period during which IPO insiders agreed not to sell. Once it expires, that batch becomes freely tradeable and free float jumps.",
 gl11dt:"Underwriters&#39; over-allotment<span>greenshoe</span>", gl11dd:"Underwriters can sell up to 15% more shares in an IPO; if exercised, it&#39;s counted in the initial free float.",
@@ -390,13 +390,13 @@ v3m:"Ratio method (used on this page)", v3e:"Cancels out the unknowns", v3m2:"On
 vthTicker:"Ticker", vthCompany:"Company", vthRaw:"Direct calc", vthCapped:"After capping", vthActual:"QQQ actual", vthDiff:"Diff (pp)",
 note1strong:"Why the direct calculation is wrong:", note1text:"Raw modified market caps put the top 5 at a combined 45.9%, over the 40% red line &mdash; Nasdaq&#39;s rule then redistributes the giants&#39; excess weight proportionally to the rest of the constituents, so giants get overstated and smaller names get understated.",
 note2strong:"Why it&#39;s still off after adding capping:", note2text:"&#9312; the index only re-caps on rebalance days, then lets weight drift with price afterward &mdash; but this recalculation re-caps using today&#39;s data, a different basis; &#9313; the constituent list here is an approximation of 90 names, with some missing and some extra, so the total market cap is off.",
-note3strong:"So this page only reports the change in weight and the dollar amount of buying for the same stock.", note3text:"SpaceX&#39;s December round = 2.82% &times; 7607 &divide; 5608 = 3.83%, consistent with the other calculation path.",
+note3strong:"So this page only reports the change in weight and the dollar amount of buying for the same stock.", note3text:"SpaceX&#39;s December round = 2.65% (actual holding after the Sep 18 rebalance) &times; 7607 &divide; 5608 = 3.59% (at the anchor-day price; about 3.61% after the page adjusts to the latest price).",
 h2Howto:"How to use this for a new stock",
 howto1:"Once the prospectus is out, copy three numbers: total shares outstanding of the listed class, initial IPO free float (including the greenshoe), and the full lockup schedule.",
 howto2:'Once it&#39;s first added to the index and Nasdaq publishes a weight, fill that round&#39;s &ldquo;reference-date free float / share price then / official weight&rdquo; into the anchor fields.',
 howto3:"Only pay attention to rounds where the weight change is &ge; 0.3 percentage points &mdash; anything smaller isn&#39;t worth trading.",
 howto4:"Trade the window, and check off every walk-away condition one by one.",
-footer:'<strong>Confidence</strong>: the schedule and the 3&times; cap formula = [tested against the official methodology text, verified with real announcement dates]; weight extrapolation beyond the anchor, future share prices, and the recognized share of unlocked stock counted as free float = [assumption].<br>\n  <strong>Known limitations</strong>: the anchor goes stale (other constituents moving, or the index adding/dropping names, both drift it) and needs updating every time Nasdaq publishes a new weight; the share price is held fixed at the current price; free float in the constituent snapshot is Yahoo&#39;s self-estimated figure (dual-class structures like GOOGL/GOOG can merge the two classes, sometimes exceeding that class&#39;s own share count) &mdash; not Nasdaq&#39;s recognized figure; growth in shares outstanding (e.g. from dual-class conversions) isn&#39;t modeled; the holiday calendar runs through the end of 2027.<br>\n  <strong>The profitability evidence is thin</strong>: the only case that actually confirms &ldquo;getting in early makes money&rdquo; is SpaceX in September 2026 (+6.5% excess return) &mdash; the 2023 special rebalance nets out to only about +1.5% after backing out style rotation. This page computes schedule and dollar amounts, not a win rate.<br>\n  Data: SEC EDGAR (424B4 / 10-Q / 13G), Nasdaq-100 Index Methodology 2026, Yahoo Finance (share counts / volume), api.nasdaq.com (constituent list), zacks.com (QQQ holdings weight &mdash; AAPL differs by &plusmn;0.4 percentage points from other sources). Not investment advice.'
+footer:'<strong>Confidence</strong>: the schedule and the 3&times; cap formula = [tested against the official methodology text, verified with real announcement dates]; weight extrapolation beyond the anchor, future share prices, and the recognized share of unlocked stock counted as free float = [assumption].<br>\n  <strong>Known limitations</strong>: the anchor goes stale (other constituents moving, or the index adding/dropping names, both drift it) and needs updating every time Nasdaq publishes a new weight; the share price is held fixed at the current price; free float in the constituent snapshot is Yahoo&#39;s self-estimated figure (dual-class structures like GOOGL/GOOG can merge the two classes, sometimes exceeding that class&#39;s own share count) &mdash; not Nasdaq&#39;s recognized figure; growth in shares outstanding (e.g. from dual-class conversions) isn&#39;t modeled; the holiday calendar runs through the end of 2027.<br>\n  <strong>The profitability evidence is thin</strong>: the only case that actually confirms &ldquo;getting in early makes money&rdquo; is SpaceX in September 2026 (+6.5% excess return) &mdash; the 2023 special rebalance nets out to only about +1.5% after backing out style rotation. This page computes schedule and dollar amounts, not a win rate.<br>\n  Data: SEC EDGAR (424B4 / 10-Q / 13G), Nasdaq-100 Index Methodology 2026, Yahoo Finance (share counts / volume), api.nasdaq.com (constituent list), QQQ holdings weight computed as shares held &times; latest close (shares from stockanalysis.com top 25 + zacks.com for the rest; zacks&#39; own weight column is stale and not used). Not investment advice.'
 };
 const I18N_EN_PLACEHOLDER={
 searchPlaceholder:"e.g. NVDA or NVIDIA", inclusionPlaceholder:"e.g. 850"
@@ -550,7 +550,7 @@ function t(key,...args){
   return typeof v==='function' ? v(...args) : v;
 }
 function kindLabel(k){ return k==='年度重构' ? t('kindAnnual') : t('kindQuarterly'); }
-const SOURCE_NOTE_MAP={'QQQ实际持仓表, 内嵌JS':'QQQ actual holdings table, embedded JS'};
+const SOURCE_NOTE_MAP={'QQQ实际持仓表, 内嵌JS':'QQQ actual holdings table, embedded JS','QQQ 持有股数 × 最近收盘自算 (股数: stockanalysis.com 前25 + zacks.com 其余; zacks 权重列已陈旧不用)':'QQQ shares held × latest close, computed here (shares: stockanalysis.com top 25 + zacks.com for the rest; zacks weight column is stale, not used)'};
 function trSourceText(s){
   if(LANG!=='en'||!s) return s;
   let out=String(s);

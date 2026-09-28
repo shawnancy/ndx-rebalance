@@ -1,0 +1,23 @@
+{
+ "t": "EROC",
+ "cik": 2110029,
+ "form": "424B4",
+ "filed": "2026-06-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110029/000119312526265898/d12401d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 48174023,
+ "shares_offered": 27906977,
+ "shares_locked": 20267046,
+ "shares_locked_text": "20,267,046 shares of Class A common stock",
+ "lockup_days": 180,
+ "evidence": "As a result of the lock-up agreements described below, 20,267,046 shares of Class A common stock (19,636,752 shares if the underwriters' option to purchase additional shares is exercised in full) will be eligible for sale upon the expiration of the lock-up agreements, beginning 180 days after the date of this prospectus when permitted under Rule 144 or Rule 701.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "SPAC相关交易；发行新股27.9M不受禁售；现有股东（Sponsor）所持20.3M股全部被锁180天",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

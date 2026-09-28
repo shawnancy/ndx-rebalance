@@ -1,0 +1,30 @@
+{
+ "t": "PFAI",
+ "form": "424B4",
+ "filed": "2025-04-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2032755/000121390025033838/ea0211833-13.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jin Yang Zhao",
+   "type": "创始人",
+   "pct_after_text": "51.28%",
+   "pct_after": 51.28
+  },
+  {
+   "name": "Li Xia Du",
+   "type": "创始人",
+   "pct_after_text": "14.49%",
+   "pct_after": 14.49
+  },
+  {
+   "name": "Jiulong You",
+   "type": "高管董事",
+   "pct_after_text": "3.25%",
+   "pct_after": 3.25
+  }
+ ],
+ "dropped": [],
+ "note": "发行后(未行使超额配售权)持股比例，Class A和Class B股份合并；Class B股具5倍投票权。"
+}

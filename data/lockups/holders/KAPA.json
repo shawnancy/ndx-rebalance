@@ -1,0 +1,42 @@
+{
+ "t": "KAPA",
+ "form": "424B4",
+ "filed": "2024-09-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1962011/000149315224036474/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "John S. Yu, M.D.",
+   "type": "创始人",
+   "pct_after_text": "41.5%",
+   "pct_after": 41.5
+  },
+  {
+   "name": "Technomedics Management and Systems, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "9.1%",
+   "pct_after": 9.1
+  },
+  {
+   "name": "Neil Bhowmick, Ph.D.",
+   "type": "创始人",
+   "pct_after_text": "8.8%",
+   "pct_after": 8.8
+  },
+  {
+   "name": "Belmet Therapeutics, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "7.8%",
+   "pct_after": 7.8
+  },
+  {
+   "name": "Ramachandran Murali, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.0%",
+   "pct_after": 1.0
+  }
+ ],
+ "note": "发行后比例，基数12,841,937股（发行150万股后），包含可转换票据和应付款项的转换。"
+}

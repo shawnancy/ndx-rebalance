@@ -1,0 +1,36 @@
+{
+ "t": "BGIN",
+ "form": "424B4",
+ "filed": "2025-10-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1945565/000121390025101062/ea0202759-19.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Qiuhua Li",
+   "type": "创始人",
+   "pct_after_text": "33.52%",
+   "pct_after": 33.52
+  },
+  {
+   "name": "Qingfeng Wu",
+   "type": "高管董事",
+   "pct_after_text": "20.16%",
+   "pct_after": 20.16
+  },
+  {
+   "name": "Qi Shao",
+   "type": "高管董事",
+   "pct_after_text": "4.29%",
+   "pct_after": 4.29
+  },
+  {
+   "name": "Boquan He",
+   "type": "高管董事",
+   "pct_after_text": "3.57%",
+   "pct_after": 3.57
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（按总普通股）；Qingfeng Wu包括其在本次发行中购买的249,500股A类股。"
+}

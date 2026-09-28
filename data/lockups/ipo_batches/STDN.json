@@ -1,0 +1,35 @@
+{
+  "t": "STDN",
+  "cik": 2086716,
+  "form": "424B4",
+  "filed": "2026-07-16",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2086716/000121390026078747/ea0276071-13.htm",
+  "listed_shares_m": 149.095234,
+  "float_base_m": 10,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:12:44Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文缺少具体的lock-up release schedule表格，仅包含通用监管规则说明（Rule 144/Rule 701/180天锁定期原理），未提供具体解禁日期和分批股数对应关系",
+    "原文未给出IPO具体发行日期，无法推导180天锁定期的精确到期日",
+    "原文主要为\"Shares Eligible for Future Sale\"章节的规则阐述部分，非实际的解禁分批明细表"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      728131,
+      743131
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 932873
+  }
+}

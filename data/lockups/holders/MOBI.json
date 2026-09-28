@@ -1,0 +1,60 @@
+{
+ "t": "MOBI",
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1489993/000162828026032843/mobiamedical-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Casey Tansey",
+   "type": "VC",
+   "pct_after_text": "11.4%",
+   "pct_after": 11.4
+  },
+  {
+   "name": "Entities affiliated with U.S. Venture Partners",
+   "type": "VC",
+   "pct_after_text": "10.9%",
+   "pct_after": 10.9
+  },
+  {
+   "name": "Entities affiliated with GPG Healthcare Opportunities Fund, LLC",
+   "type": "PE",
+   "pct_after_text": "10.5%",
+   "pct_after": 10.5
+  },
+  {
+   "name": "Entities affiliated with Osage University Partners",
+   "type": "其他",
+   "pct_after_text": "8.7%",
+   "pct_after": 8.7
+  },
+  {
+   "name": "William (Bill) Harrington",
+   "type": "高管董事",
+   "pct_after_text": "8.7%",
+   "pct_after": 8.7
+  },
+  {
+   "name": "Synapse Investment, LP",
+   "type": "PE",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  },
+  {
+   "name": "Nelson Bunker Curnes",
+   "type": "高管董事",
+   "pct_after_text": "4.3%",
+   "pct_after": 4.3
+  },
+  {
+   "name": "Thomas Jordan Curnes II",
+   "type": "高管董事",
+   "pct_after_text": "2.5%",
+   "pct_after": 2.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设优先股转换、认股权证行使和转换、2026可转债转换、发行1000万股新股后；不列全体董事高管合计行"
+}

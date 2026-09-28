@@ -1,0 +1,24 @@
+{
+ "t": "QNT",
+ "cik": 2110105,
+ "form": "424B4",
+ "filed": "2026-06-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026041003/quantinuum-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 32862895,
+ "shares_offered": 28000000,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "Upon the expiration of the applicable lock-up periods, substantially all of the shares subject to such lock-up restrictions will become eligible for sale, subject to the limitations discussed above.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "228,107,842个可交换Common Units的具体禁售期限摘录未明确说明;禁售对象包括公司、高管及1%以上股东;部分可交换证券因Registration Rights Agreement已注册可在180天后交易;董事和高管按定向配售计划购买的股票也受禁售",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

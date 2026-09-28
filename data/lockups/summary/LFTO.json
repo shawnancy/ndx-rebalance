@@ -1,0 +1,21 @@
+{
+ "t": "LFTO",
+ "cik": 1850351,
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1850351/000119312526257410/iron_424b4_round_2.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 147480527,
+ "shares_locked_text": "147,480,527",
+ "lockup_days": 180,
+ "evidence": "The remaining outstanding 147,480,527 shares of common stock held by our pre-IPO owners and management after this offering will be subject to certain restrictions on resale.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "Pre-IPO股东和管理层的147,480,527股受180天禁售约束；另有约96%资本股签署lock-up协议；禁售协议含15项豁免条款(含转让给affiliate、慈善捐赠、税务支付等)",
+ "valid": true,
+ "reasons": []
+}

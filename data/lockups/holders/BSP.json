@@ -1,0 +1,36 @@
+{
+ "t": "BSP",
+ "form": "424B4",
+ "filed": "2026-07-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2004711/000110465926079884/tm2613674-14_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Luca Ferrari",
+   "type": "高管董事",
+   "pct_after_text": "21.9%",
+   "pct_after": 21.9
+  },
+  {
+   "name": "Matteo Danieli",
+   "type": "高管董事",
+   "pct_after_text": "20.6%",
+   "pct_after": 20.6
+  },
+  {
+   "name": "Luca Querella",
+   "type": "高管董事",
+   "pct_after_text": "20.2%",
+   "pct_after": 20.2
+  },
+  {
+   "name": "Francesco Patarnello",
+   "type": "高管董事",
+   "pct_after_text": "19.9%",
+   "pct_after": 19.9
+  }
+ ],
+ "dropped": [],
+ "note": "发行后合计投票权百分比(不行使期权情景),普通股和A类股合并作为单一类计算"
+}

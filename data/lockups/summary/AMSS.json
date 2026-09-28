@@ -1,0 +1,25 @@
+{
+ "t": "AMSS",
+ "cik": 1851491,
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1851491/000157587226000343/amass010_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": null,
+ "staged": "分四阶段释放：第91-135天释放5%，第136-150天累计释放15%，第151-179天累计释放35%，第180天起全部释放",
+ "note": "摘录仅为多个主要股东的个别禁售协议明细清单，无汇总禁售股数。所有披露的禁售协议采用统一释放时间表，禁售期至2026年12月31日。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

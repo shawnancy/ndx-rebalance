@@ -1,0 +1,25 @@
+{
+ "t": "LHAI",
+ "form": "424B4",
+ "filed": "2025-07-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2017758/000121390025067578/ea0203553-24.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Haiyan Ma",
+   "type": "其他",
+   "pct_after_text": "11.42%",
+   "pct_after": 11.42
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Zhen \"Bill\" Qin",
+   "type": "创始人",
+   "pct_after_text": "42.21%",
+   "pct_after": 42.21
+  }
+ ],
+ "note": "发行后普通股持股比例;Zhen Qin通过配偶和Wallstreet Venture Partners LLC间接持有部分股份"
+}

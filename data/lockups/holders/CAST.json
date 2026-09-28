@@ -1,0 +1,18 @@
+{
+ "t": "CAST",
+ "form": "424B4",
+ "filed": "2026-03-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1633369/000121390026023677/ea0279992-424b4_freecast.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "William A. Mobley, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "93.09%",
+   "pct_after": 93.09
+  }
+ ],
+ "dropped": [],
+ "note": "截至2026年1月19日发行后，按总投票权计；Class B股票每股15票、Class A股票每股1票。"
+}

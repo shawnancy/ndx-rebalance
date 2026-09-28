@@ -1,0 +1,24 @@
+{
+ "t": "QNT",
+ "form": "424B4",
+ "filed": "2026-06-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026041003/quantinuum-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "The Honeywell Entities",
+   "type": "战略/公司",
+   "pct_after_text": "47.8%",
+   "pct_after": 47.8
+  },
+  {
+   "name": "Entities affiliated with Cambridge Quantum",
+   "type": "其他",
+   "pct_after_text": "31.8%",
+   "pct_after": 31.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例采用合计投票权列（两类股A+B合并投票权）；表中其他董事高管持股均<1%"
+}

@@ -1,0 +1,21 @@
+{
+ "t": "MOBI",
+ "cik": 1489993,
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1489993/000162828026032843/mobiamedical-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 33085391,
+ "shares_offered": null,
+ "shares_locked": 23085391,
+ "shares_locked_text": "23,085,391",
+ "lockup_days": 180,
+ "evidence": "additional 23,085,391 shares will be eligible for sale upon expiration of the lock-up agreements and market stand-off provisions described below, beginning 181 days after the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "发行时立即释放1000万股，180天后释放剩余2308.5万股",
+ "note": "IPO发行的1000万股无禁售限制；现有股东（substantially all）持有的2308.5万股受180天禁售约束",
+ "valid": true,
+ "reasons": []
+}

@@ -1,0 +1,18 @@
+{
+ "t": "WYFI",
+ "form": "424B4",
+ "filed": "2025-08-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2042022/000121390025073279/ea0249945-07.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bit Digital, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "74.3 %",
+   "pct_after": 74.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按总股本计（不假设超额配售选项）"
+}

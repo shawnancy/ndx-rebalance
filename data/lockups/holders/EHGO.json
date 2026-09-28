@@ -1,0 +1,42 @@
+{
+ "t": "EHGO",
+ "form": "424B4",
+ "filed": "2024-07-03",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1879754/000110465924077612/tm2233006d30_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "JUNZHANG DIGTAL LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "48.62%",
+   "pct_after": 48.62
+  },
+  {
+   "name": "MAGIC IDEAL LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "30.05%",
+   "pct_after": 30.05
+  },
+  {
+   "name": "MASSIVE HONOR LIMITED",
+   "type": "其他",
+   "pct_after_text": "18.54%",
+   "pct_after": 18.54
+  },
+  {
+   "name": "IMPRESSIVE SHINE LIMITED",
+   "type": "其他",
+   "pct_after_text": "16.90%",
+   "pct_after": 16.9
+  },
+  {
+   "name": "Xiaohui Wu",
+   "type": "高管董事",
+   "pct_after_text": "5.04%",
+   "pct_after": 5.04
+  }
+ ],
+ "dropped": [],
+ "note": "企业为双类股结构(A类1票/股,B类10票/股),发行后。持有Class B股东用合计投票权%(JUNZHANG DIGTAL LIMITED由Zhidan Mao控制,MAGIC IDEAL LIMITED由Qiwei Miao控制);持有Class A股东用Class A持股比例%。"
+}

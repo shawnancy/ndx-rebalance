@@ -1,0 +1,36 @@
+{
+ "t": "PARK",
+ "form": "424B4",
+ "filed": "2025-12-03",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2069604/000110465925118023/tm2514579-16_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Dr. Alan Law",
+   "type": "高管董事",
+   "pct_after_text": "3.34 %",
+   "pct_after": 3.34
+  },
+  {
+   "name": "Peter G. Swenson",
+   "type": "高管董事",
+   "pct_after_text": "2.86 %",
+   "pct_after": 2.86
+  },
+  {
+   "name": "Dr. Todd Gerlach",
+   "type": "高管董事",
+   "pct_after_text": "1.21 %",
+   "pct_after": 1.21
+  },
+  {
+   "name": "Dr. Christopher Steele",
+   "type": "高管董事",
+   "pct_after_text": "1.15 %",
+   "pct_after": 1.15
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,基于假设IPO价格$13.00/股;受限股票于发行完成时解禁25%,其余按季6.25%解禁"
+}

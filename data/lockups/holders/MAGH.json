@@ -1,0 +1,24 @@
+{
+ "t": "MAGH",
+ "form": "424B4",
+ "filed": "2025-08-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2046117/000164117225023166/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Lim Say Wei",
+   "type": "高管董事",
+   "pct_after_text": "62.46 %",
+   "pct_after": 62.46
+  },
+  {
+   "name": "XJL International Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "62.46 %",
+   "pct_after": 62.46
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例。XJL International Ltd 为 Mr. Lim Say Wei 全资代理公司，同一股权在两行中均有反映，非叠加计算。"
+}

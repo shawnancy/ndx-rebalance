@@ -1,0 +1,24 @@
+{
+ "t": "XE",
+ "cik": 2088896,
+ "form": "424B4",
+ "filed": "2026-04-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2088896/000110465926049515/tm2527015-22_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 273442494,
+ "shares_offered": 44254659,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, all of our officers and directors, all of our greater than 5% holders and substantially all of the other holders of shares of our Class A common stock or other securities convertible into or exchangeable for shares of our Class A common stock upon consummation of this offering have agreed or will agree that, without the prior written consent of J.P. Morgan Securities LLC, we and they will not, subject to certain exceptions, during the period ending 180 days after the date of this prospectus: (i) offer, sell, contract to sell, pledge, grant any option to purchase, lend or otherwise dispose of any shares of our Class A common stock, or any options or warrants to purchase any shares of our Class A common stock, or any securities convertible into, or exchangeable for, or that represent the right to receive, shares of our Class A common stock",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "新发行44.2M股可自由交易；现有股东(约229.2M股)及118.9M可交换Common Units受180天禁售，原文未明确给出禁售总股数",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

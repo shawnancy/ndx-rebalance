@@ -1,0 +1,36 @@
+{
+ "t": "SPHL",
+ "form": "424B4",
+ "filed": "2024-10-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2002236/000121390024088292/ea0201033-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "AVANTA (BVI) LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "97.87%",
+   "pct_after": 97.87
+  },
+  {
+   "name": "WZ GLOBAL (BVI) LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "10.43%",
+   "pct_after": 10.43
+  },
+  {
+   "name": "SWL (BVI) LIMITED",
+   "type": "其他",
+   "pct_after_text": "7.83%",
+   "pct_after": 7.83
+  },
+  {
+   "name": "SKY SAPPHIRE GROUP LIMITED",
+   "type": "其他",
+   "pct_after_text": "7.83%",
+   "pct_after": 7.83
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后持股比例统计，Class A 1票/股、Class B 20票/股；AVANTA同时持两类股，采用合计投票权，其他股东仅持Class A。"
+}

@@ -1,6 +1,6 @@
 ---
 name: ndx-rebalance
-description: 算纳指 100 (Nasdaq-100 / NDX / QQQ) 因解禁、增发、回购等股本变化导致的调仓权重变化、被动基金买盘金额、进出场窗口；抓 101 只成分股快照；查任意美股是否满足 Fast Entry 快速纳入门槛。触发词：纳指/纳斯达克100/Nasdaq-100/QQQ/调仓/再平衡/rebalance/权重变化/被动买盘/解禁/lockup/unlock/Fast Entry/快速纳入/纳入检查/index inclusion/低流通封顶。English triggers: Nasdaq-100 rebalance, index weight change, lockup expiration, passive demand, Fast Entry threshold check.
+description: 算纳指 100 (Nasdaq-100 / NDX / QQQ) 因解禁、增发、回购等股本变化导致的调仓权重变化、被动基金买盘金额、进出场窗口；抓 101 只成分股快照；查任意美股是否满足 Fast Entry 快速纳入门槛。触发词：纳指/纳斯达克100/Nasdaq-100/QQQ/调仓/再平衡/rebalance/权重变化/被动买盘/解禁/lockup/unlock/Fast Entry/快速纳入/纳入检查/index inclusion/低流通封顶/解禁日历/解禁砸盘/解禁后股价/主要解禁方。English triggers: Nasdaq-100 rebalance, index weight change, lockup expiration, passive demand, Fast Entry threshold check, US IPO lockup calendar, post-lockup price reaction.
 ---
 
 # ndx-rebalance · 纳指 100 调仓权重台
@@ -28,7 +28,7 @@ description: 算纳指 100 (Nasdaq-100 / NDX / QQQ) 因解禁、增发、回购�
 `scripts/ndx_weight_calc.py --selftest` 用 SpaceX 2026 年的真实日期核对过：9 月（8/31 参考日 →
 9/11 公告 → 9/18 执行 → 9/21 生效）和 12 月（11/30 → 12/11 → 12/18 → 12/21）全部吻合。
 
-## 四条工作流
+## 五条工作流
 
 ### 1. 算某只股票的权重变化 / 被动买盘 / 进出场窗口
 
@@ -96,6 +96,27 @@ curl 'http://127.0.0.1:8894/api/stock?t=HOOD'
 预期：`/api/status` 返回 `{"ok":true,...}`；`/api/stock?t=HOOD` 返回带 `px` 字段的股票 JSON。
 用完记得 `kill` 掉进程、确认端口释放，标准库 + `yfinance` 写的，没有鉴权，别对公网直接开放
 （要挡爬虫得在反代层加限流，见 `deploy.example.sh` 里的 nginx `limit_req` 示例）。
+
+### 5. 美股解禁日历 + 解禁事件研究（2026-09-27~29 新增）
+
+```bash
+python3 scripts/extract_lockup_summary.py TICKER ...   # 招股书「受禁售约束 X 股 + 禁售 N 天」原句, 带防编造校验
+python3 scripts/extract_holders.py TICKER ...          # 招股书主要股东表(名字+比例必须是原文子串)
+python3 scripts/unlock_event_study.py 26               # 近 26 个月已解禁 IPO 的事件研究, 约 15 分钟
+python3 scripts/fetch_unlock_calendar.py               # 组装 data/unlock_calendar.json, 网页下半「美股解禁日历」用
+```
+
+- **解禁股数口径优先级**：人工核对分批表 → 招股书分批表(非低置信) → 招股书原句「X 股受禁售」→ 招股书写「几乎全部老股东签禁售」时用 发行后总股本 − 发行股数 → Yahoo 总股本 − 发行股数(上界)。ADR / 海外已上市公司不估股数。
+- **日期**：MarketBeat 优先（⚠️ 它的「Number of Shares」列是 IPO 发行量，不是解禁量，只取日期），否则招股书日 + 禁售天数。
+- **防编造**：AI 输出的股数必须能从原文写法换算得出（百分比不算）；被锁量 < 发行量 20% 且对不上「总股本 − 发行量」的视为抓错对象（例：抓到 FINRA 承销商报酬股）。
+- **事件研究实测（235 次历史解禁，2024-12~2026-08，对 IWM 超额，基准 = 解禁前一天收盘）**：
+  - 效应在解禁**后 10~60 天**，不在前后 5 天：T+5 中位 0.0%（p=0.69），T+20 −6.3%（63% 跌，p=0.0001），T+60 −20.6%，跌完不反弹
+  - 唯一有预测力的因子 = **解禁前 20 日年化波动率**：≥106% 的高波档 T+20 −14.3% / 75% 跌；<66% 的低波档 −1.9% 不显著
+  - 无效：解禁前涨跌（是惯性不是反转）、解禁量占比、现价对发行价、市值、成交量、空头比、股东是 VC/PE/创始人；多因子逻辑回归留一 AUC 反而更低（0.49 vs 单波动率 0.56）
+  - 弱信号：第一大股东控股 ≥50% 的跌更多（多重检验风险）
+  - 市值 ≥20 亿美元只有 45 例，−4.6%，p=0.10 不显著
+  - **全部样本内、未扣借券费、不能说成因果**（解禁前后 20 天配对差不显著）
+- 网页把每只股票按当前 20 日波动率找最相近的 60 次历史解禁，给 T-20~T+60 各时点的中位数 + 下跌占比 + 最低点常在第几天，不给单点预测。
 
 ## 换一只新股票怎么用（比如某公司刚上市，还没被纳入指数）
 

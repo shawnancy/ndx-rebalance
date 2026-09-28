@@ -1,0 +1,30 @@
+{
+ "t": "YSS",
+ "form": "424B4",
+ "filed": "2026-01-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2086587/000119312526030469/d941199d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities Affiliated with AE Industrial Partners",
+   "type": "PE",
+   "pct_after_text": "23.8 %",
+   "pct_after": 23.8
+  },
+  {
+   "name": "Entities Affiliated with BlackRock",
+   "type": "战略/公司",
+   "pct_after_text": "13.5 %",
+   "pct_after": 13.5
+  },
+  {
+   "name": "Dirk Wallinger",
+   "type": "创始人",
+   "pct_after_text": "8.8 %",
+   "pct_after": 8.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例，按发行后总股本计算。"
+}

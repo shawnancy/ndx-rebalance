@@ -1,0 +1,11 @@
+{
+ "t": "CARL",
+ "form": "424B4",
+ "filed": "2025-07-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1794546/000095017025098125/carl_-_424b4_-_july_2025.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "提供的文本段落未包含主要股东表的具体数据。文本仅涉及聚合持股比例（发行前76.4%，发行后57.1%），缺少具体股东名单、名字及各自持股比例等主要表格内容。"
+}

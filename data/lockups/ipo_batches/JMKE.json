@@ -1,0 +1,30 @@
+{
+  "t": "JMKE",
+  "cik": 2127043,
+  "form": "424B4",
+  "filed": "2026-07-31",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2127043/000119312526326453/project_70_424b4.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:09:20Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文摘录讨论了180天lock-up协议的框架条款(涉及Sponsor、董事、高管、员工通过directed share program购买的Class A普通股),但未包含具体的解禁释放表。无解禁日期列表,无分批释放股数信息,无已发行总股数或IPO发行股数具体数字。仅提及directed share program保留最多5%IPO发行股,但未给出绝对数值。"
+  ],
+  "_extract_meta": {
+    "section_found": false,
+    "section_range": null,
+    "n_lockup_windows_total": 12,
+    "n_extra_windows_included": 12,
+    "excerpt_chars": 15252,
+    "html_flat_chars": 1048954
+  }
+}

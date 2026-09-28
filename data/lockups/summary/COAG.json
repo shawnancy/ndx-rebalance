@@ -1,0 +1,23 @@
+{
+ "t": "COAG",
+ "cik": 2114044,
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2114044/000119312526201458/d50309d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 44192910,
+ "shares_offered": 16750000,
+ "shares_locked": 27442910,
+ "shares_locked_text": "27,442,910",
+ "lockup_days": 180,
+ "evidence": "The remaining 27,442,910 shares of our common stock will be \"restricted securities\" under Rule 144, and we expect that substantially all of these restricted securities will be subject to the 180-day lock-up period under the lock-up agreements as described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "现有股东（包含优先股转换为普通股的持有人）27,442,910股受180天禁售协议约束；新发行的16,750,000股不受限制可自由交易；禁售期满后约26,496,910股可按Rule 144规则出售",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

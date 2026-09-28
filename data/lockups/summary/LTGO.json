@@ -1,0 +1,24 @@
+{
+ "t": "LTGO",
+ "cik": 2056611,
+ "form": "424B4",
+ "filed": "2026-08-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2056611/000119312526340329/d38775d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 63238030,
+ "shares_offered": 19200000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We expect that substantially all of these shares will be subject to a 180-day lock-up period under the lock-up and market stand-off agreements described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO前无公开市场; 本次新股购买者(非关联方)不受禁售限制; 现有股东及期权持有人基本全部(substantially all)受180天禁售约束但原文未给具体数字; 禁售期满后按Rule 144/701/Form S-8逐步解禁",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

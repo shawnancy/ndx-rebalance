@@ -1,0 +1,42 @@
+{
+ "t": "HUHU",
+ "form": "424B4",
+ "filed": "2024-10-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1945415/000121390024089418/ea0206594-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Yujun Xiao",
+   "type": "创始人",
+   "pct_after_text": "88.08%",
+   "pct_after": 88.08
+  },
+  {
+   "name": "Yinglai Wang",
+   "type": "高管董事",
+   "pct_after_text": "88.08%",
+   "pct_after": 88.08
+  },
+  {
+   "name": "Army Xiao Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "40.09%",
+   "pct_after": 40.09
+  },
+  {
+   "name": "Billion Wang Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "39.18%",
+   "pct_after": 39.18
+  },
+  {
+   "name": "Increase Willpower Limited Partnership",
+   "type": "其他",
+   "pct_after_text": "8.81%",
+   "pct_after": 8.81
+  }
+ ],
+ "dropped": [],
+ "note": "发行后、单类股；Yujun Xiao与配偶Yinglai Wang互计受益所有权"
+}

@@ -1,0 +1,42 @@
+{
+ "t": "SION",
+ "form": "424B4",
+ "filed": "2025-02-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2036042/000119312525022709/d882384d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with RA Capital",
+   "type": "PE",
+   "pct_after_text": "21.9%",
+   "pct_after": 21.9
+  },
+  {
+   "name": "Entities affiliated with TPG Growth",
+   "type": "PE",
+   "pct_after_text": "13.1%",
+   "pct_after": 13.1
+  },
+  {
+   "name": "Entities affiliated with Atlas Venture",
+   "type": "VC",
+   "pct_after_text": "8.5%",
+   "pct_after": 8.5
+  },
+  {
+   "name": "OrbiMed Private Investments VIII, LP",
+   "type": "VC",
+   "pct_after_text": "7.4%",
+   "pct_after": 7.4
+  },
+  {
+   "name": "Michael Cloonan, M.B.A.",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股及各系列优先股转换后合计"
+}

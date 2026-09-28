@@ -1,0 +1,55 @@
+{
+ "t": "MCRP",
+ "form": "424B4",
+ "filed": "2025-03-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1993431/000121390025022083/ea0212238-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Fareed Aljawhari",
+   "type": "高管董事",
+   "pct_after_text": "18.69%",
+   "pct_after": 18.69
+  },
+  {
+   "name": "Egor Romanyuk",
+   "type": "其他",
+   "pct_after_text": "16.26%",
+   "pct_after": 16.26
+  },
+  {
+   "name": "Simon Lo Gatto",
+   "type": "其他",
+   "pct_after_text": "11.65%",
+   "pct_after": 11.65
+  },
+  {
+   "name": "Mpolis LLC",
+   "type": "战略/公司",
+   "pct_after_text": "8.85%",
+   "pct_after": 8.85
+  },
+  {
+   "name": "Saken Saryyev",
+   "type": "高管董事",
+   "pct_after_text": "7.37%",
+   "pct_after": 7.37
+  },
+  {
+   "name": "Alexander Rugaev",
+   "type": "其他",
+   "pct_after_text": "7.37%",
+   "pct_after": 7.37
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Fares Moh'd Said Mustafa Abubaker",
+   "type": "其他",
+   "pct_after_text": "8.86%",
+   "pct_after": 8.86
+  }
+ ],
+ "note": "发行后持股比例(基于33,875,000股总股本); Mpolis LLC由Mindrock LLC管理(Pavel Cherkashin 60%、Grigorii Trubkin 40%拥有投票权)"
+}

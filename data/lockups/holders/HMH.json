@@ -1,0 +1,24 @@
+{
+ "t": "HMH",
+ "form": "424B4",
+ "filed": "2026-04-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2021880/000119312526138102/d75409d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Baker Hughes Holdings LLC",
+   "type": "战略/公司",
+   "pct_after_text": "37.0%",
+   "pct_after": 37.0
+  },
+  {
+   "name": "Akastor ASA",
+   "type": "战略/公司",
+   "pct_after_text": "37.0%",
+   "pct_after": 37.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例按合并投票权（Class A与Class B股票合并计算），假设承销商不行使认购权；董事高管持股均<1%，未列示"
+}

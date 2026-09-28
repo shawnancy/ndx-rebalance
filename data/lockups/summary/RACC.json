@@ -1,0 +1,25 @@
+{
+ "t": "RACC",
+ "cik": 2118032,
+ "form": "424B4",
+ "filed": "2026-05-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2118032/000119312526232525/d43164d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": null,
+ "evidence": "Pursuant to the letter agreement, the private placement shares will not be transferable, assignable or salable until 30 days after the completion of our initial business combination (except with respect to permitted transferees as described herein under the section of this prospectus entitled \" Principal Shareholders—Transfers of Founder Shares and Private Placement Shares \").",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "摘录仅含 lock-up 条款描述，无具体股数。founder shares 和 private placement shares 分别受不同禁售条件限制（founder shares 为条件性释放，private placement shares 为 30 天），但缺少完整数据需查看原招股书。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

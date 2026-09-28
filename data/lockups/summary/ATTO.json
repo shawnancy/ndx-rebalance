@@ -1,0 +1,23 @@
+{
+ "t": "ATTO",
+ "cik": 2058707,
+ "form": "424B4",
+ "filed": "2026-08-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2058707/000119312526334997/d40469d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 43029017,
+ "shares_offered": 17000000,
+ "shares_locked": 26749461,
+ "shares_locked_text": "approximately up to an additional 26,749,461 shares",
+ "lockup_days": 180,
+ "evidence": "After the lock-up agreements expire, based on 26,029,017 shares outstanding as of March 31, 2026, approximately up to an additional 26,749,461 shares of common stock will be eligible for sale in the public market, approximately 15,044,561 of which shares are held by our officers, directors and their affiliated entities, and will be subject to volume limitations under Rule 144 under the Securities Act.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "原文称所有股东/董事/高管均签署了lock-up协议, 但未明确披露是否存在分批释放或提前释放机制; 26,749,461为原文估计值(含 'approximately up to'修饰)",
+ "valid": false,
+ "reasons": [
+  "原文写法「approximately up to an additional 26,749,461 shares」换算不等于 shares_locked(疑似推算)"
+ ]
+}

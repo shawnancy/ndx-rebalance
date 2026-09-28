@@ -1,0 +1,24 @@
+{
+ "t": "EFTY",
+ "form": "424B4",
+ "filed": "2025-08-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2058349/000121390025073244/ea0227995-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kit Shing, CHEUNG",
+   "type": "创始人",
+   "pct_after_text": "92.89%",
+   "pct_after": 92.89
+  },
+  {
+   "name": "Etoiles Zeneo Investment Limited",
+   "type": "其他",
+   "pct_after_text": "92.89%",
+   "pct_after": 92.89
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按投票权百分比，两类股合并；Etoiles Zeneo Investment Limited为Kit Shing, CHEUNG完全控制的投资公司"
+}

@@ -1,0 +1,25 @@
+{
+ "t": "VIDA",
+ "cik": 1973062,
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1973062/000149315226024102/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 14270432,
+ "shares_offered": 3750000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "In connection with this offering, our directors and executive officers, and the other holders of substantially all of our common stock outstanding as of the effective date of the registration statement of which this prospectus forms a part have entered into customary \"lock-up\" agreements in favor of the underwriters for a period of six (6) months from the date of this offering, subject to customary exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO招股，新发行3.75M股Class A无禁售限制；原股东(substantially all比例)与承销商签6个月lock-up协议，包括5.09M Class A原有股和5.43M全部Class B。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

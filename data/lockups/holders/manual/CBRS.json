@@ -1,0 +1,44 @@
+{
+ "t": "CBRS",
+ "ok": true,
+ "source": "SEC 424B4 2026-05-14 Principal Stockholders 表, 09-28 haiku 抽取后逐条对原文核过(名字+比例均在原文)",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm",
+ "holders": [
+  {
+   "name": "Entities affiliated with Fidelity",
+   "type": "PE",
+   "pct_after": 10.9
+  },
+  {
+   "name": "Entities affiliated with Benchmark",
+   "type": "VC",
+   "pct_after": 9.4
+  },
+  {
+   "name": "Entities affiliated with Foundation Capital",
+   "type": "VC",
+   "pct_after": 8.2
+  },
+  {
+   "name": "Entities affiliated with Eclipse",
+   "type": "VC",
+   "pct_after": 7.2
+  },
+  {
+   "name": "Entities affiliated with Alpha Wave",
+   "type": "VC",
+   "pct_after": 6.5
+  },
+  {
+   "name": "Andrew D. Feldman",
+   "type": "创始人",
+   "pct_after": 5.4
+  },
+  {
+   "name": "Sean Lie",
+   "type": "高管董事",
+   "pct_after": 2.8
+  }
+ ],
+ "note": "发行后按总投票权列(% of Total Voting Power); 双重股权, B 类为受限股。"
+}

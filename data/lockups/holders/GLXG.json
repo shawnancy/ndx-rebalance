@@ -1,0 +1,54 @@
+{
+ "t": "GLXG",
+ "form": "424B4",
+ "filed": "2024-09-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1905920/000121390024078170/ea0214208-424b4_galaxy.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Wai Hong Lao",
+   "type": "高管董事",
+   "pct_after_text": "13.5%",
+   "pct_after": 13.5
+  },
+  {
+   "name": "Yiu Kong Kenneth But",
+   "type": "高管董事",
+   "pct_after_text": "13.5%",
+   "pct_after": 13.5
+  },
+  {
+   "name": "Wai Cheung Yeung",
+   "type": "高管董事",
+   "pct_after_text": "13.5%",
+   "pct_after": 13.5
+  },
+  {
+   "name": "LUCKY PARTNER ENTERPRISES LIMITED",
+   "type": "其他",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  },
+  {
+   "name": "FIRST START INTERNATIONAL LIMITED",
+   "type": "其他",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  },
+  {
+   "name": "VALUE CLASSIC GLOBAL LIMITED",
+   "type": "其他",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  },
+  {
+   "name": "PROFIT OASIS GLOBAL LIMITED",
+   "type": "其他",
+   "pct_after_text": "5.0%",
+   "pct_after": 5.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,单一类股(Ordinary Shares),三位董事通过子公司间接持有"
+}

@@ -1,0 +1,31 @@
+{
+ "t": "CGTL",
+ "form": "424B4",
+ "filed": "2024-11-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1967822/000121390024102407/ea0200927-13.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "HSZ Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "80.00%",
+   "pct_after": 80.0
+  },
+  {
+   "name": "CHSZ Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "14.12%",
+   "pct_after": 14.12
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Shangzhao (\"Cizar\") Hong",
+   "type": "创始人",
+   "pct_after_text": "94.12%",
+   "pct_after": 94.12
+  }
+ ],
+ "note": "发行后持股比例,按普通股Ordinary Shares;Cizar Hong通过HSZ与CHSZ两家离岸实体间接控制全部股权。"
+}

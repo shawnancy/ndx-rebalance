@@ -1,0 +1,25 @@
+{
+ "t": "LIME",
+ "cik": 1699963,
+ "form": "424B4",
+ "filed": "2026-07-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1699963/000162828026046635/neutronholdingsinc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 64025936,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 160,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "Uber股权分三阶段释放：1年内禁售全部、18个月内最多释放50%、24个月内最多释放75%；RSU的税收承销可在禁售期内进行",
+ "note": "LIME公司首次IPO，共享电动滑板车/电动自行车运营商；约68%股东（含Uber）签署160天禁售协议；Uber为重要股东，受单独的分级禁售约束；另有约15%和14%股份分别受投资者协议和其他协议的市场防卖条款约束",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

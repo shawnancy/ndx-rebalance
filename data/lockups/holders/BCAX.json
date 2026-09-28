@@ -1,0 +1,42 @@
+{
+ "t": "BCAX",
+ "form": "424B4",
+ "filed": "2024-09-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2023658/000119312524218862/d821336d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kiran Mazumdar-Shaw",
+   "type": "高管董事",
+   "pct_after_text": "12.2%",
+   "pct_after": 12.2
+  },
+  {
+   "name": "Entities affiliated with Biocon",
+   "type": "战略/公司",
+   "pct_after_text": "10.7%",
+   "pct_after": 10.7
+  },
+  {
+   "name": "Entities affiliated with RA Capital Management, L.P.",
+   "type": "PE",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Red Tree Venture Fund, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  },
+  {
+   "name": "Claire Mazumdar, Ph.D., M.B.A",
+   "type": "高管董事",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股，普通股口径"
+}

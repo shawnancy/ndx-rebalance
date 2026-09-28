@@ -1,0 +1,55 @@
+{
+ "t": "HAWK",
+ "form": "424B4",
+ "filed": "2026-05-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1750704/000162828026032207/hawkeye360424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Insight Partners",
+   "type": "PE",
+   "pct_after_text": "15.0%",
+   "pct_after": 15.0
+  }
+ ],
+ "dropped": [
+  {
+   "name": "David G. DeWalt",
+   "type": "高管董事",
+   "pct_after_text": "10.2%",
+   "pct_after": 10.2
+  },
+  {
+   "name": "Entities affiliated with NightDragon",
+   "type": "VC",
+   "pct_after_text": "9.7%",
+   "pct_after": 9.7
+  },
+  {
+   "name": "GIC Pte Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  },
+  {
+   "name": "Entities affiliated with BlackRock, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  },
+  {
+   "name": "Entities affiliated with Razor's Edge Ventures II, LLC",
+   "type": "VC",
+   "pct_after_text": "5.0%",
+   "pct_after": 5.0
+  },
+  {
+   "name": "John Serafini",
+   "type": "高管董事",
+   "pct_after_text": "3.9%",
+   "pct_after": 3.9
+  }
+ ],
+ "note": "表格口径为发行后普通股持股比例。"
+}

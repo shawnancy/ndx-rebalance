@@ -1,0 +1,21 @@
+{
+ "t": "ODTX",
+ "cik": 1882782,
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1882782/000119312526214819/odyssey__form_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 27098614,
+ "shares_locked_text": "27,098,614",
+ "lockup_days": 180,
+ "evidence": "After the lock-up and market standoff agreements expire, an additional 27,098,614 shares of our common stock will be eligible for sale in the public market, of which 999,814 shares are held by directors, executive officers and other affiliates and will be subject to volume limitations under Rule 144 under the Securities Act.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "首次公开发行(含同步私募)；绝大部分内部人与主要股东(占总股本62.9%)签180天禁售；期满后27.1百万股获准在公开市场交易，其中99.9万股(内部人持有)受Rule 144限制",
+ "valid": true,
+ "reasons": []
+}

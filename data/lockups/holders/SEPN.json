@@ -1,0 +1,36 @@
+{
+ "t": "SEPN",
+ "form": "424B4",
+ "filed": "2024-10-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1984086/000119312524244123/d762905d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Third Rock Ventures",
+   "type": "VC",
+   "pct_after_text": "20.8 %",
+   "pct_after": 20.8
+  },
+  {
+   "name": "Entities affiliated with RA Capital",
+   "type": "VC",
+   "pct_after_text": "6.7 %",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Samsara BioCapital, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.3 %",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Jeffrey Finer, M.D., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "2.2 %",
+   "pct_after": 2.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；包括可转换优先股自动转换为普通股；仅列发行后≥5%股东和≥1%董事/高管"
+}

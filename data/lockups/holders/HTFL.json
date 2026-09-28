@@ -1,0 +1,60 @@
+{
+ "t": "HTFL",
+ "form": "424B4",
+ "filed": "2025-08-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1464521/000162828025039265/heartflowinc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "BCLS Fund III Investments, LP",
+   "type": "PE",
+   "pct_after_text": "15.4%",
+   "pct_after": 15.4
+  },
+  {
+   "name": "HealthCor Partners Funds",
+   "type": "PE",
+   "pct_after_text": "8.3%",
+   "pct_after": 8.3
+  },
+  {
+   "name": "Entities affiliated with Hayfin Services, LLP",
+   "type": "PE",
+   "pct_after_text": "6.4%",
+   "pct_after": 6.4
+  },
+  {
+   "name": "Wellington Entities",
+   "type": "战略/公司",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  },
+  {
+   "name": "Lonnie M. Smith",
+   "type": "高管董事",
+   "pct_after_text": "4.3%",
+   "pct_after": 4.3
+  },
+  {
+   "name": "Casey M. Tansey",
+   "type": "高管董事",
+   "pct_after_text": "3.9%",
+   "pct_after": 3.9
+  },
+  {
+   "name": "John C.M. Farquhar",
+   "type": "高管董事",
+   "pct_after_text": "1.7%",
+   "pct_after": 1.7
+  },
+  {
+   "name": "Charles A. Taylor, Jr., Ph.D.",
+   "type": "董事",
+   "pct_after_text": "1.4%",
+   "pct_after": 1.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，基于64,086,637股发行前普通股加16,666,667股IPO新股；包含优先股转换和2025可转债转换后的股份"
+}

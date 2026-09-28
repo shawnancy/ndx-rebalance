@@ -1,0 +1,42 @@
+{
+  "t": "BSP",
+  "cik": 2004711,
+  "form": "424B4",
+  "filed": "2026-07-01",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2004711/000110465926079884/tm2613674-14_424b4.htm",
+  "listed_shares_m": 325,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": 318.51,
+      "note": "禁售期结束释放318.51M普通股；通常发行后180天，但如第二季度财报在发行后125-180天间发布则提早至财报发布后48小时",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:08:06Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": true,
+    "sum_m": 318.5,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供IPO具体日期（prospectus date），无法计算确切解禁日期，d字段置null待补充",
+    "原文未明确说明IPO基础发行量（float_base_m），仅通过总股数差额推测绿鞋数量为5.24M",
+    "解禁涉及事件触发加速条件（第二季度财报发布），最终日期取决于财报公告时间"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      728063,
+      743063
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1318905
+  }
+}

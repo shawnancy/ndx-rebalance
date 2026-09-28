@@ -1,0 +1,21 @@
+{
+ "t": "ETRA",
+ "cik": 2088082,
+ "form": "424B4",
+ "filed": "2026-09-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2088082/000119312526395670/d61940d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 62766955,
+ "shares_offered": 23333334,
+ "shares_locked": 39433621,
+ "shares_locked_text": "39,433,621",
+ "lockup_days": 180,
+ "evidence": "After the lock-up agreements expire, based on 39,433,621 shares outstanding as of June 30, 2026, assuming the automatic conversion of our outstanding redeemable convertible preferred stock as of June 30, 2026, approximately all 39,433,621 shares of common stock will be eligible for sale in the public market, of which approximately 14,729,214 shares are held by our officers, directors and their affiliated entities, and will be subject to volume limitations under Rule 144 under the Securities Act of 1933, as amended (Securities Act).",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "发行的 23,333,334 股立即可交易；其余 39,433,621 股（包括现有股东）受 180 天禁售协议约束，采用 Rule 144 卖空限制",
+ "valid": true,
+ "reasons": []
+}

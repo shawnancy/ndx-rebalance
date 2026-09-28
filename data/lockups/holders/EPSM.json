@@ -1,0 +1,18 @@
+{
+ "t": "EPSM",
+ "form": "424B4",
+ "filed": "2025-03-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1883437/000101376225002307/ea023300702-424b4_epsium.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Son I Tam",
+   "type": "高管董事",
+   "pct_after_text": "81.51%",
+   "pct_after": 81.51
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设发行1,250,000股普通股（不包括承销商超额配售选择权187,500股）"
+}

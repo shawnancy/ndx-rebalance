@@ -1,0 +1,42 @@
+{
+ "t": "AARD",
+ "form": "424B4",
+ "filed": "2025-02-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1774857/000119312525026060/d882459d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jane Wu Lee, M.D.",
+   "type": "其他",
+   "pct_after_text": "13.8%",
+   "pct_after": 13.8
+  },
+  {
+   "name": "Tien-Li Lee, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "13.8%",
+   "pct_after": 13.8
+  },
+  {
+   "name": "Entities affiliated with Decheng Capital Global Life Sciences Fund IV, L.P.",
+   "type": "VC",
+   "pct_after_text": "12.5%",
+   "pct_after": 12.5
+  },
+  {
+   "name": "Entities affiliated with Vickers Venture Fund VI Pte. Ltd.",
+   "type": "VC",
+   "pct_after_text": "12.4%",
+   "pct_after": 12.4
+  },
+  {
+   "name": "Jeffrey Chi, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "10.2%",
+   "pct_after": 10.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，已计入可转换优先股转为普通股，Jane Wu Lee 与 CEO Tien-Li Lee 为配偶共同持股"
+}

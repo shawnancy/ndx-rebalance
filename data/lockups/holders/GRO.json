@@ -1,0 +1,30 @@
+{
+ "t": "GRO",
+ "form": "424B4",
+ "filed": "2024-11-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1472326/000119312524267256/d303049d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "CD Capital",
+   "type": "PE",
+   "pct_after_text": "29.1%",
+   "pct_after": 29.1
+  },
+  {
+   "name": "Sentient",
+   "type": "PE",
+   "pct_after_text": "19.4%",
+   "pct_after": 19.4
+  },
+  {
+   "name": "Stan Bharti",
+   "type": "高管董事",
+   "pct_after_text": "10.8%",
+   "pct_after": 10.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，Common Shares单一类股口径"
+}

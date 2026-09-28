@@ -1,0 +1,60 @@
+{
+ "t": "NPB",
+ "form": "424B4",
+ "filed": "2025-02-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1336706/000110465925014328/tm2430447-12_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Castle Creek Capital Partners VII, LP",
+   "type": "PE",
+   "pct_after_text": "22.7%",
+   "pct_after": 22.7
+  },
+  {
+   "name": "Charles A Williams TR Charles A Williams Trust",
+   "type": "高管董事",
+   "pct_after_text": "10.5%",
+   "pct_after": 10.5
+  },
+  {
+   "name": "Second Rewritten Trust Indenture of the John S Simoni Living Trust",
+   "type": "其他",
+   "pct_after_text": "10.3%",
+   "pct_after": 10.3
+  },
+  {
+   "name": "Castle Creek Capital Partners VI, LP",
+   "type": "PE",
+   "pct_after_text": "10.1%",
+   "pct_after": 10.1
+  },
+  {
+   "name": "Annie Gainey",
+   "type": "其他",
+   "pct_after_text": "9.2%",
+   "pct_after": 9.2
+  },
+  {
+   "name": "Robert W. De Vlieger II",
+   "type": "高管董事",
+   "pct_after_text": "3.6%",
+   "pct_after": 3.6
+  },
+  {
+   "name": "David S. Hooker",
+   "type": "高管董事",
+   "pct_after_text": "3.6%",
+   "pct_after": 3.6
+  },
+  {
+   "name": "R. Jeffery Dean",
+   "type": "高管董事",
+   "pct_after_text": "2.4%",
+   "pct_after": 2.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，Underwriters未行使选择权情景，Castle Creek VII持有voting及non-voting两类股票合计"
+}

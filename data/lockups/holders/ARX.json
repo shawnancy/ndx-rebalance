@@ -1,0 +1,61 @@
+{
+ "t": "ARX",
+ "form": "424B4",
+ "filed": "2025-07-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1997350/000119312525164549/d543111d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "ACP Insurance Management, LLC",
+   "type": "PE",
+   "pct_after_text": "42.6%",
+   "pct_after": 42.6
+  },
+  {
+   "name": "ACP Accelerant Holdings LP",
+   "type": "PE",
+   "pct_after_text": "40.3%",
+   "pct_after": 40.3
+  },
+  {
+   "name": "Jeff Radke",
+   "type": "高管董事",
+   "pct_after_text": "13.2%",
+   "pct_after": 13.2
+  },
+  {
+   "name": "Christopher Lee-Smith",
+   "type": "高管董事",
+   "pct_after_text": "8.0%",
+   "pct_after": 8.0
+  },
+  {
+   "name": "ACP Accelerant Co-Invest, LLC",
+   "type": "PE",
+   "pct_after_text": "2.3%",
+   "pct_after": 2.3
+  },
+  {
+   "name": "Entities affiliated with, or managed or advised by, Barings LLC",
+   "type": "PE",
+   "pct_after_text": "1.8%",
+   "pct_after": 1.8
+  },
+  {
+   "name": "ACP Accelerant Investment Holding Company II, Ltd.",
+   "type": "PE",
+   "pct_after_text": "1.6%",
+   "pct_after": 1.6
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Frank O'Neill",
+   "type": "高管董事",
+   "pct_after_text": "3.2%",
+   "pct_after": 3.2
+  }
+ ],
+ "note": "Class A普通股发行后持股比例,基于不行使承销商期权假设;Class B股可1:1转换为Class A,发行后百分比已计入转换权"
+}

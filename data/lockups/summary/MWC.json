@@ -1,0 +1,24 @@
+{
+ "t": "MWC",
+ "cik": 2083526,
+ "form": "424B4",
+ "filed": "2026-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2083526/000182912626005249/micware_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": 2850000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We and each of our officers, directors, and holder(s) of 5% of the outstanding shares of Ordinary Shares as of the effective date of the registration statement of which this prospectus forms a part have agreed and will enter into lock-up agreements with the Representative not to offer, issue, sell, contract to sell, encumber, grant any option for the sale of, or otherwise dispose of any securities of the Company for the period of six months from the date of this offering.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "发行公司、高管和5%以上股东受6个月禁售；原文未明确列出被锁股总数；这是Nasdaq首发ADS",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

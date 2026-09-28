@@ -1,0 +1,24 @@
+{
+ "t": "VOYG",
+ "form": "424B4",
+ "filed": "2025-06-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1788060/000162828025030832/voyager-424b4finalprospect.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Dylan Taylor",
+   "type": "创始人",
+   "pct_after_text": "64.5%",
+   "pct_after": 64.5
+  },
+  {
+   "name": "Matthew Kuta",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径；Dylan Taylor多类股股东，取合计投票权比例；其他董事高管持股均<1%"
+}

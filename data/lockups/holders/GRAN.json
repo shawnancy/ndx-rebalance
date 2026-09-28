@@ -1,0 +1,24 @@
+{
+ "t": "GRAN",
+ "form": "424B4",
+ "filed": "2025-07-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027722/000121390025060039/ea0206927-17.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Yujie, CHEN",
+   "type": "创始人",
+   "pct_after_text": "96.30%",
+   "pct_after": 96.3
+  },
+  {
+   "name": "Grande Holding Limited",
+   "type": "战略/公司",
+   "pct_after_text": "96.30%",
+   "pct_after": 96.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例（多类股B股每股20票/A股每股1票），Yujie CHEN为CEO兼董事会主席，同时拥有Grande Holding Limited的实际控制权"
+}

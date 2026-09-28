@@ -1,0 +1,24 @@
+{
+ "t": "NTCL",
+ "form": "424B4",
+ "filed": "2024-12-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1927578/000110465924128487/tm2416562d9_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jianbiao Dai",
+   "type": "高管董事",
+   "pct_after_text": "79.83%",
+   "pct_after": 79.83
+  },
+  {
+   "name": "Lang Wide Investment INC",
+   "type": "其他",
+   "pct_after_text": "9.74%",
+   "pct_after": 9.74
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合并投票权(Class A 1票/股,Class B 15票/股);Jianbiao Dai通过Dragonsoft Holding Limited间接持股"
+}

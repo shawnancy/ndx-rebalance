@@ -1,0 +1,50 @@
+{
+  "t": "INIO",
+  "cik": 2109150,
+  "form": "424B4",
+  "filed": "2026-06-04",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2109150/000119312526256992/liberty_-_424b4.htm",
+  "listed_shares_m": 750,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": null,
+      "note": "IPO发行日：IPO新发行股票（非affiliate购买方）立即可交易",
+      "d_estimated": true
+    },
+    {
+      "d": null,
+      "sh_m": 660.168888,
+      "note": "发行后第181天：affiliate持股解禁，共660.168888M，后续受Rule 144体积及方式限制",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:09:35Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": false,
+    "sum_m": 660.2,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供IPO发行的具体日期，无法推算unlocks.d的确切日历日期",
+    "IPO发行的股数量未在原文明确给出",
+    "660,168,888股转百万股为660.168888M",
+    "原文未明确第181天解禁的total股数，仅点名affiliate部分660.168888M；non-affiliate部分无直接数字（可推测 ≈89.83M=750-660.17）",
+    "原文为文字描述的解禁安排，非标准表格格式，缺少明确的数值汇总"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      816808,
+      831808
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1156477
+  }
+}

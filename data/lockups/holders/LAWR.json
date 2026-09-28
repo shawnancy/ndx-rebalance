@@ -1,0 +1,24 @@
+{
+ "t": "LAWR",
+ "form": "424B4",
+ "filed": "2025-07-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2007599/000164117225020137/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Hidetoshi Yokoyama",
+   "type": "高管董事",
+   "pct_after_text": "61.91%",
+   "pct_after": 61.91
+  },
+  {
+   "name": "Stella MIC Investment Ltd.",
+   "type": "其他",
+   "pct_after_text": "5.22%",
+   "pct_after": 5.22
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，认股权未行使情况；Stella MIC Investment Ltd.为密克罗尼西亚公司"
+}

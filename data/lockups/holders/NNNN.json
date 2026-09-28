@@ -1,0 +1,24 @@
+{
+ "t": "NNNN",
+ "form": "424B4",
+ "filed": "2025-02-19",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1982708/000121390025015001/ea0200357-15.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "CVC Investment",
+   "type": "其他",
+   "pct_after_text": "49.61%",
+   "pct_after": 49.61
+  },
+  {
+   "name": "Northwestern Investment",
+   "type": "其他",
+   "pct_after_text": "49.61%",
+   "pct_after": 49.61
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合计投票权(Class A与B),两类股设计(A股1票,B股50票);董事高管持股均无数据,不列示"
+}

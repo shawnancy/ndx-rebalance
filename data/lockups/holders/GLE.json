@@ -1,0 +1,48 @@
+{
+ "t": "GLE",
+ "form": "424B4",
+ "filed": "2024-09-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1908705/000121390024080860/ea0215262-424b4_global.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Andrew, LEE Yat Lung",
+   "type": "高管董事",
+   "pct_after_text": "38.7%",
+   "pct_after": 38.7
+  },
+  {
+   "name": "Rosy Depot Limited",
+   "type": "战略/公司",
+   "pct_after_text": "8.9%",
+   "pct_after": 8.9
+  },
+  {
+   "name": "SUNG Pui Hei",
+   "type": "高管董事",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Best Digital Developments Limited",
+   "type": "其他",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Elite Trade Developments Limited",
+   "type": "其他",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Excel Elite Developments Limited",
+   "type": "其他",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后Ordinary Shares持股比例，CHAN/HUNG/CHEUNG三位董事无直接持股。"
+}

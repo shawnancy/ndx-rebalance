@@ -1,0 +1,42 @@
+{
+ "t": "BLIV",
+ "form": "424B4",
+ "filed": "2025-04-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1982448/000164117225002909/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "FTAG Ventures Pte. Ltd",
+   "type": "PE",
+   "pct_after_text": "44.47%",
+   "pct_after": 44.47
+  },
+  {
+   "name": "Kenneth Teck Chuan Tan",
+   "type": "高管董事",
+   "pct_after_text": "4.90%",
+   "pct_after": 4.9
+  },
+  {
+   "name": "Abdul Latif Bin Zainal",
+   "type": "高管董事",
+   "pct_after_text": "2.77%",
+   "pct_after": 2.77
+  },
+  {
+   "name": "Ken Jing Wei Ang",
+   "type": "高管董事",
+   "pct_after_text": "1.13%",
+   "pct_after": 1.13
+  },
+  {
+   "name": "Hassan Abid",
+   "type": "高管董事",
+   "pct_after_text": "1.13%",
+   "pct_after": 1.13
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例"
+}

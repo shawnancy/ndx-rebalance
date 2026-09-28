@@ -1,0 +1,42 @@
+{
+ "t": "OSTX",
+ "form": "424B4",
+ "filed": "2024-08-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1795091/000121390024064156/ea0205761-10.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Paul A. Romness, MPH",
+   "type": "创始人",
+   "pct_after_text": "11.1 %",
+   "pct_after": 11.1
+  },
+  {
+   "name": "John Ciccio",
+   "type": "高管董事",
+   "pct_after_text": "2.2 %",
+   "pct_after": 2.2
+  },
+  {
+   "name": "Theodore F. Search, Pharm.D.",
+   "type": "高管董事",
+   "pct_after_text": "2.2 %",
+   "pct_after": 2.2
+  },
+  {
+   "name": "Colin Goddard, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.1 %",
+   "pct_after": 1.1
+  },
+  {
+   "name": "Robert G. Petit, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.0 %",
+   "pct_after": 1.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径(IPO发行1,600,000股后); Colin Goddard的股份中198,929股由Stateside Developments USA LLC拥有; John Ciccio和Theodore F. Search的股份中435,668股由Mill River Partners LLC拥有(两人共享投票权和投资权)"
+}

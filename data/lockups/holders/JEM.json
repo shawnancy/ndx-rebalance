@@ -1,0 +1,24 @@
+{
+ "t": "JEM",
+ "form": "424B4",
+ "filed": "2025-06-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2018222/000164117225014455/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "JME",
+   "type": "战略/公司",
+   "pct_after_text": "71.13%",
+   "pct_after": 71.13
+  },
+  {
+   "name": "Mr. Cheung Lui",
+   "type": "高管董事",
+   "pct_after_text": "71.13%",
+   "pct_after": 71.13
+  }
+ ],
+ "note": "发行后按 Ordinary Shares 总数 21,950,000 计算；Mr. Cheung Lui 通过 100% 控制的 JME 公司持股"
+}

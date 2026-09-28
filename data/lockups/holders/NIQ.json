@@ -1,0 +1,43 @@
+{
+ "t": "NIQ",
+ "form": "424B4",
+ "filed": "2025-07-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2054696/000119312525163597/d906383d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Advent Shareholder",
+   "type": "PE",
+   "pct_after_text": "55.1%",
+   "pct_after": 55.1
+  }
+ ],
+ "dropped": [
+  {
+   "name": "NIM",
+   "type": "其他",
+   "pct_after_text": "11.9%",
+   "pct_after": 11.9
+  },
+  {
+   "name": "KKR Shareholder",
+   "type": "PE",
+   "pct_after_text": "10.2%",
+   "pct_after": 10.2
+  },
+  {
+   "name": "VNU International B.V.",
+   "type": "战略/公司",
+   "pct_after_text": "6.0%",
+   "pct_after": 6.0
+  },
+  {
+   "name": "James Peck",
+   "type": "高管董事",
+   "pct_after_text": "3.3%",
+   "pct_after": 3.3
+  }
+ ],
+ "note": "发行后未行权的持股比例;Advent Shareholder行权后为52.5%;VNU为warrant持有人"
+}

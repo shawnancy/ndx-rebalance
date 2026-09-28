@@ -1,0 +1,30 @@
+{
+ "t": "KMRK",
+ "form": "424B4",
+ "filed": "2025-07-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2049187/000121390025064537/ea0223235-17.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kwok Yiu Fai",
+   "type": "创始人",
+   "pct_after_text": "30.8%",
+   "pct_after": 30.8
+  },
+  {
+   "name": "Kwok Yiu Keung",
+   "type": "高管董事",
+   "pct_after_text": "30.8%",
+   "pct_after": 30.8
+  },
+  {
+   "name": "Kwok Yiu Wah",
+   "type": "高管董事",
+   "pct_after_text": "30.8%",
+   "pct_after": 30.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例，多类股合并（Class B每股10票）"
+}

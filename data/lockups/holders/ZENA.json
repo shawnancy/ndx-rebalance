@@ -1,0 +1,48 @@
+{
+ "t": "ZENA",
+ "form": "424B4",
+ "filed": "2024-09-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1997403/000137647424000565/zt_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Epazz Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "29.2%",
+   "pct_after": 29.2
+  },
+  {
+   "name": "Shaun Passley, PhD.",
+   "type": "创始人",
+   "pct_after_text": "28.4%",
+   "pct_after": 28.4
+  },
+  {
+   "name": "Star Financial Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "9.7%",
+   "pct_after": 9.7
+  },
+  {
+   "name": "GG Mars Capital, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "9.6%",
+   "pct_after": 9.6
+  },
+  {
+   "name": "Jennings Family Investments",
+   "type": "其他",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  },
+  {
+   "name": "James A. Sherman",
+   "type": "高管董事",
+   "pct_after_text": "1.9%",
+   "pct_after": 1.9
+  }
+ ],
+ "dropped": [],
+ "note": "发行前数据，基数 17,308,228 股；Shaun Passley 及其相关实体合计控制 77%；Star Financial 总裁为其母 Fay Passley，GG Mars 总裁为其姑 Vivienne Passley，Jennings 总裁为 James Sherman 妹妹 Mary B. Kluber"
+}

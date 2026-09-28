@@ -1,0 +1,36 @@
+{
+ "t": "LCLN",
+ "form": "424B4",
+ "filed": "2026-05-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1925283/000162828026037044/lincolninternational-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Lawrence James Lawson III",
+   "type": "高管董事",
+   "pct_after_text": "36.4%",
+   "pct_after": 36.4
+  },
+  {
+   "name": "Robert B. Barr",
+   "type": "高管董事",
+   "pct_after_text": "23.9%",
+   "pct_after": 23.9
+  },
+  {
+   "name": "Robert T. Brown",
+   "type": "高管董事",
+   "pct_after_text": "16.5%",
+   "pct_after": 16.5
+  },
+  {
+   "name": "Eric D. Malchow",
+   "type": "高管董事",
+   "pct_after_text": "10.6%",
+   "pct_after": 10.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后不行使承销商认股权，综合投票权(C类股10票/股、A/B类各1票/股)"
+}

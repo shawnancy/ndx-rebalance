@@ -1,0 +1,24 @@
+{
+ "t": "RACD",
+ "cik": 2137777,
+ "form": "424B4",
+ "filed": "2026-07-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2137777/000119312526301373/d160806d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "The founder shares and private placement shares are each subject to transfer restrictions pursuant to lock-up provisions in the letter agreement entered into by our sponsor and our management team.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "按股价触发提前释放：Class A普通股收盘价≥$12/股连续20个交易日(业务组合150天后启动计数)时founder shares提前解禁",
+ "note": "SPAC融资结构；founder shares 1年锁定或股价$12触发提前释放；private placement shares 30天锁定；underwriting lock-up 180天",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

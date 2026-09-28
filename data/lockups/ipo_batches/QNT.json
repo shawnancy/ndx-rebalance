@@ -1,0 +1,35 @@
+{
+  "t": "QNT",
+  "cik": 2110105,
+  "form": "424B4",
+  "filed": "2026-06-05",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026041003/quantinuum-424b4.htm",
+  "listed_shares_m": 32.86,
+  "float_base_m": 28,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:11:49Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供结构化解禁表。仅包含180天锁定期协议说明，无各批次解禁日期和股数明细",
+    "原文中提及Rule 144和Rule 701的解禁条件但无具体股数或时间表",
+    "美国政府交易(CHIPS Act奖励)涉及股权发行但条款未定，无法确定解禁时间"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      880342,
+      895342
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1120069
+  }
+}

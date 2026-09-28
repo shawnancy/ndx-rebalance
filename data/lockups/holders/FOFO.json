@@ -1,0 +1,24 @@
+{
+ "t": "FOFO",
+ "form": "424B4",
+ "filed": "2025-09-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2060083/000121390025087229/ea0233710-12.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "QIAN Fenglei",
+   "type": "高管董事",
+   "pct_after_text": "60.02%",
+   "pct_after": 60.02
+  },
+  {
+   "name": "HF Holdings",
+   "type": "其他",
+   "pct_after_text": "60.02%",
+   "pct_after": 60.02
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例；QIAN Fenglei通过BVI公司HF Holdings间接持有且对其拥有93.11%投票权"
+}

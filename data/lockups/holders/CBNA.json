@@ -1,0 +1,60 @@
+{
+ "t": "CBNA",
+ "form": "424B4",
+ "filed": "2024-10-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1392272/000119312524233337/d807354d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Peter G. Fitzgerald",
+   "type": "高管董事",
+   "pct_after_text": "22.50%",
+   "pct_after": 22.5
+  },
+  {
+   "name": "Julie Fitzgerald Schauer",
+   "type": "其他",
+   "pct_after_text": "14.17%",
+   "pct_after": 14.17
+  },
+  {
+   "name": "Gerald F. Fitzgerald, Jr.",
+   "type": "其他",
+   "pct_after_text": "11.72%",
+   "pct_after": 11.72
+  },
+  {
+   "name": "James G. Fitzgerald",
+   "type": "其他",
+   "pct_after_text": "10.14%",
+   "pct_after": 10.14
+  },
+  {
+   "name": "Thomas G. Fitzgerald",
+   "type": "其他",
+   "pct_after_text": "8.13%",
+   "pct_after": 8.13
+  },
+  {
+   "name": "Thomas G. Fitzgerald, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "4.67%",
+   "pct_after": 4.67
+  },
+  {
+   "name": "Andrew J. Fitzgerald",
+   "type": "高管董事",
+   "pct_after_text": "3.83%",
+   "pct_after": 3.83
+  },
+  {
+   "name": "Paul W. Leavitt",
+   "type": "高管董事",
+   "pct_after_text": "1.73%",
+   "pct_after": 1.73
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例，Class B普通股（每股10票权），多类股合计；股份通过信托与合伙企业持有"
+}

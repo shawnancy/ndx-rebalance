@@ -1,0 +1,30 @@
+{
+ "t": "ANPA",
+ "form": "424B4",
+ "filed": "2025-07-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2031688/000121390025062147/ea0212005-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ka Wo, NG",
+   "type": "高管董事",
+   "pct_after_text": "67.68",
+   "pct_after": 67.68
+  },
+  {
+   "name": "Superb Prospect Group Limited",
+   "type": "其他",
+   "pct_after_text": "67.68",
+   "pct_after": 67.68
+  },
+  {
+   "name": "FCGM Strategic Investment Pte. Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "18.0",
+   "pct_after": 18.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径；Superb Prospect Group Limited由Ka Wo, NG 100%控制"
+}

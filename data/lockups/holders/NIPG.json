@@ -1,0 +1,18 @@
+{
+ "t": "NIPG",
+ "form": "424B4",
+ "filed": "2024-07-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1966233/000110465924082834/tm233357-31_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Hicham Chahine",
+   "type": "其他",
+   "pct_after_text": "32.0%",
+   "pct_after": 32.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按投票权比例；多类股结构（Class B2每股20票投票权）；常规股11.9%、投票权32.0%；通过DIGLIFE AS间接持有。"
+}

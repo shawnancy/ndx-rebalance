@@ -1,0 +1,24 @@
+{
+ "t": "WHK",
+ "cik": 1921603,
+ "form": "424B4",
+ "filed": "2026-06-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1921603/000119312526264014/d86452d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 22996579,
+ "shares_offered": 7700000,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "We and our directors and executive officers will enter into lock-up agreements pursuant to which we and they will be subject to certain restrictions with respect to the offer, sale or disposition or hedge of any of our securities for a period of 180 days following the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "首次公开发行，管理层与董事主lock-up期180天；Legacy Common Stock Investors另受365天限制（可缩短至最少180天）；承销商代表可随时酌情提前释放禁售",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

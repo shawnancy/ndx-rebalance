@@ -1,0 +1,25 @@
+{
+ "t": "SKHY",
+ "cik": 2120882,
+ "form": "424B4",
+ "filed": "2026-07-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 90,
+ "evidence": null,
+ "listed_elsewhere": true,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "韩国公司在美发行ADSs；现有股东仅'certain affiliates'（部分关联方）受禁售约束，非全部；豁免项包括员工股权计划、可转换证券、认股权证等",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

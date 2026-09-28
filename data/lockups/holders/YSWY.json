@@ -1,0 +1,24 @@
+{
+ "t": "YSWY",
+ "form": "424B4",
+ "filed": "2026-04-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1859836/000110465926047210/tm2527636-17_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Thomas N. Trkla",
+   "type": "创始人",
+   "pct_after_text": "75.7%",
+   "pct_after": 75.7
+  },
+  {
+   "name": "Brookwood Financial Partners, LLC",
+   "type": "PE",
+   "pct_after_text": "75.1%",
+   "pct_after": 75.1
+  }
+ ],
+ "dropped": [],
+ "note": "多类股取合计投票权，发行后情景（No Exercise Option）"
+}

@@ -1,0 +1,48 @@
+{
+ "t": "LIFE",
+ "form": "424B4",
+ "filed": "2026-01-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1788451/000119312526029993/d901135d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Sequoia Capital",
+   "type": "VC",
+   "pct_after_text": "35.7%",
+   "pct_after": 35.7
+  },
+  {
+   "name": "Entities affiliated with Accel",
+   "type": "VC",
+   "pct_after_text": "21.3%",
+   "pct_after": 21.3
+  },
+  {
+   "name": "Peter Colis",
+   "type": "创始人",
+   "pct_after_text": "19.3%",
+   "pct_after": 19.3
+  },
+  {
+   "name": "Lingke Wang",
+   "type": "创始人",
+   "pct_after_text": "19.2%",
+   "pct_after": 19.2
+  },
+  {
+   "name": "Vipul Sharma",
+   "type": "高管董事",
+   "pct_after_text": "1.3%",
+   "pct_after": 1.3
+  },
+  {
+   "name": "Erin Lantz",
+   "type": "其他",
+   "pct_after_text": "1.0%",
+   "pct_after": 1.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按Class A和B合并投票权比例；AB股结构"
+}

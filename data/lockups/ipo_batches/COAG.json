@@ -1,0 +1,35 @@
+{
+  "t": "COAG",
+  "cik": 2114044,
+  "form": "424B4",
+  "filed": "2026-05-01",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2114044/000119312526201458/d50309d424b4.htm",
+  "listed_shares_m": 44.19291,
+  "float_base_m": 16.75,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:06:41Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文为 SHARES ELIGIBLE FOR FUTURE SALE 规则说明段，非标准解禁释放表。仅包含 Rule 144/701 法律框架和 180 天锁定期存在的声明，未提供具体日期和数量对应的解禁时间表。",
+    "招股书未给出具体 IPO 日期（prospectus date），故 180 天/90 天相对时间无法转换为具体日历日期。",
+    "27.44291M 股（非 IPO 发行股份）受锁定，但无逐批释放计划和释放日期。"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      883179,
+      891185
+    ],
+    "n_lockup_windows_total": 4,
+    "n_extra_windows_included": 1,
+    "excerpt_chars": 15021,
+    "html_flat_chars": 1031896
+  }
+}

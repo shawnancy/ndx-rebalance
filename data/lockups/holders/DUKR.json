@@ -1,0 +1,48 @@
+{
+ "t": "DUKR",
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1638911/000121390026058179/ea029121901-424b4_dukerobo.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Y.D More Investments Ltd.",
+   "type": "PE",
+   "pct_after_text": "19.9%",
+   "pct_after": 19.9
+  },
+  {
+   "name": "Afek Trading - Kadosh and Razi Ltd.",
+   "type": "其他",
+   "pct_after_text": "13.1%",
+   "pct_after": 13.1
+  },
+  {
+   "name": "Yariv Alroy",
+   "type": "高管董事",
+   "pct_after_text": "10.3%",
+   "pct_after": 10.3
+  },
+  {
+   "name": "Sagiv Aharon",
+   "type": "其他",
+   "pct_after_text": "8.9%",
+   "pct_after": 8.9
+  },
+  {
+   "name": "Erez Nachtomy",
+   "type": "高管董事",
+   "pct_after_text": "2.7%",
+   "pct_after": 2.7
+  },
+  {
+   "name": "Yossef Balucka",
+   "type": "高管董事",
+   "pct_after_text": "1.4%",
+   "pct_after": 1.4
+  }
+ ],
+ "dropped": [],
+ "note": "截至2026年5月11日发行前数据,基数2,260,383股普通股"
+}

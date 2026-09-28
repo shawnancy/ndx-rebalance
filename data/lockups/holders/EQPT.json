@@ -1,0 +1,48 @@
+{
+ "t": "EQPT",
+ "form": "424B4",
+ "filed": "2026-01-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1693736/000162828026003334/eqpt-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jabbok Schlacks",
+   "type": "创始人",
+   "pct_after_text": "42.4%",
+   "pct_after": 42.4
+  },
+  {
+   "name": "William J. Schlacks IV",
+   "type": "创始人",
+   "pct_after_text": "42.4%",
+   "pct_after": 42.4
+  },
+  {
+   "name": "Romulus Capital III L.P.",
+   "type": "PE",
+   "pct_after_text": "5.7%",
+   "pct_after": 5.7
+  },
+  {
+   "name": "Anchorage Capital Group, L.L.C.",
+   "type": "PE",
+   "pct_after_text": "1.8%",
+   "pct_after": 1.8
+  },
+  {
+   "name": "Insight Venture Partners IX, L.P.",
+   "type": "VC",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  },
+  {
+   "name": "BDT Everest Holdings, LLC",
+   "type": "PE",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后合计投票权比例（不行使承销商权利）；Schlacks 家族通过持有 Class B 高倍投票权股票控制公司。"
+}

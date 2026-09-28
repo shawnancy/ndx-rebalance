@@ -1,0 +1,36 @@
+{
+ "t": "SLDE",
+ "form": "424B4",
+ "filed": "2025-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1886428/000119312525142810/d739486d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bruce Lucas",
+   "type": "高管董事",
+   "pct_after_text": "45.09%",
+   "pct_after": 45.09
+  },
+  {
+   "name": "Shannon Lucas",
+   "type": "高管董事",
+   "pct_after_text": "5.94%",
+   "pct_after": 5.94
+  },
+  {
+   "name": "LIST Developers, LLC",
+   "type": "其他",
+   "pct_after_text": "5.32%",
+   "pct_after": 5.32
+  },
+  {
+   "name": "Robert Gries",
+   "type": "高管董事",
+   "pct_after_text": "2.14%",
+   "pct_after": 2.14
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例采用总股本占比（No Exercise of Underwriters' Option列），涉及Series A优先股自动转换为普通股"
+}

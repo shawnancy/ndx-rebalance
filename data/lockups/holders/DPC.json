@@ -1,0 +1,36 @@
+{
+ "t": "DPC",
+ "form": "424B4",
+ "filed": "2026-06-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2107018/000110465926077968/tm269965-19_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "J F Lehman",
+   "type": "PE",
+   "pct_after_text": "16.00%",
+   "pct_after": 16.0
+  },
+  {
+   "name": "Searchlight Opportunities",
+   "type": "其他",
+   "pct_after_text": "7.24%",
+   "pct_after": 7.24
+  },
+  {
+   "name": "Hill City Capital",
+   "type": "其他",
+   "pct_after_text": "5.16%",
+   "pct_after": 5.16
+  },
+  {
+   "name": "Dirkson Charles",
+   "type": "高管董事",
+   "pct_after_text": "1.10%",
+   "pct_after": 1.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例,按IPO后总股本口径,无多类股差异"
+}

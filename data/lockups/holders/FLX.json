@@ -1,0 +1,54 @@
+{
+ "t": "FLX",
+ "form": "424B4",
+ "filed": "2024-10-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1858724/000119312524232593/d439608d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Peng Xue",
+   "type": "创始人",
+   "pct_after_text": "73.1%",
+   "pct_after": 73.1
+  },
+  {
+   "name": "Snoweagle-s Limited",
+   "type": "其他",
+   "pct_after_text": "66.7%",
+   "pct_after": 66.7
+  },
+  {
+   "name": "SIG China Investments Master Fund IV, LLLP",
+   "type": "PE",
+   "pct_after_text": "3.1%",
+   "pct_after": 3.1
+  },
+  {
+   "name": "CDH Venture Capital III Limited",
+   "type": "VC",
+   "pct_after_text": "2.9%",
+   "pct_after": 2.9
+  },
+  {
+   "name": "Entities affiliated with Shunwei Capital",
+   "type": "PE",
+   "pct_after_text": "2.5%",
+   "pct_after": 2.5
+  },
+  {
+   "name": "Haibo Ru",
+   "type": "高管董事",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  },
+  {
+   "name": "Hongjian Yu",
+   "type": "高管董事",
+   "pct_after_text": "0.5%",
+   "pct_after": 0.5
+  }
+ ],
+ "note": "发行后按合计投票权比例排序,多类股(ClassA每股1票ClassB每股10票);总股本比例分别为21.4%/19.5%/9.1%/8.4%/7.4%/4.5%/1.5%"
+}

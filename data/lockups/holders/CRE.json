@@ -1,0 +1,18 @@
+{
+ "t": "CRE",
+ "form": "424B4",
+ "filed": "2025-07-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2003977/000121390025066853/ea0201513-23.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Cre8 Investments Limited",
+   "type": "战略/公司",
+   "pct_after_text": "88.11%",
+   "pct_after": 88.11
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按投票权百分比（Class B 每股 20 票，Class A 每股 1 票）；Cre8 Investments Limited 持有 Class B 股 100% 和 Class A 股 33.08%，合计投票权 88.11%；董事和高管持股均为 0%，不列"
+}

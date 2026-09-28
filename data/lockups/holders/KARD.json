@@ -1,0 +1,48 @@
+{
+ "t": "KARD",
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2123613/000119312526276096/d107928d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with HRTG Partners",
+   "type": "PE",
+   "pct_after_text": "16.6%",
+   "pct_after": 16.6
+  },
+  {
+   "name": "Entities affiliated with ARCH",
+   "type": "VC",
+   "pct_after_text": "16.5%",
+   "pct_after": 16.5
+  },
+  {
+   "name": "Tassos Gianakakos, Chief Executive Officer, Director, and Chair",
+   "type": "创始人",
+   "pct_after_text": "11.2%",
+   "pct_after": 11.2
+  },
+  {
+   "name": "Entities affiliated with Perceptive",
+   "type": "PE",
+   "pct_after_text": "9.3%",
+   "pct_after": 9.3
+  },
+  {
+   "name": "Jay Edelberg, M.D., Ph.D., Chief Medical Officer",
+   "type": "高管董事",
+   "pct_after_text": "5.2%",
+   "pct_after": 5.2
+  },
+  {
+   "name": "Entities affiliated with Fidelity",
+   "type": "战略/公司",
+   "pct_after_text": "5.1%",
+   "pct_after": 5.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股比例，按投资后所有权百分比计算，包括所有 ≥5% 股东及 ≥1% 高管董事"
+}

@@ -1,0 +1,11 @@
+{
+ "t": "CBRS",
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "提供的摘录不包含发行后持股比例的主要股东表。摘录仅包含Series G/H融资轮购买信息及相关协议描述，真正的Principal Stockholders表（含IPO发行后各股东持股%）未包含在此摘录中。摘录末尾被截断('Tabl')，原表应在其他页面。"
+}

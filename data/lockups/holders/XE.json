@@ -1,0 +1,54 @@
+{
+ "t": "XE",
+ "form": "424B4",
+ "filed": "2026-04-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2088896/000110465926049515/tm2527015-22_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Dr. Kamal Ghaffarian",
+   "type": "高管董事",
+   "pct_after_text": "70.9%",
+   "pct_after": 70.9
+  },
+  {
+   "name": "X-Energy Holdings, LLC",
+   "type": "其他",
+   "pct_after_text": "63.1%",
+   "pct_after": 63.1
+  },
+  {
+   "name": "Amazon.com NV Investment Holdings LLC",
+   "type": "战略/公司",
+   "pct_after_text": "23.4%",
+   "pct_after": 23.4
+  },
+  {
+   "name": "Entities affiliated with Ares",
+   "type": "PE",
+   "pct_after_text": "20.5%",
+   "pct_after": 20.5
+  },
+  {
+   "name": "Jane Street Global Trading, LLC",
+   "type": "其他",
+   "pct_after_text": "8.6%",
+   "pct_after": 8.6
+  },
+  {
+   "name": "XERC Holdings LLC",
+   "type": "其他",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  },
+  {
+   "name": "J. Clay Sell",
+   "type": "高管董事",
+   "pct_after_text": "1.7%",
+   "pct_after": 1.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按Underwriters' Option Not Exercised统计，多类股按投票权(Class B)比例统计。"
+}

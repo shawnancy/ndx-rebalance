@@ -1,0 +1,25 @@
+{
+ "t": "SIND",
+ "cik": 2096861,
+ "form": "424B4",
+ "filed": "2026-06-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2096861/000114036126026625/ny20063495x12_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 156774750,
+ "shares_offered": 17750000,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "发行的17,750,000股自由交易；其余股份受限制性转售规则约束。11,773,851股期权+1,256,500股RSU substantially all受锁定。原文未明确合计所有受锁定股数总额，仅说'substantially all'现有股东/期权持有人受180天禁售约束。Cornerstone投资者不受锁定限制。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

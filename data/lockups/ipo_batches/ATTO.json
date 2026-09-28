@@ -1,0 +1,42 @@
+{
+  "t": "ATTO",
+  "cik": 2058707,
+  "form": "424B4",
+  "filed": "2026-08-05",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2058707/000119312526334997/d40469d424b4.htm",
+  "listed_shares_m": 43.029017,
+  "float_base_m": 17,
+  "unlocks": [
+    {
+      "d": "YYYY-MM-DD",
+      "sh_m": 26.749461,
+      "note": "Lock-up协议期满(180天后)，约26.7M之前受限股份解禁；其中15.04M系高管董事及关联实体持股，需遵Rule 144成交量限制",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:06:18Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": true,
+    "sum_m": 26.7,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供prospectus具体日期，仅给出相对参考'180 days from prospectus date'，无法推算ISO格式日期，d值为占位符",
+    "IPO基础发行17M，Over-allotment(绿鞋)选项可增至19.55M，原文假设未行使",
+    "Lock-up期满后26.7M股中，15.04M系officers/directors/affiliated entities持股，即使解禁仍需遵Rule 144每3个月≤1%日均交易量的成交量限制"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      752634,
+      761259
+    ],
+    "n_lockup_windows_total": 9,
+    "n_extra_windows_included": 2,
+    "excerpt_chars": 15042,
+    "html_flat_chars": 1005071
+  }
+}

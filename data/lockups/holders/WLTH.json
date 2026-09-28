@@ -1,0 +1,60 @@
+{
+ "t": "WLTH",
+ "form": "424B4",
+ "filed": "2025-12-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1524566/000162828025056780/wealthfront-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Andrew S. Rachleff",
+   "type": "创始人",
+   "pct_after_text": "11.73%",
+   "pct_after": 11.73
+  },
+  {
+   "name": "Entities affiliated with Tiger Global",
+   "type": "VC",
+   "pct_after_text": "10.32%",
+   "pct_after": 10.32
+  },
+  {
+   "name": "Entities affiliated with DAG Ventures",
+   "type": "VC",
+   "pct_after_text": "9.40%",
+   "pct_after": 9.4
+  },
+  {
+   "name": "Entities affiliated with Index Ventures",
+   "type": "VC",
+   "pct_after_text": "8.79%",
+   "pct_after": 8.79
+  },
+  {
+   "name": "Michelangelo Volpi",
+   "type": "高管董事",
+   "pct_after_text": "8.79%",
+   "pct_after": 8.79
+  },
+  {
+   "name": "Entities affiliated with Ribbit Capital",
+   "type": "VC",
+   "pct_after_text": "6.70%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "David Fortunato",
+   "type": "高管",
+   "pct_after_text": "5.92%",
+   "pct_after": 5.92
+  },
+  {
+   "name": "Kal Iyer",
+   "type": "高管",
+   "pct_after_text": "1.12%",
+   "pct_after": 1.12
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（普通股），期权和RSU按60日行使条件计入。"
+}

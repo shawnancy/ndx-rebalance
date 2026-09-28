@@ -1,0 +1,35 @@
+{
+  "t": "XE",
+  "cik": 2088896,
+  "form": "424B4",
+  "filed": "2026-04-27",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2088896/000110465926049515/tm2527015-22_424b4.htm",
+  "listed_shares_m": 273.442494,
+  "float_base_m": 50.892857,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:13:03Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未包含具体的解禁释放表（Lock-up Release Schedule）。仅提及180天锁定期届满后解禁，但未给出具体日期和股数明细对应表",
+    "float_base_m取承销商完全行使绿鞋期权后的数字(50.892857M)，基础发行量为44.254659M",
+    "持续权益所有者持有118.907374M普通合伙人份额(Common Units)，可按1:1交换为Class A普通股，但原文未提供交换的具体时间表或批次安排"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      840186,
+      855186
+    ],
+    "n_lockup_windows_total": 7,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1053809
+  }
+}

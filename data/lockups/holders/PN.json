@@ -1,0 +1,36 @@
+{
+ "t": "PN",
+ "form": "424B4",
+ "filed": "2025-03-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2001288/000121390025019949/ea0207046-12.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Skyline Tech Limited",
+   "type": "其他",
+   "pct_after_text": "48.24%",
+   "pct_after": 48.24
+  },
+  {
+   "name": "Weiqi Huang",
+   "type": "高管董事",
+   "pct_after_text": "48.24%",
+   "pct_after": 48.24
+  },
+  {
+   "name": "Baili Group Limited",
+   "type": "其他",
+   "pct_after_text": "8.80%",
+   "pct_after": 8.8
+  },
+  {
+   "name": "Gaokui Zhang",
+   "type": "高管董事",
+   "pct_after_text": "8.80%",
+   "pct_after": 8.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；Weiqi Huang和Gaokui Zhang的权益分别通过BVI公司Skyline Tech Limited和Baili Group Limited间接持有"
+}

@@ -1,0 +1,23 @@
+{
+ "t": "DPC",
+ "cik": 2107018,
+ "form": "424B4",
+ "filed": "2026-06-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2107018/000110465926077968/tm269965-19_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 145151799,
+ "shares_offered": null,
+ "shares_locked": 112936894,
+ "shares_locked_text": "approximately 112,936,894 ordinary shares",
+ "lockup_days": 180,
+ "evidence": "approximately 112,936,894 ordinary shares will be eligible for sale upon expiration of lock-up agreements and market stand-off provisions described below, beginning 181 days after the date of this prospectus, subject in certain circumstances to the volume, manner of sale and other limitations under Rules 144 and 701.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "并行私募(2,083,593股)和QIA私募(2,272,727股)亦属受限证券但在lock-up期满后仍受Rule 144限制;员工激励计划13,812,500股将通过Form S-8注册",
+ "valid": false,
+ "reasons": [
+  "原文写法「approximately 112,936,894 ordinary shares」换算不等于 shares_locked(疑似推算)"
+ ]
+}

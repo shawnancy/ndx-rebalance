@@ -1,0 +1,18 @@
+{
+ "t": "SPCX",
+ "form": "424B4",
+ "filed": "2026-06-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Elon Musk",
+   "type": "创始人",
+   "pct_after_text": "84.4%",
+   "pct_after": 84.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合计投票权比例; SpaceX 有 Class A/B 两类股票, Class B 股每股十投权, Elon Musk 持 93.6% Class B 股权导致投票权集中"
+}

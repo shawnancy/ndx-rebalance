@@ -1,0 +1,18 @@
+{
+ "t": "INIO",
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2109150/000119312526256992/liberty_-_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "AI Alpine (Luxembourg) S.à r.l.",
+   "type": "PE",
+   "pct_after_text": "88.0%",
+   "pct_after": 88.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后（不行使承销商购股权）持股比例；仅AI Alpine一个≥5%股东；董事高管持股均<1%"
+}

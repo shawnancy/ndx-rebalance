@@ -1,0 +1,42 @@
+{
+ "t": "EXYN",
+ "form": "424B4",
+ "filed": "2026-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1960355/000110465926062711/tm2525579-34_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Reliance Strategic Business Ventures Limited",
+   "type": "战略/公司",
+   "pct_after_text": "15.0%",
+   "pct_after": 15.0
+  },
+  {
+   "name": "North America University Innovation, LP",
+   "type": "VC",
+   "pct_after_text": "13.1%",
+   "pct_after": 13.1
+  },
+  {
+   "name": "Neolync Holdings Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "11.5%",
+   "pct_after": 11.5
+  },
+  {
+   "name": "Brandon Torres Declet",
+   "type": "创始人",
+   "pct_after_text": "3.7%",
+   "pct_after": 3.7
+  },
+  {
+   "name": "Benjamin Williams",
+   "type": "高管董事",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，基于所有优先股自动转换为普通股的假设；无其他特殊情况"
+}

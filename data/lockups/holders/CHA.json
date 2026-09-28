@@ -1,0 +1,36 @@
+{
+ "t": "CHA",
+ "form": "424B4",
+ "filed": "2025-04-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2013649/000110465925036228/tm246985-42_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Junjie Zhang",
+   "type": "创始人",
+   "pct_after_text": "89.0%",
+   "pct_after": 89.0
+  },
+  {
+   "name": "XVC Entities",
+   "type": "VC",
+   "pct_after_text": "4.4%",
+   "pct_after": 4.4
+  },
+  {
+   "name": "Congbi Qiushi Entities",
+   "type": "VC",
+   "pct_after_text": "2.3%",
+   "pct_after": 2.3
+  },
+  {
+   "name": "Dengfeng Yin",
+   "type": "高管董事",
+   "pct_after_text": "1.6%",
+   "pct_after": 1.6
+  }
+ ],
+ "note": "发行后(After the Offering)按聚合投票权(Aggregate Voting Power)展示，Class A普通股每股1票，Class B普通股每股10票；所有优先股发行前按1:1转换为A类普通股"
+}

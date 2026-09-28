@@ -1,0 +1,23 @@
+{
+ "t": "APMD",
+ "cik": 1745648,
+ "form": "424B4",
+ "filed": "2026-07-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1745648/000119312526328422/apmd_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 39823183,
+ "shares_offered": 12000000,
+ "shares_locked": 27823183,
+ "shares_locked_text": "27,823,183",
+ "lockup_days": 180,
+ "evidence": "We expect that substantially all of these shares will be subject to the 180-day lock-up period under the lock-up agreements described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO首次上市，无公开市场；发行12M股，其余27.8M股（占70%）为受限证券，绝大多数受180天禁售协议约束；承销商有权自行决定在禁售期内任何时刻提前释放部分或全部",
+ "valid": false,
+ "reasons": [
+  "股数写法不在证据句里"
+ ]
+}

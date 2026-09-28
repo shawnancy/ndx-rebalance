@@ -1,0 +1,18 @@
+{
+ "t": "AADX",
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2118195/000119312526256356/d25758d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "AA&D Holdings, LP",
+   "type": "PE",
+   "pct_after_text": "81.0%",
+   "pct_after": 81.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例基于32,500,000股基础发行、未行使承销商超配选择权; 其他董事高管持有AA&D Holdings合伙份额, 锁定期满后可转为普通股"
+}

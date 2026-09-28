@@ -1,0 +1,30 @@
+{
+ "t": "WHK",
+ "form": "424B4",
+ "filed": "2026-06-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1921603/000119312526264014/d86452d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Daniel Herz",
+   "type": "高管董事",
+   "pct_after_text": "16.1%",
+   "pct_after": 16.1
+  },
+  {
+   "name": "WhiteHawk Minerals LLC",
+   "type": "战略/公司",
+   "pct_after_text": "15.4%",
+   "pct_after": 15.4
+  },
+  {
+   "name": "Omega Capital Partners, LP",
+   "type": "PE",
+   "pct_after_text": "14.2%",
+   "pct_after": 14.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后数据（无超额配售权行使），多类股参与者（Daniel Herz、WhiteHawk）按合并投票权，单类股参与者（Omega）按Class A持股比例"
+}

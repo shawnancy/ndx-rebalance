@@ -1,0 +1,48 @@
+{
+ "t": "ELMT",
+ "form": "424B4",
+ "filed": "2026-04-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2101698/000121390026047144/ea0270360-06.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Peter V. Anania",
+   "type": "创始人",
+   "pct_after_text": "37.45 %",
+   "pct_after": 37.45
+  },
+  {
+   "name": "Anania & Associates Investment Company, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "18.71 %",
+   "pct_after": 18.71
+  },
+  {
+   "name": "George Schott",
+   "type": "其他",
+   "pct_after_text": "17.68 %",
+   "pct_after": 17.68
+  },
+  {
+   "name": "The Anania Trust II",
+   "type": "其他",
+   "pct_after_text": "5.64 %",
+   "pct_after": 5.64
+  },
+  {
+   "name": "Scott W. Knoll",
+   "type": "高管董事",
+   "pct_after_text": "5.38 %",
+   "pct_after": 5.38
+  },
+  {
+   "name": "Derek Fox",
+   "type": "高管董事",
+   "pct_after_text": "1.58 %",
+   "pct_after": 1.58
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股比例（Class A/B已合并为单一普通股；计入IPO时vest的RSU；未考虑承销商超额认购权和SAR行权）"
+}

@@ -1,0 +1,30 @@
+{
+ "t": "SSMR",
+ "form": "424B4",
+ "filed": "2026-06-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2091017/000114036126024037/ny20061035x7_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Thomas S. Kaplan",
+   "type": "高管董事",
+   "pct_after_text": "64.2%",
+   "pct_after": 64.2
+  },
+  {
+   "name": "Electrum",
+   "type": "PE",
+   "pct_after_text": "63.1%",
+   "pct_after": 63.1
+  },
+  {
+   "name": "Ospraie",
+   "type": "PE",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例; Thomas S. Kaplan 的持股包含对 Electrum 基金的控制权但声明仅对经济利益负责"
+}

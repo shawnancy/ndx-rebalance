@@ -1,0 +1,18 @@
+{
+ "t": "AGBK",
+ "form": "424B1",
+ "filed": "2026-02-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2081206/000175392626000308/g085129_424b1.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Marciano Testa",
+   "type": "创始人",
+   "pct_after_text": "94.5%",
+   "pct_after": 94.5
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后不行使上市承销商选择权计，合计投票权百分比；Marciano Testa系创始人，拥有全部Class B股份（每股10票）"
+}

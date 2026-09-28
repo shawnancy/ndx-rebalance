@@ -1,0 +1,18 @@
+{
+ "t": "PHOE",
+ "form": "424B4",
+ "filed": "2025-04-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2035709/000164117225006131/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Chi Kin Kelvin, Yeung",
+   "type": "高管董事",
+   "pct_after_text": "74.54%",
+   "pct_after": 74.54
+  }
+ ],
+ "note": "发行后普通股占比。Chi Kin Kelvin, Yeung为首席执行官兼董事会主席,其持股通过全资拥有的Phoenix Prosperity Investment Limited进行。"
+}

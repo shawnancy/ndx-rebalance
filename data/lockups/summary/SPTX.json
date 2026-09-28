@@ -1,0 +1,23 @@
+{
+ "t": "SPTX",
+ "cik": 2042347,
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2042347/000119312526201758/d73463d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 53027817,
+ "shares_offered": null,
+ "shares_locked": 38029523,
+ "shares_locked_text": "38,029,523",
+ "lockup_days": 180,
+ "evidence": "The resale of the remaining 38,029,523 shares, or 98% of our outstanding shares of common stock following this offering, is currently prohibited or otherwise restricted, subject to certain limited exceptions, as a result of securities law provisions, market standoff agreements entered into by certain of our stockholders with us or lock-up agreements entered into by our stockholders with the underwriters in connection with this offering.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "SpaceX IPO上市，180天禁售期覆盖substantially all股东；发行后总股本5300万股，禁售股占绝大多数",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

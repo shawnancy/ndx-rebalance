@@ -1,0 +1,25 @@
+{
+ "t": "NHP",
+ "cik": 1561032,
+ "form": "424B4",
+ "filed": "2026-04-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1561032/000162828026026541/nhp-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 68012459,
+ "shares_offered": 38500000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "REIT结构（含OP Units），仅directors/executives/某些OP Unit持有人受180天lock-up协议约束，新发行股票和非affiliate投资者股票不受限制；原文未明确披露锁定股数",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

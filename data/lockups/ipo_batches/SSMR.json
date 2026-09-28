@@ -1,0 +1,34 @@
+{
+  "t": "SSMR",
+  "cik": 2091017,
+  "form": "424B4",
+  "filed": "2026-06-05",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2091017/000114036126024037/ny20061035x7_424b4.htm",
+  "listed_shares_m": 140.73,
+  "float_base_m": 20.0,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:12:29Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供具体解禁时间表。仅涉及 180 天锁定期框架、Rule 144/701 规则说明及注册权条款，无分批解禁日期和股数",
+    "IPO 绿鞋选项：最多 3M 股(30天内可行使)，float_base_m 仅含基础 20M 发行量"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      580580,
+      595580
+    ],
+    "n_lockup_windows_total": 4,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 752919
+  }
+}

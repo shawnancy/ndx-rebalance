@@ -1,0 +1,42 @@
+{
+ "t": "SPAI",
+ "form": "424B4",
+ "filed": "2024-08-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2011208/000149315224034264/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Daniyel Erdberg",
+   "type": "高管董事",
+   "pct_after_text": "39.0 %",
+   "pct_after": 39.0
+  },
+  {
+   "name": "Pravin Borkar",
+   "type": "高管董事",
+   "pct_after_text": "11.0 %",
+   "pct_after": 11.0
+  },
+  {
+   "name": "Christopher Todd",
+   "type": "高管董事",
+   "pct_after_text": "5.3 %",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Jonathan Leinwand",
+   "type": "高管董事",
+   "pct_after_text": "4.4 %",
+   "pct_after": 4.4
+  },
+  {
+   "name": "Theresa Carlise",
+   "type": "高管董事",
+   "pct_after_text": "2.0 %",
+   "pct_after": 2.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，普通股；包含员工协议、可转债、IPO新发行1.02M股和Series A/B优先股2.81M股的转换"
+}

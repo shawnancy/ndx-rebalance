@@ -1,0 +1,43 @@
+{
+ "t": "ROLR",
+ "form": "424B4",
+ "filed": "2024-10-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1947210/000175392624001757/g084502_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Cascadia Holdings Limited",
+   "type": "创始人",
+   "pct_after_text": "31.16%",
+   "pct_after": 31.16
+  },
+  {
+   "name": "OEH Invest AB",
+   "type": "其他",
+   "pct_after_text": "23.72%",
+   "pct_after": 23.72
+  },
+  {
+   "name": "Spike Up Media A.B.",
+   "type": "战略/公司",
+   "pct_after_text": "9.33%",
+   "pct_after": 9.33
+  },
+  {
+   "name": "Legendman Investments Limited",
+   "type": "其他",
+   "pct_after_text": "6.09%",
+   "pct_after": 6.09
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Daniel Bradtke",
+   "type": "高管董事",
+   "pct_after_text": "1.53%",
+   "pct_after": 1.53
+  }
+ ],
+ "note": "发行后普通股持股比例; 仅列≥5%的股东与≥1%的董事高管"
+}

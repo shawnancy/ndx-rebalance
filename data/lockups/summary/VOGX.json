@@ -1,0 +1,24 @@
+{
+ "t": "VOGX",
+ "cik": 1903784,
+ "form": "424B4",
+ "filed": "2026-08-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1903784/000118518526003448/vogenx424b4081126.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 13917587,
+ "shares_offered": 6250000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "Each of our directors and officers and substantially all of our stockholders have agreed not to sell or otherwise transfer or dispose of any of our securities for a period of 180 days from the date of this prospectus, subject to certain exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "原文未直接给出受禁售股数的具体数字；禁售对象为现有股东和管理层的 substantially all，新发行的 6,250,000 股自由交易",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "t": "CHYM",
+ "form": "424B4",
+ "filed": "2025-06-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025030855/chimefinancialinc-finalpro.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Christopher Britt",
+   "type": "创始人",
+   "pct_after_text": "39.0%",
+   "pct_after": 39.0
+  },
+  {
+   "name": "Ryan King",
+   "type": "创始人",
+   "pct_after_text": "35.5%",
+   "pct_after": 35.5
+  },
+  {
+   "name": "Entities affiliated with DST Global",
+   "type": "VC",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后合计投票权; Class A(1票)和 Class B(10票)两类股, Britt/King持B股, 其余股东持A股"
+}

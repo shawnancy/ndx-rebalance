@@ -1,0 +1,54 @@
+{
+ "t": "ITG",
+ "form": "424B4",
+ "filed": "2026-07-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110117/000119312526292853/d103576d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "ITG Management Holdings, LLC",
+   "type": "其他",
+   "pct_after_text": "35.3%",
+   "pct_after": 35.3
+  },
+  {
+   "name": "OCM ITG Aggregator LLC",
+   "type": "PE",
+   "pct_after_text": "25.7%",
+   "pct_after": 25.7
+  },
+  {
+   "name": "OCM Power VI AIV Holdings (Delaware), L.P.",
+   "type": "PE",
+   "pct_after_text": "20.9%",
+   "pct_after": 20.9
+  },
+  {
+   "name": "Michael G. Brooks",
+   "type": "创始人",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Peter A. Giacalone",
+   "type": "创始人",
+   "pct_after_text": "9.2%",
+   "pct_after": 9.2
+  },
+  {
+   "name": "Christopher Perkins",
+   "type": "创始人",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  },
+  {
+   "name": "Guilherme Elias",
+   "type": "高管董事",
+   "pct_after_text": "1.2%",
+   "pct_after": 1.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后(认购权完全行使)按Class A与B合并投票权;ITG Management Holdings为员工及前员工所有、Oaktree无经济利益;部分创始人通过该平台间接持非经济投票股"
+}

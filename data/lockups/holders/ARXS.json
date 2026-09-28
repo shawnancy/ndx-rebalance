@@ -1,0 +1,24 @@
+{
+ "t": "ARXS",
+ "form": "424B4",
+ "filed": "2026-04-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2093536/000119312526159369/d81728d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Arcline Investment Management",
+   "type": "PE",
+   "pct_after_text": "99.1%",
+   "pct_after": 99.1
+  },
+  {
+   "name": "Kevin Perhamus",
+   "type": "高管董事",
+   "pct_after_text": "3.4%",
+   "pct_after": 3.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，按投票权百分比(B类股20倍投票权);Arcline通过PE基金结构持有B类股,无其他≥5%股东"
+}

@@ -1,0 +1,48 @@
+{
+ "t": "ATHR",
+ "form": "424B4",
+ "filed": "2025-04-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2026353/000164117225003724/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Elixir Technology Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "32.787 %",
+   "pct_after": 32.787
+  },
+  {
+   "name": "Up and Up Ventures Limited",
+   "type": "战略/公司",
+   "pct_after_text": "20.074 %",
+   "pct_after": 20.074
+  },
+  {
+   "name": "Greentown Investments Corporation Limited",
+   "type": "战略/公司",
+   "pct_after_text": "14.052 %",
+   "pct_after": 14.052
+  },
+  {
+   "name": "Nicolas Kuan Liang Lin",
+   "type": "高管董事",
+   "pct_after_text": "13.600 %",
+   "pct_after": 13.6
+  },
+  {
+   "name": "Hao Hu",
+   "type": "高管董事",
+   "pct_after_text": "4.778 %",
+   "pct_after": 4.778
+  },
+  {
+   "name": "Jaclyn Mang Hei Wu",
+   "type": "高管董事",
+   "pct_after_text": "1.617 %",
+   "pct_after": 1.617
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例;董事高管行包含通过关联实体间接持有的股份"
+}

@@ -1,0 +1,48 @@
+{
+ "t": "BTGO",
+ "form": "424B4",
+ "filed": "2026-01-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1740604/000162828026003180/bitgoholdingsinc424b4-janu.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Michael Belshe",
+   "type": "创始人",
+   "pct_after_text": "55.72%",
+   "pct_after": 55.72
+  },
+  {
+   "name": "Entities affiliated with Valor",
+   "type": "VC",
+   "pct_after_text": "11.65%",
+   "pct_after": 11.65
+  },
+  {
+   "name": "Entities affiliated with Redpoint",
+   "type": "VC",
+   "pct_after_text": "9.99%",
+   "pct_after": 9.99
+  },
+  {
+   "name": "Entities affiliated with Craft Ventures",
+   "type": "VC",
+   "pct_after_text": "6.90%",
+   "pct_after": 6.9
+  },
+  {
+   "name": "Entities affiliated with Bridgescale",
+   "type": "PE",
+   "pct_after_text": "5.71%",
+   "pct_after": 5.71
+  },
+  {
+   "name": "Chen Fang",
+   "type": "高管董事",
+   "pct_after_text": "1.62%",
+   "pct_after": 1.62
+  }
+ ],
+ "note": "发行后持股，多类股取总投票权比例；Michael Belshe持有全部B类股票。"
+}

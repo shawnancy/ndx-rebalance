@@ -1,0 +1,24 @@
+{
+ "t": "CCHH",
+ "form": "424B4",
+ "filed": "2025-10-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2074123/000121390025096312/ea0245520-08.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Goh Kok Foong",
+   "type": "高管董事",
+   "pct_after_text": "50.49%",
+   "pct_after": 50.49
+  },
+  {
+   "name": "Lim Soon Huat",
+   "type": "其他",
+   "pct_after_text": "28.99%",
+   "pct_after": 28.99
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，单一普通股，基于19,250,000股。"
+}

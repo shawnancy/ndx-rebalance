@@ -1,0 +1,42 @@
+{
+ "t": "HTLM",
+ "form": "424B4",
+ "filed": "2024-10-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2023153/000149315224038954/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Golden Hill BVI",
+   "type": "战略/公司",
+   "pct_after_text": "69.05%",
+   "pct_after": 69.05
+  },
+  {
+   "name": "Phua Yong Pin",
+   "type": "高管董事",
+   "pct_after_text": "34.53%",
+   "pct_after": 34.53
+  },
+  {
+   "name": "Phua Yong Tat",
+   "type": "高管董事",
+   "pct_after_text": "34.53%",
+   "pct_after": 34.53
+  },
+  {
+   "name": "Summer Capital Pte. Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "8.53%",
+   "pct_after": 8.53
+  },
+  {
+   "name": "Chew Kwang Yong",
+   "type": "高管董事",
+   "pct_after_text": "8.53%",
+   "pct_after": 8.53
+  }
+ ],
+ "note": "发行后持股比例(基于14.5M股)；Phua两人通过Golden Hill BVI间接持有，Chew通过Summer Capital间接持有"
+}

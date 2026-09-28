@@ -1,0 +1,23 @@
+{
+ "t": "CSQR",
+ "cik": 2105398,
+ "form": "424B4",
+ "filed": "2026-07-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2105398/000110465926084293/tm264837-15_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 155020702,
+ "shares_offered": 50000000,
+ "shares_locked": 106887373,
+ "shares_locked_text": "approximately 106,887,373",
+ "lockup_days": 180,
+ "evidence": "Immediately following the consummation of this offering, the holders of approximately 106,887,373 shares of our common stock will be entitled to dispose of their shares following the expiration of an initial 180-day underwriter \"lock-up\" period, subject to the holding period, volume and other restrictions of Rule 144.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "Brookfield及全体董事和执行官共持\"substantially all\"已发行股份,均受180天禁售;除180天期外,1,133,329股员工股还受额外转让限制;摘录未载招股书日期",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "t": "ARDT",
+ "form": "424B4",
+ "filed": "2024-07-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1756655/000119312524181092/d754933d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "EGI",
+   "type": "PE",
+   "pct_after_text": "54.8%",
+   "pct_after": 54.8
+  },
+  {
+   "name": "Pure Health",
+   "type": "战略/公司",
+   "pct_after_text": "21.5%",
+   "pct_after": 21.5
+  },
+  {
+   "name": "ALH Holdings, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  }
+ ],
+ "dropped": [],
+ "note": "IPO发行后持股比例，取未行使绿鞋期权场景；股本基数128,963,328股"
+}

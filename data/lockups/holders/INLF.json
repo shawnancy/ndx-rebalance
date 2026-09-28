@@ -1,0 +1,42 @@
+{
+ "t": "INLF",
+ "form": "424B4",
+ "filed": "2025-01-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1991592/000121390024114202/ea0200353-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "LIANKEN ENTERPRISE LIMITED",
+   "type": "创始人",
+   "pct_after_text": "30.184 %",
+   "pct_after": 30.184
+  },
+  {
+   "name": "TIANHUA ENTERPRISE LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "25.681 %",
+   "pct_after": 25.681
+  },
+  {
+   "name": "XINGCAN ENTERPRISE LIMITED",
+   "type": "高管董事",
+   "pct_after_text": "15.552 %",
+   "pct_after": 15.552
+  },
+  {
+   "name": "WEIBO ENTERPRISE LIMITED",
+   "type": "其他",
+   "pct_after_text": "9.618 %",
+   "pct_after": 9.618
+  },
+  {
+   "name": "Kerui Enterprise Limited",
+   "type": "其他",
+   "pct_after_text": "5.172 %",
+   "pct_after": 5.172
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，普通股；LIANKEN 和 XINGCAN 分别为董事 Wenzao Huang 和 Yunjun Huang 通过 BVI 企业间接持有。"
+}

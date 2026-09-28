@@ -1,0 +1,54 @@
+{
+ "t": "LBRX",
+ "form": "424B4",
+ "filed": "2025-09-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1691082/000119312525201757/d12080d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Deep Track Biotechnology Master Fund, Ltd.",
+   "type": "VC",
+   "pct_after_text": "3.1 %",
+   "pct_after": 3.1
+  },
+  {
+   "name": "Entities affiliated with Vida Ventures",
+   "type": "VC",
+   "pct_after_text": "2.5 %",
+   "pct_after": 2.5
+  },
+  {
+   "name": "Rajul Jain, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "2.5 %",
+   "pct_after": 2.5
+  },
+  {
+   "name": "Entities affiliated with Pontifax",
+   "type": "PE",
+   "pct_after_text": "1.8 %",
+   "pct_after": 1.8
+  },
+  {
+   "name": "Ran Nussbaum",
+   "type": "高管董事",
+   "pct_after_text": "1.8 %",
+   "pct_after": 1.8
+  },
+  {
+   "name": "TCG Crossover Fund II, L.P.",
+   "type": "VC",
+   "pct_after_text": "1.8 %",
+   "pct_after": 1.8
+  },
+  {
+   "name": "Chen Yu, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.8 %",
+   "pct_after": 1.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例，优先股按$15/股IPO价格转换为普通股并计入反稀释调整"
+}

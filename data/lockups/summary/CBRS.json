@@ -1,0 +1,24 @@
+{
+ "t": "CBRS",
+ "cik": 2021728,
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 215110345,
+ "shares_offered": 30000000,
+ "shares_locked": null,
+ "shares_locked_text": "approximately 71.4%",
+ "lockup_days": 180,
+ "evidence": "As a result of the foregoing, substantially all of our outstanding shares of Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to a lock-up agreement or market standoff provisions during the Lock-up Period.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "分十个阶段按财报季度、特定日期及股价触发条件(133% IPO价格)逐步释放，其中非执行员工和董事/高管有不同释放时间表，180天后完全解禁",
+ "note": "原文仅给禁售股份的百分比形式(71.4%+4.9%+23.7%=99%)而非绝对数字；Class B股权和期权视为限制性证券；大部分释放触发于Q1-Q3 2026财报和股价条件",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "股数写法不在证据句里"
+ ]
+}

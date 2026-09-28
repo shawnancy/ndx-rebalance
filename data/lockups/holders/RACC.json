@@ -1,0 +1,24 @@
+{
+ "t": "RACC",
+ "form": "424B4",
+ "filed": "2026-05-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2118032/000119312526232525/d43164d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Research Alliance Holdings III LLC",
+   "type": "VC",
+   "pct_after_text": "16.7 %",
+   "pct_after": 16.7
+  },
+  {
+   "name": "Matthew Hammond, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "16.7 %",
+   "pct_after": 16.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径；包含 founder shares（Class B）和 private placement shares；Matthew Hammond 为 sponsor 单独董事，被认定为对 sponsor 持有证券的受益所有人。"
+}

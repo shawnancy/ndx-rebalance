@@ -1,0 +1,36 @@
+{
+ "t": "BRIA",
+ "form": "424B4",
+ "filed": "2024-11-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2000230/000121390024103340/ea0200081-19.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Salim Podiono",
+   "type": "创始人",
+   "pct_after_text": "92.1%",
+   "pct_after": 92.1
+  },
+  {
+   "name": "SF Shim",
+   "type": "其他",
+   "pct_after_text": "14.2%",
+   "pct_after": 14.2
+  },
+  {
+   "name": "Mr. Kendrew Hartanto",
+   "type": "高管董事",
+   "pct_after_text": "9.6%",
+   "pct_after": 9.6
+  },
+  {
+   "name": "Nursalim",
+   "type": "创始人",
+   "pct_after_text": "9.4%",
+   "pct_after": 9.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径；多类股（Salim Podiono）取合计投票权，其他为 Class A 持股比例；Salim Podiono 特别持有全部 Class B 股份（5,625,000 股）"
+}

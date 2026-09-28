@@ -1,0 +1,54 @@
+{
+ "t": "AKTS",
+ "form": "424B4",
+ "filed": "2026-01-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2035832/000119312526009078/d875386d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with MPM BioImpact LLC",
+   "type": "VC",
+   "pct_after_text": "17.4%",
+   "pct_after": 17.4
+  },
+  {
+   "name": "Entities affiliated with VV Manager II, LLC",
+   "type": "VC",
+   "pct_after_text": "9.5%",
+   "pct_after": 9.5
+  },
+  {
+   "name": "Helen S. Kim, MBA",
+   "type": "高管董事",
+   "pct_after_text": "9.5%",
+   "pct_after": 9.5
+  },
+  {
+   "name": "Todd Foley, MBA",
+   "type": "高管董事",
+   "pct_after_text": "7.6%",
+   "pct_after": 7.6
+  },
+  {
+   "name": "Entities affiliated with EcoR1 Capital, LLC",
+   "type": "VC",
+   "pct_after_text": "5.0%",
+   "pct_after": 5.0
+  },
+  {
+   "name": "Oleg Nodelman",
+   "type": "高管董事",
+   "pct_after_text": "5.0%",
+   "pct_after": 5.0
+  },
+  {
+   "name": "Matthew Roden, PhD",
+   "type": "高管董事",
+   "pct_after_text": "2.4%",
+   "pct_after": 2.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例；EcoR1 Capital LLC和Oleg Nodelman另持Class A可转换优先股"
+}

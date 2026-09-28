@@ -1,0 +1,21 @@
+{
+ "t": "QMLS",
+ "cik": 2084026,
+ "form": "424B4",
+ "filed": "2026-07-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2084026/000143774926023622/quma20260714_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 31727001,
+ "shares_offered": null,
+ "shares_locked": 12678323,
+ "shares_locked_text": "12,678,323",
+ "lockup_days": 180,
+ "evidence": "Our directors, officers and greater than 10% shareholders have entered into contractual lock-up agreements with respect to an aggregate of 12,678,323 shares of common stock, plus 610,376 shares of common stock underlying options and warrants.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "直接上市(Direct Listing)模式仅董事、高管及>10%股东签lock-up，其他股东上市后可立即卖出；610,376股期权/认股权证underlying股票亦在协议约束下",
+ "valid": true,
+ "reasons": []
+}

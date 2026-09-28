@@ -1,0 +1,23 @@
+{
+ "t": "PS",
+ "cik": 2026053,
+ "form": "424B4",
+ "filed": "2026-04-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2026053/000114036126018103/ny20040230x30_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 400000000,
+ "shares_offered": null,
+ "shares_locked": 375400000,
+ "shares_locked_text": "375.4 million",
+ "lockup_days": 180,
+ "evidence": "The 375.4 million shares of our common stock to be held by our pre-IPO owners and management and the 16.6 million shares of our common stock to be delivered to the private placement investors in the combined private placement will be \"restricted securities,\" as defined in Rule 144 and may not be sold absent registration under the Securities Act or compliance with Rule 144 or in reliance on another exemption from registration.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "除375.4百万股pre-IPO持股人和管理层外，还有16.6百万股私募投资者也是受限证券，共受180天禁售协议约束；pre-IPO持股人另有一年转让限制",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

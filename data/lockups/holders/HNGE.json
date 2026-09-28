@@ -1,0 +1,60 @@
+{
+ "t": "HNGE",
+ "form": "424B4",
+ "filed": "2025-05-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1673743/000119312525125262/d829170d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Entities affiliated with Insight",
+   "type": "VC",
+   "pct_after_text": "19.2%",
+   "pct_after": 19.2
+  },
+  {
+   "name": "Daniel Perez",
+   "type": "高管董事",
+   "pct_after_text": "18.3%",
+   "pct_after": 18.3
+  },
+  {
+   "name": "Entities affiliated with Atomico",
+   "type": "VC",
+   "pct_after_text": "13.7%",
+   "pct_after": 13.7
+  },
+  {
+   "name": "Entities affiliated with Tiger Global",
+   "type": "VC",
+   "pct_after_text": "8.3%",
+   "pct_after": 8.3
+  },
+  {
+   "name": "Entities affiliated with 11.2 Capital",
+   "type": "VC",
+   "pct_after_text": "7.5%",
+   "pct_after": 7.5
+  },
+  {
+   "name": "Entities affiliated with Coatue",
+   "type": "VC",
+   "pct_after_text": "7.3%",
+   "pct_after": 7.3
+  },
+  {
+   "name": "Entities affiliated with Bessemer Venture Partners",
+   "type": "VC",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  },
+  {
+   "name": "Gabriel Mecklenburg",
+   "type": "高管董事",
+   "pct_after_text": "6.9%",
+   "pct_after": 6.9
+  }
+ ],
+ "note": "发行后按投票权比例排序，多类股结构（Class A和B投票权权重不同）"
+}

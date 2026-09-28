@@ -1,0 +1,60 @@
+{
+ "t": "AMSS",
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1851491/000157587226000343/amass010_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "MVL Inc. (f/k/a Alchemi Project Inc.)",
+   "type": "其他",
+   "pct_after_text": "18.8%",
+   "pct_after": 18.8
+  },
+  {
+   "name": "Kayus Limited",
+   "type": "PE",
+   "pct_after_text": "13.0%",
+   "pct_after": 13.0
+  },
+  {
+   "name": "Desmond Lynn",
+   "type": "其他",
+   "pct_after_text": "11.0%",
+   "pct_after": 11.0
+  },
+  {
+   "name": "Z1967 Limited",
+   "type": "PE",
+   "pct_after_text": "7.7%",
+   "pct_after": 7.7
+  },
+  {
+   "name": "Kukus LLC",
+   "type": "PE",
+   "pct_after_text": "7.0%",
+   "pct_after": 7.0
+  },
+  {
+   "name": "Charles Jobson",
+   "type": "其他",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Kayus LLC",
+   "type": "PE",
+   "pct_after_text": "6.0%",
+   "pct_after": 6.0
+  },
+  {
+   "name": "Davies Holdings Europe Kft.",
+   "type": "战略/公司",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，基于 Common Stock 总股数 11,367,278 股，包含可行权期权和认股权证，Kayus Limited 系列由同一方共同控制。"
+}

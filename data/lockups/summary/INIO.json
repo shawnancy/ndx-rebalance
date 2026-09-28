@@ -1,0 +1,24 @@
+{
+ "t": "INIO",
+ "cik": 2109150,
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2109150/000119312526256992/liberty_-_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 750000000,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "beginning 181 days after the date of this prospectus, subject to the terms of the lock-up agreements described below, all remaining shares will become eligible for sale in the public market, of which 660,168,888 shares will be held by affiliates and subject to the volume and other restrictions of Rule 144, as described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "承销商可凭裁量提前释放禁售证券",
+ "note": "IPO首次发行；660,168,888股系affiliates持有人，受Rule 144交易量和方式限制；remaining shares总数原文未明确给出",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

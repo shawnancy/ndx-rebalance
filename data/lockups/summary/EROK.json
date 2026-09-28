@@ -1,0 +1,21 @@
+{
+ "t": "EROK",
+ "cik": 2104882,
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2104882/000119312526224302/d37594d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": 17300000,
+ "shares_locked": 112825000,
+ "shares_locked_text": "112,825,000",
+ "lockup_days": 180,
+ "evidence": "112,825,000 Class A shares will be eligible for sale upon the expiration of the lock-up agreements, 93.2% of which are Class A shares that may be issued in exchange for OpCo Units (together with the cancellation of a corresponding number of Class B shares), beginning 180 days after the date of this prospectus when permitted under Rule 144 or Rule 701.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "Double Eagle及Shallow Valley Owners另有18个月或$3亿融资额触发的额外禁售期",
+ "note": "双层股权结构(Class A/B+OpCo Units);新发17.3M股自由流通;现有股东所有权益禁售180天;禁售期后按Rule 144/701规则分批释放,其中93.2%为OpCo Units赎回所得",
+ "valid": true,
+ "reasons": []
+}

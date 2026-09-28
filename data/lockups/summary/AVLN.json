@@ -1,0 +1,24 @@
+{
+ "t": "AVLN",
+ "cik": 1540171,
+ "form": "424B4",
+ "filed": "2026-04-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1540171/000119312526197686/424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 41812047,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, all of our directors and executive officers, and the holders of substantially all of our capital stock and securities convertible into or exchangeable for our capital stock have entered into lock-up agreements with the underwriters and/or are subject to market standoff agreements or other agreements with us, which prevent them from selling any of our common stock or any securities convertible into or exercisable or exchangeable for common stock for a period of not less than 180 days from the date of this prospectus without the prior written consent of Morgan Stanley & Co. LLC, Jefferies LLC, and Evercore Group L.L.C., subject to certain exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "摘录未明确给出被禁售股数，仅说'substantially all'现有股东/高管/董事受禁售；新发行股票可自由交易但关联方受限；Rule 144/Rule 701 有豁免条款",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

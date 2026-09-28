@@ -1,0 +1,18 @@
+{
+ "t": "OWLS",
+ "form": "424B4",
+ "filed": "2025-10-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2025416/000119312525240757/d800443d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Darren Wang",
+   "type": "创始人",
+   "pct_after_text": "67.2%",
+   "pct_after": 67.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例（Class A 单票权、Class B 十倍投票权）；文本摘录仅涉及 CEO，缺乏完整股东表"
+}

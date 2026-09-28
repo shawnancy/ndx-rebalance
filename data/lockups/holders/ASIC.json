@@ -1,0 +1,24 @@
+{
+ "t": "ASIC",
+ "form": "424B4",
+ "filed": "2025-06-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2040491/000110465925058563/tm2428146-13_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Stuart J. Zimmer",
+   "type": "创始人",
+   "pct_after_text": "85.4%",
+   "pct_after": 85.4
+  },
+  {
+   "name": "Justin Cohen",
+   "type": "高管董事",
+   "pct_after_text": "3.1%",
+   "pct_after": 3.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，仅列≥5%股东及≥1%董事高管"
+}

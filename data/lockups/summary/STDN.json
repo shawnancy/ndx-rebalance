@@ -1,0 +1,10 @@
+{
+ "t": "STDN",
+ "form": "424B4",
+ "filed": "2026-07-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2086716/000121390026078747/ea0276071-13.htm",
+ "valid": false,
+ "reasons": [
+  "haiku 失败: Expecting ',' delimiter: line 12 column 73 (char 1039)"
+ ]
+}

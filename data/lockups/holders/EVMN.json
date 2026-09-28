@@ -1,0 +1,60 @@
+{
+ "t": "EVMN",
+ "form": "424B4",
+ "filed": "2025-11-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2044725/000119312525270066/d771358d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities Affiliated with Pivotal bioVenture",
+   "type": "VC",
+   "pct_after_text": "11.2 %",
+   "pct_after": 11.2
+  },
+  {
+   "name": "LSP 7 Coöperatief UA",
+   "type": "VC",
+   "pct_after_text": "11.2 %",
+   "pct_after": 11.2
+  },
+  {
+   "name": "Rob Hopfner, R.Ph., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "11.2 %",
+   "pct_after": 11.2
+  },
+  {
+   "name": "Felice Verduyn-van Weegen",
+   "type": "高管董事",
+   "pct_after_text": "11.2 %",
+   "pct_after": 11.2
+  },
+  {
+   "name": "Entities Affiliated with RA Capital",
+   "type": "VC",
+   "pct_after_text": "7.3 %",
+   "pct_after": 7.3
+  },
+  {
+   "name": "BioDiscovery 6 FPCI",
+   "type": "PE",
+   "pct_after_text": "6.0 %",
+   "pct_after": 6.0
+  },
+  {
+   "name": "SymBiosis II, LLC",
+   "type": "PE",
+   "pct_after_text": "4.3 %",
+   "pct_after": 4.3
+  },
+  {
+   "name": "Entities Affiliated with B Capital Group",
+   "type": "VC",
+   "pct_after_text": "3.7 %",
+   "pct_after": 3.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(IPO完全稀释基础,假设承销商不行使超额配售权); 列出所有≥5%股东及持股≥1%执行官董事,共8人"
+}

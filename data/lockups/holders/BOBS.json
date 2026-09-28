@@ -1,0 +1,31 @@
+{
+ "t": "BOBS",
+ "form": "424B4",
+ "filed": "2026-02-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2085187/000162828026005868/bobsdiscountfurnitureinc42.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Bain Capital",
+   "type": "PE",
+   "pct_after_text": "75.4%",
+   "pct_after": 75.4
+  },
+  {
+   "name": "Edmond J. English",
+   "type": "高管董事",
+   "pct_after_text": "3.0%",
+   "pct_after": 3.0
+  }
+ ],
+ "dropped": [
+  {
+   "name": "William G. (\"Bill\") Barton",
+   "type": "高管董事",
+   "pct_after_text": "1.6%",
+   "pct_after": 1.6
+  }
+ ],
+ "note": "发行后持股比例（不含期权），普通股单一类"
+}

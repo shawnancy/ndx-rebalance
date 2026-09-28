@@ -1,0 +1,60 @@
+{
+ "t": "JUNS",
+ "form": "424B4",
+ "filed": "2024-12-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1679628/000149315224048318/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Christer Rosén",
+   "type": "高管董事",
+   "pct_after_text": "38.2 %",
+   "pct_after": 38.2
+  },
+  {
+   "name": "Marshall Hayward, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "11.0 %",
+   "pct_after": 11.0
+  },
+  {
+   "name": "Dr. Claes Wahlestedt, M.D., Ph.D.",
+   "type": "其他",
+   "pct_after_text": "10.1 %",
+   "pct_after": 10.1
+  },
+  {
+   "name": "Shaun Brothers",
+   "type": "其他",
+   "pct_after_text": "6.2 %",
+   "pct_after": 6.2
+  },
+  {
+   "name": "Alexander Rosén",
+   "type": "高管董事",
+   "pct_after_text": "4.9 %",
+   "pct_after": 4.9
+  },
+  {
+   "name": "Alison D. Silva",
+   "type": "高管董事",
+   "pct_after_text": "2.6 %",
+   "pct_after": 2.6
+  },
+  {
+   "name": "Saleem Elmasri",
+   "type": "高管董事",
+   "pct_after_text": "2.0 %",
+   "pct_after": 2.0
+  },
+  {
+   "name": "Dana Eschenburg Perez",
+   "type": "高管董事",
+   "pct_after_text": "1.2 %",
+   "pct_after": 1.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；包含60天内可行权的期权等衍生工具；发行新增2,750,000股"
+}

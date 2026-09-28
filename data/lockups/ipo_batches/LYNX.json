@@ -1,0 +1,34 @@
+{
+  "t": "LYNX",
+  "cik": 2132582,
+  "form": "424B4",
+  "filed": "2026-08-19",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2132582/000119312526356916/d23330d424b4.htm",
+  "listed_shares_m": 115.949,
+  "float_base_m": 17.0,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:11:04Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文描述了多个lock-up安排(IPO Lock-Up 180/360/540/720天按25%/25%/25%/remainder比例; Trive LP Distribution Lock-Up采用同样比例; Charter Lock-Up 720天), 但未提供具体的解禁日期和各批次股数对应表。原文仅给出天数间隔和百分比百分比, 缺少IPO日期锚点, 无法推算具体的解禁日历日期和股数, 无法构建完整的解禁释放表。",
+    "Trive LP Distribution的受益者持股约占IPO后总股数的58%, 但原文未明确该部分具体股数, 亦未提供该部分的独立解禁时间表。"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      651951,
+      661725
+    ],
+    "n_lockup_windows_total": 5,
+    "n_extra_windows_included": 3,
+    "excerpt_chars": 15063,
+    "html_flat_chars": 915117
+  }
+}

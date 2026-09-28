@@ -1,0 +1,23 @@
+{
+ "t": "ELOX",
+ "cik": 1035354,
+ "form": "424B4",
+ "filed": "2026-06-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1035354/000119312526263914/d35071d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 5113935,
+ "shares_locked_text": "155,016 shares of common stock and 4,958,919 shares of common stock issuable upon exercise of pre-funded warrants",
+ "lockup_days": 90,
+ "evidence": "Upon the expiration of the 90-day lock-up period, all 155,016 shares of common stock and 4,958,919 shares of common stock issuable upon exercise of pre-funded warrants subject to such lock-up restrictions will become eligible for sale, subject to the limitations discussed below and, in the case of the pre-funded warrants, limitations on exercise set forth in the pre-funded warrants.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "预融资认股权证可行使4,958,919股;大多数股票无lock-up限制;公司和关键股东(董事、高管、5%股东)受90天禁售约束",
+ "valid": false,
+ "reasons": [
+  "原文写法「155,016 shares of common stock and 4,958,919 shares of common stock issuable upon exercise of pre-funded warrants」换算不等于 shares_locked(疑似推算)"
+ ]
+}

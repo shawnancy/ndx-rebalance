@@ -1,0 +1,18 @@
+{
+ "t": "MCTA",
+ "form": "424B4",
+ "filed": "2025-10-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2035992/000121390025100671/ea0213012-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kit Wong",
+   "type": "创始人",
+   "pct_after_text": "91.65%",
+   "pct_after": 91.65
+  }
+ ],
+ "dropped": [],
+ "note": "发行后合计投票权；多类股结构（Class A Ordinary Shares 69.29%、Class B Ordinary Shares 100%）"
+}

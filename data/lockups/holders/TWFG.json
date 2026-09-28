@@ -1,0 +1,25 @@
+{
+ "t": "TWFG",
+ "form": "424B4",
+ "filed": "2024-07-19",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2007596/000162828024032250/twfginc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bunch Family Holdings, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "94.41%",
+   "pct_after": 94.41
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Richard F. (\"Gordy\") Bunch III",
+   "type": "创始人",
+   "pct_after_text": "94.41%",
+   "pct_after": 94.41
+  }
+ ],
+ "note": "发行后合计投票权(Combined voting power)口径; 三类股(A/B/C)结构, Class C股十倍投票权; Richard F. Bunch III通过Bunch Family Holdings间接持有所有股份"
+}

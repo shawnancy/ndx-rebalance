@@ -1,0 +1,21 @@
+{
+ "t": "KARD",
+ "cik": 2123613,
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2123613/000119312526276096/d107928d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 89339121,
+ "shares_offered": null,
+ "shares_locked": 64301057,
+ "shares_locked_text": "64,301,057",
+ "lockup_days": 180,
+ "evidence": "We, all of our directors and executive officers, and the holders of substantially all of our capital stock and securities convertible into or exchangeable for our capital stock, representing 64,301,057 shares of our common stock, have entered into lock-up agreements with the underwriters and/or are subject to market standoff agreements or other agreements with us, which prevents them from selling any of our common stock or any securities convertible into or exercisable or exchangeable for common stock for a period of not less than 180 days from the date of this prospectus without the prior written consent of J.P. Morgan Securities LLC, Jefferies LLC, Leerink Partners LLC and TD Securities (USA) LLC, subject to certain exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "KARD Nasdaq IPO；64.3M股(约占上市后流通股72%)受180天lock-up约束，涵盖所有董事、执行官及实质上所有现有股东及可转换证券持有人；除新发行股外，原有股票均为Rule 144定义的受限证券",
+ "valid": true,
+ "reasons": []
+}

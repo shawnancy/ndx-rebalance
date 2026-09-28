@@ -1,0 +1,24 @@
+{
+ "t": "CTW",
+ "form": "424B4",
+ "filed": "2025-08-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2047148/000121390025072850/ea0229974-16.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Ryuichi Sasaki",
+   "type": "高管董事",
+   "pct_after_text": "98.6%",
+   "pct_after": 98.6
+  },
+  {
+   "name": "CTW (BVI) LTD",
+   "type": "其他",
+   "pct_after_text": "98.6%",
+   "pct_after": 98.6
+  }
+ ],
+ "note": "发行后投票权比例(多类股按合计);两行代表同一实际控制人"
+}

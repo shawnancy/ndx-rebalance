@@ -1,0 +1,36 @@
+{
+ "t": "RCT",
+ "form": "424B4",
+ "filed": "2025-03-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027360/000164117225000222/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Christina Byland",
+   "type": "其他",
+   "pct_after_text": "43.62%",
+   "pct_after": 43.62
+  },
+  {
+   "name": "Hans Rudolf Kunz",
+   "type": "高管董事",
+   "pct_after_text": "18.04%",
+   "pct_after": 18.04
+  },
+  {
+   "name": "Nikolaus Senn",
+   "type": "高管董事",
+   "pct_after_text": "17.01%",
+   "pct_after": 17.01
+  },
+  {
+   "name": "Justin Floyd",
+   "type": "高管董事",
+   "pct_after_text": "5.02%",
+   "pct_after": 5.02
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股口径; 包括 CLN 与债权转股"
+}

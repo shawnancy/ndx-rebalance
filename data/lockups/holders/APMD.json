@@ -1,0 +1,11 @@
+{
+ "t": "APMD",
+ "form": "424B4",
+ "filed": "2026-07-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1745648/000119312526328422/apmd_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "摘录中未列出具体主要股东表格，仅提及Alpha Wave是主要股东（将有董事代表），整体提到发行前管理层及5%以上股东合计占投票权85%、发行后59%，但无单个股东的具体比例数据"
+}

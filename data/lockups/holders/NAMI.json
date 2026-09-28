@@ -1,0 +1,54 @@
+{
+ "t": "NAMI",
+ "form": "424B4",
+ "filed": "2024-12-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1967631/000121390024106418/ea0200131-21.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Namibox Technology Limited",
+   "type": "创始人",
+   "pct_after_text": "28.53%",
+   "pct_after": 28.53
+  },
+  {
+   "name": "Talented Ventures III Limited",
+   "type": "PE",
+   "pct_after_text": "13.97%",
+   "pct_after": 13.97
+  },
+  {
+   "name": "China Broadband Capital Partners III, L.P.",
+   "type": "PE",
+   "pct_after_text": "13.97%",
+   "pct_after": 13.97
+  },
+  {
+   "name": "Wu Capital Limited",
+   "type": "PE",
+   "pct_after_text": "13.93%",
+   "pct_after": 13.93
+  },
+  {
+   "name": "QM Angel I Limited",
+   "type": "VC",
+   "pct_after_text": "9.41%",
+   "pct_after": 9.41
+  },
+  {
+   "name": "Rockbridge Angel Investments Limited",
+   "type": "VC",
+   "pct_after_text": "6.36%",
+   "pct_after": 6.36
+  },
+  {
+   "name": "Jun Jiang",
+   "type": "高管董事",
+   "pct_after_text": "4.86%",
+   "pct_after": 4.86
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例，所有优先股已按一比一比例转换为普通股"
+}

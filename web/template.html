@@ -62,7 +62,11 @@ tr.past td{color:var(--muted)}
 tr.hit td{background:var(--accent-soft)}
 .chip{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-left:6px}
 .chip.cap{border-color:var(--accent);color:var(--accent)}
+.chip.warn{border-color:var(--warn);color:var(--warn)}
+a.chip{color:var(--accent);text-decoration:none}
 .up{color:var(--good)} .flat{color:var(--muted)}
+.days-hi{color:var(--bad);font-weight:600}
+.days-lo{color:var(--muted)}
 
 .win{border:1px solid var(--line);border-left:3px solid var(--warn);border-radius:8px;background:var(--surface);padding:14px 16px;margin-top:12px}
 .win h3{margin:0 0 8px;font-size:15px;font-family:"Source Serif 4",Georgia,serif}
@@ -142,14 +146,48 @@ footer strong{color:var(--ink)}
 #lockupsource a{color:var(--accent)}
 .langtoggle{position:fixed;top:14px;right:16px;z-index:50;font-size:12.5px;padding:6px 11px}
 @media (max-width:480px){.langtoggle{top:8px;right:8px;padding:5px 9px;font-size:12px}}
+
+/* 标签栏 */
+.tabbar{display:flex;gap:8px;margin:0 0 24px;flex-wrap:wrap}
+.tabbtn{display:inline-block;text-decoration:none;font:inherit;font-size:13.5px;padding:8px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.tabbtn:hover{border-color:var(--accent);color:var(--ink)}
+.tabbtn.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+
+/* 解禁日历表 */
+#unlocktbl th[data-sort]{cursor:pointer;user-select:none}
+#unlocktbl th[data-sort]:hover{color:var(--ink)}
+#unlocktbl th .arrow{display:inline-block;margin-left:3px;font-size:10px}
+#unlocktbl tr.morerow td{text-align:center;padding:8px;cursor:default;background:var(--surface-2)}
+#unlocktbl tr.morerow:hover td{background:var(--surface-2)}
+#unlocktbl tr.morerow button{font-size:12.5px}
+#unlocktbl th,#unlocktbl td{padding:9px 7px;font-size:12.5px}
+#unlocktbl td.name{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#unlocktbl th:nth-child(3),#unlocktbl td:nth-child(3){text-align:left}
+#unlocktbl tbody tr.urow{cursor:pointer}
+#unlocktbl tbody tr.urow:hover td{background:var(--surface-2)}
+#unlocktbl tbody tr.urow.open td{background:var(--accent-soft)}
+#unlocktbl tr.udetail td{white-space:normal;text-align:left;background:var(--surface-2);padding:14px 16px}
+.udl{display:grid;grid-template-columns:120px 1fr;gap:8px 16px;margin:0;font-size:13px;max-width:900px}
+.udl dt{color:var(--muted)} .udl dd{margin:0;font-family:inherit}
+.udl .neg,.neg-txt{color:var(--bad)} .udl .pos,.pos-txt{color:var(--good)}
+.htbl{border-collapse:collapse;min-width:0;width:auto;margin-top:6px;font-size:12.5px}
+.htbl th,.htbl td{padding:4px 10px;text-align:right;white-space:nowrap}
+.htbl th:first-child,.htbl td:first-child{text-align:left}
+@media (max-width:600px){.udl{grid-template-columns:1fr}.udl dt{margin-top:6px}}
 </style>
 
 <button type="button" id="langtoggle" class="langtoggle" title="Switch language / 切换语言">EN</button>
 <div class="wrap">
 <p class="eyebrow" data-i18n="eyebrow">Nasdaq-100 · 调仓权重与被动买盘</p>
 <h1 data-i18n="h1">纳指调仓权重台</h1>
-<p class="sub" data-i18n="subTop">一只股票解禁之后，能自由买卖的股数变多，纳指给它的份额「权重」就会在下一个调仓日往上调，跟踪指数的基金必须照着买。这个页面算的就是：下一轮调多少、基金要买多少钱、什么时候进出场。默认载入 SpaceX。</p>
+<p class="sub" data-i18n="subTop">一只股票解禁之后，能自由买卖的股数变多，纳指给它的份额「权重」就会在下一个调仓日往上调，跟踪指数的基金必须照着买。这个页面算的就是：下一轮调多少、基金要买多少钱、什么时候进出场。默认载入 SpaceX。往下是「美股解禁日历」：近 3 个月哪些美股要解禁、解禁比例、主要解禁方、过往解禁时的股价反应和预计波动。</p>
 
+<nav class="tabbar" id="tabbar">
+  <a class="tabbtn" href="#tab-ndx" data-i18n="tabNdx">纳指调仓权重 ↓</a>
+  <a class="tabbtn" href="#tab-unlock" data-i18n="tabUnlock">美股解禁日历 ↓</a>
+</nav>
+
+<section id="tab-ndx">
 <div class="stocksearch">
   <label for="stocksearch-input" data-i18n="searchLabel">搜美股<span class="term">按代码或公司名过滤下表</span></label>
   <span class="hint" data-i18n="searchHint">下面是纳指 100 全部 101 只成分股，默认按权重降序；点任意一行 = 选中它，自动把「参数」栏和下面这张卡换成它——旧股没有解禁表，「下一轮会发生什么」显示持平是对的。这个框只过滤下表，不用下拉。</span>
@@ -196,6 +234,49 @@ footer strong{color:var(--ink)}
 <p class="sub" data-i18n="windowsSub">历史上有肉的只有「参考日之后 → 官方公告之前」这一段。公告之后再进场，三组数据都没赚到：2023 纳指特别再平衡 +0.14%、3 个单股案例 −2.7%、SpaceX 7 月 −2.3%、9 月公布后三个交易日 −5.1%。</p>
 <div id="windows"></div>
 
+</section>
+
+<section id="tab-unlock">
+<h2 data-i18n="h1Unlock">美股解禁日历</h2>
+<p class="sub" data-i18n="unlockIntro">IPO 时内部人承诺一段时间不卖，到期那天这批股票能卖了，叫「解禁」。下表按日期列出近 13 个月上市的美股接下来的解禁：解禁多少股、按现价值多少钱、相当于平时几天的成交量——天数越大，砸盘压力越大。</p>
+
+<div class="changes" id="unlockcards"></div>
+
+<div class="chipbar" id="unlockchipbar"></div>
+
+<div class="stocksearch" style="max-width:360px">
+  <label for="unlocksearch-input" data-i18n="unlockSearchLabel">搜代码或公司名</label>
+  <input id="unlocksearch-input" autocomplete="off" data-i18n-placeholder="unlockSearchPlaceholder" placeholder="比如 SPCX">
+</div>
+
+<p class="hint" data-i18n="unlockClickHint" style="margin:0 0 8px">点任意一行，展开看主要解禁方、过往解禁时的股价反应、预计波动怎么算的。</p>
+<div class="tablewrap">
+<table id="unlocktbl">
+  <thead><tr>
+    <th data-sort="d"><span data-i18n="uThDate">日期</span><span class="arrow"></span></th>
+    <th data-i18n="thTicker">代码</th>
+    <th data-i18n="thCompany">公司</th>
+    <th data-i18n="uThShares">解禁股数(M)</th>
+    <th data-sort="ratio_float"><span data-i18n="uThRatio">占流通</span><span class="arrow"></span></th>
+    <th data-sort="val_bn"><span data-i18n="uThVal">按现价市值</span><span class="arrow"></span></th>
+    <th data-sort="days_adv"><span data-i18n="uThDays">÷日均量(天)</span><span class="arrow"></span></th>
+    <th data-i18n="uThPx">现价 / 发行价</th>
+    <th data-sort="exp_med"><span data-i18n="uThExp">预计后20日</span><span class="arrow"></span></th>
+    <th data-i18n="uThSrc">口径</th>
+  </tr></thead>
+  <tbody></tbody>
+</table>
+</div>
+
+<ul class="notes">
+  <li><strong data-i18n="unote1strong">招股书：</strong><span data-i18n="unote1text">SEC 424B4 招股书原文给出的解禁股数：分批表（人工核对或 AI 抽取）或「受禁售约束 X 股、禁售 N 天」的原句（AI 抽取，程序核对原句和数字都在招股书里才采用）；日期带「约」的是推算的。</span></li>
+  <li><strong data-i18n="unote2strong">估算上界：</strong><span data-i18n="unote2text">招股书没写被锁股数时的估算：招股书写明「几乎全部老股东签禁售」的，用发行后总股本 − 发行股数；否则用 Yahoo 总股本 − 发行股数。日期取 MarketBeat 或招股书日 + 禁售天数。只当量级参考；海外已上市公司 / ADR 不估股数（显示「—」）。</span></li>
+  <li><strong data-i18n="unote3strong">SPAC：</strong><span data-i18n="unote3text">解禁的是发起人股，合并前按 ~$10 信托价交易，不估股数。</span></li>
+  <li id="unlockAsofNote"></li>
+</ul>
+</section>
+
+<section id="tab-ref">
 <h2 data-i18n="h2Inclusion">纳入检查</h2>
 <p class="sub" data-i18n="inclusionSub">输入一家公司的市值，看它插进现有纳指 100 成分股里第几名、够不够新股「快速纳入」的门槛（前 40 名）。年度重构用的 75/100/125 名线规则，以纳指方法论原文为准，这里只给名次。</p>
 <div class="grid" style="max-width:340px;margin-bottom:12px">
@@ -308,6 +389,9 @@ footer strong{color:var(--ink)}
   <li data-i18n="howto3">只盯权重变化 ≥ 0.3 个百分点的那一轮，小于这个数不值得做。</li>
   <li data-i18n="howto4">按窗口进出，逐条核对放弃条件。</li>
 </ul>
+</section>
+
+
 
 <footer id="footer" data-i18n="footer">
   <strong>成色</strong>：日程与 3 倍封顶公式 =【实测·规则原文，已用真实公告日核对】；锚点之外的权重外推、未来股价、解禁股被认定为自由流通的比例 =【假设】。<br>
@@ -325,7 +409,7 @@ const I18N_EN={
 title:"Nasdaq-100 Rebalance Weight Desk",
 eyebrow:"Nasdaq-100 · Rebalance Weight &amp; Passive Demand",
 h1:"Nasdaq-100 Rebalance Weight Desk",
-subTop:"After a stock&#39;s lockup expires, more shares become freely tradeable, so Nasdaq bumps up its share of the index &mdash; its &ldquo;weight&rdquo; &mdash; at the next rebalance, and funds tracking the index have to buy accordingly. This page works out exactly that: how much the weight moves next, how much money funds have to buy, and when to get in and out. Loads SpaceX by default.",
+subTop:"After a stock&#39;s lockup expires, more shares become freely tradeable, so Nasdaq bumps up its share of the index &mdash; its &ldquo;weight&rdquo; &mdash; at the next rebalance, and funds tracking the index have to buy accordingly. This page works out exactly that: how much the weight moves next, how much money funds have to buy, and when to get in and out. Loads SpaceX by default. Further down is the US lockup calendar: which US stocks unlock in the next 3 months, how big each unlock is, who the main holders are, how the price reacted to past unlocks, and the expected move.",
 searchLabel:'Search a US stock<span class="term">filter the table below by ticker or company name</span>',
 searchHint:'Below are all 101 Nasdaq-100 constituents, sorted by weight descending by default; click any row to select it &mdash; it swaps the &ldquo;Parameters&rdquo; panel and the card below to that stock. Older stocks have no lockup table, so seeing &ldquo;flat&rdquo; under &ldquo;What happens next&rdquo; is expected behavior. This box only filters the table below, no dropdown.',
 searchPlaceholder:"e.g. NVDA or NVIDIA",
@@ -391,6 +475,15 @@ vthTicker:"Ticker", vthCompany:"Company", vthRaw:"Direct calc", vthCapped:"After
 note1strong:"Why the direct calculation is wrong:", note1text:"Raw modified market caps put the top 5 at a combined 45.9%, over the 40% red line &mdash; Nasdaq&#39;s rule then redistributes the giants&#39; excess weight proportionally to the rest of the constituents, so giants get overstated and smaller names get understated.",
 note2strong:"Why it&#39;s still off after adding capping:", note2text:"&#9312; the index only re-caps on rebalance days, then lets weight drift with price afterward &mdash; but this recalculation re-caps using today&#39;s data, a different basis; &#9313; the constituent list here is an approximation of 90 names, with some missing and some extra, so the total market cap is off.",
 note3strong:"So this page only reports the change in weight and the dollar amount of buying for the same stock.", note3text:"SpaceX&#39;s December round = 2.65% (actual holding after the Sep 18 rebalance) &times; 7607 &divide; 5608 = 3.59% (at the anchor-day price; about 3.61% after the page adjusts to the latest price).",
+tabNdx:"Nasdaq-100 weights ↓",
+tabUnlock:"US lockup calendar ↓",
+h1Unlock:"US stock lockup calendar",
+unlockIntro:'When a company IPOs, insiders agree not to sell for a while; once that period ends, that batch of shares can be sold &mdash; that&#39;s a &ldquo;lockup expiration.&rdquo; The table below lists upcoming lockup expirations for US stocks that listed in roughly the last 13 months: how many shares unlock, what they&#39;re worth at the current price, and how many days of normal trading volume that equals &mdash; the more days, the heavier the potential selling pressure.',
+unlockSearchLabel:"Search by ticker or company name",
+uThDate:"Date", uThShares:"Shares unlocked (M)", uThVal:"Value at current price", uThDays:"&divide; ADV (days)", uThPx:"Price / IPO price", uThRatio:"% of float", uThExp:"Expected T+20", unlockClickHint:"Click any row to see the main unlocking holders, past unlock reactions and how the expected move is derived.", uThSrc:"Basis",
+unote1strong:"Prospectus:", unote1text:'Unlock share counts stated in the SEC 424B4 prospectus: either a batch schedule (manually verified or AI-extracted) or the sentence &ldquo;X shares subject to lock-up, N days&rdquo; (AI-extracted, used only after code confirms both the sentence and the number appear in the prospectus); a date marked &ldquo;est.&rdquo; is derived.',
+unote2strong:"Estimated upper bound:", unote2text:'Used when the prospectus doesn&#39;t state a locked share count: if it says &ldquo;substantially all&rdquo; existing holders are locked up, post-offering shares outstanding &minus; offering shares; otherwise Yahoo shares outstanding &minus; offering shares. The date is from MarketBeat or prospectus date + lockup days. Order-of-magnitude only; companies already listed overseas / ADRs get no share estimate (shown as &ldquo;&mdash;&rdquo;).',
+unote3strong:"SPAC:", unote3text:"What unlocks is sponsor shares, which trade around the ~$10 trust value before a merger &mdash; share counts aren&#39;t estimated.",
 h2Howto:"How to use this for a new stock",
 howto1:"Once the prospectus is out, copy three numbers: total shares outstanding of the listed class, initial IPO free float (including the greenshoe), and the full lockup schedule.",
 howto2:'Once it&#39;s first added to the index and Nasdaq publishes a weight, fill that round&#39;s &ldquo;reference-date free float / share price then / official weight&rdquo; into the anchor fields.',
@@ -399,7 +492,7 @@ howto4:"Trade the window, and check off every walk-away condition one by one.",
 footer:'<strong>Confidence</strong>: the schedule and the 3&times; cap formula = [tested against the official methodology text, verified with real announcement dates]; weight extrapolation beyond the anchor, future share prices, and the recognized share of unlocked stock counted as free float = [assumption].<br>\n  <strong>Known limitations</strong>: the anchor goes stale (other constituents moving, or the index adding/dropping names, both drift it) and needs updating every time Nasdaq publishes a new weight; the share price is held fixed at the current price; free float in the constituent snapshot is Yahoo&#39;s self-estimated figure (dual-class structures like GOOGL/GOOG can merge the two classes, sometimes exceeding that class&#39;s own share count) &mdash; not Nasdaq&#39;s recognized figure; growth in shares outstanding (e.g. from dual-class conversions) isn&#39;t modeled; the holiday calendar runs through the end of 2027.<br>\n  <strong>The profitability evidence is thin</strong>: the only case that actually confirms &ldquo;getting in early makes money&rdquo; is SpaceX in September 2026 (+6.5% excess return) &mdash; the 2023 special rebalance nets out to only about +1.5% after backing out style rotation. This page computes schedule and dollar amounts, not a win rate.<br>\n  Data: SEC EDGAR (424B4 / 10-Q / 13G), Nasdaq-100 Index Methodology 2026, Yahoo Finance (share counts / volume), api.nasdaq.com (constituent list), QQQ holdings weight computed as shares held &times; latest close (shares from stockanalysis.com top 25 + zacks.com for the rest; zacks&#39; own weight column is stale and not used). Not investment advice.'
 };
 const I18N_EN_PLACEHOLDER={
-searchPlaceholder:"e.g. NVDA or NVIDIA", inclusionPlaceholder:"e.g. 850"
+searchPlaceholder:"e.g. NVDA or NVIDIA", inclusionPlaceholder:"e.g. 850", unlockSearchPlaceholder:"e.g. SPCX"
 };
 const STATIC_ORIG={};
 function captureStaticOrig(){
@@ -543,6 +636,64 @@ incFmtLine:{zh:(m,t)=>`${m}B（${t}）`, en:(m,t)=>`$${m}B (${t})`},
 incFmtLineNone:{zh:"—（成分股不够这么多）",en:"— (fewer constituents than that)"},
 incHint:{zh:"年度重构的名次规则（75/100/125 名线）以纳指方法论原文为准，本页只给名次。",
          en:"The rank-line rules for annual reconstitution (75/100/125) follow the official Nasdaq-100 methodology text — this page only gives you the rank."},
+/* ---- 解禁日历 ---- */
+uwin30:{zh:"未来 30 天",en:"Next 30 days"},
+uwin90:{zh:"未来 90 天",en:"Next 90 days"},
+uwinAll:{zh:"全部未来",en:"All upcoming"},
+uwinPast60:{zh:"已过去 60 天",en:"Past 60 days"},
+utogProspectus:{zh:"只看招股书口径",en:"Prospectus-sourced only"},
+utogSpac:{zh:"显示 SPAC",en:"Show SPACs"},
+valB:{zh:v=>`${v}B`, en:v=>`$${v}B`},
+valM:{zh:v=>`${v}M`, en:v=>`$${v}M`},
+estDateTag:{zh:"约",en:"est."},
+udRatioK:{zh:"解禁比例",en:"Unlock size"},
+udRatio:{zh:(f,tot)=>`占解禁前可交易股 ${f}%，占总股本 ${tot}%`,en:(f,tot)=>`${f}% of shares tradable before the unlock, ${tot}% of total shares`},
+udHoldersK:{zh:"主要解禁方",en:"Main holders"},
+udNoHolders:{zh:"招股书主要股东表没抽到（或未通过原文核对）",en:"Principal stockholders table not extracted (or failed the source check)"},
+udPastK:{zh:"过往解禁反应",en:"Past unlocks"},
+udNoPast:{zh:"首次解禁，没有过往记录",en:"First unlock, no history"},
+udPastLine:{zh:(d,sh,pre,day,post)=>`${d} 解禁 ${sh}M 股：前 5 日 ${pre}，当日 ${day}，后 5 日 ${post}（对 IWM 超额）`,en:(d,sh,pre,day,post)=>`${d}, ${sh}M shares: 5 days before ${pre}, day of ${day}, 5 days after ${post} (vs IWM)`},
+udExpK:{zh:"预计波动",en:"Expected move"},
+udExp:{zh:(g,n,med,q25,q75,neg,pre,day,post)=>`同类历史解禁 ${n} 次（${g}）：解禁前 5 日到后 5 日对 IWM 超额中位 ${med}，一半样本落在 ${q25}% ~ ${q75}%，跌的占 ${neg}%。分段中位：前 5 日 ${pre} / 当日 ${day} / 后 5 日 ${post}。这是历史统计，不是对这只股票的预测。`,
+       en:(g,n,med,q25,q75,neg,pre,day,post)=>`${n} similar past unlocks (${g}): median excess return vs IWM from 5 days before to 5 days after is ${med}; the middle half falls between ${q25}% and ${q75}%; ${neg}% were down. Segment medians: 5 days before ${pre} / day of ${day} / 5 days after ${post}. A historical base rate, not a forecast for this stock.`},
+udSrcK:{zh:"来源",en:"Source"},
+udNegShort:{zh:"跌",en:" down"},
+udFeatK:{zh:"当前指标",en:"Current indicators"},
+udFeat:{zh:(v,ru,adv,mc)=>`近 20 日年化波动率 ${v}%（唯一有预测力的指标）· 近 20 日对 IWM 超额 ${ru} · 20 日均量 ${adv}M 股 · 市值 ${mc}B`,en:(v,ru,adv,mc)=>`20-day annualized volatility ${v}% (the only indicator with predictive power) · 20-day excess vs IWM ${ru} · 20-day avg volume ${adv}M shares · market cap ${mc}B`},
+udExp2:{zh:(n,a,b,tier)=>`取解禁前 20 日波动率与它最接近的 ${n} 次历史解禁（波动率 ${a}%~${b}%，${tier}），相对解禁前一天、扣掉 IWM 后各时点的中位数和下跌占比：`,en:(n,a,b,tier)=>`The ${n} past unlocks whose pre-unlock 20-day volatility is closest to this stock (${a}%–${b}%, ${tier}); median excess return vs IWM relative to the day before the unlock, and share that were down:`},
+udHT:{zh:"时点",en:"Horizon"}, udHMed:{zh:"中位",en:"Median"}, udHNeg:{zh:"跌的占比",en:"Share down"},
+udTrough:{zh:tr=>`最低点最常出现在：${tr}。`,en:tr=>`Trough most often at: ${tr}.`},
+udTroughItem:{zh:(d,p)=>`第 ${d} 天（${p}%）`,en:(d,p)=>`day ${d} (${p}%)`},
+udBigCap:{zh:(n,m,neg)=>`注意：市值 ≥ 20 亿美元的历史样本只有 ${n} 例，后 20 日中位 ${m}、跌占 ${neg}%，统计上不显著——大票的效应明显弱于小票。`,en:(n,m,neg)=>`Caution: only ${n} past samples had market cap ≥ $2B; their T+20 median is ${m} with ${neg}% down, not statistically significant — the effect is much weaker for large caps.`},
+udPathLbl:{zh:"路径",en:"path"},
+udStratK:{zh:"策略参考",en:"Trade reference"},
+udStratHigh:{zh:"历史上高波动档解禁后 20 天中位 −14%、75% 下跌，且不反弹（+60 天累计 −29%）：唯一站得住的做法是解禁前一天开空、持有 20 个交易日，止损设 15~20%（10% 会被反复扫掉）。做多没有任何窗口有正期望。⚠️ 以上不含借券费（新股借券常年化 10%~100%，20 天≈1%~8%，可能吃掉一半利润），且全部是历史样本内统计。",en:"Historically, high-volatility names have a −14% median 20 days after the unlock with 75% down and no rebound (−29% cumulative by day 60): the only defensible trade is shorting at the close before the unlock and holding 20 trading days with a 15–20% stop (a 10% stop gets whipsawed). No long window has positive expectancy. ⚠️ Excludes borrow fees (often 10–100% annualized on recent IPOs, ≈1–8% over 20 days, which can eat half the edge), and everything here is in-sample."},
+udStratMid:{zh:"中波动档解禁后 20 天中位约 −6%、六成下跌，显著但不强；空头期望在扣除借券费后可能所剩无几。做多没有正期望窗口。",en:"Mid-volatility names: about −6% median 20 days after the unlock, ~60% down — significant but modest; the short edge may vanish after borrow fees. No long window has positive expectancy."},
+udStratLow:{zh:"低波动档解禁后 20 天中位约 −2%，统计上不显著：没有可交易的方向信号，空多都不建议。",en:"Low-volatility names: about −2% median 20 days after the unlock, not statistically significant — no tradeable directional signal either way."},
+tier_low:{zh:"低波动档",en:"low-volatility tier"}, tier_mid:{zh:"中波动档",en:"mid-volatility tier"}, tier_high:{zh:"高波动档",en:"high-volatility tier"},
+udNA:{zh:"数据不足",en:"Not enough data"},
+grp_all:{zh:"全部样本",en:"all samples"},
+grp_in_money:{zh:"现价高于发行价",en:"trading above IPO price"},
+grp_under_water:{zh:"现价低于发行价",en:"trading below IPO price"},
+grp_big_lock:{zh:"解禁量 ≥ 发行量 5 倍",en:"unlock ≥ 5× IPO shares"},
+grp_small_lock:{zh:"解禁量 < 发行量 5 倍",en:"unlock < 5× IPO shares"},
+'grp_in_money+big_lock':{zh:"现价高于发行价、解禁量 ≥ 发行量 5 倍",en:"above IPO price, unlock ≥ 5× IPO shares"},
+'grp_in_money+small_lock':{zh:"现价高于发行价、解禁量 < 发行量 5 倍",en:"above IPO price, unlock < 5× IPO shares"},
+'grp_under_water+big_lock':{zh:"现价低于发行价、解禁量 ≥ 发行量 5 倍",en:"below IPO price, unlock ≥ 5× IPO shares"},
+'grp_under_water+small_lock':{zh:"现价低于发行价、解禁量 < 发行量 5 倍",en:"below IPO price, unlock < 5× IPO shares"},
+srcChipProspectus:{zh:"招股书",en:"Prospectus"},
+srcChipEstimate:{zh:"估算上界",en:"Est. upper bound"},
+srcChipSpac:{zh:"SPAC",en:"SPAC"},
+srcChipLowConf:{zh:"低置信",en:"Low confidence"},
+ucard30:{zh:"未来 30 天解禁总额",en:"Unlocking in next 30 days"},
+ucard90:{zh:"未来 90 天解禁总额",en:"Unlocking in next 90 days"},
+ucardBiggest:{zh:"最大一笔",en:"Largest single unlock"},
+ucardCount:{zh:(n,e)=>`共 ${n} 笔${e?`，其中 ${e} 笔为估算口径`:''}`,
+            en:(n,e)=>`${n} unlock${n===1?'':'s'}${e?`, ${e} estimated`:''}`},
+ucardBiggestNote:{zh:(tk,d)=>`${tk} · ${d}`, en:(tk,d)=>`${tk} · ${d}`},
+unlockAsofNoteStrong:{zh:"数据截至：",en:"Data as of:"},
+unlockAsofNoteText:{zh:s=>`${s}（北京时间），每个交易日自动刷新。`,
+                    en:s=>`${s} (Beijing time), refreshed automatically every trading day.`},
 };
 function t(key,...args){
   const e=T[key]; if(!e) return key;
@@ -570,6 +721,7 @@ function setLang(l){
   if(selectedTicker && box && !box.hidden){ const s=findStock(selectedTicker); if(s) renderStockNow(s); }
   const iv=document.getElementById('incmcap');
   if(iv && iv.value.trim()!=='') iv.dispatchEvent(new Event('input'));
+  if(typeof renderUnlockTab==='function') renderUnlockTab();
 }
 function initLang(){
   captureStaticOrig();
@@ -1031,4 +1183,245 @@ document.getElementById('incmcap').addEventListener('input',()=>{
     </div>
     <p class="hint">${t('incHint')}</p>`;
 });
+
+/* ================= 解禁日历(独立标签页, 不改上面任何引擎/渲染函数) ================= */
+function unlockRows(){ try{ return (typeof UNLOCK_CAL!=='undefined' && UNLOCK_CAL.rows) || []; }catch(e){ return []; } }
+function fmtVal(bn){
+  if(bn==null) return '—';
+  if(bn>=1) return t('valB', num(bn,1));
+  return t('valM', Math.round(bn*1000));
+}
+function daysClass(d){
+  if(d==null) return '';
+  if(d>=5) return 'days-hi';
+  if(d<1) return 'days-lo';
+  return '';
+}
+function fmtPxPair(px, ipoPx){
+  const a = px!=null ? num(px,2) : '—';
+  const b = ipoPx!=null ? num(ipoPx,2) : '—';
+  return `${a} / ${b}`;
+}
+function srcChip(r){
+  if(r.spac || r.src==='spac') return `<span class="chip">${t('srcChipSpac')}</span>`;
+  if(r.src==='prospectus'){
+    let html = r.src_url
+      ? `<a class="chip" href="${r.src_url}" target="_blank" rel="noopener">${t('srcChipProspectus')}</a>`
+      : `<span class="chip">${t('srcChipProspectus')}</span>`;
+    if(r.conf==='low') html += ` <span class="chip warn">${t('srcChipLowConf')}</span>`;
+    return html;
+  }
+  if(r.src==='estimate') return `<span class="chip warn">${t('srcChipEstimate')}</span>`;
+  return '—';
+}
+function toBeijingStr(isoStr){
+  if(!isoStr) return '—';
+  const d=new Date(isoStr);
+  if(isNaN(d.getTime())) return '—';
+  const bj=new Date(d.getTime()+8*3600*1000);
+  const pad=n=>String(n).padStart(2,'0');
+  return `${bj.getUTCFullYear()}-${pad(bj.getUTCMonth()+1)}-${pad(bj.getUTCDate())} ${pad(bj.getUTCHours())}:${pad(bj.getUTCMinutes())}`;
+}
+
+const UNLOCK_WINDOWS=[
+  {key:'30', labelKey:'uwin30'}, {key:'90', labelKey:'uwin90'},
+  {key:'all', labelKey:'uwinAll'}, {key:'past60', labelKey:'uwinPast60'},
+];
+let unlockWindow='90', unlockOnlyProspectus=false, unlockShowSpac=false, unlockShowAllRows=false;
+let unlockSort={key:'d', dir:1};
+const UNLOCK_PREVIEW=30;
+
+function unlockToday(){ return new Date().toISOString().slice(0,10); }
+
+function unlockFilteredRows(windowOverride){
+  const rows=unlockRows();
+  const win = windowOverride!=null ? windowOverride : unlockWindow;
+  const todayD=mk(unlockToday());
+  const qEl=document.getElementById('unlocksearch-input');
+  const q=qEl?qEl.value.trim().toLowerCase():'';
+  return rows.filter(r=>{
+    if(!r.d) return false;
+    if(!unlockShowSpac && r.spac) return false;
+    if(unlockOnlyProspectus && r.src!=='prospectus') return false;
+    if(q && !((r.t||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))) return false;
+    const rd=mk(r.d);
+    if(win==='30') return rd>=todayD && rd<=addD(todayD,30);
+    if(win==='90') return rd>=todayD && rd<=addD(todayD,90);
+    if(win==='past60') return rd<todayD && rd>=addD(todayD,-60);
+    return rd>=todayD; // 'all'
+  });
+}
+
+function sortUnlockRows(rows){
+  const {key,dir}=unlockSort;
+  return rows.slice().sort((a,b)=>{
+    const av=a[key], bv=b[key];
+    if(av==null&&bv==null) return 0;
+    if(av==null) return 1;
+    if(bv==null) return -1;
+    if(av<bv) return -1*dir;
+    if(av>bv) return 1*dir;
+    return 0;
+  });
+}
+
+function renderUnlockCards(){
+  const box=document.getElementById('unlockcards'); if(!box) return;
+  const rows=unlockRows().filter(r=>r.d && !r.spac && r.val_bn!=null);
+  const todayD=mk(unlockToday());
+  const upcoming=rows.filter(r=>mk(r.d)>=todayD);
+  const in30=upcoming.filter(r=>mk(r.d)<=addD(todayD,30));
+  const in90=upcoming.filter(r=>mk(r.d)<=addD(todayD,90));
+  const sum=arr=>arr.reduce((s,r)=>s+r.val_bn,0);
+  const estCount=arr=>arr.filter(r=>r.src==='estimate').length;
+  const biggest=upcoming.slice().sort((a,b)=>b.val_bn-a.val_bn)[0];
+  box.innerHTML=`
+    <div class="change"><div class="k">${t('ucard30')}</div>
+      <div class="arrowline"><span class="to">${fmtVal(sum(in30))}</span></div>
+      <div class="note">${t('ucardCount', in30.length, estCount(in30))}</div></div>
+    <div class="change"><div class="k">${t('ucard90')}</div>
+      <div class="arrowline"><span class="to">${fmtVal(sum(in90))}</span></div>
+      <div class="note">${t('ucardCount', in90.length, estCount(in90))}</div></div>
+    <div class="change"><div class="k">${t('ucardBiggest')}</div>
+      <div class="arrowline"><span class="to">${biggest?fmtVal(biggest.val_bn):'—'}</span></div>
+      <div class="note">${biggest?t('ucardBiggestNote', biggest.t, biggest.d):t('noData')}</div></div>`;
+}
+
+function renderUnlockChipbar(){
+  const box=document.getElementById('unlockchipbar'); if(!box) return;
+  const winHtml=UNLOCK_WINDOWS.map(w=>
+    `<span class="fchip${unlockWindow===w.key?' active':''}" data-wk="${w.key}">${t(w.labelKey)} <span class="cnt">(${unlockFilteredRows(w.key).length})</span></span>`
+  ).join('');
+  const toggleHtml=
+    `<span class="fchip${unlockOnlyProspectus?' active':''}" data-tk="prospectus">${t('utogProspectus')}</span>`+
+    `<span class="fchip${unlockShowSpac?' active':''}" data-tk="spac">${t('utogSpac')}</span>`;
+  box.innerHTML=winHtml+toggleHtml;
+  box.querySelectorAll('[data-wk]').forEach(el=>el.addEventListener('click',()=>{
+    unlockWindow=el.dataset.wk; unlockShowAllRows=false; renderUnlockChipbar(); renderUnlockTable();
+  }));
+  box.querySelectorAll('[data-tk]').forEach(el=>el.addEventListener('click',()=>{
+    if(el.dataset.tk==='prospectus') unlockOnlyProspectus=!unlockOnlyProspectus;
+    if(el.dataset.tk==='spac') unlockShowSpac=!unlockShowSpac;
+    unlockShowAllRows=false; renderUnlockChipbar(); renderUnlockTable();
+  }));
+}
+
+function updateUnlockSortArrows(){
+  document.querySelectorAll('#unlocktbl th[data-sort]').forEach(th=>{
+    const arrow=th.querySelector('.arrow'); if(!arrow) return;
+    arrow.textContent = th.dataset.sort===unlockSort.key ? (unlockSort.dir===1?'▲':'▼') : '';
+  });
+}
+
+const unlockOpen=new Set();
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function sgn(v){ return v==null?'—':(v>0?'+':'')+num(v,1); }
+function pctSpan(v){ return v==null?'—':`<span class="${v<0?'neg':'pos'}">${sgn(v)}%</span>`; }
+const HOLDER_TYPE_EN={'VC':'VC','PE':'PE','创始人':'founder','高管董事':'officer/director','战略/公司':'strategic/corporate','其他':'other'};
+function unlockDetail(r){
+  const rows=[];
+  const ratio=(r.ratio_float!=null||r.ratio_total!=null)
+    ? t('udRatio', r.ratio_float!=null?num(r.ratio_float,0):'—', r.ratio_total!=null?num(r.ratio_total,1):'—') : t('udNA');
+  rows.push([t('udRatioK'), ratio]);
+  let hs=t('udNoHolders');
+  if(r.holders&&r.holders.length){
+    hs=r.holders.map(h=>`${esc(h.n)}<span class="chip">${esc(LANG==='en'?(HOLDER_TYPE_EN[h.type]||h.type||''):(h.type||''))}</span> ${h.pct!=null?num(h.pct,1)+'%':''}`).join('<br>')
+      + (LANG==='zh'&&r.holders_note?`<br><span class="hint">${esc(r.holders_note)}</span>`:'');
+  }
+  rows.push([t('udHoldersK'), hs]);
+  let ps=t('udNoPast');
+  if(r.past&&r.past.length){
+    ps=r.past.map(m=>{
+      const p=m.path||{}; const pk=['-20','-10','-5','5','10','20'].filter(k=>p[k]!=null);
+      const tail=pk.length?` · ${t('udPathLbl')} ${pk.map(k=>`T${k.startsWith('-')?k:'+'+k} ${pctSpan(p[k])}`).join(' / ')}`:'';
+      return t('udPastLine', m.d, num(m.sh_m,1), pctSpan(m.pre_x!=null?m.pre_x:m.pre), pctSpan(m.day_x!=null?m.day_x:m.day), pctSpan(m.post_x!=null?m.post_x:m.post))+tail;
+    }).join('<br>');
+  }
+  rows.push([t('udPastK'), ps]);
+  const e2=r.exp2, f=r.feat||{};
+  if(f.vol20!=null) rows.push([t('udFeatK'), t('udFeat', num(f.vol20,0), pctSpan(f.runup20_x), f.adv20_m!=null?num(f.adv20_m,1):'—', r.mcap_bn!=null?num(r.mcap_bn,1):'—')]);
+  if(e2&&e2.h){
+    const H=['-20','-10','-5','5','10','20','30','40','60'];
+    const tbl=`<table class="htbl"><thead><tr><th>${t('udHT')}</th>${H.filter(k=>e2.h[k]).map(k=>`<th>T${k.startsWith('-')?k:'+'+k}</th>`).join('')}</tr></thead><tbody>
+      <tr><td>${t('udHMed')}</td>${H.filter(k=>e2.h[k]).map(k=>`<td>${pctSpan(e2.h[k].med)}</td>`).join('')}</tr>
+      <tr><td>${t('udHNeg')}</td>${H.filter(k=>e2.h[k]).map(k=>`<td>${num(e2.h[k].neg*100,0)}%</td>`).join('')}</tr></tbody></table>`;
+    const tr=(e2.trough_day||[]).map(([d,c])=>t('udTroughItem', d>=0?'+'+d:d, num(c/e2.n*100,0))).join('、');
+    const big=(e2.bigcap20&&r.mcap_bn>=2)?t('udBigCap', e2.bigcap20.n, pctSpan(e2.bigcap20.med), num(e2.bigcap20.neg*100,0)):'';
+    rows.push([t('udExpK'), t('udExp2', e2.n, e2.vol_range[0], e2.vol_range[1], t('tier_'+e2.tier)) + tbl + `<div class="hint" style="margin-top:6px">${t('udTrough', tr)} ${big}</div>`]);
+    rows.push([t('udStratK'), t(e2.tier==='high'?'udStratHigh':(e2.tier==='mid'?'udStratMid':'udStratLow'))]);
+  } else rows.push([t('udExpK'), t('udNA')]);
+  if(r.src_url) rows.push([t('udSrcK'), `<a href="${esc(r.src_url)}" target="_blank" rel="noopener">SEC ${esc(r.t)}</a>`]);
+  return `<dl class="udl">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>`;
+}
+function renderUnlockTable(){
+  const tbody=document.querySelector('#unlocktbl tbody'); if(!tbody) return;
+  const rows=sortUnlockRows(unlockFilteredRows());
+  const total=rows.length;
+  const collapsed=!unlockShowAllRows && total>UNLOCK_PREVIEW;
+  const shown=collapsed?rows.slice(0,UNLOCK_PREVIEW):rows;
+  const todayIso=unlockToday();
+  tbody.innerHTML=(shown.length ? shown.map(r=>{
+    const past=r.d<todayIso;
+    const estTag=r.d_est?` <span class="chip">${t('estDateTag')}</span>`:'';
+    const dcls=daysClass(r.days_adv);
+    const title=(r.note||'').replace(/"/g,'&quot;');
+    const key=r.t+'|'+r.d; const open=unlockOpen.has(key);
+    const ex=r.exp;
+    const e2=r.exp2, h20=e2&&e2.h&&e2.h['20'];
+    const expCell=h20?`<span class="${h20.med<0?'neg-txt':'pos-txt'}">${sgn(h20.med)}%</span> <span class="hint" style="display:inline">${num(h20.neg*100,0)}%${t('udNegShort')}</span>`:'—';
+    return `<tr class="urow ${past?'past':''} ${open?'open':''}" data-key="${key}" title="${title}">
+      <td class="n mono">${r.d}${estTag}</td>
+      <td class="mono">${r.t||'—'}</td>
+      <td class="name">${r.name||''}</td>
+      <td class="n">${r.sh_m!=null?num(r.sh_m,1)+'M':'—'}</td>
+      <td class="n">${r.ratio_float!=null?num(r.ratio_float,0)+'%':'—'}</td>
+      <td class="n">${fmtVal(r.val_bn)}</td>
+      <td class="n ${dcls}">${r.days_adv!=null?t('tblAdvDays',num(r.days_adv,1)):'—'}</td>
+      <td class="n">${fmtPxPair(r.px,r.ipo_px)}</td>
+      <td class="n">${expCell}</td>
+      <td>${srcChip(r)}</td></tr>`+(open?`<tr class="udetail"><td colspan="10">${unlockDetail(r)}</td></tr>`:'');
+  }).join('') : `<tr><td colspan="10" class="none">${t('noMatch')}</td></tr>`)
+    + (collapsed ? `<tr class="morerow"><td colspan="10"><button type="button" id="unlockshowall">${t('showAll',total,UNLOCK_PREVIEW)}</button></td></tr>` : '');
+  tbody.querySelectorAll('tr.urow').forEach(tr=>tr.addEventListener('click',()=>{
+    const k=tr.dataset.key; if(unlockOpen.has(k)) unlockOpen.delete(k); else unlockOpen.add(k); renderUnlockTable();
+  }));
+  const sa=document.getElementById('unlockshowall');
+  if(sa) sa.addEventListener('click',()=>{ unlockShowAllRows=true; renderUnlockTable(); });
+  updateUnlockSortArrows();
+}
+
+function renderUnlockAsofNote(){
+  const el=document.getElementById('unlockAsofNote'); if(!el) return;
+  const meta=(typeof UNLOCK_CAL!=='undefined' && UNLOCK_CAL) || {};
+  el.innerHTML=`<strong>${t('unlockAsofNoteStrong')}</strong><span>${t('unlockAsofNoteText', toBeijingStr(meta.asof))}</span>`;
+}
+
+function renderUnlockTab(){
+  renderUnlockCards();
+  renderUnlockChipbar();
+  renderUnlockTable();
+  renderUnlockAsofNote();
+}
+
+document.querySelectorAll('#unlocktbl th[data-sort]').forEach(th=>{
+  th.addEventListener('click',()=>{
+    const k=th.dataset.sort;
+    if(unlockSort.key===k){ unlockSort.dir*=-1; }
+    else{ unlockSort.key=k; unlockSort.dir = k==='d' ? 1 : -1; }
+    renderUnlockTable();
+  });
+});
+const unlockSearchInput=document.getElementById('unlocksearch-input');
+if(unlockSearchInput) unlockSearchInput.addEventListener('input',()=>{ unlockShowAllRows=false; renderUnlockChipbar(); renderUnlockTable(); });
+
+/* ---- 同页显示: 两块都渲染; 带 #unlock / #tab-unlock 打开时滚到解禁日历 ---- */
+function initTab(){
+  renderUnlockTab();
+  try{
+    if(location.hash==='#unlock'||location.hash==='#tab-unlock'){
+      const el=document.getElementById('tab-unlock'); if(el) setTimeout(()=>el.scrollIntoView(),0);
+    }
+  }catch(e){}
+}
+initTab();
 </script>

@@ -1,0 +1,11 @@
+{
+ "t": "NHP",
+ "form": "424B4",
+ "filed": "2026-04-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1561032/000162828026026541/nhp-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "发行后口径。表中无≥5%股东，全部董事高管持股<1%，不符合最低列示条件"
+}

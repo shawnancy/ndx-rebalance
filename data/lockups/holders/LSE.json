@@ -1,0 +1,48 @@
+{
+ "t": "LSE",
+ "form": "424B4",
+ "filed": "2024-12-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1985139/000149315224050874/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Hongliang Li",
+   "type": "高管董事",
+   "pct_after_text": "91.85%",
+   "pct_after": 91.85
+  },
+  {
+   "name": "Hongqi Li",
+   "type": "高管董事",
+   "pct_after_text": "37.66%",
+   "pct_after": 37.66
+  },
+  {
+   "name": "Jin Wu",
+   "type": "其他",
+   "pct_after_text": "37.66%",
+   "pct_after": 37.66
+  },
+  {
+   "name": "Hongguang Li",
+   "type": "其他",
+   "pct_after_text": "9.19%",
+   "pct_after": 9.19
+  },
+  {
+   "name": "Yali Wang",
+   "type": "其他",
+   "pct_after_text": "7.35%",
+   "pct_after": 7.35
+  },
+  {
+   "name": "Xiangteng Li",
+   "type": "其他",
+   "pct_after_text": "7.35%",
+   "pct_after": 7.35
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设不行使超额配售选择权。部分股东通过 Voting Rights Proxy 协议将投票权委托给 Polar Energy Company Limited。"
+}

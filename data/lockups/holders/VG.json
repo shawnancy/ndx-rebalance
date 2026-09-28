@@ -1,0 +1,30 @@
+{
+ "t": "VG",
+ "form": "424B4",
+ "filed": "2025-01-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2007855/000119312525012218/d146310d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Venture Global Partners II, LLC",
+   "type": "PE",
+   "pct_after_text": "97.8%",
+   "pct_after": 97.8
+  },
+  {
+   "name": "Michael Sabel",
+   "type": "高管董事",
+   "pct_after_text": "97.8%",
+   "pct_after": 97.8
+  },
+  {
+   "name": "Robert Pender",
+   "type": "高管董事",
+   "pct_after_text": "97.8%",
+   "pct_after": 97.8
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后投票权排序,underwriters选择权未行使情景;Michael Sabel和Robert Pender系VG Partners managing partners,通过基金间接持股;多类股采用总投票权比例"
+}

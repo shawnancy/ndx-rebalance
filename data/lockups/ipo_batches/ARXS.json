@@ -1,0 +1,35 @@
+{
+  "t": "ARXS",
+  "cik": 2093536,
+  "form": "424B4",
+  "filed": "2026-04-16",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2093536/000119312526159369/d81728d424b4.htm",
+  "listed_shares_m": 63.65398,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:05:48Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供分批解禁释放表。内容仅讨论了180天lock-up协议条款、Rule 144/701等一般性规则,但无具体的解禁日期及股数分批信息",
+    "IPO发行股数未明确说明,float_base无法确定。若计入绿鞋期权,Class A总股数为69.72898M",
+    "原文提及340,676,786股Class A common stock持有人享有注册权,但无分批释放时间表"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      611836,
+      619486
+    ],
+    "n_lockup_windows_total": 10,
+    "n_extra_windows_included": 2,
+    "excerpt_chars": 15042,
+    "html_flat_chars": 891879
+  }
+}

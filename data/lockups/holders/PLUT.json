@@ -1,0 +1,36 @@
+{
+ "t": "PLUT",
+ "form": "424B4",
+ "filed": "2025-02-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1933021/000149315225005069/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Zhisheng Zhao",
+   "type": "创始人",
+   "pct_after_text": "40.26%",
+   "pct_after": 40.26
+  },
+  {
+   "name": "Radiant Global Ventures Limited",
+   "type": "战略/公司",
+   "pct_after_text": "40.26%",
+   "pct_after": 40.26
+  },
+  {
+   "name": "Ting Kin Cheung",
+   "type": "高管董事",
+   "pct_after_text": "32.93%",
+   "pct_after": 32.93
+  },
+  {
+   "name": "Divine Star Ventures Limited",
+   "type": "战略/公司",
+   "pct_after_text": "32.93%",
+   "pct_after": 32.93
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例,Over-allotment option not exercised情景,无特殊情况"
+}

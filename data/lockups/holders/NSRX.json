@@ -1,0 +1,54 @@
+{
+ "t": "NSRX",
+ "form": "424B4",
+ "filed": "2025-08-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2029039/000164117225023826/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Udi Gilboa",
+   "type": "创始人",
+   "pct_after_text": "21 %",
+   "pct_after": 21
+  },
+  {
+   "name": "Dalia Megiddo",
+   "type": "创始人",
+   "pct_after_text": "21 %",
+   "pct_after": 21
+  },
+  {
+   "name": "Ronnie Hershman",
+   "type": "创始人",
+   "pct_after_text": "13 %",
+   "pct_after": 13
+  },
+  {
+   "name": "Capital Point Ltd.",
+   "type": "其他",
+   "pct_after_text": "5 %",
+   "pct_after": 5
+  },
+  {
+   "name": "Phoenix Solutions Ltd",
+   "type": "其他",
+   "pct_after_text": "5 %",
+   "pct_after": 5
+  },
+  {
+   "name": "Hershman Holdings LLC",
+   "type": "其他",
+   "pct_after_text": "5 %",
+   "pct_after": 5
+  },
+  {
+   "name": "Galia Temtsin Krayz",
+   "type": "高管董事",
+   "pct_after_text": "2 %",
+   "pct_after": 2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后;多类股(Ordinary Shares及Class A-1/A-3A/A-3B)合并计算,含可转换2024 SAFEs和60天内可行使期权"
+}

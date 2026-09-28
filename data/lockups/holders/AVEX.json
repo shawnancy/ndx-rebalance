@@ -1,0 +1,24 @@
+{
+ "t": "AVEX",
+ "form": "424B4",
+ "filed": "2026-06-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2096300/000119312526258295/d147986d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "MDP Funds",
+   "type": "PE",
+   "pct_after_text": "70.5%",
+   "pct_after": 70.5
+  },
+  {
+   "name": "FNF Holdco Corp.",
+   "type": "战略/公司",
+   "pct_after_text": "5.2%",
+   "pct_after": 5.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后比例（未行使underwriters期权），按合并投票权百分比；多类股表取Combined Voting Power列"
+}

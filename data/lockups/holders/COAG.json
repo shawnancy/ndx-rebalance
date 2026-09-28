@@ -1,0 +1,43 @@
+{
+ "t": "COAG",
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2114044/000119312526201458/d50309d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with RA Capital Management, L.P.",
+   "type": "VC",
+   "pct_after_text": "10.95 %",
+   "pct_after": 10.95
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Novo Holdings A/S",
+   "type": "战略/公司",
+   "pct_after_text": "9.46 %",
+   "pct_after": 9.46
+  },
+  {
+   "name": "AI DEN-MAB LLC",
+   "type": "战略/公司",
+   "pct_after_text": "8.55 %",
+   "pct_after": 8.55
+  },
+  {
+   "name": "Sofinnova Crossover II SLP",
+   "type": "VC",
+   "pct_after_text": "5.37 %",
+   "pct_after": 5.37
+  },
+  {
+   "name": "Benny Sørensen",
+   "type": "高管董事",
+   "pct_after_text": "1.47 %",
+   "pct_after": 1.47
+  }
+ ],
+ "note": "发行后持股比例，基数为自动转换后27,442,910股共同股；Benny Sørensen持股中649,880股为可行使warrant"
+}

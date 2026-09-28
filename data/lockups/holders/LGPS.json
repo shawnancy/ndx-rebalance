@@ -1,0 +1,36 @@
+{
+ "t": "LGPS",
+ "form": "424B4",
+ "filed": "2025-03-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2040290/000164117225000557/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Yasuyuki Nozawa",
+   "type": "高管董事",
+   "pct_after_text": "67.47%",
+   "pct_after": 67.47
+  },
+  {
+   "name": "Propolife, LLC.",
+   "type": "其他",
+   "pct_after_text": "67.47%",
+   "pct_after": 67.47
+  },
+  {
+   "name": "Satoshi Oyamatsu",
+   "type": "高管董事",
+   "pct_after_text": "2.25%",
+   "pct_after": 2.25
+  },
+  {
+   "name": "Hiroyuki Nozawa",
+   "type": "高管董事",
+   "pct_after_text": "1.58%",
+   "pct_after": 1.58
+  }
+ ],
+ "dropped": [],
+ "note": "发行后不行使超额配售权情景; Yasuyuki Nozawa和Propolife LLC代表同一受益人(脚注说Propolife为其100%控股日本公司)"
+}

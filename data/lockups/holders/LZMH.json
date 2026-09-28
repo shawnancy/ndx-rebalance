@@ -1,0 +1,42 @@
+{
+ "t": "LZMH",
+ "form": "424B4",
+ "filed": "2025-02-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1967397/000121390025017977/ea023188301-424b4_lztech.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Andong Zhang",
+   "type": "创始人",
+   "pct_after_text": "81.87%",
+   "pct_after": 81.87
+  },
+  {
+   "name": "LZ Digital Technology Holdings Co., Ltd 联掌数字科技控股有限公司",
+   "type": "战略/公司",
+   "pct_after_text": "72.25%",
+   "pct_after": 72.25
+  },
+  {
+   "name": "Youder Investment Group Limited 友达投资集团有限公司",
+   "type": "PE",
+   "pct_after_text": "10.87%",
+   "pct_after": 10.87
+  },
+  {
+   "name": "Weihua Chen",
+   "type": "高管董事",
+   "pct_after_text": "10.87%",
+   "pct_after": 10.87
+  },
+  {
+   "name": "Vanshion Investment Group Limited 万盛投资集团有限公司",
+   "type": "PE",
+   "pct_after_text": "9.62%",
+   "pct_after": 9.62
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；按总投票权计算（Class A十票/股+Class B一票/股合并）；假设承销商不行使超额配售。"
+}

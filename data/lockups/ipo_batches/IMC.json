@@ -1,0 +1,33 @@
+{
+  "t": "IMC",
+  "cik": 2098395,
+  "form": "424B4",
+  "filed": "2026-07-29",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2098395/000149315226035207/form424b4.htm",
+  "listed_shares_m": 105.1,
+  "float_base_m": 4.0,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:08:25Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供解禁表(无Earliest Date/Approximate Number of Shares两列组合);仅包含Lock-up Agreements(3个月)和Rule 144/Form S-8的一般性监管规则说明,无具体日期与股数的逐批释放记录"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      423358,
+      438358
+    ],
+    "n_lockup_windows_total": 1,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 534145
+  }
+}

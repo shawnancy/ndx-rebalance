@@ -1,0 +1,54 @@
+{
+ "t": "TDTH",
+ "form": "424B4",
+ "filed": "2024-09-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1983550/000121390024077083/ea0200176-10.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Soon Huat Lim",
+   "type": "创始人",
+   "pct_after_text": "48.7%",
+   "pct_after": 48.7
+  },
+  {
+   "name": "Trident Group Holdings Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "19.7%",
+   "pct_after": 19.7
+  },
+  {
+   "name": "Tri Wealth Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "19.3%",
+   "pct_after": 19.3
+  },
+  {
+   "name": "Soon Tai Lee",
+   "type": "其他",
+   "pct_after_text": "14.5%",
+   "pct_after": 14.5
+  },
+  {
+   "name": "Trident Digital Tech Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "9.7%",
+   "pct_after": 9.7
+  },
+  {
+   "name": "Poh Kiong Tan",
+   "type": "高管董事",
+   "pct_after_text": "1.9%",
+   "pct_after": 1.9
+  },
+  {
+   "name": "Haiyan Huang",
+   "type": "高管董事",
+   "pct_after_text": "1.0%",
+   "pct_after": 1.0
+  }
+ ],
+ "note": "发行后As-converted basis口径，多类股结构（A类60票/B类1票）；Soon Huat Lim创始人通过三家BVI公司间接控制，Haiyan Huang通过信托持有。"
+}

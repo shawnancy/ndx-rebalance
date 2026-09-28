@@ -1,0 +1,21 @@
+{
+ "t": "TMCR",
+ "cik": 2087398,
+ "form": "424B4",
+ "filed": "2026-04-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2087398/000110465926040599/tm2526563-24_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 44106862,
+ "shares_locked_text": "44,106,862",
+ "lockup_days": null,
+ "evidence": "44,106,862 Common Shares held by Registered Shareholders are subject to contractual lock-up agreements described elsewhere in this prospectus and may not be sold until the expiration or waiver of those restrictions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "按 9/12/15/18/21/24 个月逐步释放各 15%/15%/15%/15%/15%/剩余部分",
+ "note": "Direct Listing 禁售协议; 约 80.11% 已发行股份锁定 24 个月; 分批释放机制",
+ "valid": true,
+ "reasons": []
+}

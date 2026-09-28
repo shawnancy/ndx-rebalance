@@ -1,0 +1,18 @@
+{
+ "t": "TDIC",
+ "form": "424B4",
+ "filed": "2025-07-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2041338/000164117225020588/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ms. Seto",
+   "type": "创始人",
+   "pct_after_text": "79.13%",
+   "pct_after": 79.13
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后合计投票权百分比(Ms. Seto持有1,000,000 Class B Ordinary Shares x 12倍投票权 + 21,236,240 Class A Ordinary Shares x 1倍投票权,占总投票权79.13%)"
+}

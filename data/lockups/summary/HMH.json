@@ -1,0 +1,21 @@
+{
+ "t": "HMH",
+ "cik": 2021880,
+ "form": "424B4",
+ "filed": "2026-04-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2021880/000119312526138102/d75409d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 11422504,
+ "shares_offered": 10520000,
+ "shares_locked": 902504,
+ "shares_locked_text": "902,504",
+ "lockup_days": 180,
+ "evidence": "902,504 shares of Class A common stock will be eligible for sale upon the expiration of the lock-up agreements, beginning 180 days after the date of this prospectus, or otherwise when permitted under Rule 144 or Rule 701.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "除本次发行及定向配售股份和Baker Hughes/Akastor持股外的现有股东902,504股受180天禁售;本次发行10,520,000股不受限制;AB股结构,主要股东可通过Exchange Agreement兑换Class A股",
+ "valid": true,
+ "reasons": []
+}

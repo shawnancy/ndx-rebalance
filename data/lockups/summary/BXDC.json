@@ -1,0 +1,25 @@
+{
+ "t": "BXDC",
+ "cik": 2100161,
+ "form": "424B4",
+ "filed": "2026-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2100161/000119312526225090/d52761d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 87500005,
+ "shares_offered": 87500000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, our directors and officers, our Manager and the Blackstone Investor have agreed, and the DSP participants will agree, subject to specified exceptions as set forth under \"Underwriting,\" not to dispose of or hedge any shares of our common stock (including any shares issued upon redemption of OP units) or securities convertible into or exchangeable for shares of our common stock during the period from the date of this prospectus continuing through the date 180 days after the date of this prospectus, except with the prior written consent of the representatives of the underwriters.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "数据中心REIT(OP结构)。摘录明确提及DSP保留5,031,250股、Seed Shares 5股、管理层和Blackstone投资者皆受180日禁售约束，但无原文'X shares subject to lock-up'格式的总数；Blackstone额外$200M投资的股数因缺IPO价格无法确定",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

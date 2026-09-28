@@ -1,0 +1,30 @@
+{
+ "t": "SIND",
+ "form": "424B4",
+ "filed": "2026-06-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2096861/000114036126026625/ny20063495x12_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Electrum",
+   "type": "PE",
+   "pct_after_text": "82.6%",
+   "pct_after": 82.6
+  },
+  {
+   "name": "Ospraie",
+   "type": "PE",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Daniel Muñiz Quintanilla",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例, 基数148,936,013股(不含Concurrent Placement); Electrum与Ospraie为投资基金"
+}

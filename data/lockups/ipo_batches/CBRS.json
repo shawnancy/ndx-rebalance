@@ -1,0 +1,106 @@
+{
+  "t": "CBRS",
+  "cik": 2021728,
+  "form": "424B4",
+  "filed": "2026-05-14",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2021728/000162828026035214/cerebras-424b4.htm",
+  "listed_shares_m": 30,
+  "float_base_m": 30,
+  "unlocks": [
+    {
+      "d": "2026-04-15",
+      "sh_m": 2.5,
+      "note": "IPO首个交易日，非执行员工解禁首批2.5M",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-04-16",
+      "sh_m": 2.5,
+      "note": "IPO第二个交易日（条件：首日收盘价超IPO价133%），非执行员工解禁第二批；不满足条件则不释放",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-05-22",
+      "sh_m": 30.2,
+      "note": "Q1 2026财报后第二交易日；基准情形（Second Trading Day Trigger不满足），包括全职员工；若Trigger满足则仅27.7M",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-08-14",
+      "sh_m": 36.4,
+      "note": "Q2 2026财报后第二交易日",
+      "d_estimated": true
+    },
+    {
+      "d": "2026-08-19",
+      "sh_m": 14.6,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-02",
+      "sh_m": 14.6,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-16",
+      "sh_m": 14.6,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-09-30",
+      "sh_m": 19.4,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-10-14",
+      "sh_m": 19.4,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-10-28",
+      "sh_m": 19.4,
+      "note": "定期解禁批次",
+      "d_estimated": false
+    },
+    {
+      "d": "2026-11-05",
+      "sh_m": null,
+      "note": "Lock-up期满，取较早者：(i)Q3 2026财报后第二交易日 或 (ii)招股书发布后180天；释放所有剩余股份（Rule 144限制下）",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:09:59Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": false,
+    "sum_m": 173.6,
+    "sum_le_listed": false
+  },
+  "confidence": "low",
+  "warnings": [
+    "摘录缺失IPO日期和招股书具体发布日期，事件触发型日期（First/Second Trading Day、Q1/Q2财报后）为推估值，精度约±3天",
+    "Float_base_m填基础发行30M，未含绿鞋期权4.5M；如行使全部绿鞋，总数为34.5M",
+    "Second Trading Day的2.5M股为条件释放，触发条件为首日收盘价超IPO价格133%；条件不满足则此批不释放",
+    "Q1财报后解禁量存在条件分支：若Second Trading Day Trigger满足则27.7M，不满足则30.2M；表中仅记录基准情形30.2M",
+    "Q1/Q2财报后的具体日期基于常见财报发布时间表推估，实际日期受财报公开时间和交易日影响",
+    "最终一批(Lock-up期满)的解禁股数用null表示'所有剩余股份'，具体数量无法从摘录中确定",
+    "摘录在Rule 144/Rule 701条款处截断，后续可能存在其他解禁条款或例外情形"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      724677,
+      739677
+    ],
+    "n_lockup_windows_total": 11,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 977889
+  }
+}

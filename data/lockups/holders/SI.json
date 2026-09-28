@@ -1,0 +1,54 @@
+{
+ "t": "SI",
+ "form": "424B4",
+ "filed": "2025-08-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1699350/000162828025037109/shoulderinnovation-final42.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "FMR LLC",
+   "type": "其他",
+   "pct_after_text": "13.8 %",
+   "pct_after": 13.8
+  },
+  {
+   "name": "Entities affiliated with U.S. Venture Partners",
+   "type": "VC",
+   "pct_after_text": "13.3 %",
+   "pct_after": 13.3
+  },
+  {
+   "name": "Coöperatieve Gilde Healthcare V U.A.",
+   "type": "PE",
+   "pct_after_text": "11.2 %",
+   "pct_after": 11.2
+  },
+  {
+   "name": "Entities affiliated with Lightstone Ventures",
+   "type": "VC",
+   "pct_after_text": "8.0 %",
+   "pct_after": 8.0
+  },
+  {
+   "name": "Entities affiliated with cultivate(MD)",
+   "type": "VC",
+   "pct_after_text": "6.7 %",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Robert Ball",
+   "type": "高管董事",
+   "pct_after_text": "2.2 %",
+   "pct_after": 2.2
+  },
+  {
+   "name": "Matthew Ahearn",
+   "type": "高管董事",
+   "pct_after_text": "1.1 %",
+   "pct_after": 1.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后，包含IPO新发行5000000股及Notes Conversion转换的2805049股，优先股假设全部转为普通股"
+}

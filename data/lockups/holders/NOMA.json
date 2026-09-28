@@ -1,0 +1,42 @@
+{
+ "t": "NOMA",
+ "form": "424B4",
+ "filed": "2025-10-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1994214/000149315225020306/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Sport City Cádiz S.L.",
+   "type": "战略/公司",
+   "pct_after_text": "90.05%",
+   "pct_after": 90.05
+  },
+  {
+   "name": "Cádiz CF",
+   "type": "战略/公司",
+   "pct_after_text": "5.65%",
+   "pct_after": 5.65
+  },
+  {
+   "name": "Javier Sánchez",
+   "type": "高管董事",
+   "pct_after_text": "2.66%",
+   "pct_after": 2.66
+  },
+  {
+   "name": "Joaquin Martin",
+   "type": "高管董事",
+   "pct_after_text": "1.49%",
+   "pct_after": 1.49
+  },
+  {
+   "name": "Carlos Lacave",
+   "type": "高管董事",
+   "pct_after_text": "1.31%",
+   "pct_after": 1.31
+  }
+ ],
+ "dropped": [],
+ "note": "发行后数据,按Class A比例筛选≥5%股东和≥1%董事;Sport City同时持Class A和Class B(后者各20倍投票权)故用合并投票权90.05%"
+}

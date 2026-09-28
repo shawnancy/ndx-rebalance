@@ -1,0 +1,42 @@
+{
+ "t": "MGRT",
+ "form": "424B4",
+ "filed": "2025-07-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2033377/000121390025064701/ea0209090-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Mericorn Company Limited",
+   "type": "战略/公司",
+   "pct_after_text": "72.73%",
+   "pct_after": 72.73
+  },
+  {
+   "name": "Tin Sze Wai",
+   "type": "其他",
+   "pct_after_text": "18.1825%",
+   "pct_after": 18.1825
+  },
+  {
+   "name": "Wong Ka Ki",
+   "type": "其他",
+   "pct_after_text": "18.1825%",
+   "pct_after": 18.1825
+  },
+  {
+   "name": "Ip Tsz Ying",
+   "type": "其他",
+   "pct_after_text": "18.1825%",
+   "pct_after": 18.1825
+  },
+  {
+   "name": "Tam Tak Seng",
+   "type": "其他",
+   "pct_after_text": "18.1825%",
+   "pct_after": 18.1825
+  }
+ ],
+ "note": "发行后持股比例，基于新增3,750,000股且不行使超额配售权。后四个自然人各持Mericorn Company Limited 25%权益，系间接持有公司股份。"
+}

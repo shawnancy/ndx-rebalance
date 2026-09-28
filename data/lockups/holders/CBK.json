@@ -1,0 +1,54 @@
+{
+ "t": "CBK",
+ "form": "424B4",
+ "filed": "2025-10-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1981546/000121390025095538/ea0235885-08.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "J. Adam Robertson",
+   "type": "创始人",
+   "pct_after_text": "16.5%",
+   "pct_after": 16.5
+  },
+  {
+   "name": "Aaron A. Robertson",
+   "type": "创始人",
+   "pct_after_text": "16.2%",
+   "pct_after": 16.2
+  },
+  {
+   "name": "Robertson Holding Company, L.P.",
+   "type": "其他",
+   "pct_after_text": "16.1%",
+   "pct_after": 16.1
+  },
+  {
+   "name": "Martha S. Spurlock",
+   "type": "高管董事",
+   "pct_after_text": "9.2%",
+   "pct_after": 9.2
+  },
+  {
+   "name": "Unified Shares LLC",
+   "type": "其他",
+   "pct_after_text": "8.5%",
+   "pct_after": 8.5
+  },
+  {
+   "name": "Terry L. Lee",
+   "type": "高管董事",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  },
+  {
+   "name": "Alan C. Neely",
+   "type": "高管董事",
+   "pct_after_text": "3.7%",
+   "pct_after": 3.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（不行使期权），部分股东通过持股实体LP/LLC直接持股，包含卖出股份股东"
+}

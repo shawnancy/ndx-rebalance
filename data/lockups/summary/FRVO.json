@@ -1,0 +1,25 @@
+{
+ "t": "FRVO",
+ "cik": 1853868,
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026034849/fervoenergy-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 275776919,
+ "shares_offered": 70000000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "IPO 申报 NASDAQ（尚未上市）。除新发行 70M 股外，现存 205.8M 股是 Rule 144 定义的「受限制证券」（独立于 lock-up），两层限制叠加。约 99% 现有股东和高管签 180 天禁售协议，原文未给出具体禁售股数、无分批释放条款。禁售期满后仍需遵守 Rule 144 holding period/volume limits。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

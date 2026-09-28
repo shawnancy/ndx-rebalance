@@ -1,0 +1,24 @@
+{
+ "t": "BLSM",
+ "cik": 1839970,
+ "form": "424B4",
+ "filed": "2026-08-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1839970/000119312526340215/d98958d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 30643660,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We expect that substantially all of these shares will be subject to a 180-day lock-up period under the lock-up and market stand-off agreements described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "发行股数未明确披露，无法确定；受禁售股数仅用'substantially all'表述，无具体数字；18,258,960股为可转换优先股在发行完成时自动转换为普通股，涉及注册权",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "t": "FATN",
+ "form": "424B4",
+ "filed": "2025-04-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1993400/000164117225003434/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ragula Bhaskar",
+   "type": "创始人",
+   "pct_after_text": "17.56%",
+   "pct_after": 17.56
+  },
+  {
+   "name": "The Mason Sutter SF Trust",
+   "type": "其他",
+   "pct_after_text": "12.22%",
+   "pct_after": 12.22
+  },
+  {
+   "name": "Sanchaita Datta",
+   "type": "高管董事",
+   "pct_after_text": "11.88%",
+   "pct_after": 11.88
+  },
+  {
+   "name": "Zions SBIC, LLC",
+   "type": "VC",
+   "pct_after_text": "9.55%",
+   "pct_after": 9.55
+  },
+  {
+   "name": "Skyline Investment Trust",
+   "type": "其他",
+   "pct_after_text": "7.92%",
+   "pct_after": 7.92
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例，统计日期2025年4月4日，共5个≥5%股东"
+}

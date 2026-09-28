@@ -1,0 +1,24 @@
+{
+ "t": "PMAX",
+ "form": "424B4",
+ "filed": "2024-09-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2012096/000121390024076355/ea0201090-14.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ms. Leung",
+   "type": "创始人",
+   "pct_after_text": "94.4%",
+   "pct_after": 94.4
+  },
+  {
+   "name": "Bliss On Limited",
+   "type": "其他",
+   "pct_after_text": "94.4%",
+   "pct_after": 94.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按投票权比例；Bliss On Limited 由 Ms. Leung 100% 控制；董事高管均无明确持股比例（显示为\"—\"）"
+}

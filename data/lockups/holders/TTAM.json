@@ -1,0 +1,18 @@
+{
+ "t": "TTAM",
+ "form": "424B1",
+ "filed": "2025-02-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2035304/000119312525022729/d833037d424b1.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Titan Cement International SA",
+   "type": "战略/公司",
+   "pct_after_text": "87%",
+   "pct_after": 87
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，基于未行使承销商期权假设；普通股；所有董事高管持股均未达报告阈值"
+}

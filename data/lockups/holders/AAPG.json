@@ -1,0 +1,42 @@
+{
+ "t": "AAPG",
+ "form": "424B4",
+ "filed": "2025-01-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2023311/000110465925006029/tm2415654-19_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Edward Ming Guo",
+   "type": "创始人",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  },
+  {
+   "name": "Dajun Yang, M.D., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  },
+  {
+   "name": "Yifan Zhai, M.D., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  },
+  {
+   "name": "Shaomeng Wang, Ph.D.",
+   "type": "其他",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  },
+  {
+   "name": "Takeda Pharmaceuticals International AG",
+   "type": "战略/公司",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例。Edward Ming Guo、Dajun Yang、Yifan Zhai和Shaomeng Wang通过Concert Party Confirmation Deed共同控制部分股份。"
+}

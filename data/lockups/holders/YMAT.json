@@ -1,0 +1,48 @@
+{
+ "t": "YMAT",
+ "form": "424B4",
+ "filed": "2025-07-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1875016/000164117225021687/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jing-Bin Chiang",
+   "type": "创始人",
+   "pct_after_text": "35.84 %",
+   "pct_after": 35.84
+  },
+  {
+   "name": "NEW MOON CORPORATION",
+   "type": "战略/公司",
+   "pct_after_text": "28.73 %",
+   "pct_after": 28.73
+  },
+  {
+   "name": "Lee Bo-Wei",
+   "type": "其他",
+   "pct_after_text": "17.82 %",
+   "pct_after": 17.82
+  },
+  {
+   "name": "RADIANT FAITH LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "15.87 %",
+   "pct_after": 15.87
+  },
+  {
+   "name": "STAR CENTURION LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "10.11 %",
+   "pct_after": 10.11
+  },
+  {
+   "name": "Barium Glory Financial Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "8.82 %",
+   "pct_after": 8.82
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，普通股单一股类"
+}

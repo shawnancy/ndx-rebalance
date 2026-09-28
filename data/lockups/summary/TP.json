@@ -1,0 +1,24 @@
+{
+ "t": "TP",
+ "cik": 2104296,
+ "form": "424B4",
+ "filed": "2026-08-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2104296/000121390026086641/ea0301091-424b4_ticket.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 12064525,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, all of our directors and officers, and holders of 5% or more of our outstanding Ordinary Shares have agreed with the underwriters, subject to certain exceptions, not to sell, transfer or dispose of, directly or indirectly, any of our Ordinary Shares or securities convertible into or exercisable or exchangeable for our Ordinary Shares for a period of 180 days from the date on which the trading of our Ordinary Shares commences.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "Ticketplus (TP)首次IPO，禁售协议仅约束董事、高管及5%以上股东（不包括全部现有股东），期限180天，未公布具体禁售股数。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

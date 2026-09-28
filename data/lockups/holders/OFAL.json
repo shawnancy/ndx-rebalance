@@ -1,0 +1,42 @@
+{
+ "t": "OFAL",
+ "form": "424B4",
+ "filed": "2025-05-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2036307/000164117225011844/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "R-OPUS Inc.",
+   "type": "其他",
+   "pct_after_text": "33.02%",
+   "pct_after": 33.02
+  },
+  {
+   "name": "FNHK Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "12.35%",
+   "pct_after": 12.35
+  },
+  {
+   "name": "CP COWORK LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "12.35%",
+   "pct_after": 12.35
+  },
+  {
+   "name": "Larry Wong",
+   "type": "高管董事",
+   "pct_after_text": "12.35%",
+   "pct_after": 12.35
+  },
+  {
+   "name": "Keith Chong",
+   "type": "高管董事",
+   "pct_after_text": "12.35%",
+   "pct_after": 12.35
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例。FNHK Inc.和CP COWORK LIMITED分别由CEO Larry Wong和CTO Keith Chong控制。"
+}

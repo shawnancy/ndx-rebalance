@@ -1,0 +1,23 @@
+{
+ "t": "KLRA",
+ "cik": 2096997,
+ "form": "424B4",
+ "filed": "2026-04-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2096997/000119312526161521/d113532d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 123677939,
+ "shares_offered": 39062500,
+ "shares_locked": 84615439,
+ "shares_locked_text": "84,615,439",
+ "lockup_days": 180,
+ "evidence": "We expect that substantially all of these shares will be subject to the 180-day lock-up period under the lock-up agreements described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "84,615,439 股受限证券预计受 180 天禁售；已行权期权 2,520,139 股行权后亦受禁售约束；新发行 39,062,500 股中联属方交易受 Rule 144 限制",
+ "valid": false,
+ "reasons": [
+  "股数写法不在证据句里"
+ ]
+}

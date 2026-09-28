@@ -1,0 +1,24 @@
+{
+ "t": "LFS",
+ "form": "424B4",
+ "filed": "2025-10-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2030277/000182912625008019/leifras_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kiyotaka Ito",
+   "type": "创始人",
+   "pct_after_text": "50.37%",
+   "pct_after": 50.37
+  },
+  {
+   "name": "K2MY Co., Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "22.41%",
+   "pct_after": 22.41
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(超额配售权未行使); Kiyotaka Ito 含个人直接持股及控制的 K2MY Co., Ltd. 间接持股"
+}

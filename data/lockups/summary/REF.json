@@ -1,0 +1,23 @@
+{
+ "t": "REF",
+ "cik": 1787117,
+ "form": "424B4",
+ "filed": "2026-07-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1787117/000110465926088733/tm2513004-17_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 45013708,
+ "shares_locked_text": "45,013,708",
+ "lockup_days": 180,
+ "evidence": "we, all of our directors, executive officers and the holders of substantially all of our outstanding securities, including the selling stockholders and the stockholders participating in the Synthetic Secondary, are subject to lock-up agreements with the underwriters that will, subject to certain customary exceptions, restrict the sale of the shares of our common stock and certain other securities held by them for up to 180 days following the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "现有股东及公司管理层受 180 天禁售约束；摘录来自风险因素章节",
+ "valid": false,
+ "reasons": [
+  "股数写法不在证据句里"
+ ]
+}

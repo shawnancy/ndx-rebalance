@@ -1,0 +1,54 @@
+{
+ "t": "ARTV",
+ "form": "424B4",
+ "filed": "2024-07-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1817241/000119312524181773/d808948d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with GC Corp.",
+   "type": "战略/公司",
+   "pct_after_text": "10.7%",
+   "pct_after": 10.7
+  },
+  {
+   "name": "Yong-Jun Huh",
+   "type": "高管董事",
+   "pct_after_text": "10.7%",
+   "pct_after": 10.7
+  },
+  {
+   "name": "5AM Ventures VI, L.P.",
+   "type": "VC",
+   "pct_after_text": "6.5%",
+   "pct_after": 6.5
+  },
+  {
+   "name": "venBio Global Strategic Fund III, L.P.",
+   "type": "VC",
+   "pct_after_text": "6.5%",
+   "pct_after": 6.5
+  },
+  {
+   "name": "Entities affiliated with RA Capital Healthcare Fund, L.P.",
+   "type": "PE",
+   "pct_after_text": "6.5%",
+   "pct_after": 6.5
+  },
+  {
+   "name": "James Park",
+   "type": "高管董事",
+   "pct_after_text": "3.6%",
+   "pct_after": 3.6
+  },
+  {
+   "name": "Fred Aslan, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径(含全部SAFE按$12折15%转换及1392万股新发); Yong-Jun Huh持股与GC Corp.隶属实体数据重叠; 董事高管持股包含60日内可行使期权"
+}

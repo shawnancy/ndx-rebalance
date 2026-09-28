@@ -1,0 +1,60 @@
+{
+ "t": "STUB",
+ "form": "424B4",
+ "filed": "2025-09-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312525206300/d225849d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Eric H. Baker",
+   "type": "创始人",
+   "pct_after_text": "88.3%",
+   "pct_after": 88.3
+  },
+  {
+   "name": "Entities affiliated with Madrone Partners, L.P.",
+   "type": "PE",
+   "pct_after_text": "22.1%",
+   "pct_after": 22.1
+  },
+  {
+   "name": "Thomas A. Patterson",
+   "type": "高管董事",
+   "pct_after_text": "22.1%",
+   "pct_after": 22.1
+  },
+  {
+   "name": "Entities affiliated with WestCap",
+   "type": "PE",
+   "pct_after_text": "11.1%",
+   "pct_after": 11.1
+  },
+  {
+   "name": "Entities affiliated with Bessemer Venture Partners",
+   "type": "VC",
+   "pct_after_text": "7.9%",
+   "pct_after": 7.9
+  },
+  {
+   "name": "Jeremy Levine",
+   "type": "高管董事",
+   "pct_after_text": "7.9%",
+   "pct_after": 7.9
+  },
+  {
+   "name": "Entities affiliated with PointState Capital",
+   "type": "PE",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "Nayaab Islam",
+   "type": "高管董事",
+   "pct_after_text": "1.8%",
+   "pct_after": 1.8
+  }
+ ],
+ "note": "发行后、单类股取该类股%/多类股取总投票权%；Eric Baker持100%B类股（总投票权88.3%）"
+}

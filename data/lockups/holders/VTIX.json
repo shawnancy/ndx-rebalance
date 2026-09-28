@@ -1,0 +1,43 @@
+{
+ "t": "VTIX",
+ "form": "424B4",
+ "filed": "2026-01-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1606242/000121390026007731/ea0251002-08.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jan Goetgeluk",
+   "type": "创始人",
+   "pct_after_text": "77.89%",
+   "pct_after": 77.89
+  },
+  {
+   "name": "Ugo de Charette",
+   "type": "高管董事",
+   "pct_after_text": "3.34%",
+   "pct_after": 3.34
+  },
+  {
+   "name": "Bernard Goetgeluk",
+   "type": "其他",
+   "pct_after_text": "1.20%",
+   "pct_after": 1.2
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Streeterville Capital, LLC",
+   "type": "PE",
+   "pct_after_text": "*",
+   "pct_after": null
+  },
+  {
+   "name": "David Allan",
+   "type": "高管董事",
+   "pct_after_text": "*",
+   "pct_after": null
+  }
+ ],
+ "note": "发行后投票权比例（多类股汇总，A类1票/B类20票）；创始人独占全部B类股（100%）提供控制权"
+}

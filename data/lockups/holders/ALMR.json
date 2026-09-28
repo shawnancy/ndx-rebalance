@@ -1,0 +1,49 @@
+{
+ "t": "ALMR",
+ "form": "424B4",
+ "filed": "2026-04-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2104204/000119312526161647/d39680d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Qiming Venture Partners",
+   "type": "VC",
+   "pct_after_text": "15.8%",
+   "pct_after": 15.8
+  },
+  {
+   "name": "Entities affiliated with Illumina Innovation Funds",
+   "type": "战略/公司",
+   "pct_after_text": "9.1%",
+   "pct_after": 9.1
+  },
+  {
+   "name": "Yuling Luo, Ph.D.",
+   "type": "创始人",
+   "pct_after_text": "9.0%",
+   "pct_after": 9.0
+  },
+  {
+   "name": "Entities affiliated with Sherpa Healthcare Partners",
+   "type": "PE",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  },
+  {
+   "name": "Sands Capital Life Sciences Pulse Fund II, L.P.",
+   "type": "PE",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Shiping (\"Steve\") Chen, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "3.0%",
+   "pct_after": 3.0
+  }
+ ],
+ "note": "发行后持股比例，基于 67,163,276 股普通股计算。Nicholas Naclerio 的间接持股已计入 Illumina Innovation Funds，故未重复列示。"
+}

@@ -1,0 +1,21 @@
+{
+ "t": "CNXU",
+ "cik": 2066836,
+ "form": "424B4",
+ "filed": "2026-05-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2066836/000106299326002473/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 20916173,
+ "shares_offered": null,
+ "shares_locked": 11292031,
+ "shares_locked_text": "11,292,031",
+ "lockup_days": 365,
+ "evidence": "As of April 16, 2026, a total of 11,292,031 of the 20,916,173 shares of common stock outstanding and 1,566,559 of the 9,233,226 common stock purchase warrants outstanding are subject to either the one-year or three-year pooling arrangements.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "两种方案：(1)12个月后100%释放；(2)12个月后20%释放，之后每6个月释放20%",
+ "note": "直接上市申报Nasdaq(代码CNXU)而非IPO；受限股东受自愿pooling agreements约束；另有1,837,975股按Rule 144受90天限制",
+ "valid": true,
+ "reasons": []
+}

@@ -1,0 +1,41 @@
+{
+  "t": "SPTX",
+  "cik": 2042347,
+  "form": "424B4",
+  "filed": "2026-05-01",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2042347/000119312526201758/d73463d424b4.htm",
+  "listed_shares_m": 53.03,
+  "float_base_m": 15.0,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": 38.03,
+      "note": "首次公开发行后180天届满，所有受lock-up协议限制的股份于第181天起解禁",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:13:06Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": true,
+    "sum_m": 38.0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供prospectus具体日期(即发行日)，无法推导确切的解禁日历日期，仅知为发行后第181天",
+    "lock-up股数(38.03M)占总发行(53.03M)的比例约71.75%，与原文描述'98% of outstanding shares'存在数字出入，可能源于不同的计算口径或原文有多版本"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      917018,
+      923079
+    ],
+    "n_lockup_windows_total": 7,
+    "n_extra_windows_included": 2,
+    "excerpt_chars": 15042,
+    "html_flat_chars": 1106261
+  }
+}

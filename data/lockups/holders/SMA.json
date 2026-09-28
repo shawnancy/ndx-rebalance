@@ -1,0 +1,24 @@
+{
+ "t": "SMA",
+ "form": "424B4",
+ "filed": "2025-04-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1585389/000119312525071444/d860878d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Extra Space Storage LP",
+   "type": "战略/公司",
+   "pct_after_text": "8.6 %",
+   "pct_after": 8.6
+  },
+  {
+   "name": "H. Michael Schwartz",
+   "type": "创始人",
+   "pct_after_text": "5.2 %",
+   "pct_after": 5.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后（含27百万待发行普通股）；Extra Space Storage LP持可转换优先股，IPO后将被赎回至0%"
+}

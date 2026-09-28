@@ -1,0 +1,42 @@
+{
+ "t": "IOTR",
+ "form": "424B4",
+ "filed": "2025-04-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1997637/000121390025030667/ea0200830-14.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Eng Chye Koh",
+   "type": "创始人",
+   "pct_after_text": "74.89 %",
+   "pct_after": 74.89
+  },
+  {
+   "name": "iO3 Strategic Investments Limited",
+   "type": "战略/公司",
+   "pct_after_text": "55.68 %",
+   "pct_after": 55.68
+  },
+  {
+   "name": "Wei Meng See",
+   "type": "高管董事",
+   "pct_after_text": "55.68 %",
+   "pct_after": 55.68
+  },
+  {
+   "name": "Joanna Hui Cheng Soh",
+   "type": "高管董事",
+   "pct_after_text": "55.68 %",
+   "pct_after": 55.68
+  },
+  {
+   "name": "All Wealthy International Limited",
+   "type": "战略/公司",
+   "pct_after_text": "19.21 %",
+   "pct_after": 19.21
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，基于 25,650,000 股发行后总股数；Wei Meng See 和 Joanna Hui Cheng Soh 的持股通过 iO3 Strategic Investments Limited 间接持有"
+}

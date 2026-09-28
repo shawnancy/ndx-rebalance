@@ -1,0 +1,24 @@
+{
+ "t": "FOIL",
+ "cik": 2006960,
+ "form": "424B4",
+ "filed": "2026-08-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2006960/000119312526351136/d476818d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 390792185,
+ "shares_offered": 21428570,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, our directors, executive officers and all of our existing shareholders have agreed with the underwriters, subject to some exceptions, not to sell, transfer or dispose of, directly or indirectly, any of our ordinary shares, including ordinary shares represented by ADSs, or any securities convertible into or exchangeable or exercisable for our ordinary shares, for a period of 180 days after the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "主承销商(CF&CO)可自由裁量随时提前全部或部分释放禁售股份,不按财报或股价触发",
+ "note": "ESOP股份500万(占1.4%)另有36个月禁售;本次新发股份(2142.86万)免禁售;现有股东(含大股东DR Global 35.6%持股)受180天禁售;部分现有股东可在禁售期内向SEC提交机密转售登记,但不得公开披露",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

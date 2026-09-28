@@ -1,0 +1,42 @@
+{
+ "t": "EIKN",
+ "form": "424B4",
+ "filed": "2026-02-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526039375/d99350d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Lux",
+   "type": "VC",
+   "pct_after_text": "10.5 %",
+   "pct_after": 10.5
+  },
+  {
+   "name": "Entities affiliated with The Column Group",
+   "type": "VC",
+   "pct_after_text": "7.7 %",
+   "pct_after": 7.7
+  },
+  {
+   "name": "Entities affiliated with Foresite Capital",
+   "type": "VC",
+   "pct_after_text": "7.6 %",
+   "pct_after": 7.6
+  },
+  {
+   "name": "Entities affiliated with Innovation Endeavors",
+   "type": "VC",
+   "pct_after_text": "5.7 %",
+   "pct_after": 5.7
+  },
+  {
+   "name": "Roger M. Perlmutter M.D., Ph.D",
+   "type": "高管董事",
+   "pct_after_text": "5.1 %",
+   "pct_after": 5.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股。Joshua Wolfe董事的10.5%股权归并于Lux基金中，仅列一次"
+}

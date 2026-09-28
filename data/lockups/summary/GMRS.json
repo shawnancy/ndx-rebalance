@@ -1,0 +1,25 @@
+{
+ "t": "GMRS",
+ "cik": 1898718,
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1898718/000110465926060835/tm2518736-29_424b5.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 54021728,
+ "shares_offered": 31914893,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "In connection with this offering, we, our directors and executive officers, and substantially all of our existing stockholders will agree, subject to certain exceptions, not to sell, dispose of, or hedge any shares of our common stock or securities convertible into or exchangeable for shares of our common stock, without, in each case, the prior written consent of J.P. Morgan Securities LLC, for a period of 180 days after the date of this prospectus (the \"lockup period\").",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "本次为IPO；原文未明确给出普通股禁售总股数，仅说现有股东'substantially all'签署180天禁售协议；禁售期满时员工RSU/PSU/期权将陆续解锁",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "t": "KLAR",
+ "form": "424B4",
+ "filed": "2025-09-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2003292/000200329225000052/klarnagroupplc424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "摘录为董事高管薪酬部分，未包含主要股东表具体数据。原文提及股东信息在'Principal and Selling Shareholders'章节，但该章节未提供。"
+}

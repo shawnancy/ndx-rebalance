@@ -1,0 +1,48 @@
+{
+ "t": "FLOC",
+ "form": "424B4",
+ "filed": "2025-01-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2035149/000119312525007794/d808403d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "GEC Advisors LLC",
+   "type": "PE",
+   "pct_after_text": "43.2%",
+   "pct_after": 43.2
+  },
+  {
+   "name": "Jonathan B. Fairbanks",
+   "type": "高管董事",
+   "pct_after_text": "43.2%",
+   "pct_after": 43.2
+  },
+  {
+   "name": "White Deer Management LLC",
+   "type": "PE",
+   "pct_after_text": "16.5%",
+   "pct_after": 16.5
+  },
+  {
+   "name": "Genesis Park II, LP",
+   "type": "PE",
+   "pct_after_text": "5.1%",
+   "pct_after": 5.1
+  },
+  {
+   "name": "John Gatlin",
+   "type": "高管董事",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  },
+  {
+   "name": "Chad Roberts",
+   "type": "高管董事",
+   "pct_after_text": "1.0%",
+   "pct_after": 1.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后数据，按 Class A 和 Class B 合并投票权计算；GEC Advisors LLC 和 Jonathan B. Fairbanks 涉及同一实际控制人。"
+}

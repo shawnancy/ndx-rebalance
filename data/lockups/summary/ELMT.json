@@ -1,0 +1,23 @@
+{
+ "t": "ELMT",
+ "cik": 2101698,
+ "form": "424B4",
+ "filed": "2026-04-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2101698/000121390026047144/ea0270360-06.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 28847649,
+ "shares_offered": 8571428,
+ "shares_locked": 20624611,
+ "shares_locked_text": "20,624,611",
+ "lockup_days": 180,
+ "evidence": "Notwithstanding the availability of Rule 144, the holders of 20,624,611 shares of our common stock, including 348,390 shares of unvested restricted stock that will vest within 180 days of the consummation of this offering, have entered into lock-up agreements as described below and their restricted shares will become eligible for sale at the expiration of the restrictions set forth in those agreements.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO 配售的 8,571,428 股（除关联人外）可自由交易；IPO 前股东的 20,624,611 股受 180 天禁售约束，其中含 348,390 股 180 天内待行权限制性股票；IPO 前现有股东及全体董事、高管、员工代表 100% 股份已签禁售协议",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

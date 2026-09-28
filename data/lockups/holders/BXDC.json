@@ -1,0 +1,18 @@
+{
+ "t": "BXDC",
+ "form": "424B4",
+ "filed": "2026-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2100161/000119312526225090/d52761d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Blackstone",
+   "type": "战略/公司",
+   "pct_after_text": "10.4%",
+   "pct_after": 10.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例。董事及高管持股均<1%，不符合≥1%列入条件。"
+}

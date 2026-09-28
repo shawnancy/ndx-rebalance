@@ -1,0 +1,61 @@
+{
+ "t": "MNTN",
+ "form": "424B4",
+ "filed": "2025-05-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1891027/000110465925052048/tm2413466-25_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mark Douglas",
+   "type": "创始人",
+   "pct_after_text": "26.3%",
+   "pct_after": 26.3
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Baroda Ventures LLC",
+   "type": "VC",
+   "pct_after_text": "19.4%",
+   "pct_after": 19.4
+  },
+  {
+   "name": "Entities affiliated with Greycroft",
+   "type": "VC",
+   "pct_after_text": "15.6%",
+   "pct_after": 15.6
+  },
+  {
+   "name": "Qualcomm Incorporated",
+   "type": "战略/公司",
+   "pct_after_text": "14.8%",
+   "pct_after": 14.8
+  },
+  {
+   "name": "Entities affiliated with MGD Holdings",
+   "type": "其他",
+   "pct_after_text": "11.3%",
+   "pct_after": 11.3
+  },
+  {
+   "name": "Entities affiliated with Bonfire Ventures",
+   "type": "VC",
+   "pct_after_text": "9.4%",
+   "pct_after": 9.4
+  },
+  {
+   "name": "Peak Investment Holdings LLC",
+   "type": "其他",
+   "pct_after_text": "6.5%",
+   "pct_after": 6.5
+  },
+  {
+   "name": "Entities affiliated with Fidelity",
+   "type": "其他",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  }
+ ],
+ "note": "发行后不行使期权，按合计投票权比例（Class A 1票/股、Class B 10票/股）"
+}

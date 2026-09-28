@@ -1,0 +1,25 @@
+{
+ "t": "JMKE",
+ "cik": 2127043,
+ "form": "424B4",
+ "filed": "2026-07-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2127043/000119312526326453/project_70_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "Sponsor、Principal Stockholders及其关联方、Directors/Officers(通过directed share program)、Continuing Incentive Unitholders(exchange后)均受180天lock-up；涉及Jersey Mike's Subs Inc.与Jersey Mike's Holdings之间复杂的单位交换结构；Sponsor可通过margin loan pledge股份但不受lock-up约束；原文未提供被lock-up的具体股数",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

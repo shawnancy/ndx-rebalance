@@ -1,0 +1,30 @@
+{
+ "t": "XZO",
+ "form": "424B4",
+ "filed": "2025-11-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1873951/000119312525267098/d28749d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "HCI Group, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "82.62%",
+   "pct_after": 82.62
+  },
+  {
+   "name": "Paresh Patel",
+   "type": "高管董事",
+   "pct_after_text": "6.81%",
+   "pct_after": 6.81
+  },
+  {
+   "name": "Kevin Mitchell",
+   "type": "高管董事",
+   "pct_after_text": "1.85%",
+   "pct_after": 1.85
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,假设underwriters期权不行使(90,775,789股);Paresh Patel和Kevin Mitchell分别持5百万和100万可行权期权,但受HCI董事会同意限制不得低于80.1%控股权"
+}

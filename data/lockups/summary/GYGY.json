@@ -1,0 +1,25 @@
+{
+ "t": "GYGY",
+ "cik": 2111846,
+ "form": "424B4",
+ "filed": "2026-07-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2111846/000121390026082494/ea0275919-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 14388000,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": null,
+ "evidence": "",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "摘录未提供具体禁售股数与禁售天数；主要讨论 Rule 144/701 和 Form S-8 框架下的各类限售规则；14,388,000 股为上市时流通在外数；Form S-8 股票明确受禁售协议约束但未指定期限",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "t": "OPTH",
+ "form": "424B4",
+ "filed": "2026-05-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027329/000119312526231760/d43258d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bryan Safarik",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Dane Stevens",
+   "type": "高管董事",
+   "pct_after_text": "8.0%",
+   "pct_after": 8.0
+  },
+  {
+   "name": "John James Wilson",
+   "type": "高管董事",
+   "pct_after_text": "5.7%",
+   "pct_after": 5.7
+  },
+  {
+   "name": "Edward and Diana Safarik",
+   "type": "其他",
+   "pct_after_text": "5.7%",
+   "pct_after": 5.7
+  },
+  {
+   "name": "Jacob Safarik",
+   "type": "高管董事",
+   "pct_after_text": "2.0%",
+   "pct_after": 2.0
+  }
+ ],
+ "note": "发行后持股比例，普通股口径（基数5,625,899股）"
+}

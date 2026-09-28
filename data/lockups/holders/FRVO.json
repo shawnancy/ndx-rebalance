@@ -1,0 +1,48 @@
+{
+ "t": "FRVO",
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1853868/000162828026034849/fervoenergy-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Tim Latimer",
+   "type": "创始人",
+   "pct_after_text": "47.9%",
+   "pct_after": 47.9
+  },
+  {
+   "name": "Jack Norbeck",
+   "type": "创始人",
+   "pct_after_text": "14.2%",
+   "pct_after": 14.2
+  },
+  {
+   "name": "Devon Energy Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "6.1%",
+   "pct_after": 6.1
+  },
+  {
+   "name": "Capricorn Investment Group",
+   "type": "VC",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  },
+  {
+   "name": "DCVC",
+   "type": "VC",
+   "pct_after_text": "3.1%",
+   "pct_after": 3.1
+  },
+  {
+   "name": "Breakthrough Energy Ventures",
+   "type": "VC",
+   "pct_after_text": "2.4%",
+   "pct_after": 2.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按投票权比例计算，因Class B股份含40倍投票权"
+}

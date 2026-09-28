@@ -1,0 +1,42 @@
+{
+ "t": "BMHL",
+ "form": "424B4",
+ "filed": "2025-07-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027815/000202781525000012/form424b.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Echo International Holdings Group Limited",
+   "type": "战略/公司",
+   "pct_after_text": "30.0%",
+   "pct_after": 30.0
+  },
+  {
+   "name": "Bluemount Group Limited",
+   "type": "其他",
+   "pct_after_text": "22.55%",
+   "pct_after": 22.55
+  },
+  {
+   "name": "Pan Jiye",
+   "type": "高管董事",
+   "pct_after_text": "22.55%",
+   "pct_after": 22.55
+  },
+  {
+   "name": "Yes & Right Investment Limited",
+   "type": "其他",
+   "pct_after_text": "21.18%",
+   "pct_after": 21.18
+  },
+  {
+   "name": "WI Holdings Limited",
+   "type": "其他",
+   "pct_after_text": "11.57%",
+   "pct_after": 11.57
+  }
+ ],
+ "dropped": [],
+ "note": "发行后双类股结构，按Class A股份比例（投票权20倍）；Class B对应比例为Echo 27.03%、Bluemount 20.32%、Pan Jiye 20.32%、Yes & Right 19.08%、WI Holdings 10.42%"
+}

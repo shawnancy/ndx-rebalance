@@ -1,0 +1,24 @@
+{
+ "t": "REA",
+ "cik": 2095743,
+ "form": "424B4",
+ "filed": "2026-05-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2095743/000119312526209799/rea_final_prospectus_-_4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 17743764,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "Our directors, executive officers, and a significant portion of all other holders of our common stock have agreed with the underwriters not to offer for sale, issue, sell, contract to sell, pledge or otherwise dispose of any of our common stock or securities convertible into common stock for a period of 180 days after the closing of this offering.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "禁售协议存在但未披露具体受约束股数,仅说管理层与'other holders of our common stock中的significant portion'签了180天禁售,无具体数字",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

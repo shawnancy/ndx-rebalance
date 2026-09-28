@@ -1,0 +1,42 @@
+{
+ "t": "NPT",
+ "form": "424B4",
+ "filed": "2025-10-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2014337/000121390025101321/ea0248938-08.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Hui Xu",
+   "type": "高管董事",
+   "pct_after_text": "30.40%",
+   "pct_after": 30.4
+  },
+  {
+   "name": "EXCP QQG Holding Limited",
+   "type": "其他",
+   "pct_after_text": "27.23%",
+   "pct_after": 27.23
+  },
+  {
+   "name": "EXCP WW Holding Limited",
+   "type": "其他",
+   "pct_after_text": "26.66%",
+   "pct_after": 26.66
+  },
+  {
+   "name": "EXCP XCH Holding Limited",
+   "type": "其他",
+   "pct_after_text": "15.39%",
+   "pct_after": 15.39
+  },
+  {
+   "name": "Jian Huang",
+   "type": "高管董事",
+   "pct_after_text": "12.27%",
+   "pct_after": 12.27
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例；多数股东通过BVI持股公司间接持股"
+}

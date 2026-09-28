@@ -1,0 +1,60 @@
+{
+ "t": "UPB",
+ "form": "424B4",
+ "filed": "2024-10-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2022626/000119312524236714/d843142d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Entities affiliated with OrbiMed",
+   "type": "VC",
+   "pct_after_text": "9.48%",
+   "pct_after": 9.48
+  },
+  {
+   "name": "AI Upstream LLC",
+   "type": "战略/公司",
+   "pct_after_text": "8.41%",
+   "pct_after": 8.41
+  },
+  {
+   "name": "Altshuler Shaham Provident Fund and Pension Ltd.",
+   "type": "其他",
+   "pct_after_text": "6.61%",
+   "pct_after": 6.61
+  },
+  {
+   "name": "Decheng Capital Global Life Sciences Fund IV, L.P.",
+   "type": "VC",
+   "pct_after_text": "6.01%",
+   "pct_after": 6.01
+  },
+  {
+   "name": "TCG Crossover Fund I, L.P.",
+   "type": "其他",
+   "pct_after_text": "5.41%",
+   "pct_after": 5.41
+  },
+  {
+   "name": "HBM Healthcare Investments (Cayman) Ltd.",
+   "type": "其他",
+   "pct_after_text": "5.29%",
+   "pct_after": 5.29
+  },
+  {
+   "name": "Maruho Deutschland GmbH",
+   "type": "战略/公司",
+   "pct_after_text": "5.11%",
+   "pct_after": 5.11
+  },
+  {
+   "name": "Erez Chimovits, M.B.A., M.Sc.",
+   "type": "高管董事",
+   "pct_after_text": "1.90%",
+   "pct_after": 1.9
+  }
+ ],
+ "note": "发行后持股比例，基于转换后普通股总数51,343,454股统计"
+}

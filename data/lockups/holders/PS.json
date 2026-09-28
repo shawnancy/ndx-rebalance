@@ -1,0 +1,48 @@
+{
+ "t": "PS",
+ "form": "424B4",
+ "filed": "2026-04-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2026053/000114036126018103/ny20040230x30_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Pershing Square Management, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "74.7%",
+   "pct_after": 74.7
+  },
+  {
+   "name": "William A. Ackman",
+   "type": "创始人",
+   "pct_after_text": "44.9%",
+   "pct_after": 44.9
+  },
+  {
+   "name": "Ryan Israel",
+   "type": "高管董事",
+   "pct_after_text": "7.7%",
+   "pct_after": 7.7
+  },
+  {
+   "name": "Ben Hakim",
+   "type": "高管董事",
+   "pct_after_text": "3.2%",
+   "pct_after": 3.2
+  },
+  {
+   "name": "Halit Coussin",
+   "type": "高管董事",
+   "pct_after_text": "2.3%",
+   "pct_after": 2.3
+  },
+  {
+   "name": "Nicholas M. Lamotte",
+   "type": "高管董事",
+   "pct_after_text": "2.1%",
+   "pct_after": 2.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径（承销商未行使期权情景），Management通过特殊投票股维持多数投票权，主要股东受投票权代理限制"
+}

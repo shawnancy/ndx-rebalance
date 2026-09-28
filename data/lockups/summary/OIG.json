@@ -1,0 +1,24 @@
+{
+ "t": "OIG",
+ "cik": 2124472,
+ "form": "424B4",
+ "filed": "2026-09-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2124472/000162828026062794/orion180-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 99032452,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, our directors and executive officers and substantially all of our shareholders have signed lock-up agreements under which they have agreed not to offer, sell, contract to sell, pledge or otherwise dispose of, or to enter into any hedging transactions with respect to, any shares of our Class A common stock or any securities convertible into or exercisable or exchangeable for shares of our Class A common stock for a period of 180 days commencing on the date of this prospectus, subject to certain exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO 发行；发行完成后总股数 9903.2 万股（A 类 3909.7 万 + B 类 5993.5 万）；现有股东持有的 1900.3 万 A 类股属于 restricted securities，其中大部分受 180 天 lock-up 约束，但原文列表行预留空白未填具体数字，无法确定释放数量。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

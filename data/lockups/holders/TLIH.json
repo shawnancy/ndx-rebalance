@@ -1,0 +1,24 @@
+{
+ "t": "TLIH",
+ "form": "424B4",
+ "filed": "2025-07-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1982012/000164117225018088/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Lim",
+   "type": "高管董事",
+   "pct_after_text": "80.32%",
+   "pct_after": 80.32
+  },
+  {
+   "name": "Ten-League Corp",
+   "type": "战略/公司",
+   "pct_after_text": "80.32%",
+   "pct_after": 80.32
+  }
+ ],
+ "dropped": [],
+ "note": "发行后；Mr. Lim通过99.99%拥有的Ten-League Corp持股80.32%为控制股东"
+}

@@ -1,0 +1,36 @@
+{
+ "t": "PBLS",
+ "form": "424B4",
+ "filed": "2026-06-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1657677/000119312526265983/pbls_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with FMR LLC",
+   "type": "其他",
+   "pct_after_text": "7.41%",
+   "pct_after": 7.41
+  },
+  {
+   "name": "Entities affiliated with RA Capital",
+   "type": "PE",
+   "pct_after_text": "6.55%",
+   "pct_after": 6.55
+  },
+  {
+   "name": "ARCH Venture Fund XII, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.43%",
+   "pct_after": 5.43
+  },
+  {
+   "name": "Mathai Mammen, M.D., Ph.D., Chairman, Chief Executive Officer and President",
+   "type": "高管董事",
+   "pct_after_text": "2.30%",
+   "pct_after": 2.3
+  }
+ ],
+ "dropped": [],
+ "note": "表格口径为IPO发行后(含并发私募配售)普通股及无投票权普通股合计后的持股比例"
+}

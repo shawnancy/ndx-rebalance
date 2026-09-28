@@ -1,0 +1,48 @@
+{
+ "t": "BIOA",
+ "form": "424B4",
+ "filed": "2024-09-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1709941/000119312524226927/d835745d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kristen Fortney, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "6.60%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "Entities Affiliated with Andreessen Horowitz",
+   "type": "VC",
+   "pct_after_text": "6.19%",
+   "pct_after": 6.19
+  },
+  {
+   "name": "Entities Affiliated with Khosla Ventures",
+   "type": "VC",
+   "pct_after_text": "5.26%",
+   "pct_after": 5.26
+  },
+  {
+   "name": "James Healy, M.D., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "4.79%",
+   "pct_after": 4.79
+  },
+  {
+   "name": "Patrick Enright",
+   "type": "高管董事",
+   "pct_after_text": "3.84%",
+   "pct_after": 3.84
+  },
+  {
+   "name": "Eric Morgen, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "1.59%",
+   "pct_after": 1.59
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例，基于全部优先股自动转换为普通股；部分董事代表所属投资基金持股"
+}

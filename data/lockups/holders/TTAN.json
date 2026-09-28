@@ -1,0 +1,54 @@
+{
+ "t": "TTAN",
+ "form": "424B4",
+ "filed": "2024-12-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1638826/000119312524277099/d577298d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Vahe Kuzoyan",
+   "type": "创始人",
+   "pct_after_text": "37.8%",
+   "pct_after": 37.8
+  },
+  {
+   "name": "Ara Mahdessian",
+   "type": "创始人",
+   "pct_after_text": "32.7%",
+   "pct_after": 32.7
+  },
+  {
+   "name": "Entities affiliated ICONIQ Growth",
+   "type": "VC",
+   "pct_after_text": "20.7%",
+   "pct_after": 20.7
+  },
+  {
+   "name": "Entities affiliated with Bessemer Venture Partners",
+   "type": "VC",
+   "pct_after_text": "12.0%",
+   "pct_after": 12.0
+  },
+  {
+   "name": "TPG Tech Adjacencies II Sherpa, L.P.",
+   "type": "PE",
+   "pct_after_text": "6.8%",
+   "pct_after": 6.8
+  },
+  {
+   "name": "Entities affiliated with Battery Ventures",
+   "type": "VC",
+   "pct_after_text": "6.4%",
+   "pct_after": 6.4
+  },
+  {
+   "name": "Nina Achadjian",
+   "type": "VC",
+   "pct_after_text": "2.6%",
+   "pct_after": 2.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按总投票权比例排序; 创始人持 B 类股(投票权更高), 其余为 A 类股; Nina Achadjian 为董事兼 Index Ventures 代表"
+}

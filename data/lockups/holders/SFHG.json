@@ -1,0 +1,18 @@
+{
+ "t": "SFHG",
+ "form": "424B4",
+ "filed": "2024-10-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1926792/000121390024087863/ea0200200-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Wing Wah Cheng, Wayne",
+   "type": "创始人",
+   "pct_after_text": "71.02%",
+   "pct_after": 71.02
+  }
+ ],
+ "dropped": [],
+ "note": "表为发行后持股比例(假设不行使期权),普通股口径"
+}

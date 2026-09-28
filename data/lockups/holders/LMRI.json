@@ -1,0 +1,30 @@
+{
+ "t": "LMRI",
+ "form": "424B4",
+ "filed": "2025-12-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2071288/000119312525316455/d217676d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "WCAS",
+   "type": "PE",
+   "pct_after_text": "29.2 %",
+   "pct_after": 29.2
+  },
+  {
+   "name": "Charlotte Radiology Investors, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "6.1 %",
+   "pct_after": 6.1
+  },
+  {
+   "name": "John Perkins",
+   "type": "高管董事",
+   "pct_after_text": "1.2 %",
+   "pct_after": 1.2
+  }
+ ],
+ "dropped": [],
+ "note": "S-1招股书发行后共同股持股比例，基于无行使期权情景，涉及Holdings LLC单位转换。"
+}

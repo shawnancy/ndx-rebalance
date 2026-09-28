@@ -1,0 +1,42 @@
+{
+ "t": "FISN",
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1918102/000110465926075763/tm2612179-14_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Elizabeth Muller",
+   "type": "高管董事",
+   "pct_after_text": "17.69%",
+   "pct_after": 17.69
+  },
+  {
+   "name": "Richard Muller",
+   "type": "高管董事",
+   "pct_after_text": "9.28%",
+   "pct_after": 9.28
+  },
+  {
+   "name": "Entities affiliated with 8VC",
+   "type": "VC",
+   "pct_after_text": "7.73%",
+   "pct_after": 7.73
+  },
+  {
+   "name": "Mark Tompkins",
+   "type": "其他",
+   "pct_after_text": "5.23%",
+   "pct_after": 5.23
+  },
+  {
+   "name": "EE Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "5.08%",
+   "pct_after": 5.08
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（未行使承销商超额配售权），基数60,333,311股"
+}

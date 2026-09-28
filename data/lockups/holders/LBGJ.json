@@ -1,0 +1,36 @@
+{
+ "t": "LBGJ",
+ "form": "424B4",
+ "filed": "2024-10-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1896425/000121390024089686/ea0218085-424b4_libang.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Huang Feng",
+   "type": "高管董事",
+   "pct_after_text": "83.35%",
+   "pct_after": 83.35
+  },
+  {
+   "name": "Li Funa",
+   "type": "高管董事",
+   "pct_after_text": "83.35%",
+   "pct_after": 83.35
+  },
+  {
+   "name": "Maple Huang Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "69.12%",
+   "pct_after": 69.12
+  },
+  {
+   "name": "Funa Lee Holdings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "14.23%",
+   "pct_after": 14.23
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；董事高管数字为beneficial ownership，包括配偶及受控实体股份。"
+}

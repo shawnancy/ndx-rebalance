@@ -1,0 +1,30 @@
+{
+ "t": "KLC",
+ "form": "424B4",
+ "filed": "2024-10-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312524235226/d760946d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Partners Group Holding AG",
+   "type": "PE",
+   "pct_after_text": "71.2%",
+   "pct_after": 71.2
+  },
+  {
+   "name": "Tom Wyatt",
+   "type": "高管董事",
+   "pct_after_text": "3.7%",
+   "pct_after": 3.7
+  },
+  {
+   "name": "Paul Thompson",
+   "type": "高管董事",
+   "pct_after_text": "1.0%",
+   "pct_after": 1.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，不考虑承销商认购选项，普通股单一类别。"
+}

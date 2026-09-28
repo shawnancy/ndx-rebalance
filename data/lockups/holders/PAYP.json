@@ -1,0 +1,36 @@
+{
+ "t": "PAYP",
+ "form": "424B4",
+ "filed": "2026-03-12",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2080845/000208084526000001/d941409d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "B Holdings Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "46.24%",
+   "pct_after": 46.24
+  },
+  {
+   "name": "SVF II Piranha (DE) LLC",
+   "type": "PE",
+   "pct_after_text": "27.97%",
+   "pct_after": 27.97
+  },
+  {
+   "name": "SoftBank Corp.",
+   "type": "战略/公司",
+   "pct_after_text": "7.40%",
+   "pct_after": 7.4
+  },
+  {
+   "name": "LY Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "7.40%",
+   "pct_after": 7.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,基于676,873,535股已发行股份(含ADSs),包括12,436,600可行使股票期权,假设行使全部超额配售权"
+}

@@ -1,0 +1,18 @@
+{
+ "t": "MH",
+ "form": "424B4",
+ "filed": "2025-07-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1951070/000162828025035928/mcgrawhillinc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Investment vehicles affiliated with Platinum Equity, LLC",
+   "type": "PE",
+   "pct_after_text": "86.5%",
+   "pct_after": 86.5
+  }
+ ],
+ "dropped": [],
+ "note": "按发行后不行使期权持股比例；仅一家≥5%股东，无单个董事高管持股≥1%"
+}

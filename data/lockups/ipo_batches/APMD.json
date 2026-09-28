@@ -1,0 +1,43 @@
+{
+  "t": "APMD",
+  "cik": 1745648,
+  "form": "424B4",
+  "filed": "2026-07-31",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1745648/000119312526328422/apmd_424b4.htm",
+  "listed_shares_m": 39.82,
+  "float_base_m": 12,
+  "unlocks": [
+    {
+      "d": "2026-10-12",
+      "sh_m": 27.82,
+      "note": "180日锁定期满，第181天释放。受限股东不得在此日期前转售",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:06:21Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 27.8,
+    "sum_le_listed": true
+  },
+  "confidence": "medium",
+  "warnings": [
+    "原文未明确给出招股书(prospectus)发布日期，仅给出财务截止日(2026-03-31)及warrant信息日期(2026-04-02)，日期推估假设424B4在4月中旬发布",
+    "原文详述Rule 144(affiliate/non-affiliate)、Rule 701、Registration Rights等多种解禁规则，但均未给出具体批次和数量，仅记录唯一有明确释放股数的180天锁定期满批次",
+    "12M IPO发行股份在closing后即可自由交易(除affiliate购买者外)，不受180天锁定限制",
+    "underwriters有权在180天内任意时点自主(sole discretion)释放部分或全部锁定股，原文未指定具体释放方案或时间表"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      987989,
+      997888
+    ],
+    "n_lockup_windows_total": 3,
+    "n_extra_windows_included": 3,
+    "excerpt_chars": 15063,
+    "html_flat_chars": 1276478
+  }
+}

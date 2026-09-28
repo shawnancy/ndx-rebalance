@@ -1,0 +1,42 @@
+{
+ "t": "MENS",
+ "form": "424B4",
+ "filed": "2025-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1954488/000121390025055414/ea0200696-25.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Fu-Feng Kuo",
+   "type": "高管董事",
+   "pct_after_text": "33.3%",
+   "pct_after": 33.3
+  },
+  {
+   "name": "Perfect Minds Co., Ltd.",
+   "type": "其他",
+   "pct_after_text": "33.3%",
+   "pct_after": 33.3
+  },
+  {
+   "name": "Laxton Investments Company Limited",
+   "type": "其他",
+   "pct_after_text": "10.0%",
+   "pct_after": 10.0
+  },
+  {
+   "name": "Linkage Gladden Enterprise Ltd.",
+   "type": "其他",
+   "pct_after_text": "9.0%",
+   "pct_after": 9.0
+  },
+  {
+   "name": "Peak Valley International Co., Ltd.",
+   "type": "其他",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，单一普通股；Fu-Feng Kuo 直接持股与通过 100% 拥有的 Perfect Minds Co., Ltd. 间接持股均按 SEC 有利所有权规则列示。"
+}

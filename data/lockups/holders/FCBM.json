@@ -1,0 +1,54 @@
+{
+ "t": "FCBM",
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1531193/000114036126025790/ny20062301x10_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ocean Water Investments, LLC",
+   "type": "其他",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "James A. Lucas, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  },
+  {
+   "name": "Vincent C. Andracchio, II",
+   "type": "高管董事",
+   "pct_after_text": "1.9%",
+   "pct_after": 1.9
+  },
+  {
+   "name": "Ronald A. Day",
+   "type": "高管董事",
+   "pct_after_text": "1.3%",
+   "pct_after": 1.3
+  },
+  {
+   "name": "Charles A. Robbins, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "1.2%",
+   "pct_after": 1.2
+  },
+  {
+   "name": "John W. Gussenhoven",
+   "type": "高管董事",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  },
+  {
+   "name": "John J. Ferebee, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  }
+ ],
+ "dropped": [],
+ "note": "Immediately Following the Offering列数据, 普通股, 已进行2:1正向拆股"
+}

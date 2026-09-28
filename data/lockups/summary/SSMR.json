@@ -1,0 +1,25 @@
+{
+ "t": "SSMR",
+ "cik": 2091017,
+ "form": "424B4",
+ "filed": "2026-06-05",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2091017/000114036126024037/ny20061035x7_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 140726603,
+ "shares_offered": 20000000,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "原文未给出被锁定股数的精确数字, 仅用'substantially all'修饰; 禁售涵盖董事、高管及绝大多数现有股东和8,573,000期权持有者; 新发行20M股完全自由转让",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "t": "FCBM",
+ "cik": 1531193,
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1531193/000114036126025790/ny20062301x10_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 30245752,
+ "shares_offered": 5500000,
+ "shares_locked": 6604464,
+ "shares_locked_text": "6,604,464 shares of our common stock",
+ "lockup_days": 180,
+ "evidence": "We, our executive officers, directors and certain of our holders of our currently outstanding shares of common stock, holding, in the aggregate, 6,604,464 shares of our common stock as of June 1, 2026, after giving effect to the 2-for-1 forward stock split of our common stock (representing approximately 27% of our outstanding common stock as of such date), have entered into lock-up agreements under which we and they will generally agree not to sell or otherwise transfer our or their shares for a period of 180 days after the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "180天禁售期后分阶段释放：发行日17,680,160股，90天后375,208股，禁售期满后6,690,384股(部分需分卷限制)",
+ "note": "禁售协议覆盖6.6百万股占流通股27%，为高管董事及部分现有股东；新发行股5.5百万股免禁售；NYSE首次上市",
+ "valid": true,
+ "reasons": []
+}

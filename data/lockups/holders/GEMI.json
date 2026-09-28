@@ -1,0 +1,48 @@
+{
+ "t": "GEMI",
+ "form": "424B4",
+ "filed": "2025-09-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465925089710/tm255912-34_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Winklevoss Capital, Fund, LLC",
+   "type": "VC",
+   "pct_after_text": "94.7%",
+   "pct_after": 94.7
+  },
+  {
+   "name": "Tyler Winklevoss",
+   "type": "创始人",
+   "pct_after_text": "94.7%",
+   "pct_after": 94.7
+  },
+  {
+   "name": "Cameron Winklevoss",
+   "type": "创始人",
+   "pct_after_text": "94.7%",
+   "pct_after": 94.7
+  },
+  {
+   "name": "Entities affiliated with Morgan Creek",
+   "type": "VC",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "Marshall Beard",
+   "type": "高管董事",
+   "pct_after_text": "2.7%",
+   "pct_after": 2.7
+  },
+  {
+   "name": "Tyler Meade",
+   "type": "高管董事",
+   "pct_after_text": "2.1%",
+   "pct_after": 2.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例,多类股按综合投票权,无行使保险包场景;Winklevoss兄弟持股通过所控基金实现"
+}

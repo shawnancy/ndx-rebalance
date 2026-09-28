@@ -1,0 +1,30 @@
+{
+ "t": "KRMN",
+ "form": "424B4",
+ "filed": "2025-02-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2040127/000119312525026168/d882184d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "TCFIII Spaceco SPV LP",
+   "type": "PE",
+   "pct_after_text": "56.04%",
+   "pct_after": 56.04
+  },
+  {
+   "name": "Uninet Partners, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "5.29%",
+   "pct_after": 5.29
+  },
+  {
+   "name": "Tony Koblinski",
+   "type": "高管董事",
+   "pct_after_text": "2.17%",
+   "pct_after": 2.17
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设不行使承销商期权；仅普通股一类"
+}

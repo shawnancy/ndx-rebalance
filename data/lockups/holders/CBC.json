@@ -1,0 +1,60 @@
+{
+ "t": "CBC",
+ "form": "424B4",
+ "filed": "2025-11-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2065601/000110465925114684/tm2512009-13_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Robert R. Hermann, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "66.05%",
+   "pct_after": 66.05
+  },
+  {
+   "name": "S. Bryan Cook",
+   "type": "高管董事",
+   "pct_after_text": "65.89%",
+   "pct_after": 65.89
+  },
+  {
+   "name": "Robert M. Robuck",
+   "type": "高管董事",
+   "pct_after_text": "65.81%",
+   "pct_after": 65.81
+  },
+  {
+   "name": "Voting Trust",
+   "type": "其他",
+   "pct_after_text": "65.79%",
+   "pct_after": 65.79
+  },
+  {
+   "name": "Central Trust Bank",
+   "type": "战略/公司",
+   "pct_after_text": "19.74%",
+   "pct_after": 19.74
+  },
+  {
+   "name": "Charles A. Weber",
+   "type": "其他",
+   "pct_after_text": "10.26%",
+   "pct_after": 10.26
+  },
+  {
+   "name": "John D. Schaperkotter",
+   "type": "其他",
+   "pct_after_text": "10.25%",
+   "pct_after": 10.25
+  },
+  {
+   "name": "Steven W. Cook",
+   "type": "其他",
+   "pct_after_text": "8.59%",
+   "pct_after": 8.59
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设underwriters' option不行使；Voting Trust为受信机构，部分Trustee持股中包含该信托的间接持股"
+}

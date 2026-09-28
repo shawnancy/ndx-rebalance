@@ -1,0 +1,48 @@
+{
+ "t": "EROC",
+ "form": "424B4",
+ "filed": "2026-06-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110029/000119312526265898/d12401d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with our Sponsor",
+   "type": "PE",
+   "pct_after_text": "46.8 %",
+   "pct_after": 46.8
+  },
+  {
+   "name": "Thomas McAndrew",
+   "type": "创始人",
+   "pct_after_text": "10.3 %",
+   "pct_after": 10.3
+  },
+  {
+   "name": "Corey Amthor",
+   "type": "高管董事",
+   "pct_after_text": "3.3 %",
+   "pct_after": 3.3
+  },
+  {
+   "name": "Ian Blakely",
+   "type": "高管董事",
+   "pct_after_text": "2.6 %",
+   "pct_after": 2.6
+  },
+  {
+   "name": "John Carrington",
+   "type": "高管董事",
+   "pct_after_text": "1.5 %",
+   "pct_after": 1.5
+  },
+  {
+   "name": "Paul Froutan",
+   "type": "高管董事",
+   "pct_after_text": "1.4 %",
+   "pct_after": 1.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例取Combined Voting Power列(Class A和B合并投票权);Sponsor由多层PE基金结构控制"
+}

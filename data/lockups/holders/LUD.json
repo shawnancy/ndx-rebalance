@@ -1,0 +1,24 @@
+{
+ "t": "LUD",
+ "form": "424B4",
+ "filed": "2025-02-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1984124/000121390025017858/ea0220044-08.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ma Biu",
+   "type": "高管董事",
+   "pct_after_text": "88.9 %",
+   "pct_after": 88.9
+  },
+  {
+   "name": "Diamond Horses Group Limited",
+   "type": "战略/公司",
+   "pct_after_text": "88.9 %",
+   "pct_after": 88.9
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股；Ma Biu 为英属维尔京企业 Diamond Horses Group Limited 的唯一股东，对该公司直接持有的全部 20,000,000 股有投票及处置权"
+}

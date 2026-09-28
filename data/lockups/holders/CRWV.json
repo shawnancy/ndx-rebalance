@@ -1,0 +1,42 @@
+{
+ "t": "CRWV",
+ "form": "424B4",
+ "filed": "2025-03-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Michael Intrator",
+   "type": "创始人",
+   "pct_after_text": "37.18%",
+   "pct_after": 37.18
+  },
+  {
+   "name": "Brian Venturo",
+   "type": "创始人",
+   "pct_after_text": "24.66%",
+   "pct_after": 24.66
+  },
+  {
+   "name": "Brannin McBee",
+   "type": "创始人",
+   "pct_after_text": "18.76%",
+   "pct_after": 18.76
+  },
+  {
+   "name": "Magnetar Financial LLC",
+   "type": "PE",
+   "pct_after_text": "7.01%",
+   "pct_after": 7.01
+  },
+  {
+   "name": "Jack Cogen",
+   "type": "高管董事",
+   "pct_after_text": "1.46%",
+   "pct_after": 1.46
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权比例（多类股Class A和Class B合计投票权）"
+}

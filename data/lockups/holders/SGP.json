@@ -1,0 +1,54 @@
+{
+ "t": "SGP",
+ "form": "424B4",
+ "filed": "2026-02-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1778922/000162828026006068/spyglass-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with New Enterprise Associates",
+   "type": "VC",
+   "pct_after_text": "20.2%",
+   "pct_after": 20.2
+  },
+  {
+   "name": "Entities affiliated with RA Capital Management",
+   "type": "VC",
+   "pct_after_text": "13.6%",
+   "pct_after": 13.6
+  },
+  {
+   "name": "Vensana Capital I, L.P.",
+   "type": "VC",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Coöperatieve Gilde Healthcare VG VI U.A.",
+   "type": "VC",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  },
+  {
+   "name": "Entities affiliated with Sands Capital Alternatives",
+   "type": "VC",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  },
+  {
+   "name": "Malik Y. Kahook, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "2.9%",
+   "pct_after": 2.9
+  },
+  {
+   "name": "Patrick Mooney",
+   "type": "高管董事",
+   "pct_after_text": "1.4%",
+   "pct_after": 1.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,普通股;无特殊情况"
+}

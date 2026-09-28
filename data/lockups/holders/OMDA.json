@@ -1,0 +1,54 @@
+{
+ "t": "OMDA",
+ "form": "424B4",
+ "filed": "2025-06-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1611115/000119312525137394/d785770d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Revelation Partners",
+   "type": "PE",
+   "pct_after_text": "9.3 %",
+   "pct_after": 9.3
+  },
+  {
+   "name": "Entities affiliated with U.S. Venture Partners X, L.P.",
+   "type": "VC",
+   "pct_after_text": "8.5 %",
+   "pct_after": 8.5
+  },
+  {
+   "name": "Entities affiliated with Andreessen Horowitz",
+   "type": "VC",
+   "pct_after_text": "8.3 %",
+   "pct_after": 8.3
+  },
+  {
+   "name": "FMR LLC",
+   "type": "其他",
+   "pct_after_text": "8.0 %",
+   "pct_after": 8.0
+  },
+  {
+   "name": "Cigna Ventures, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "6.2 %",
+   "pct_after": 6.2
+  },
+  {
+   "name": "Sean Duffy",
+   "type": "高管董事",
+   "pct_after_text": "3.5 %",
+   "pct_after": 3.5
+  },
+  {
+   "name": "Wei-Li Shao",
+   "type": "高管董事",
+   "pct_after_text": "1.0 %",
+   "pct_after": 1.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股，包括60天内可行使期权"
+}

@@ -1,0 +1,23 @@
+{
+ "t": "IMC",
+ "cik": 2098395,
+ "form": "424B4",
+ "filed": "2026-07-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2098395/000149315226035207/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 105100000,
+ "shares_offered": 4000000,
+ "shares_locked": 101100000,
+ "shares_locked_text": "101,100,000",
+ "lockup_days": 90,
+ "evidence": "The remaining 101,100,000 ordinary shares will be \"restricted securities,\" as that phrase is defined in Rule 144, and are eligible for public sale only if they are registered under the Securities Act or if they qualify for an exemption from registration under Rules 144 or 701 under the Securities Act, which are summarized below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "禁售范围包括Rule 144 restricted securities和董事高管的三个月lock-up协议；后续Form S-8注册后可按规则公开发售。",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

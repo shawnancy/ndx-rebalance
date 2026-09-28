@@ -1,0 +1,12 @@
+{
+ "t": "SPCX",
+ "ok": true,
+ "source": "人工核对: SEC 13G 原件(2026-09-14 研究) + 424B4 禁售条款",
+ "holders": [
+  {"name": "Elon Musk", "type": "创始人", "pct_after": 48.4},
+  {"name": "Alphabet (Google)", "type": "战略/公司", "pct_after": 7.2},
+  {"name": "Valor Equity Partners", "type": "PE", "pct_after": 6.5},
+  {"name": "Founders Fund", "type": "VC", "pct_after": 2.3}
+ ],
+ "note": "经济权益比例(13G), 不是投票权(马斯克 B 类股投票权约 84%)。马斯克约 64 亿股锁到 2027-06-12, 2026 年 10-12 月各批解禁的卖方主要是员工(约 58%)和机构老股东(约 37%), 不含马斯克。"
+}

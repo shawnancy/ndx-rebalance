@@ -1,0 +1,35 @@
+{
+  "t": "PS",
+  "cik": 2026053,
+  "form": "424B4",
+  "filed": "2026-04-30",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2026053/000114036126018103/ny20040230x30_424b4.htm",
+  "listed_shares_m": 400,
+  "float_base_m": 8.103392,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:11:53Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "招股书未提供详细的解禁表(unlock schedule); 仅阐述锁定期规则(180天承销商锁定期、1年转让限制)而无具体日期对应股数配对",
+    "基础发行量8.103M股; 绿鞋期权可选(up to 1.216M, exercisable for 45 days), 未含在基础发行量内",
+    "375.4M pre-IPO owners/management和16.6M私募投资者为受限证券, 解禁依赖Rule 144豁免和注册权协议执行, 本摘录未给出具体解禁日期表"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      752455,
+      767455
+    ],
+    "n_lockup_windows_total": 2,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1106042
+  }
+}

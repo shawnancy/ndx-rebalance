@@ -1,0 +1,30 @@
+{
+ "t": "PICS",
+ "form": "424B1",
+ "filed": "2026-01-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1841644/000121390026009315/ea0201690-21.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "PicPay Netherlands",
+   "type": "战略/公司",
+   "pct_after_text": "99.615%",
+   "pct_after": 99.615
+  },
+  {
+   "name": "Stichting JAB",
+   "type": "高管董事",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Stichting ACC Family",
+   "type": "高管董事",
+   "pct_after_text": "7.4%",
+   "pct_after": 7.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例按Class A普通股百分比;多类股结构下合并投票权分别为99.615%/0.5%/0.4%"
+}

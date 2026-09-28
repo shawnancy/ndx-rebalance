@@ -1,0 +1,60 @@
+{
+ "t": "SWMR",
+ "form": "424B4",
+ "filed": "2026-03-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2092574/000110465926029590/tm2529424-12_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Serhii Kupriienko",
+   "type": "创始人",
+   "pct_after_text": "22.2 %",
+   "pct_after": 22.2
+  },
+  {
+   "name": "Theseus Capital Partners, LLC",
+   "type": "PE",
+   "pct_after_text": "17.2 %",
+   "pct_after": 17.2
+  },
+  {
+   "name": "Philip Wagenheim",
+   "type": "高管董事",
+   "pct_after_text": "17.2 %",
+   "pct_after": 17.2
+  },
+  {
+   "name": "Alexander Fink",
+   "type": "高管",
+   "pct_after_text": "11.4 %",
+   "pct_after": 11.4
+  },
+  {
+   "name": "RG.AI Technologies, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "10.6 %",
+   "pct_after": 10.6
+  },
+  {
+   "name": "D3 Fund, LP",
+   "type": "VC",
+   "pct_after_text": "7.6 %",
+   "pct_after": 7.6
+  },
+  {
+   "name": "Radius Fund I, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.2",
+   "pct_after": 5.2
+  },
+  {
+   "name": "Justin Zeefe",
+   "type": "高管董事",
+   "pct_after_text": "4.0 %",
+   "pct_after": 4.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股持股比例；部分比例原文缺%符号已照抄"
+}

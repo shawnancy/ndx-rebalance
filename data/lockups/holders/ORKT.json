@@ -1,0 +1,30 @@
+{
+ "t": "ORKT",
+ "form": "424B4",
+ "filed": "2024-07-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1979407/000149315224029118/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Goh Kian Hwa",
+   "type": "创始人",
+   "pct_after_text": "32.90 %",
+   "pct_after": 32.9
+  },
+  {
+   "name": "Lung Lay Hua",
+   "type": "创始人",
+   "pct_after_text": "32.90 %",
+   "pct_after": 32.9
+  },
+  {
+   "name": "Tan Kevin Patrick So",
+   "type": "高管董事",
+   "pct_after_text": "2.64 %",
+   "pct_after": 2.64
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按总股本比例；公司采用双类股，Class B股投票权10倍"
+}

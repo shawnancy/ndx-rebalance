@@ -1,0 +1,25 @@
+{
+ "t": "SNSC",
+ "cik": 2101240,
+ "form": "424B4",
+ "filed": "2026-08-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2101240/000121390026088617/ea0268485-18.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "JKM Equity Limited 可根据公司书面请求获得主承销商豁免，提前释放 6 个月禁售约束",
+ "note": "发行前 23.1 百万股 A 类普通股；禁售对象限于董事、高管和部分股东，非全体股东；公司禁售期 3 个月，董事/高管/股东禁售期 6 个月；摘录缺少禁售股份的具体数字和发行股数",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "t": "DUKR",
+ "cik": 1638911,
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1638911/000121390026058179/ea029121901-424b4_dukerobo.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "We and our officers and directors, and certain of our holders of 3% or more of the outstanding shares of our common stock, as of the effective date of the Registration Statement, have agreed, subject to limited exceptions, for a period of 180 days after the closing of this offering, not to offer, sell, contract to sell, pledge, grant any option to purchase, make any short sale or otherwise dispose of, directly or indirectly any shares of our common stock or any securities convertible into or exchangeable for our common stock either owned as of the date of the underwriting agreement or thereafter acquired without the prior written consent of the Representative.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "摘录缺关键数字:未明确说明有多少股受lock-up约束(仅列出发行前2,260,383流通股,但未给发行后总数或lock-up股数);Selling Stockholders股票受限但数量未给;warrants另有180天禁售;代表可自由提前释放所有或部分锁定证券",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

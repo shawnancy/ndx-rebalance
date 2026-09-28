@@ -1,0 +1,42 @@
+{
+ "t": "HCAI",
+ "form": "424B4",
+ "filed": "2025-02-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1958399/000121390025010702/ea0230031-424b4_huachenai.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bin Lu, Chief Executive Officer, Director and Chairman of the Board",
+   "type": "高管董事",
+   "pct_after_text": "60.16%",
+   "pct_after": 60.16
+  },
+  {
+   "name": "Huayue (BVI) Holding Limited",
+   "type": "其他",
+   "pct_after_text": "9.52%",
+   "pct_after": 9.52
+  },
+  {
+   "name": "Huaxuan (BVI) Limited",
+   "type": "其他",
+   "pct_after_text": "9.08%",
+   "pct_after": 9.08
+  },
+  {
+   "name": "Huamao (BVI) Limited",
+   "type": "其他",
+   "pct_after_text": "8.42%",
+   "pct_after": 8.42
+  },
+  {
+   "name": "Huajing (BVI) Limited",
+   "type": "其他",
+   "pct_after_text": "8.06%",
+   "pct_after": 8.06
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(未行使超额配售权); Bin Lu通过Huahao(BVI)Limited持股已去重"
+}

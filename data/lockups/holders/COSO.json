@@ -1,0 +1,60 @@
+{
+ "t": "COSO",
+ "form": "424B4",
+ "filed": "2025-07-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1297107/000095017025092949/coso_424_july_2025.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Patriot Financial Partners",
+   "type": "PE",
+   "pct_after_text": "17.20%",
+   "pct_after": 17.2
+  },
+  {
+   "name": "EJF Capital LLC",
+   "type": "PE",
+   "pct_after_text": "9.84%",
+   "pct_after": 9.84
+  },
+  {
+   "name": "GCP Capital Partners",
+   "type": "PE",
+   "pct_after_text": "9.47%",
+   "pct_after": 9.47
+  },
+  {
+   "name": "Joseph V. Topper",
+   "type": "高管董事",
+   "pct_after_text": "4.09%",
+   "pct_after": 4.09
+  },
+  {
+   "name": "Stephen R. Stone",
+   "type": "高管董事",
+   "pct_after_text": "2.45%",
+   "pct_after": 2.45
+  },
+  {
+   "name": "James S. MacLeod",
+   "type": "高管董事",
+   "pct_after_text": "2.42%",
+   "pct_after": 2.42
+  },
+  {
+   "name": "Anthony P. Valduga",
+   "type": "高管董事",
+   "pct_after_text": "2.18%",
+   "pct_after": 2.18
+  },
+  {
+   "name": "James N. Richardson, Jr.",
+   "type": "高管董事",
+   "pct_after_text": "1.50%",
+   "pct_after": 1.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，假设不行使承销商认购权；表格包含投票股和非投票股转换后的合计比例"
+}

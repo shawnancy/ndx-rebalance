@@ -1,0 +1,24 @@
+{
+ "t": "PXED",
+ "form": "424B4",
+ "filed": "2025-10-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1600222/000119312525235971/d876348d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "AP VIII Socrates Holdings, L.P.",
+   "type": "PE",
+   "pct_after_text": "71 %",
+   "pct_after": 71
+  },
+  {
+   "name": "TVG-I-E-AEG Holdings, LP",
+   "type": "PE",
+   "pct_after_text": "14 %",
+   "pct_after": 14
+  }
+ ],
+ "dropped": [],
+ "note": "表格口径为发行后(假设认购权不行使),按普通股总股本比例。董事高管持股均<1%,不列示。"
+}

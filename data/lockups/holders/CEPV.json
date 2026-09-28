@@ -1,0 +1,24 @@
+{
+ "t": "CEPV",
+ "form": "424B4",
+ "filed": "2025-11-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2034266/000121390025106079/ea0253055-05.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Brandon G. Lutnick",
+   "type": "高管董事",
+   "pct_after_text": "21.5%",
+   "pct_after": 21.5
+  },
+  {
+   "name": "Cantor EP Holdings V, LLC",
+   "type": "PE",
+   "pct_after_text": "21.5%",
+   "pct_after": 21.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例；两名股东通过同一实体关系持有同批 founder shares（Cantor 是 Brandon 控制的 CFGM 的唯一成员），故股份数量和比例相同"
+}

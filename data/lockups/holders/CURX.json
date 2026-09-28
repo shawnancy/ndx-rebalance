@@ -1,0 +1,31 @@
+{
+ "t": "CURX",
+ "form": "424B4",
+ "filed": "2025-08-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2025942/000149315225012350/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jun Liu",
+   "type": "高管董事",
+   "pct_after_text": "40.5%",
+   "pct_after": 40.5
+  },
+  {
+   "name": "Dian Ying Jing",
+   "type": "创始人",
+   "pct_after_text": "40.5%",
+   "pct_after": 40.5
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Chang Liu",
+   "type": "其他",
+   "pct_after_text": "28.8%",
+   "pct_after": 28.8
+  }
+ ],
+ "note": "发行后普通股投票权比例，所列股东均持优先股；多类股投票权分别计算。"
+}

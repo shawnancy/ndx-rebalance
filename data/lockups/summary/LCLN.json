@@ -1,0 +1,25 @@
+{
+ "t": "LCLN",
+ "cik": 1925283,
+ "form": "424B4",
+ "filed": "2026-05-21",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1925283/000162828026037044/lincolninternational-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 31657019,
+ "shares_offered": 21049988,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "禁售2年后，在第2、3、4周年分三等份释放（仅限Lock-Up Shares和Lock-Up Common Units持有者）",
+ "note": "摘录未明确列出受禁售约束的总股数；Underwriter Lock-Up Period 180天对几乎全部股东适用；LILP Partners的70,358,393个common units可兑换成Class A普通股但受2年禁售约束；分批释放仅适用于Lock-Up Shares和Lock-Up Common Units，非所有股份",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "t": "ACCL",
+ "form": "424B4",
+ "filed": "2025-10-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2038378/000121390025099963/ea0214214-19.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Mr. Yuen Yuk, HAU",
+   "type": "高管董事",
+   "pct_after_text": "74.73%",
+   "pct_after": 74.73
+  },
+  {
+   "name": "Star Blessings Limited",
+   "type": "战略/公司",
+   "pct_after_text": "74.73%",
+   "pct_after": 74.73
+  },
+  {
+   "name": "Mr. Cheung Po, LUI",
+   "type": "高管董事",
+   "pct_after_text": "4.50%",
+   "pct_after": 4.5
+  }
+ ],
+ "dropped": [],
+ "note": "表格为发行后持股比例，Yuen Yuk, HAU 通过全资拥有的 Star Blessings Limited（英属维尔京）间接持有。"
+}

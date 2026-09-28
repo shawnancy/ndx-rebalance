@@ -1,0 +1,23 @@
+{
+ "t": "SUJA",
+ "cik": 1934114,
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1934114/000110465926057504/tm2530822-13_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 23788700,
+ "shares_offered": 8888889,
+ "shares_locked": 14899811,
+ "shares_locked_text": "14,899,811",
+ "lockup_days": 180,
+ "evidence": "We, each of our officers and directors and other shareholders owning all of our Class A common stock and options or other securities to acquire Class A common stock have agreed that, without the prior written consent of Goldman Sachs & Co. LLC and Jefferies LLC on behalf of the underwriters, we and they will not, subject to limited exceptions, directly or indirectly sell or dispose of any of the shares of Class A common stock or securities convertible into or exchangeable for, or that represent the right to receive, shares of common stock, including LP Units, through the date that is 180 days after the date of this prospectus.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO新发8,888,889股不受lock-up；原有股东14,899,811股加可交换LP Units(14,836,312)共29,736,123股受180天禁售协议约束；LP Units交换为Class A股票后仍受Rule 144限制",
+ "valid": false,
+ "reasons": [
+  "股数写法不在证据句里"
+ ]
+}

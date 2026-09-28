@@ -1,0 +1,42 @@
+{
+ "t": "ZBIO",
+ "form": "424B4",
+ "filed": "2024-09-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1953926/000110465924099805/tm2332800-18_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Xencor, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "7.8%",
+   "pct_after": 7.8
+  },
+  {
+   "name": "Enavate Sciences",
+   "type": "VC",
+   "pct_after_text": "7.2%",
+   "pct_after": 7.2
+  },
+  {
+   "name": "Entities affiliated with SR One",
+   "type": "VC",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Entities affiliated with Longitude Capital",
+   "type": "VC",
+   "pct_after_text": "5.2%",
+   "pct_after": 5.2
+  },
+  {
+   "name": "Leon O. Moulder, Jr",
+   "type": "高管董事",
+   "pct_after_text": "4.8%",
+   "pct_after": 4.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，包含60日内可行使期权。"
+}

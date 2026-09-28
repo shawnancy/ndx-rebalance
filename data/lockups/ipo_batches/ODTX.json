@@ -1,0 +1,32 @@
+{
+  "t": "ODTX",
+  "cik": 1882782,
+  "form": "424B4",
+  "filed": "2026-05-08",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1882782/000119312526214819/odyssey__form_424b4.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:11:30Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文缺少具体的解禁时间表(Release Schedule)表格。虽然提到180天lock-up期限和解禁股数(27.1M+4.6M等)，但未提供发行日期/招股书日期的calendar date，无法推算lock-up到期日。",
+    "原文仅描述180天后27,098,614股+期权4,631,713股符合交易条件，但缺少分批解禁的日期与数量对应关系。期权解禁取决于vesting schedule，原文未提供vesting日期表。",
+    "未找到'已发行总股数'(listed_shares_m)的明确数据，仅提及锁定股数29,662,867股占总股本62.9%。"
+  ],
+  "_extract_meta": {
+    "section_found": false,
+    "section_range": null,
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 5,
+    "excerpt_chars": 15105,
+    "html_flat_chars": 1142406
+  }
+}

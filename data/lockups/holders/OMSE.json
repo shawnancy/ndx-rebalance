@@ -1,0 +1,24 @@
+{
+ "t": "OMSE",
+ "form": "424B4",
+ "filed": "2025-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2012219/000121390025042797/ea0200016-30.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "How Meng Hock",
+   "type": "创始人",
+   "pct_after_text": "61.78 %",
+   "pct_after": 61.78
+  },
+  {
+   "name": "Ng Tse Meng",
+   "type": "高管董事",
+   "pct_after_text": "2.17 %",
+   "pct_after": 2.17
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径（增发3,703,704股普通股后）；仅普通股无多类股"
+}

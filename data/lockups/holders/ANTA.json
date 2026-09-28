@@ -1,0 +1,36 @@
+{
+ "t": "ANTA",
+ "form": "424B4",
+ "filed": "2025-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2044255/000119312525120412/d849162d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Antalpha Technologies Holding Company",
+   "type": "战略/公司",
+   "pct_after_text": "64.9%",
+   "pct_after": 64.9
+  },
+  {
+   "name": "AMT Integrated Fund L.P.",
+   "type": "PE",
+   "pct_after_text": "10.8%",
+   "pct_after": 10.8
+  },
+  {
+   "name": "Tether International, S.A. de C.V.",
+   "type": "战略/公司",
+   "pct_after_text": "8.4%",
+   "pct_after": 8.4
+  },
+  {
+   "name": "Moore Xin Jin",
+   "type": "高管董事",
+   "pct_after_text": "3.2%",
+   "pct_after": 3.2
+  }
+ ],
+ "note": "发行后即期普通股比例，单一股类无多类股"
+}

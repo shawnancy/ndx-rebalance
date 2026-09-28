@@ -1,0 +1,18 @@
+{
+ "t": "CAI",
+ "form": "424B4",
+ "filed": "2025-06-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2019410/000110465925060762/tm2415719-25_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "David D. Halbert",
+   "type": "创始人",
+   "pct_after_text": "approximately 44.6%",
+   "pct_after": 44.6
+  }
+ ],
+ "note": "发行后持股比例，IPO定价$21.00/share；仅Founder/Chairman/CEO单独列名，其他≥5%股东和≥1%董事高管未详细列示"
+}

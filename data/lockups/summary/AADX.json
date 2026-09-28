@@ -1,0 +1,25 @@
+{
+ "t": "AADX",
+ "cik": 2118195,
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2118195/000119312526256356/d25758d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": null,
+ "evidence": "Our executive officers, our directors and other stockholders owning all of our common stock prior to this offering (such persons, collectively, the \"lock-up parties\") have agreed that, without the prior written consent of Morgan Stanley & Co. LLC and Jefferies LLC, he, she or it will not, and will not cause any direct or indirect affiliate to, and will not publicly disclose an intention to, during the lock-up period, (1) offer, pledge, hypothecate or grant any security interest in, sell, contract to sell, sell any option or contract to purchase, purchase any option or contract to sell, grant any option, right or warrant to purchase, lend, make any short sale or otherwise transfer or dispose of, directly or indirectly, any shares of common stock beneficially owned (as such term is used in Rule 13d-3 of the Exchange Act), by the lock-up party or any other securities so owned that are convertible into or exercisable or exchangeable (directly or indirectly) for, or that represent the right to receive, shares of common stock, including, without limitation, our preferred stock or securities which may be issued upon exercise of stock options, restricted stock units or warrants (collectively, the \"Other Securities\"), or (2) enter into any swap, hedging transaction or other arrangement that transfers to another, in whole or in part, any of the economic consequences of ownership of the common stock or Other Securities, whether any such transaction described in clause (1) or (2) above is to be settled by delivery of common stock or Other Securities, in cash or otherwise (a \"Swap\").",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "摘录为lock-up协议条款详解,涵盖全部发行前股东(exec、董事、其他股东);未明示禁售股数和期限;条款含15项豁免例外(赠与、继承、员工计划、融资并购等)",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "t": "LGCY",
+ "form": "424B4",
+ "filed": "2024-09-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315224038419/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Robert deRose & Susan deRose",
+   "type": "其他",
+   "pct_after_text": "10.13 %",
+   "pct_after": 10.13
+  },
+  {
+   "name": "LeeAnn Rohmann",
+   "type": "高管董事",
+   "pct_after_text": "9.24 %",
+   "pct_after": 9.24
+  },
+  {
+   "name": "deRose Family Trust 11/18/86",
+   "type": "其他",
+   "pct_after_text": "9.07 %",
+   "pct_after": 9.07
+  },
+  {
+   "name": "Michael Garnick",
+   "type": "其他",
+   "pct_after_text": "8.31 %",
+   "pct_after": 8.31
+  },
+  {
+   "name": "Robert Appel",
+   "type": "其他",
+   "pct_after_text": "6.42 %",
+   "pct_after": 6.42
+  },
+  {
+   "name": "RMH Consultants, Inc.",
+   "type": "其他",
+   "pct_after_text": "5.68 %",
+   "pct_after": 5.68
+  },
+  {
+   "name": "Gerald Amato",
+   "type": "高管董事",
+   "pct_after_text": "2.68 %",
+   "pct_after": 2.68
+  },
+  {
+   "name": "Brandon Pope",
+   "type": "高管董事",
+   "pct_after_text": "1.79 %",
+   "pct_after": 1.79
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,发行2,500,000股common stock后的调整后比例"
+}

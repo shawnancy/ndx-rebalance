@@ -1,0 +1,18 @@
+{
+ "t": "FVR",
+ "form": "424B4",
+ "filed": "2024-10-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1988494/000114036124042577/ny20036129x12_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Stephen Preston",
+   "type": "高管董事",
+   "pct_after_text": "1.6%",
+   "pct_after": 1.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例基于 Common Stock 与 OP Units 合计比例；无符合 ≥5% 的股东；仅 Stephen Preston 作为董事符合 ≥1% 的条件"
+}

@@ -1,0 +1,25 @@
+{
+ "t": "ARXS",
+ "cik": 2093536,
+ "form": "424B4",
+ "filed": "2026-04-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2093536/000119312526159369/d81728d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 404330767,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "Our directors and executive officers and substantially all of the holders of our capital stock (such persons, the \"lock-up parties\") have entered into lock-up agreements with the underwriters prior to the commencement of this offering pursuant to which each lock-up party, with limited exceptions, for a period of 180 days after the date of this prospectus (such period, the \"restricted period\"), may not, without the prior written consent of two of Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Jefferies LLC, (i) offer, pledge, sell, contract to sell, sell any option or contract to purchase, purchase any option or contract to sell, grant any option, right or warrant to purchase, lend or otherwise transfer or dispose of, directly or indirectly, any shares of Class A common stock or any securities convertible into or exercisable or exchangeable for shares of Class A common stock (including, without limitation, Class A common stock or such other securities which may be deemed to be beneficially owned by such lock-up parties in accordance with the rules and regulations of the SEC and securities which may be issued upon exercise of a stock option or warrant (collectively with the Class A common stock, the \"lock-up securities\"))",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "双层股权结构；新股自由转让；现有股东substantially all签180天禁售；存在Rule 144/701豁免规则",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

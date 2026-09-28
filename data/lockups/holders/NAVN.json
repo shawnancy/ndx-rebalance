@@ -1,0 +1,54 @@
+{
+ "t": "NAVN",
+ "form": "424B4",
+ "filed": "2025-10-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1639723/000162828025047640/navan-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Ilan Twig",
+   "type": "创始人",
+   "pct_after_text": "49.1%",
+   "pct_after": 49.1
+  },
+  {
+   "name": "Ariel Cohen",
+   "type": "创始人",
+   "pct_after_text": "34.5%",
+   "pct_after": 34.5
+  },
+  {
+   "name": "Entities affiliated with Lightspeed Venture Partners",
+   "type": "VC",
+   "pct_after_text": "21.4%",
+   "pct_after": 21.4
+  },
+  {
+   "name": "Entities affiliated with Zeev Ventures",
+   "type": "VC",
+   "pct_after_text": "16.0%",
+   "pct_after": 16.0
+  },
+  {
+   "name": "Entities affiliated with Andreessen Horowitz",
+   "type": "VC",
+   "pct_after_text": "10.9%",
+   "pct_after": 10.9
+  },
+  {
+   "name": "Entities affiliated with Greenoaks",
+   "type": "VC",
+   "pct_after_text": "6.2%",
+   "pct_after": 6.2
+  },
+  {
+   "name": "Entities affiliated with Premji Invest",
+   "type": "高管董事",
+   "pct_after_text": "3.7%",
+   "pct_after": 3.7
+  }
+ ],
+ "note": "发行后按合计投票权比例排列,Ilan Twig和Ariel Cohen主要持有Class B股享受30倍投票权,其余为Class A持股比例"
+}

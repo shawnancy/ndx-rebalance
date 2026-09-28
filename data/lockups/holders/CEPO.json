@@ -1,0 +1,24 @@
+{
+ "t": "CEPO",
+ "form": "424B4",
+ "filed": "2025-01-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027708/000121390025001321/ea0208720-10.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Cantor EP Holdings I, LLC",
+   "type": "PE",
+   "pct_after_text": "21.6 %",
+   "pct_after": 21.6
+  },
+  {
+   "name": "Howard W. Lutnick",
+   "type": "高管董事",
+   "pct_after_text": "21.6 %",
+   "pct_after": 21.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，基于总股本；赞助方Cantor EP Holdings I, LLC与其关联CEO Howard W. Lutnick持同一批founder shares和private placement shares"
+}

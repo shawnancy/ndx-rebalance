@@ -1,0 +1,42 @@
+{
+ "t": "DGNX",
+ "form": "424B4",
+ "filed": "2025-01-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2010499/000149315225003427/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Miles Pelham",
+   "type": "创始人",
+   "pct_after_text": "35.0%",
+   "pct_after": 35.0
+  },
+  {
+   "name": "Rhino Ventures Limited",
+   "type": "其他",
+   "pct_after_text": "33.7%",
+   "pct_after": 33.7
+  },
+  {
+   "name": "HBM IV, Inc.",
+   "type": "战略/公司",
+   "pct_after_text": "16.2%",
+   "pct_after": 16.2
+  },
+  {
+   "name": "Nalimz Holdings Limited",
+   "type": "其他",
+   "pct_after_text": "6.4%",
+   "pct_after": 6.4
+  },
+  {
+   "name": "Mark Blick",
+   "type": "高管董事",
+   "pct_after_text": "1.3%",
+   "pct_after": 1.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后比例口径，基数22,656,263普通股。Rhino Ventures持4,170,520认股权证及$3M可转换贷款将于IPO时转换。"
+}

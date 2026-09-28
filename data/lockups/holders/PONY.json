@@ -1,0 +1,54 @@
+{
+ "t": "PONY",
+ "form": "424B4",
+ "filed": "2024-11-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1969302/000110465924123680/tm2310344-35_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Dr. Jun Peng",
+   "type": "创始人",
+   "pct_after_text": "17.4 %",
+   "pct_after": 17.4
+  },
+  {
+   "name": "Toyota Motor Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "12.2 %",
+   "pct_after": 12.2
+  },
+  {
+   "name": "Entities affiliated with HongShan",
+   "type": "VC",
+   "pct_after_text": "9.3 %",
+   "pct_after": 9.3
+  },
+  {
+   "name": "2774719 Ontario Limited",
+   "type": "PE",
+   "pct_after_text": "6.2 %",
+   "pct_after": 6.2
+  },
+  {
+   "name": "Dr. Tiancheng Lou",
+   "type": "创始人",
+   "pct_after_text": "6.1 %",
+   "pct_after": 6.1
+  },
+  {
+   "name": "IDG entities",
+   "type": "VC",
+   "pct_after_text": "5.2 %",
+   "pct_after": 5.2
+  },
+  {
+   "name": "5Y Capital entities",
+   "type": "VC",
+   "pct_after_text": "5.2 %",
+   "pct_after": 5.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例按转换后普通股计算;采用双类股结构(Class B享10倍投票权)"
+}

@@ -1,0 +1,24 @@
+{
+ "t": "BRVE",
+ "cik": 2131524,
+ "form": "424B4",
+ "filed": "2026-08-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2131524/000162828026054354/braveheartbioinc-sx1a2.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 73152838,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We, all of our directors and executive officers, and the holders of substantially all of our capital stock and securities convertible into or exchangeable for our capital stock plan to enter into lock-up agreements with the underwriters and/or are subject to market standoff agreements or other agreements with us, which prevents them from selling any of our common stock or any securities convertible into or exercisable or exchangeable for common stock for a period of not less than 180 days from the date of this prospectus without the prior written consent of Goldman Sachs & Co. LLC, Jefferies LLC, and TD Securities (USA) LLC, subject to certain exceptions.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "现有股东普通股为受限证券需符合 Rule 144 豁免；新募股票（定向发给高管除外）可自由交易；现有股东及高管承诺 180 天禁售；摘录未明确给出禁售股数",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

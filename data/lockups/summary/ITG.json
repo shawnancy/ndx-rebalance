@@ -1,0 +1,23 @@
+{
+ "t": "ITG",
+ "cik": 2110117,
+ "form": "424B4",
+ "filed": "2026-07-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2110117/000119312526292853/d103576d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 121230390,
+ "shares_offered": 19512196,
+ "shares_locked": 101718194,
+ "shares_locked_text": "101,718,194",
+ "lockup_days": 180,
+ "evidence": "We, our directors and officers, and substantially all of our stockholders, have agreed with the underwriters that, for a period of 180 days following the date of this prospectus, subject to certain exceptions, we and they will not, directly or indirectly, offer, pledge, sell, contract to sell, sell any option or contract to purchase, purchase any option or contract to sell, grant any option, right or warrant to purchase, lend, or otherwise transfer or dispose of any of our shares of Class A common stock, or any options or warrants to purchase any shares of our common stock, or any securities convertible into, or exchangeable for or that represent the right to receive shares of our common stock.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO发行的19,512,196股为freely tradable；101,718,194股需禁售180天，包含26,005,508股受限Class A股和75,712,686股可换成Class A的LLC Interests；所有Class A股均受lock-up或market standoff约束",
+ "valid": false,
+ "reasons": [
+  "股数写法不在证据句里"
+ ]
+}

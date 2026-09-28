@@ -1,0 +1,30 @@
+{
+ "t": "FGL",
+ "form": "424B4",
+ "filed": "2024-10-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1989930/000121390024089650/ea0200114-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Reservoir Link Energy Bhd.",
+   "type": "战略/公司",
+   "pct_after_text": "45.22%",
+   "pct_after": 45.22
+  },
+  {
+   "name": "Lee Seng Chi",
+   "type": "高管董事",
+   "pct_after_text": "28.57%",
+   "pct_after": 28.57
+  },
+  {
+   "name": "CNP Equity Limited",
+   "type": "其他",
+   "pct_after_text": "6.62%",
+   "pct_after": 6.62
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（超额配售选择权未行使）；CNP Equity Limited为warrant持有人，已纳入beneficial ownership"
+}

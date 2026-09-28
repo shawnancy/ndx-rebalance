@@ -1,0 +1,35 @@
+{
+  "t": "FOIL",
+  "cik": 2006960,
+  "form": "424B4",
+  "filed": "2026-08-14",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2006960/000119312526351136/d476818d424b4.htm",
+  "listed_shares_m": 390.79,
+  "float_base_m": 24.64,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:08:11Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文阐述lock-up协议框架(180天)但无分批解禁时间表",
+    "无prospectus具体日期,无法推算90/180天/36月的实际解禁日期",
+    "ESOP Shares 5.0M股36个月锁定但未在主体解禁表中单独列示"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      636262,
+      641646
+    ],
+    "n_lockup_windows_total": 7,
+    "n_extra_windows_included": 7,
+    "excerpt_chars": 15147,
+    "html_flat_chars": 819284
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "t": "SKHY",
+ "form": "424B4",
+ "filed": "2026-07-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "SK square",
+   "type": "战略/公司",
+   "pct_after_text": "20.50%",
+   "pct_after": 20.5
+  }
+ ],
+ "dropped": [
+  {
+   "name": "National Pension Service",
+   "type": "其他",
+   "pct_after_text": "8.06%",
+   "pct_after": 8.06
+  },
+  {
+   "name": "BlackRock Inc.",
+   "type": "其他",
+   "pct_after_text": "5.11%",
+   "pct_after": 5.11
+  }
+ ],
+ "note": "发行后持股比例，仅列≥5%的股东，无独立董事高管≥1%持股"
+}

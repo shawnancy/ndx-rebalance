@@ -1,0 +1,54 @@
+{
+ "t": "XCH",
+ "form": "424B4",
+ "filed": "2024-09-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1979887/000110465924098594/tm2316418-35_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Yifei Hou",
+   "type": "创始人",
+   "pct_after_text": "31.2%",
+   "pct_after": 31.2
+  },
+  {
+   "name": "Rui Ding",
+   "type": "创始人",
+   "pct_after_text": "18.7%",
+   "pct_after": 18.7
+  },
+  {
+   "name": "Beijing Foreign Economic and Trade Development Guidance Fund L.P.",
+   "type": "PE",
+   "pct_after_text": "11.0%",
+   "pct_after": 11.0
+  },
+  {
+   "name": "GGV (Xcharge) Limited",
+   "type": "VC",
+   "pct_after_text": "10.9%",
+   "pct_after": 10.9
+  },
+  {
+   "name": "Shell Ventures Company Limited",
+   "type": "战略/公司",
+   "pct_after_text": "8.4%",
+   "pct_after": 8.4
+  },
+  {
+   "name": "Zhen Partners Fund IV L.P.",
+   "type": "VC",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Wuxi Shenqi Leye Private Equity Funds Partnership L.P.",
+   "type": "PE",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，多类股(Class A/B)；Yifei Hou和Rui Ding的Class B股享超级投票权(投票权占82.0%/49.2%)"
+}

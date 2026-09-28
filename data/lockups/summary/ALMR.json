@@ -1,0 +1,24 @@
+{
+ "t": "ALMR",
+ "cik": 2104204,
+ "form": "424B4",
+ "filed": "2026-04-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2104204/000119312526161647/d39680d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 66521425,
+ "shares_offered": 11250000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "We expect that substantially all of these shares will be subject to a 180-day lock-up period under the lock-up and market stand-off agreements described below.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "本次IPO新发行股11.25百万股可自由交易；既有股东及行权人受180天锁定协议约束但原文未给出具体受锁股数(需推算55.27百万股)；受限股东锁定期满后可依Rule 144/701及注册权规定卖出",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

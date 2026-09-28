@@ -1,0 +1,35 @@
+{
+  "t": "SIND",
+  "cik": 2096861,
+  "form": "424B4",
+  "filed": "2026-06-29",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2096861/000114036126026625/ny20063495x12_424b4.htm",
+  "listed_shares_m": 156.77475,
+  "float_base_m": 20.4125,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:12:59Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供明确的解禁释放表。仅说明统一180天锁定期后受Rule 144规则约束,但未列出分批释放的具体日期和数量对应。",
+    "招股书发行日期未明确给出,无法推算180天锁定期的具体到期日期;被锁定的股份总数表述为'substantially all'(基本全部),未给出明确数字。",
+    "绿鞋数字明确(2.6625M),已纳入float_base_m计算。"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      536317,
+      551317
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 692277
+  }
+}

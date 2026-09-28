@@ -1,0 +1,54 @@
+{
+ "t": "ELOG",
+ "form": "424B4",
+ "filed": "2025-08-28",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2013320/000164117225025815/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Albert Wong(1)",
+   "type": "高管董事",
+   "pct_after_text": "64.8%",
+   "pct_after": 64.8
+  },
+  {
+   "name": "Eastern Worldwide Logistics Group Inc.(1)",
+   "type": "战略/公司",
+   "pct_after_text": "64.8%",
+   "pct_after": 64.8
+  },
+  {
+   "name": "Eastern1 Holdings Ltd.(3)",
+   "type": "其他",
+   "pct_after_text": "16.3%",
+   "pct_after": 16.3
+  },
+  {
+   "name": "Ms. Weimei Huang(3)",
+   "type": "其他",
+   "pct_after_text": "16.3%",
+   "pct_after": 16.3
+  },
+  {
+   "name": "Lin Tan(2)",
+   "type": "高管董事",
+   "pct_after_text": "2.2%",
+   "pct_after": 2.2
+  },
+  {
+   "name": "Chung Leung Cheung",
+   "type": "高管董事",
+   "pct_after_text": "1.9%",
+   "pct_after": 1.9
+  },
+  {
+   "name": "Ching Hei Li",
+   "type": "高管董事",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  }
+ ],
+ "note": "发行后聚合投票权（Aggregated Voting Power）；优先股每股10倍投票权；Albert Wong 和其控制的 Eastern Worldwide Logistics Group Inc. 为同一控制人"
+}

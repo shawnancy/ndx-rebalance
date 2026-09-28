@@ -1,0 +1,32 @@
+{
+  "t": "LFTO",
+  "cik": 1850351,
+  "form": "424B4",
+  "filed": "2026-06-04",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1850351/000119312526257410/iron_424b4_round_2.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:10:38Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文缺乏IPO发行的具体日期，无法将'发行后180天'转换为确切的解禁日期",
+    "缺乏明细的解禁时间表，仅提及一般性的180天锁定期后全部被锁定股票解禁，未提供分阶段/分批次的解禁安排",
+    "原文提到约96%的股票被180天锁定、pre-IPO持有者有147.48M股，但未给出完整发行股数和明细解禁表"
+  ],
+  "_extract_meta": {
+    "section_found": false,
+    "section_range": null,
+    "n_lockup_windows_total": 5,
+    "n_extra_windows_included": 5,
+    "excerpt_chars": 13652,
+    "html_flat_chars": 947104
+  }
+}

@@ -1,0 +1,18 @@
+{
+ "t": "GMRS",
+ "form": "424B4",
+ "filed": "2026-05-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1898718/000110465926060835/tm2518736-29_424b5.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "KKR Stockholder",
+   "type": "PE",
+   "pct_after_text": "77.6%",
+   "pct_after": 77.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按总股本计算的持股比例，假设权转期权不行使。BlackRock(4.9%)和Koch(1.0%)均未满足≥5%条件，董事高管持股均<1%。"
+}

@@ -1,0 +1,21 @@
+{
+ "t": "BSP",
+ "cik": 2004711,
+ "form": "424B4",
+ "filed": "2026-07-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2004711/000110465926079884/tm2613674-14_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 318510767,
+ "shares_locked_text": "318,510,767",
+ "lockup_days": 180,
+ "evidence": "318,510,767 ordinary shares will be eligible for sale upon expiration of the lock-up agreements described below, beginning more than 180 days after the date of this prospectus, subject to certain exceptions (assuming no class A shares are converted into ordinary shares).",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "禁售期可在第二季度财报发布后48小时提前结束（需满足至少125天条件）",
+ "note": "A类股与普通股并存，禁售协议严格禁止对冲交易和衍生品操作",
+ "valid": true,
+ "reasons": []
+}

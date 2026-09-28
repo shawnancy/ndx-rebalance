@@ -1,0 +1,54 @@
+{
+ "t": "ADVB",
+ "form": "424B4",
+ "filed": "2025-03-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1941029/000157587225000219/advb037_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Yi Lu",
+   "type": "创始人",
+   "pct_after_text": "31.00 %",
+   "pct_after": 31.0
+  },
+  {
+   "name": "Hung To Pau",
+   "type": "高管董事",
+   "pct_after_text": "16.29 %",
+   "pct_after": 16.29
+  },
+  {
+   "name": "Advance On Ventures Limited",
+   "type": "VC",
+   "pct_after_text": "10.09 %",
+   "pct_after": 10.09
+  },
+  {
+   "name": "Yimin Jin",
+   "type": "其他",
+   "pct_after_text": "8.11 %",
+   "pct_after": 8.11
+  },
+  {
+   "name": "Xiaoyuan Luo",
+   "type": "其他",
+   "pct_after_text": "7.62 %",
+   "pct_after": 7.62
+  },
+  {
+   "name": "Nanzhen Shen",
+   "type": "其他",
+   "pct_after_text": "5.59 %",
+   "pct_after": 5.59
+  },
+  {
+   "name": "Steven I-Fang Cheng",
+   "type": "高管董事",
+   "pct_after_text": "3.43 %",
+   "pct_after": 3.43
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股计算。Steven I-Fang Cheng部分股份（3,712,800股）通过Advance On Ventures Limited间接持有；Yimin Jin、Xiaoyuan Luo、Nanzhen Shen通过债权转换协议获得股份。"
+}

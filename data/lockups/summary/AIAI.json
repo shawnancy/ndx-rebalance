@@ -1,0 +1,25 @@
+{
+ "t": "AIAI",
+ "cik": 2096362,
+ "form": "424B4",
+ "filed": "2026-06-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2096362/000149315226029830/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": null,
+ "evidence": null,
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "摘录为空，无法提取信息",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

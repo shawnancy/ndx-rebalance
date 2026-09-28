@@ -1,0 +1,60 @@
+{
+ "t": "POAS",
+ "form": "424B4",
+ "filed": "2025-11-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2024258/000149315225022234/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Beh Hook Seng",
+   "type": "创始人",
+   "pct_after_text": "62.40%",
+   "pct_after": 62.4
+  },
+  {
+   "name": "Tonghuai SG Enterprise Pte Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "30.14%",
+   "pct_after": 30.14
+  },
+  {
+   "name": "Singlight Technology Pte Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "24.38%",
+   "pct_after": 24.38
+  },
+  {
+   "name": "Tonghuai SG2 Enterprise Pte Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "11.96%",
+   "pct_after": 11.96
+  },
+  {
+   "name": "SG AB Venture Pte Ltd",
+   "type": "VC",
+   "pct_after_text": "5.11%",
+   "pct_after": 5.11
+  },
+  {
+   "name": "Andrew Yeo",
+   "type": "高管董事",
+   "pct_after_text": "5.11%",
+   "pct_after": 5.11
+  },
+  {
+   "name": "Tay Beng Boon",
+   "type": "高管董事",
+   "pct_after_text": "1.95%",
+   "pct_after": 1.95
+  },
+  {
+   "name": "Gan Hong Loon",
+   "type": "高管董事",
+   "pct_after_text": "1.95%",
+   "pct_after": 1.95
+  }
+ ],
+ "dropped": [],
+ "note": "发行后合计投票权（Class A和Class B合并），Beh Hook Seng通过Tonghuai SG Enterprise Pte Ltd和Tonghuai SG2 Enterprise Pte Ltd间接持股。"
+}

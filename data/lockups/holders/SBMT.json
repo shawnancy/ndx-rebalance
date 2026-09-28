@@ -1,0 +1,36 @@
+{
+ "t": "SBMT",
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2067674/000153949726001267/n5138_x20-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Crescat Portfolio Management LLC",
+   "type": "PE",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Concept Capital Management Ltd.",
+   "type": "PE",
+   "pct_after_text": "7.0%",
+   "pct_after": 7.0
+  },
+  {
+   "name": "2176423 Ontario Ltd.",
+   "type": "其他",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  },
+  {
+   "name": "Bruce Reid",
+   "type": "其他",
+   "pct_after_text": "5.2%",
+   "pct_after": 5.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，普通股口径，基准日2026年4月29日，共24,318,500股发行在外。"
+}

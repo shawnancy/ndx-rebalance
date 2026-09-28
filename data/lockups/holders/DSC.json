@@ -1,0 +1,60 @@
+{
+ "t": "DSC",
+ "form": "424B4",
+ "filed": "2026-06-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1966041/000121390026072276/ea0200059-38.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Junhong Yao",
+   "type": "创始人",
+   "pct_after_text": "42.2%",
+   "pct_after": 42.2
+  },
+  {
+   "name": "Binary Sky Limited",
+   "type": "其他",
+   "pct_after_text": "42.0%",
+   "pct_after": 42.0
+  },
+  {
+   "name": "API (HONG KONG) INVESTMENT LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "11.9%",
+   "pct_after": 11.9
+  },
+  {
+   "name": "5Y Capital Entities",
+   "type": "VC",
+   "pct_after_text": "9.4%",
+   "pct_after": 9.4
+  },
+  {
+   "name": "Primavera Entities",
+   "type": "PE",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "Cygnus Entities",
+   "type": "其他",
+   "pct_after_text": "5.7%",
+   "pct_after": 5.7
+  },
+  {
+   "name": "Liyu Zhang",
+   "type": "高管董事",
+   "pct_after_text": "1.3%",
+   "pct_after": 1.3
+  },
+  {
+   "name": "Qin Zou",
+   "type": "高管董事",
+   "pct_after_text": "1.1%",
+   "pct_after": 1.1
+  }
+ ],
+ "note": "发行后持股比例（Class A和B普通股合计），Junhong Yao与Binary Sky Limited存在股权重叠（子公司关系）。"
+}

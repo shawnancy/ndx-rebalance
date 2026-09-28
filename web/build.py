@@ -23,6 +23,7 @@ DATA_DIR = ROOT.parent / "data"
 REAL = DATA_DIR / "ndx_data.json"
 MOCK = DATA_DIR / "ndx_data.mock.json"
 LOCKUPS_DIR = DATA_DIR / "lockups"
+UNLOCK_CAL_FILE = DATA_DIR / "unlock_calendar.json"
 TEMPLATE = ROOT / "template.html"
 OUT = ROOT / "index.html"
 PLACEHOLDER = "/*__NDX_DATA__*/"
@@ -68,6 +69,17 @@ def load_lockups():
     return out
 
 
+def load_unlock_calendar():
+    """解禁日历 data/unlock_calendar.json -> dict。不存在/解析失败就兜底成空日历, 不中断整体构建。"""
+    if not UNLOCK_CAL_FILE.exists():
+        return {"rows": []}
+    try:
+        return json.loads(UNLOCK_CAL_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[build] [警告] {UNLOCK_CAL_FILE} 解析失败, 用空日历兜底: {e}", file=sys.stderr)
+        return {"rows": []}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--api", default="", help="线上版: 注入 window.NDX_API=该URL, 搜不到成分股时实时查")
@@ -88,7 +100,9 @@ def main():
     lockups = load_lockups()
     data["lockups"] = lockups
     print(f"[build] 解禁表 {len(lockups)} 只: {', '.join(sorted(lockups)) or '(无)'}")
-    snippet = "const NDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";"
+    unlock_cal = load_unlock_calendar()
+    print(f"[build] 解禁日历 {len(unlock_cal.get('rows', []))} 行")
+    snippet = "const NDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";" + "const UNLOCK_CAL=" + json.dumps(unlock_cal, ensure_ascii=False) + ";"
     if args.api:
         snippet = "window.NDX_API=" + json.dumps(args.api) + ";" + snippet
     if args.live_url:

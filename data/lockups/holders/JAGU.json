@@ -1,0 +1,42 @@
+{
+ "t": "JAGU",
+ "form": "424B4",
+ "filed": "2026-02-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2039273/000121390026014610/ea0219487-23.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Green Shift Commodities Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "21.92 %",
+   "pct_after": 21.92
+  },
+  {
+   "name": "IsoEnergy Ltd. (Consolidated Uranium Inc.)",
+   "type": "战略/公司",
+   "pct_after_text": "13.02 %",
+   "pct_after": 13.02
+  },
+  {
+   "name": "Beaconsfield Ventures Ltd.",
+   "type": "其他",
+   "pct_after_text": "7.21 %",
+   "pct_after": 7.21
+  },
+  {
+   "name": "Luis Ducassi",
+   "type": "高管董事",
+   "pct_after_text": "2.29 %",
+   "pct_after": 2.29
+  },
+  {
+   "name": "Steven Gold",
+   "type": "高管董事",
+   "pct_after_text": "1.27 %",
+   "pct_after": 1.27
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(未行使underwriter选择权); Green Shift和IsoEnergy发行后百分比包含流动事件/上市事件额外股份"
+}

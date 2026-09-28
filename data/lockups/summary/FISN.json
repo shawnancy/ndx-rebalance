@@ -1,0 +1,23 @@
+{
+ "t": "FISN",
+ "cik": 1918102,
+ "form": "424B4",
+ "filed": "2026-06-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1918102/000110465926075763/tm2612179-14_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": 2500000,
+ "shares_locked": 17149879,
+ "shares_locked_text": "17,149,879",
+ "lockup_days": 180,
+ "evidence": "17,149,879 shares of common stock will be subject to lock-up agreements with the underwriters expiring 180 days after the date of this prospectus, subject to certain exceptions and waivers (as described in \"— Lock-Up Agreements,\" below),",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "两类禁售协议：承销商禁售180天（17.15M股）、公司禁售6个月后（21.33M股含warrant）；创始人/董事/高管及部分股东占上市前29.7%股权签承销商禁售。",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

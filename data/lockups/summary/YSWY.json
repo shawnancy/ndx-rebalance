@@ -1,0 +1,23 @@
+{
+ "t": "YSWY",
+ "cik": 1859836,
+ "form": "424B4",
+ "filed": "2026-04-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1859836/000110465926047210/tm2527636-17_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 29085561,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": "substantially all",
+ "lockup_days": 180,
+ "evidence": "Upon the expiration of the applicable lock-up periods, substantially all of the shares subject to such lock-up restrictions will become eligible for sale, subject to the limitations discussed above.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "Yesway IPO; Continuing Equity Owners hold 32,009,185 LLC Interests exchangeable for Class A shares, subject to same 180-day lock-up as officers/directors and substantially all stockholders; prospectus uses 'substantially all' not explicit share count for locked amount",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked"
+ ]
+}

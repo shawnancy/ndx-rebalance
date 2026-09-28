@@ -1,0 +1,36 @@
+{
+ "t": "AUGO",
+ "form": "424B1",
+ "filed": "2025-07-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1468642/000121390025064677/ea0244679-13.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Paulo Carlos de Brito",
+   "type": "创始人",
+   "pct_after_text": "48.21%",
+   "pct_after": 48.21
+  },
+  {
+   "name": "Bruno Mauad",
+   "type": "PE",
+   "pct_after_text": "7.01%",
+   "pct_after": 7.01
+  },
+  {
+   "name": "Paulo Carlos de Brito Filho",
+   "type": "高管董事",
+   "pct_after_text": "2.54%",
+   "pct_after": 2.54
+  },
+  {
+   "name": "Rodrigo Barbosa",
+   "type": "高管董事",
+   "pct_after_text": "1.02%",
+   "pct_after": 1.02
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股口径（不含承销商期权行使），部分股东通过投资机构间接持有"
+}

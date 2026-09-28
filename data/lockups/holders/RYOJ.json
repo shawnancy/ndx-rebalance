@@ -1,0 +1,36 @@
+{
+ "t": "RYOJ",
+ "form": "424B4",
+ "filed": "2025-08-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2012600/000164117225024105/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ryoji Baba",
+   "type": "创始人",
+   "pct_after_text": "71.32%",
+   "pct_after": 71.32
+  },
+  {
+   "name": "Miracle Exploration Technologies Ltd.",
+   "type": "其他",
+   "pct_after_text": "28.54%",
+   "pct_after": 28.54
+  },
+  {
+   "name": "Satoshi Saito",
+   "type": "高管董事",
+   "pct_after_text": "5.69%",
+   "pct_after": 5.69
+  },
+  {
+   "name": "Yusuke Hirata",
+   "type": "高管董事",
+   "pct_after_text": "1.01%",
+   "pct_after": 1.01
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径；Ryoji Baba 的 71.32% 包含通过 100% 拥有的 Miracle Exploration Technologies Ltd. 间接持有部分（脚注合并计算）"
+}

@@ -1,0 +1,61 @@
+{
+ "t": "ACOG",
+ "form": "424B4",
+ "filed": "2024-11-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1655923/000121390024097035/ea0207296-12.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ken Cawkell",
+   "type": "高管董事",
+   "pct_after_text": "7.2%",
+   "pct_after": 7.2
+  },
+  {
+   "name": "Nutie Dowdle",
+   "type": "其他",
+   "pct_after_text": "7.0%",
+   "pct_after": 7.0
+  },
+  {
+   "name": "Rotorua Partners L.P.",
+   "type": "其他",
+   "pct_after_text": "6.4%",
+   "pct_after": 6.4
+  },
+  {
+   "name": "Len Mertz",
+   "type": "高管董事",
+   "pct_after_text": "4.9%",
+   "pct_after": 4.9
+  },
+  {
+   "name": "John Havens",
+   "type": "高管董事",
+   "pct_after_text": "4.8%",
+   "pct_after": 4.8
+  },
+  {
+   "name": "Michael McFadden",
+   "type": "高管董事",
+   "pct_after_text": "3.5%",
+   "pct_after": 3.5
+  },
+  {
+   "name": "Phillip Mertz",
+   "type": "高管董事",
+   "pct_after_text": "2.0%",
+   "pct_after": 2.0
+  }
+ ],
+ "dropped": [
+  {
+   "name": "Lauren D'Angelo",
+   "type": "高管董事",
+   "pct_after_text": "1.8%",
+   "pct_after": 1.8
+  }
+ ],
+ "note": "发行前按总投票权计（多类股合并，部分稀释基础），Manchester因blocker agreement投票权受限"
+}

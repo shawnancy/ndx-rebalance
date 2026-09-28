@@ -1,0 +1,30 @@
+{
+ "t": "GENB",
+ "form": "424B4",
+ "filed": "2026-02-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2100782/000119312526083190/generate_bio_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Noubar B. Afeyan, Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "48.78%",
+   "pct_after": 48.78
+  },
+  {
+   "name": "Entities affiliated with Flagship Funds",
+   "type": "VC",
+   "pct_after_text": "48.76%",
+   "pct_after": 48.76
+  },
+  {
+   "name": "Michael Nally, M.B.A., Chief Executive Officer and Director",
+   "type": "高管董事",
+   "pct_after_text": "5.55%",
+   "pct_after": 5.55
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股计算，基数127,450,201股；Noubar B. Afeyan通过Flagship Funds间接控制股份，两行存在重叠。"
+}

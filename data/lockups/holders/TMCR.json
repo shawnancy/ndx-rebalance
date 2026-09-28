@@ -1,0 +1,11 @@
+{
+ "t": "TMCR",
+ "form": "424B4",
+ "filed": "2026-04-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2087398/000110465926040599/tm2526563-24_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "提供摘录为招股书中关于股东浓度的叙述文字，不包含主要股东表。仅提及董事、高管及5%以上股东合计持29.48%投票权，无具体股东名单或明细持股比例。"
+}

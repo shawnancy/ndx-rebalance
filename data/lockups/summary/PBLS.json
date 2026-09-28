@@ -1,0 +1,23 @@
+{
+ "t": "PBLS",
+ "cik": 1657677,
+ "form": "424B4",
+ "filed": "2026-06-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1657677/000119312526265983/pbls_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 118145780,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": "approximately 71.6%",
+ "lockup_days": 180,
+ "evidence": "The resale of the remaining shares, or approximately 71.6% of our outstanding shares of common stock following this offering, is currently prohibited or otherwise restricted as a result of securities law provisions, market standoff agreements entered into by certain of our stockholders with us or lock-up agreements entered into by our stockholders with the underwriters in connection with this offering.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "包含非投票普通股；SAFE在初始发行价基础上自动转换；Lock-up协议有多项例外(并购、期权行使、转移、死亡继承等)；Rule 144和Rule 701提供受限股东的额外销售路径",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked"
+ ]
+}

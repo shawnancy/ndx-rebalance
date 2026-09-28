@@ -1,0 +1,36 @@
+{
+ "t": "NCEW",
+ "form": "424B4",
+ "filed": "2024-12-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1968043/000149315224050584/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Ching Shun Ngan",
+   "type": "高管董事",
+   "pct_after_text": "39.07%",
+   "pct_after": 39.07
+  },
+  {
+   "name": "Yuk Hung Sin",
+   "type": "其他",
+   "pct_after_text": "16.05%",
+   "pct_after": 16.05
+  },
+  {
+   "name": "Asia International Securities Exchange Co., Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "15.35%",
+   "pct_after": 15.35
+  },
+  {
+   "name": "Chi Keung Yip",
+   "type": "其他",
+   "pct_after_text": "9.30%",
+   "pct_after": 9.3
+  }
+ ],
+ "note": "发行后持股比例，假设不行使超额配售权；Wai Kin Chan 发行后降至 4.65% 未列"
+}

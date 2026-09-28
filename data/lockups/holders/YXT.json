@@ -1,0 +1,60 @@
+{
+ "t": "YXT",
+ "form": "424B4",
+ "filed": "2024-08-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1872090/000119312524202129/d196858d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Xiaoyan Lu",
+   "type": "创始人",
+   "pct_after_text": "69.4%",
+   "pct_after": 69.4
+  },
+  {
+   "name": "Jump Shot Holdings Limited",
+   "type": "PE",
+   "pct_after_text": "17.6%",
+   "pct_after": 17.6
+  },
+  {
+   "name": "Image Frame Investment (HK) Limited",
+   "type": "战略/公司",
+   "pct_after_text": "16.6%",
+   "pct_after": 16.6
+  },
+  {
+   "name": "YF Elite Alliance Limited",
+   "type": "其他",
+   "pct_after_text": "13.2%",
+   "pct_after": 13.2
+  },
+  {
+   "name": "MPC VI HK Limited",
+   "type": "PE",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "SIG China Investments Master Fund IV, LLLP",
+   "type": "PE",
+   "pct_after_text": "6.2%",
+   "pct_after": 6.2
+  },
+  {
+   "name": "Teng Zu",
+   "type": "高管董事",
+   "pct_after_text": "2.1%",
+   "pct_after": 2.1
+  },
+  {
+   "name": "Jie Ding",
+   "type": "高管董事",
+   "pct_after_text": "1.4%",
+   "pct_after": 1.4
+  }
+ ],
+ "note": "发行后比例：Xiaoyan Lu 多类股结构（Class A 5.4%+Class B 9.4%）取投票权69.4%，其他股东单类股取股本比例"
+}

@@ -1,0 +1,42 @@
+{
+ "t": "LIME",
+ "form": "424B4",
+ "filed": "2026-07-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1699963/000162828026046635/neutronholdingsinc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Uber",
+   "type": "战略/公司",
+   "pct_after_text": "21.9%",
+   "pct_after": 21.9
+  },
+  {
+   "name": "Entities affiliated with Sapphire",
+   "type": "PE",
+   "pct_after_text": "15.2%",
+   "pct_after": 15.2
+  },
+  {
+   "name": "Entities affiliated with Fidelity",
+   "type": "其他",
+   "pct_after_text": "10.3%",
+   "pct_after": 10.3
+  },
+  {
+   "name": "Wayne Ting",
+   "type": "高管董事",
+   "pct_after_text": "1.9%",
+   "pct_after": 1.9
+  },
+  {
+   "name": "Zhoujia Brad Bao",
+   "type": "高管董事",
+   "pct_after_text": "1.5%",
+   "pct_after": 1.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股口径，包括60天内可行权的期权、认股权证和RSU；Uber和Sapphire通过可转换票据转换权持股"
+}

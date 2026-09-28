@@ -1,0 +1,24 @@
+{
+ "t": "TOPP",
+ "form": "424B4",
+ "filed": "2025-01-22",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1960847/000121390025005515/ea0228298-424b4_toppoint.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Hok C Chan",
+   "type": "高管董事",
+   "pct_after_text": "42.9%",
+   "pct_after": 42.9
+  },
+  {
+   "name": "Heung Ling Chan",
+   "type": "其他",
+   "pct_after_text": "32.6%",
+   "pct_after": 32.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股比例，≥5%股东；Hok C Chan为董事"
+}

@@ -1,0 +1,18 @@
+{
+ "t": "APC",
+ "form": "424B4",
+ "filed": "2026-02-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2080921/000119312526049767/d928360d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "ARKO Corp.",
+   "type": "战略/公司",
+   "pct_after_text": "94.0%",
+   "pct_after": 94.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，按总投票权(Class A占75.9% + Class B占100%的加权合计)；ARKO Corp.通过子公司ACS持有全部Class B股票，可转换为Class A"
+}

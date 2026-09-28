@@ -1,0 +1,60 @@
+{
+ "t": "YB",
+ "form": "424B4",
+ "filed": "2025-04-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1995520/000119312525107431/d425047d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Rui Fang",
+   "type": "创始人",
+   "pct_after_text": "39.2%",
+   "pct_after": 39.2
+  },
+  {
+   "name": "For Ring Limited",
+   "type": "战略/公司",
+   "pct_after_text": "30.4%",
+   "pct_after": 30.4
+  },
+  {
+   "name": "Hike Entities",
+   "type": "VC",
+   "pct_after_text": "16.7%",
+   "pct_after": 16.7
+  },
+  {
+   "name": "Northern Light Venture Capital V, Ltd.",
+   "type": "VC",
+   "pct_after_text": "11.0%",
+   "pct_after": 11.0
+  },
+  {
+   "name": "Qiming Entities",
+   "type": "VC",
+   "pct_after_text": "8.4%",
+   "pct_after": 8.4
+  },
+  {
+   "name": "Global Running Lion Limited",
+   "type": "战略/公司",
+   "pct_after_text": "8.1%",
+   "pct_after": 8.1
+  },
+  {
+   "name": "SIG Global China Fund I, LLLP",
+   "type": "PE",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "SCC Entities",
+   "type": "PE",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，按权益比例(% of beneficial ownership)；含Class A和Class B合并计算，Class B享20倍投票权；包含IPO配售部分"
+}

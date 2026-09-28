@@ -1,0 +1,60 @@
+{
+ "t": "ROC",
+ "form": "424B4",
+ "filed": "2026-02-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2077709/000121390026018551/ea0277640-424b4_rankone.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Brendan Klare",
+   "type": "高管董事",
+   "pct_after_text": "25.3 %",
+   "pct_after": 25.3
+  },
+  {
+   "name": "Joshua Klontz",
+   "type": "高管董事",
+   "pct_after_text": "25.3 %",
+   "pct_after": 25.3
+  },
+  {
+   "name": "Scott Klum",
+   "type": "其他",
+   "pct_after_text": "16.8 %",
+   "pct_after": 16.8
+  },
+  {
+   "name": "Benjamin Klein",
+   "type": "其他",
+   "pct_after_text": "7.8 %",
+   "pct_after": 7.8
+  },
+  {
+   "name": "B. Scott Swann",
+   "type": "高管董事",
+   "pct_after_text": "6.7 %",
+   "pct_after": 6.7
+  },
+  {
+   "name": "David Ray",
+   "type": "高管董事",
+   "pct_after_text": "4.6 %",
+   "pct_after": 4.6
+  },
+  {
+   "name": "Cody Barnes",
+   "type": "高管董事",
+   "pct_after_text": "3.4 %",
+   "pct_after": 3.4
+  },
+  {
+   "name": "Anthony Brown",
+   "type": "高管董事",
+   "pct_after_text": "1.4 %",
+   "pct_after": 1.4
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，包括可在60天内行权的期权，按普通股计算"
+}

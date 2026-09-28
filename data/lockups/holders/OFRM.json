@@ -1,0 +1,54 @@
+{
+ "t": "OFRM",
+ "form": "424B4",
+ "filed": "2026-02-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1696556/000119312526041885/d832753d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "CAVU",
+   "type": "VC",
+   "pct_after_text": "27.5%",
+   "pct_after": 27.5
+  },
+  {
+   "name": "S2G",
+   "type": "VC",
+   "pct_after_text": "14.0%",
+   "pct_after": 14.0
+  },
+  {
+   "name": "Cambridge",
+   "type": "VC",
+   "pct_after_text": "9.3%",
+   "pct_after": 9.3
+  },
+  {
+   "name": "Jennifer Garner",
+   "type": "高管董事",
+   "pct_after_text": "7.4%",
+   "pct_after": 7.4
+  },
+  {
+   "name": "John Foraker",
+   "type": "创始人",
+   "pct_after_text": "6.6%",
+   "pct_after": 6.6
+  },
+  {
+   "name": "Cassandra Curtis",
+   "type": "高管董事",
+   "pct_after_text": "1.4%",
+   "pct_after": 1.4
+  },
+  {
+   "name": "Lawrence Waldman",
+   "type": "高管董事",
+   "pct_after_text": "1.2%",
+   "pct_after": 1.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按普通股比例排序，共7个股东（3个≥5%机构投资者+4个≥1%董事高管）"
+}

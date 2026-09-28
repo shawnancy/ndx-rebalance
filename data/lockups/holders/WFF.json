@@ -1,0 +1,30 @@
+{
+ "t": "WFF",
+ "form": "424B4",
+ "filed": "2025-03-28",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1980210/000101376225003577/ea0235917-424b4_wfholding.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Chee Hoong Lew",
+   "type": "高管董事",
+   "pct_after_text": "68.95%",
+   "pct_after": 68.95
+  },
+  {
+   "name": "Chee Seong Lew",
+   "type": "创始人",
+   "pct_after_text": "63.54%",
+   "pct_after": 63.54
+  },
+  {
+   "name": "LYC Capital Private Limited",
+   "type": "其他",
+   "pct_after_text": "5.41%",
+   "pct_after": 5.41
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股口径，Chee Hoong Lew 和 Chee Seong Lew 系兄弟，共同控制主要持股公司 Lew Capital Private Limited；LYC Capital Private Limited 为其母亲 Yew Chean Lim 名义持股。"
+}

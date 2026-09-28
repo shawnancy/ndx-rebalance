@@ -1,0 +1,36 @@
+{
+ "t": "HKPD",
+ "form": "424B4",
+ "filed": "2025-01-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2007702/000121390025003870/ea0227659-424b4_hongkong.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Lap Sun Wong",
+   "type": "创始人",
+   "pct_after_text": "56.77%",
+   "pct_after": 56.77
+  },
+  {
+   "name": "Fame Overseas Supply Chain Limited",
+   "type": "战略/公司",
+   "pct_after_text": "40.44%",
+   "pct_after": 40.44
+  },
+  {
+   "name": "Pacific Health Century International Group",
+   "type": "其他",
+   "pct_after_text": "5.62%",
+   "pct_after": 5.62
+  },
+  {
+   "name": "Atlantic Health Century International Group",
+   "type": "其他",
+   "pct_after_text": "5.62%",
+   "pct_after": 5.62
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例, 基于11,000,000普通股流通股; Lap Sun Wong的持股含直接持股和通过控制公司的间接持股"
+}

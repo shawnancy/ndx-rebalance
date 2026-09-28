@@ -1,0 +1,36 @@
+{
+ "t": "FIG",
+ "form": "424B4",
+ "filed": "2025-07-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828025037014/figma424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Dylan Field",
+   "type": "创始人",
+   "pct_after_text": "49.6%",
+   "pct_after": 49.6
+  },
+  {
+   "name": "Wu-Wallace Family Trust",
+   "type": "其他",
+   "pct_after_text": "25.5%",
+   "pct_after": 25.5
+  },
+  {
+   "name": "Mamoon Hamid",
+   "type": "VC",
+   "pct_after_text": "3.4%",
+   "pct_after": 3.4
+  },
+  {
+   "name": "Andrew Reed",
+   "type": "VC",
+   "pct_after_text": "2.1%",
+   "pct_after": 2.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按总投票权排列"
+}

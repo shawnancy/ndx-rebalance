@@ -1,0 +1,60 @@
+{
+ "t": "BETA",
+ "form": "424B4",
+ "filed": "2025-11-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1784570/000119312525265029/d89594d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Kyle Clark",
+   "type": "创始人",
+   "pct_after_text": "62.6 %",
+   "pct_after": 62.6
+  },
+  {
+   "name": "FMR LLC",
+   "type": "PE",
+   "pct_after_text": "12.5 %",
+   "pct_after": 12.5
+  },
+  {
+   "name": "General Electric Company",
+   "type": "战略/公司",
+   "pct_after_text": "8.8 %",
+   "pct_after": 8.8
+  },
+  {
+   "name": "John E. Abele",
+   "type": "创始人",
+   "pct_after_text": "8.1 %",
+   "pct_after": 8.1
+  },
+  {
+   "name": "TPG Rise Belfry, LP",
+   "type": "PE",
+   "pct_after_text": "7.6 %",
+   "pct_after": 7.6
+  },
+  {
+   "name": "Chuck Davis",
+   "type": "创始人",
+   "pct_after_text": "6.9 %",
+   "pct_after": 6.9
+  },
+  {
+   "name": "Austin Meyer",
+   "type": "其他",
+   "pct_after_text": "5.6 %",
+   "pct_after": 5.6
+  },
+  {
+   "name": "Amazon.com NV Investment Holdings LLC (d/b/a The Climate Pledge Fund)",
+   "type": "战略/公司",
+   "pct_after_text": "5.5 %",
+   "pct_after": 5.5
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合并投票权排列; Kyle Clark持8,501,484股B类股(每股40票)+Class A股,合并投票权62.6%; 其他股东仅持Class A普通股"
+}

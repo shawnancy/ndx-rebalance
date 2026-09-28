@@ -1,0 +1,24 @@
+{
+ "t": "MAIR",
+ "cik": 2098430,
+ "form": "424B4",
+ "filed": "2026-04-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2098430/000119312526160250/project_breathe_form_424.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 488864126,
+ "shares_offered": 82692308,
+ "shares_locked": 406171818,
+ "shares_locked_text": "406,171,818",
+ "lockup_days": 180,
+ "evidence": "These remaining shares of Class A common stock that will be outstanding upon completion of this offering will be available for sale in the public market after the expiration of the lock-up agreements described below under \"—Lock-Up Agreements\" and in \"Underwriting,\" taking into account the provisions of Rules 144 and 701 under the Securities Act.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "存在A类和B类双重股权结构；IPO前股东(董事、高管及现有股东)承诺180天锁定；B类股东另有二年转让限制；新发行股份一般可自由交易但affiliate受Rule 144限制",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串",
+  "股数写法不在证据句里"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "t": "OPTH",
+ "cik": 2027329,
+ "form": "424B4",
+ "filed": "2026-05-20",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2027329/000119312526231760/d43258d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 5625899,
+ "shares_offered": null,
+ "shares_locked": null,
+ "shares_locked_text": "",
+ "lockup_days": 180,
+ "evidence": "",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "公司及全部董事、高管和部分股东受180天禁售约束；禁售有多项例外（礼物赠送、家族转移、信托受益、股权激励行权等）；包括加拿大4个月的额外转售限制；仅在Nasdaq Capital Market交易，非二次上市",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "证据句不是摘录原文子串",
+  "缺股数原文写法"
+ ]
+}

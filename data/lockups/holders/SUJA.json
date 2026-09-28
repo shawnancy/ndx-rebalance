@@ -1,0 +1,24 @@
+{
+ "t": "SUJA",
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1934114/000110465926057504/tm2530822-13_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "PSP Funds",
+   "type": "PE",
+   "pct_after_text": "60.4 %",
+   "pct_after": 60.4
+  },
+  {
+   "name": "The New Vive Partnerships",
+   "type": "其他",
+   "pct_after_text": "10.3 %",
+   "pct_after": 10.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合并投票权统计，假设承销商期权未行使。"
+}

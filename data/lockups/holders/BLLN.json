@@ -1,0 +1,55 @@
+{
+ "t": "BLLN",
+ "form": "424B4",
+ "filed": "2025-11-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2070849/000119312525270155/d903739d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Oguzhan Atay",
+   "type": "高管董事",
+   "pct_after_text": "31.4%",
+   "pct_after": 31.4
+  }
+ ],
+ "dropped": [
+  {
+   "name": "David Tsao",
+   "type": "高管董事",
+   "pct_after_text": "32.5%",
+   "pct_after": 32.5
+  },
+  {
+   "name": "Entities affiliated with Hummingbird Ventures",
+   "type": "VC",
+   "pct_after_text": "7.3%",
+   "pct_after": 7.3
+  },
+  {
+   "name": "Firat Ileri",
+   "type": "高管董事",
+   "pct_after_text": "7.3%",
+   "pct_after": 7.3
+  },
+  {
+   "name": "Krishna Swaroop Kolluri",
+   "type": "VC",
+   "pct_after_text": "4.0%",
+   "pct_after": 4.0
+  },
+  {
+   "name": "Thomas Bremner",
+   "type": "PE",
+   "pct_after_text": "1.7%",
+   "pct_after": 1.7
+  },
+  {
+   "name": "Akshay Rai",
+   "type": "战略/公司",
+   "pct_after_text": "1.6%",
+   "pct_after": 1.6
+  }
+ ],
+ "note": "发行后按总投票权百分比(两类股合并计算表决权)"
+}

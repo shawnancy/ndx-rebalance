@@ -1,0 +1,60 @@
+{
+ "t": "SPTX",
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2042347/000119312526201758/d73463d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "PureTech LYT, Inc.",
+   "type": "VC",
+   "pct_after_text": "31.5 %",
+   "pct_after": 31.5
+  },
+  {
+   "name": "ARCH Venture Fund XII, L.P.",
+   "type": "VC",
+   "pct_after_text": "9.8 %",
+   "pct_after": 9.8
+  },
+  {
+   "name": "General Atlantic (SP), L.P.",
+   "type": "PE",
+   "pct_after_text": "6.3 %",
+   "pct_after": 6.3
+  },
+  {
+   "name": "Daphne Zohar, Chief Executive Officer and Director",
+   "type": "高管董事",
+   "pct_after_text": "6.1 %",
+   "pct_after": 6.1
+  },
+  {
+   "name": "Sofinnova Venture Partners XI, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.2 %",
+   "pct_after": 5.2
+  },
+  {
+   "name": "James I. Healy, M.D., Ph.D.",
+   "type": "高管董事",
+   "pct_after_text": "5.2 %",
+   "pct_after": 5.2
+  },
+  {
+   "name": "Steven M. Paul, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "4.3 %",
+   "pct_after": 4.3
+  },
+  {
+   "name": "Third Rock Ventures VI, L.P.",
+   "type": "VC",
+   "pct_after_text": "3.9 %",
+   "pct_after": 3.9
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，包含普通股、可转换优先股及期权形式，基准为发行后53,027,817股"
+}

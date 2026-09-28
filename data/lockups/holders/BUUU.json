@@ -1,0 +1,30 @@
+{
+ "t": "BUUU",
+ "form": "424B4",
+ "filed": "2025-08-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2047273/000121390025076323/ea0221100-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "BUBI Services Limited",
+   "type": "战略/公司",
+   "pct_after_text": "95.10%",
+   "pct_after": 95.1
+  },
+  {
+   "name": "Nana CHAN",
+   "type": "高管董事",
+   "pct_after_text": "95.10%",
+   "pct_after": 95.1
+  },
+  {
+   "name": "Wai Kwong POON",
+   "type": "高管董事",
+   "pct_after_text": "95.10%",
+   "pct_after": 95.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合计投票权百分比；Class A（1票/股）和Class B（20票/股）两类股同时考虑；Nana CHAN和Wai Kwong POON通过BUBI Services Limited间接持有"
+}

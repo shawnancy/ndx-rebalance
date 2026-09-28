@@ -1,0 +1,36 @@
+{
+  "t": "DPC",
+  "cik": 2107018,
+  "form": "424B4",
+  "filed": "2026-06-26",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2107018/000110465926077968/tm269965-19_424b4.htm",
+  "listed_shares_m": 145.15,
+  "float_base_m": 27.86,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:07:17Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文摘录中未包含明确的解禁表(Earliest Date / Approximate Number of Shares表格), 仅有Rule 144/Rule 701规则性描述",
+    "唯一明确的解禁事件是Lock-up协议到期(180天后), 但涉及股数部分描述不清(现有股东112.9M vs. 总restricted securities多于此数)",
+    "Prospectus的确切日期未在摘录中给出, 仅知June 22, 2026为统计基准日; 无法推算具体日历日期",
+    "float_base_m为估算值(145.15 - 112.94 - 2.08 - 2.27 ≈ 27.86M), 摘录未明确说明IPO发行量"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      568856,
+      583856
+    ],
+    "n_lockup_windows_total": 14,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 845306
+  }
+}

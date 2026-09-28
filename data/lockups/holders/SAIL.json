@@ -1,0 +1,18 @@
+{
+ "t": "SAIL",
+ "form": "424B4",
+ "filed": "2025-02-14",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2030781/000119312525026566/d906470d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Thoma Bravo",
+   "type": "PE",
+   "pct_after_text": "86.2%",
+   "pct_after": 86.2
+  }
+ ],
+ "note": "发行后持股比例（假设无行权行使）；无持股≥1%的董事高管"
+}

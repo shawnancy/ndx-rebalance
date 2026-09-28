@@ -1,0 +1,36 @@
+{
+ "t": "SMJF",
+ "form": "424B4",
+ "filed": "2025-12-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2070954/000121390025118072/ea0268008-424b4_smjinter.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Lui Oi Kheng",
+   "type": "其他",
+   "pct_after_text": "27.30%",
+   "pct_after": 27.3
+  },
+  {
+   "name": "Rena Ho",
+   "type": "高管董事",
+   "pct_after_text": "13.65%",
+   "pct_after": 13.65
+  },
+  {
+   "name": "Nellie Ho",
+   "type": "高管董事",
+   "pct_after_text": "13.65%",
+   "pct_after": 13.65
+  },
+  {
+   "name": "Rosie Lee",
+   "type": "高管董事",
+   "pct_after_text": "4.55%",
+   "pct_after": 4.55
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按Class A和Class B合计股份比例;Lui Oi Kheng文中未标注明确职位"
+}

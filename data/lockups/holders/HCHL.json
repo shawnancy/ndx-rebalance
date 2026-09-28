@@ -1,0 +1,30 @@
+{
+ "t": "HCHL",
+ "form": "424B4",
+ "filed": "2025-06-23",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2046656/000121390025056693/ea0220645-12.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Suk Yee, Kwan",
+   "type": "创始人",
+   "pct_after_text": "97.13%",
+   "pct_after": 97.13
+  },
+  {
+   "name": "Tak Shing, Lam",
+   "type": "创始人",
+   "pct_after_text": "97.13%",
+   "pct_after": 97.13
+  },
+  {
+   "name": "Happy City Group Limited",
+   "type": "战略/公司",
+   "pct_after_text": "97.13%",
+   "pct_after": 97.13
+  }
+ ],
+ "dropped": [],
+ "note": "发行后投票权合计比例(Class B每股20票优于Class A每股1票); Kwan与Lam为夫妻共享Happy City Group Limited的投票权"
+}

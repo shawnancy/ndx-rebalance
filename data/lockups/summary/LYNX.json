@@ -1,0 +1,24 @@
+{
+ "t": "LYNX",
+ "cik": 2132582,
+ "form": "424B4",
+ "filed": "2026-08-19",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2132582/000119312526356916/d23330d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 115949384,
+ "shares_offered": 17000000,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "In connection with this offering, we agreed, subject to certain limited exceptions, not to sell, dispose of, or hedge, without the prior written consent of Evercore Group L.L.C. and Citigroup Global Markets Inc., the shares of our common stock or securities convertible into or exchangeable for shares of our common stock for 180 days following the offering and our directors, executive officers, and holders of substantially all of our capital stock and securities convertible into our capital stock, including the selling stockholders, agreed, subject to certain limited exceptions, not to sell, dispose of, or hedge, without the prior written consent of Evercore Group L.L.C. and Citigroup Global Markets Inc., 25% of the shares of our common stock or securities convertible into or exchangeable for shares of our common stock for 180 days, 25% of the shares of our common stock or securities convertible into or exchangeable for shares of our common stock for 360 days following the offering, 25% of the shares of our common stock or securities convertible into or exchangeable for shares of our common stock for 540 days following the offering and the remainder of the shares of our common stock or securities convertible into or exchangeable for shares of our common stock for 720 days following the offering.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "分四个阶段释放，180日释放25%、360日释放25%、540日释放25%、720日释放剩余",
+ "note": "Charter Lock-Up对Combination所得股份施加720天禁售；IPO Lock-Up涉及实质上所有股东分阶段禁售；Trive LP Distribution涉及约58%流通股同样分四阶段释放，原文未给绝对股数故shares_locked为null",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

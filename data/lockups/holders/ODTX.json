@@ -1,0 +1,11 @@
+{
+ "t": "ODTX",
+ "form": "424B4",
+ "filed": "2026-05-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1882782/000119312526214819/odyssey__form_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [],
+ "note": "提供的文本为风险因素及公司治理讨论段落，未包含具体的主要股东表格。文本仅提及发行前全体高管及5%+股东合计持约62.9%投票权，发行后降至41.1%，但未列出个别股东名单和具体比例。"
+}

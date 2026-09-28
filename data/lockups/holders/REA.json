@@ -1,0 +1,60 @@
+{
+ "t": "REA",
+ "form": "424B4",
+ "filed": "2026-05-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2095743/000119312526209799/rea_final_prospectus_-_4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Todd Hannigan",
+   "type": "创始人",
+   "pct_after_text": "10.15%",
+   "pct_after": 10.15
+  },
+  {
+   "name": "ACN 664400382 PTY LTD",
+   "type": "战略/公司",
+   "pct_after_text": "8.39%",
+   "pct_after": 8.39
+  },
+  {
+   "name": "Dominic Paul Allen",
+   "type": "创始人",
+   "pct_after_text": "6.50%",
+   "pct_after": 6.5
+  },
+  {
+   "name": "DTQ (BVI) Limited",
+   "type": "创始人",
+   "pct_after_text": "6.32%",
+   "pct_after": 6.32
+  },
+  {
+   "name": "Hancock Prospecting Pty Ltd",
+   "type": "战略/公司",
+   "pct_after_text": "6.26%",
+   "pct_after": 6.26
+  },
+  {
+   "name": "Anastasios Arima",
+   "type": "创始人",
+   "pct_after_text": "6.11%",
+   "pct_after": 6.11
+  },
+  {
+   "name": "Kitabella Pty Ltd",
+   "type": "创始人",
+   "pct_after_text": "5.52%",
+   "pct_after": 5.52
+  },
+  {
+   "name": "Dan Shribman",
+   "type": "高管董事",
+   "pct_after_text": "1.86%",
+   "pct_after": 1.86
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按普通股，不行使超额配售选项；部分持股含期权、SAFE、RSU等衍生权益。"
+}

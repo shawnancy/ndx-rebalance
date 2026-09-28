@@ -1,0 +1,42 @@
+{
+ "t": "BUDA",
+ "form": "424B4",
+ "filed": "2026-01-08",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2079720/000149315226001005/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Bernard Lucien Nussbaumer",
+   "type": "高管董事",
+   "pct_after_text": "23.36 %",
+   "pct_after": 23.36
+  },
+  {
+   "name": "Bryan Herr",
+   "type": "高管董事",
+   "pct_after_text": "19.75 %",
+   "pct_after": 19.75
+  },
+  {
+   "name": "Horatio Lonsdale-Hands",
+   "type": "高管董事",
+   "pct_after_text": "14.77 %",
+   "pct_after": 14.77
+  },
+  {
+   "name": "2469447 Ontario Ltd.",
+   "type": "其他",
+   "pct_after_text": "6.19 %",
+   "pct_after": 6.19
+  },
+  {
+   "name": "Doug Burris",
+   "type": "高管董事",
+   "pct_after_text": "1.29 %",
+   "pct_after": 1.29
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，基于 12,166,667 股流通股，已计入 Stock Redemption 影响"
+}

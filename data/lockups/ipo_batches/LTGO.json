@@ -1,0 +1,43 @@
+{
+  "t": "LTGO",
+  "cik": 2056611,
+  "form": "424B4",
+  "filed": "2026-08-07",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2056611/000119312526340329/d38775d424b4.htm",
+  "listed_shares_m": 63.238,
+  "float_base_m": 19.2,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": 44.038,
+      "note": "lock-up期满(发行后第180天), 限制股东可解禁出售,共含43.11M股登记权益股东",
+      "d_estimated": false
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:10:55Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": true,
+    "sum_m": 44.0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未明确给出招股书/发行日期,无法推算180天解禁的具体日历日期(仅知'March 31, 2026'为财报日)",
+    "原文未按'最早日期/股数'表格格式给出分批次解禁时刻表,仅描述单一180天统一lock-up期限",
+    "Rule 144/701资格股东可在90天后分批出售,但具体解禁日期和股数均未明确",
+    "greenshoe期权未行使,故float_base_m=19.2M"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      875432,
+      885201
+    ],
+    "n_lockup_windows_total": 6,
+    "n_extra_windows_included": 1,
+    "excerpt_chars": 15021,
+    "html_flat_chars": 1099150
+  }
+}

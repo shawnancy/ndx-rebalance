@@ -1,0 +1,34 @@
+{
+  "t": "CSQR",
+  "cik": 2105398,
+  "form": "424B4",
+  "filed": "2026-07-16",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2105398/000110465926084293/tm264837-15_424b4.htm",
+  "listed_shares_m": 155.02,
+  "float_base_m": 57.5,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:07:31Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文缺乏具体的解禁时间表。仅提及180日锁定期后约106.89M股可解禁，以及Rule 144/Rule 701的一般规则，但未给出具体解禁日期或完整分批明细",
+    "float_base_m包含绿鞋选项（57.5M = 50M基础 + 7.5M额外发行权）"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      536053,
+      551053
+    ],
+    "n_lockup_windows_total": 7,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 827889
+  }
+}

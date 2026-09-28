@@ -1,0 +1,35 @@
+{
+  "t": "BRVE",
+  "cik": 2131524,
+  "form": "424B4",
+  "filed": "2026-08-06",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/2131524/000162828026054354/braveheartbioinc-sx1a2.htm",
+  "listed_shares_m": 73.15,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:06:45Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文未提供具体的股票解禁释放时间表（Lock-up Release Schedule），仅讨论Rule 144/Rule 701销售规则框架和180天lock-up安排，无具体解禁日期和分批股数",
+    "IPO发行股数未明确披露，无法确定float_base_m",
+    "listed_shares_m为发行后总股数预测值73,152,838股，基于March 31, 2026统计时点"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      837365,
+      852365
+    ],
+    "n_lockup_windows_total": 9,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 1015221
+  }
+}

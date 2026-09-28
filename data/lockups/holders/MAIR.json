@@ -1,0 +1,24 @@
+{
+ "t": "MAIR",
+ "form": "424B4",
+ "filed": "2026-04-17",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2098430/000119312526160250/project_breathe_form_424.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Larry W. Gies",
+   "type": "高管董事",
+   "pct_after_text": "97%",
+   "pct_after": 97
+  },
+  {
+   "name": "Holdings",
+   "type": "战略/公司",
+   "pct_after_text": "96%",
+   "pct_after": 96
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例基于合并投票权(Class A每股1票、Class B每股10票);假设承销商期权未行使"
+}

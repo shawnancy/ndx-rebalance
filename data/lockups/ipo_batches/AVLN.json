@@ -1,0 +1,35 @@
+{
+  "t": "AVLN",
+  "cik": 1540171,
+  "form": "424B4",
+  "filed": "2026-04-30",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1540171/000119312526197686/424b4.htm",
+  "listed_shares_m": 41.812047,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:06:20Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文仅提及180天lock-up期限(自招股书发行日起),无具体的逐批解禁日期和股数表格",
+    "Rule 144/701等内容为通用规则说明,非此次IPO的具体解禁时间表",
+    "原文未公开IPO发行量(float_base)数据"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      823622,
+      830036
+    ],
+    "n_lockup_windows_total": 6,
+    "n_extra_windows_included": 1,
+    "excerpt_chars": 15021,
+    "html_flat_chars": 977367
+  }
+}

@@ -1,0 +1,24 @@
+{
+ "t": "IOND",
+ "cik": 2007691,
+ "form": "424B4",
+ "filed": "2026-07-28",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2007691/000118518526003152/ionicdigi424b4072026.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 44921427,
+ "shares_offered": 10800164,
+ "shares_locked": null,
+ "shares_locked_text": null,
+ "lockup_days": 180,
+ "evidence": "The Investors have agreed that they will not transfer or otherwise dispose of the Series A Preferred Stock, the Class A common stock issued upon conversion of the Series A Preferred Stock, the Warrants, or the shares of Class A common stock issuable upon exercise of the Warrants at a price of less than $70.00 per share until six months after our securities are first listed on Nasdaq or another national securities exchange.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "Hut 8 Plan Sponsor股份(15,945,000股)在锁定期第二年按股价触发分批释放：股价≥150% NAV时可售30%，≥200% NAV时可售60%",
+ "note": "直接上市(direct listing)。Registered Stockholders 10,800,164股受6个月低价锁定($70最低价)；Hut 8 Plan Sponsor 15,945,000股受2年锁定。摘录未提供受锁定股票的单一统一数字。",
+ "valid": false,
+ "reasons": [
+  "没有 shares_locked",
+  "缺股数原文写法"
+ ]
+}

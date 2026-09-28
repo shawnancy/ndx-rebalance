@@ -1,0 +1,24 @@
+{
+ "t": "BKV",
+ "form": "424B4",
+ "filed": "2024-09-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1838406/000110465924103216/tm2217921-58_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Banpu North America Corporation",
+   "type": "战略/公司",
+   "pct_after_text": "75.9%",
+   "pct_after": 75.9
+  },
+  {
+   "name": "Christopher P. Kalnin",
+   "type": "高管董事",
+   "pct_after_text": "2.8%",
+   "pct_after": 2.8
+  }
+ ],
+ "dropped": [],
+ "note": "表格口径为发行后普通股持股比例（按投票权合计计算）；仅列≥5%股东和持股≥1%董事高管共2人"
+}

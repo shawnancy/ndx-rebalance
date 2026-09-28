@@ -1,0 +1,36 @@
+{
+ "t": "THH",
+ "form": "424B4",
+ "filed": "2025-08-28",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2044241/000149315225012451/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Rakuyo Otsuki",
+   "type": "创始人",
+   "pct_after_text": "70.48%",
+   "pct_after": 70.48
+  },
+  {
+   "name": "Yasushi Yuki",
+   "type": "其他",
+   "pct_after_text": "5.28%",
+   "pct_after": 5.28
+  },
+  {
+   "name": "Hong Kong orientsummit Co. Limited",
+   "type": "战略/公司",
+   "pct_after_text": "2.93%",
+   "pct_after": 2.93
+  },
+  {
+   "name": "Yoichi Hiraoka",
+   "type": "高管董事",
+   "pct_after_text": "0.82%",
+   "pct_after": 0.82
+  }
+ ],
+ "note": "发行后按投票权比例排序，涉及两类股（普通股+Series A优先股）；Rakuyo Otsuki持优先股全部加普通股合计投票权70.48%"
+}

@@ -1,0 +1,60 @@
+{
+ "t": "BBNX",
+ "form": "424B4",
+ "filed": "2025-01-31",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1674632/000119312525017676/d880651d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Entities affiliated with Eventide Asset Management",
+   "type": "战略/公司",
+   "pct_after_text": "10.6%",
+   "pct_after": 10.6
+  },
+  {
+   "name": "Wellington Hadley Harbor Aggregator IV, L.P.",
+   "type": "PE",
+   "pct_after_text": "9.1%",
+   "pct_after": 9.1
+  },
+  {
+   "name": "Zone Healthcare Holdings, LLC",
+   "type": "PE",
+   "pct_after_text": "7.3%",
+   "pct_after": 7.3
+  },
+  {
+   "name": "Entities affiliated with RTW Investments",
+   "type": "VC",
+   "pct_after_text": "7.2%",
+   "pct_after": 7.2
+  },
+  {
+   "name": "Edward Damiano, Ph.D.",
+   "type": "创始人",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  },
+  {
+   "name": "Sands Capital Life Sciences Pulse Fund II, L.P.",
+   "type": "VC",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  },
+  {
+   "name": "Entities affiliated with Soleus Capital",
+   "type": "VC",
+   "pct_after_text": "5.4%",
+   "pct_after": 5.4
+  },
+  {
+   "name": "Sean Saint",
+   "type": "高管董事",
+   "pct_after_text": "1.7%",
+   "pct_after": 1.7
+  }
+ ],
+ "dropped": [],
+ "note": "表格基于发行后（假设无期权行权）持股比例，已计入优先股自动转换与认股权证自动行权。"
+}

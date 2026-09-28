@@ -1,0 +1,24 @@
+{
+ "t": "ARAI",
+ "form": "424B4",
+ "filed": "2025-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1818274/000164117225010892/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Daniel O'Toole",
+   "type": "创始人",
+   "pct_after_text": "77.8%",
+   "pct_after": 77.8
+  },
+  {
+   "name": "John Ritchison",
+   "type": "高管董事",
+   "pct_after_text": "4.5%",
+   "pct_after": 4.5
+  }
+ ],
+ "note": "反向股票拆分后的发行后普通股持股比例；仅Daniel O'Toole与John Ritchison符合≥5%或≥1%董事高管门槛"
+}

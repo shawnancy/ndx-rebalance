@@ -1,0 +1,48 @@
+{
+ "t": "AVLN",
+ "form": "424B4",
+ "filed": "2026-04-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1540171/000119312526197686/424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Novo Holdings A/S",
+   "type": "VC",
+   "pct_after_text": "7.96%",
+   "pct_after": 7.96
+  },
+  {
+   "name": "Entities affiliated with SR One Capital",
+   "type": "VC",
+   "pct_after_text": "6.58%",
+   "pct_after": 6.58
+  },
+  {
+   "name": "F-Prime Capital Partners Healthcare Fund V LP",
+   "type": "VC",
+   "pct_after_text": "5.46%",
+   "pct_after": 5.46
+  },
+  {
+   "name": "Perceptive Xontogeny Venture Fund II, LP",
+   "type": "VC",
+   "pct_after_text": "5.38%",
+   "pct_after": 5.38
+  },
+  {
+   "name": "Norwest Venture Partners XV, LP",
+   "type": "VC",
+   "pct_after_text": "5.07%",
+   "pct_after": 5.07
+  },
+  {
+   "name": "Lyn Baranowski",
+   "type": "高管董事",
+   "pct_after_text": "2.32%",
+   "pct_after": 2.32
+  }
+ ],
+ "dropped": [],
+ "note": "发行后口径，普通股比例，≥5%股东及≥1%董事高管"
+}

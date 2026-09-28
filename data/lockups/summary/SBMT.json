@@ -1,0 +1,21 @@
+{
+ "t": "SBMT",
+ "cik": 2067674,
+ "form": "424B4",
+ "filed": "2026-05-01",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2067674/000153949726001267/n5138_x20-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": null,
+ "shares_offered": null,
+ "shares_locked": 30000,
+ "shares_locked_text": "30,000",
+ "lockup_days": 180,
+ "evidence": "30,000 of the common shares purchased by the managing directors of Research Capital USA Inc. from a third party have been deemed compensation by FINRA and are therefore subject to a 180-day lock-up pursuant to FINRA Rule 5110(e)(1).",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "仅 FINRA 规则下明确有 30,000 股 180 日禁售；公司、董事、高管及持股≥60% 股东亦受 180 日禁售但无具体股数",
+ "valid": true,
+ "reasons": []
+}

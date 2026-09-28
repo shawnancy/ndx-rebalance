@@ -1,0 +1,45 @@
+{
+  "t": "HAWK",
+  "cik": 1750704,
+  "form": "424B4",
+  "filed": "2026-05-07",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1750704/000162828026032207/hawkeye360424b4.htm",
+  "listed_shares_m": 93.084412,
+  "float_base_m": 16,
+  "unlocks": [
+    {
+      "d": null,
+      "sh_m": 77.084412,
+      "note": "现存股东持有的restricted securities, lock-up期于IPO后第180个交易日到期; 如遇内部交易黑名单期则提前至其前10个交易日释放",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:09:35Z",
+  "checks": {
+    "monotonic": false,
+    "all_positive": true,
+    "sum_m": 77.1,
+    "sum_le_listed": true
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文为424B4招股书摘录, 未包含具体IPO日期, 故无法推算精确解禁日期, 仅知为IPO后第180个交易日(如非交易日则顺延至后续首个交易日)",
+    "原文未提供分阶段释放时间表, 仅为单次全量释放模式(不分批)",
+    "假设underwriter未行使over-allotment option(绿鞋), IPO基础发行量16M",
+    "lock-up股数主要为77.084412M existing shareholders的股票, 另还包括IPO中董事/高管/大股东(>10%)购买部分和Directed share program中董事/高管购买部分(均数量未知), 无法精确分别统计",
+    "Directed share program 800k中, 非董事/高管员工购买部分不受lock-up, 该部分数量未知, 已从77.084412M中隐性排除",
+    "Conditional Early Termination条款需根据公司实际内部交易政策黑名单期确定, 超出招股书现有信息范围"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      783126,
+      792777
+    ],
+    "n_lockup_windows_total": 7,
+    "n_extra_windows_included": 2,
+    "excerpt_chars": 15042,
+    "html_flat_chars": 1060268
+  }
+}

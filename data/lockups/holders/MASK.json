@@ -1,0 +1,36 @@
+{
+ "t": "MASK",
+ "form": "424B4",
+ "filed": "2025-01-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1993097/000121390025002376/ea0207717-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Shu Sang Joseph Law",
+   "type": "高管董事",
+   "pct_after_text": "68.44%",
+   "pct_after": 68.44
+  },
+  {
+   "name": "State-of-the-Art International Limited",
+   "type": "其他",
+   "pct_after_text": "5.33%",
+   "pct_after": 5.33
+  },
+  {
+   "name": "Vanguard First Limited",
+   "type": "其他",
+   "pct_after_text": "5.33%",
+   "pct_after": 5.33
+  },
+  {
+   "name": "Great Name Group Limited",
+   "type": "其他",
+   "pct_after_text": "5.33%",
+   "pct_after": 5.33
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例（超配权未行使），仅A类普通股"
+}

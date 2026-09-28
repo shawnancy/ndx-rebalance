@@ -1,0 +1,48 @@
+{
+ "t": "WTF",
+ "form": "424B4",
+ "filed": "2025-04-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1987363/000114036125011710/ny20017183x17_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "ZHOU Kai",
+   "type": "创始人",
+   "pct_after_text": "86.13%",
+   "pct_after": 86.13
+  },
+  {
+   "name": "WATON CORPORATION LIMITED",
+   "type": "其他",
+   "pct_after_text": "86.13%",
+   "pct_after": 86.13
+  },
+  {
+   "name": "TRIUMPH TEAM ASSETS LIMITED",
+   "type": "其他",
+   "pct_after_text": "86.13%",
+   "pct_after": 86.13
+  },
+  {
+   "name": "WATON ESOP HOLDINGS LTD",
+   "type": "其他",
+   "pct_after_text": "86.13%",
+   "pct_after": 86.13
+  },
+  {
+   "name": "TZed Holding Group Ltd.",
+   "type": "其他",
+   "pct_after_text": "86.13%",
+   "pct_after": 86.13
+  },
+  {
+   "name": "WEN Huaxin",
+   "type": "高管董事",
+   "pct_after_text": "1.45%",
+   "pct_after": 1.45
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按总股本持股比例排列；ZHOU Kai通过多层级公司结构（WATON CORPORATION LIMITED等）间接控制；WEN Huaxin持股来自2024年股权激励计划的受限股单位。"
+}

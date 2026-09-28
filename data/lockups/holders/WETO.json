@@ -1,0 +1,36 @@
+{
+ "t": "WETO",
+ "form": "424B4",
+ "filed": "2025-02-27",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1941158/000157587225000188/vc071_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Zheng Jiahua",
+   "type": "高管董事",
+   "pct_after_text": "37.05 %",
+   "pct_after": 37.05
+  },
+  {
+   "name": "Micava Co., Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "37.05 %",
+   "pct_after": 37.05
+  },
+  {
+   "name": "Zheng Nan",
+   "type": "高管董事",
+   "pct_after_text": "37.04 %",
+   "pct_after": 37.04
+  },
+  {
+   "name": "Annan Tech Co., Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "37.04 %",
+   "pct_after": 37.04
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股数据（假设承销商不行使购买选择权）；Micava Co., Ltd.由Zheng Jiahua 100%拥有（BVI公司），Annan Tech Co., Ltd.由Zheng Nan 100%拥有（BVI公司）"
+}

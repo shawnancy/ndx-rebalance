@@ -1,0 +1,30 @@
+{
+ "t": "WRD",
+ "form": "424B4",
+ "filed": "2024-10-25",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1867729/000119312524243435/d343706d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Tony Xu Han",
+   "type": "创始人",
+   "pct_after_text": "63.9",
+   "pct_after": 63.9
+  },
+  {
+   "name": "Yan Li",
+   "type": "创始人",
+   "pct_after_text": "26.1",
+   "pct_after": 26.1
+  },
+  {
+   "name": "Duane Ziping Kuang",
+   "type": "高管董事",
+   "pct_after_text": "2.1",
+   "pct_after": 2.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后聚合投票权口径（Class A每股1票、Class B每股40票），Duane Ziping Kuang代理Qiming基金已放弃受益权。"
+}

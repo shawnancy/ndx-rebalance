@@ -245,6 +245,27 @@ The `--setting-sources ""` flag matters: without it, `claude -p` loads whatever 
 files exist in the caller's working directory, which can add tens of KB to the first-token
 latency and hang the call for 120+ seconds with no response.
 
+### 6. US lockup calendar + lockup event study (added 2026-09-27~29)
+
+```bash
+python3 scripts/extract_lockup_summary.py TICKER ...   # prospectus sentence "X shares subject to lock-up, N days", with anti-fabrication checks
+python3 scripts/extract_holders.py TICKER ...          # prospectus principal stockholders table (names and percentages must appear verbatim)
+python3 scripts/unlock_event_study.py 26               # event study over IPOs from the last 26 months that have already unlocked, ~15 min
+python3 scripts/fetch_unlock_calendar.py               # builds data/unlock_calendar.json for the "US lockup calendar" section of the page
+```
+
+- **Unlock share-count priority**: manually verified batch schedule → prospectus batch schedule (not low-confidence) → prospectus sentence "X shares subject to lock-up" → if the prospectus says "substantially all" holders are locked, post-offering shares − offering shares → Yahoo shares outstanding − offering shares (upper bound). ADRs / companies already listed abroad get no share estimate.
+- **Dates**: MarketBeat first (⚠️ its "Number of Shares" column is the IPO offering size, not the unlock size — dates only), otherwise prospectus date + lockup days.
+- **Anti-fabrication**: the AI's share count must be derivable from the verbatim wording (percentages don't count); a locked count < 20% of offering shares that can't be reconciled with total − offering is treated as the wrong target (e.g. FINRA underwriter-compensation shares).
+- **Event-study results (235 past unlocks, 2024-12 to 2026-08, excess vs IWM, base = close the day before the unlock)**:
+  - The effect sits **10–60 days after** the unlock, not ±5 days: T+5 median 0.0% (p=0.69), T+20 −6.3% (63% down, p=0.0001), T+60 −20.6%, no rebound
+  - Only predictive factor = **pre-unlock 20-day annualized volatility**: the ≥106% tier is −14.3% / 75% down at T+20; the <66% tier is −1.9%, not significant
+  - Not predictive: pre-unlock run-up (it's momentum, not reversal), unlock size, price vs IPO price, market cap, volume, short interest, whether holders are VC/PE/founders; a multi-factor logistic regression does worse out-of-sample (leave-one-out AUC 0.49 vs 0.56 for volatility alone)
+  - Weak signal: a controlling holder (≥50%) goes with larger declines (multiple-testing risk)
+  - Only 45 samples with market cap ≥ $2B: −4.6%, p=0.10, not significant
+  - **All in-sample, before borrow fees, and not causal** (the paired before/after-20-day difference is not significant)
+- For each stock the page finds the 60 past unlocks with the closest current 20-day volatility and shows the median and share-down at T-20…T+60 plus the most common trough day, not a point forecast.
+
 ## Lockup extractor validation
 
 Validated against SpaceX's prospectus, batch by batch, against a 14-batch manually verified

@@ -1,0 +1,21 @@
+{
+ "t": "EXYN",
+ "cik": 1960355,
+ "form": "424B4",
+ "filed": "2026-05-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1960355/000110465926062711/tm2525579-34_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 7707460,
+ "shares_offered": null,
+ "shares_locked": 1322500,
+ "shares_locked_text": "1,322,500",
+ "lockup_days": 180,
+ "evidence": "The 1,322,500 shares of common stock outstanding prior to this offering are restricted as a result of securities laws or lock-up agreements.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "首次公开发行，无海外上市；主要股东及高管180天禁售，SAFE持有人及员工90天禁售",
+ "valid": true,
+ "reasons": []
+}

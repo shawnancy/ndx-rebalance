@@ -1,0 +1,60 @@
+{
+ "t": "BIYA",
+ "form": "424B4",
+ "filed": "2025-03-24",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1944712/000101376225001683/ea0200053-11.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Daoning Xia",
+   "type": "其他",
+   "pct_after_text": "46.95%",
+   "pct_after": 46.95
+  },
+  {
+   "name": "Hemei International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "8.42%",
+   "pct_after": 8.42
+  },
+  {
+   "name": "Weilai Zhang",
+   "type": "高管董事",
+   "pct_after_text": "7.58%",
+   "pct_after": 7.58
+  },
+  {
+   "name": "Datong International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "7.37%",
+   "pct_after": 7.37
+  },
+  {
+   "name": "Hesheng International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "6.74%",
+   "pct_after": 6.74
+  },
+  {
+   "name": "Xinyi International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "6.74%",
+   "pct_after": 6.74
+  },
+  {
+   "name": "Dongsheng International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "6.63%",
+   "pct_after": 6.63
+  },
+  {
+   "name": "Hanjin International Group Ltd.",
+   "type": "战略/公司",
+   "pct_after_text": "6.06%",
+   "pct_after": 6.06
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例,基于12,500,000总股份;Weilai Zhang为董事长,通过Huiwan Holdings Ltd.100%控制持股"
+}

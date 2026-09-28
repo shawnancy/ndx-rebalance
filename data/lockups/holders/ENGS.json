@@ -1,0 +1,30 @@
+{
+ "t": "ENGS",
+ "form": "424B4",
+ "filed": "2025-04-02",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1971828/000164117225002260/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Michael Lau",
+   "type": "高管董事",
+   "pct_after_text": "70.1%",
+   "pct_after": 70.1
+  },
+  {
+   "name": "Moonglade Investment Limited",
+   "type": "其他",
+   "pct_after_text": "68.0%",
+   "pct_after": 68.0
+  },
+  {
+   "name": "Sky Shadow Limited",
+   "type": "其他",
+   "pct_after_text": "68.0%",
+   "pct_after": 68.0
+  }
+ ],
+ "dropped": [],
+ "note": "发行后基于普通股计数，Moonglade 与 Sky Shadow 为同一受益所有人 Michael Lau 的层级控制实体。"
+}

@@ -1,0 +1,54 @@
+{
+ "t": "HXHX",
+ "form": "424B4",
+ "filed": "2025-04-16",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1936817/000121390025032325/ea0238263-424b4_haoxin.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Zhengjun Tao",
+   "type": "创始人",
+   "pct_after_text": "91.98 %",
+   "pct_after": 91.98
+  },
+  {
+   "name": "QSA (BVI) Limited",
+   "type": "其他",
+   "pct_after_text": "13.41 %",
+   "pct_after": 13.41
+  },
+  {
+   "name": "Xing Wang",
+   "type": "高管董事",
+   "pct_after_text": "9.12 %",
+   "pct_after": 9.12
+  },
+  {
+   "name": "Yuhan Zhao",
+   "type": "高管董事",
+   "pct_after_text": "6.70 %",
+   "pct_after": 6.7
+  },
+  {
+   "name": "Goldcrown International (HK) Limited",
+   "type": "其他",
+   "pct_after_text": "6.70 %",
+   "pct_after": 6.7
+  },
+  {
+   "name": "ZCFENG (BVI) LIMITED",
+   "type": "其他",
+   "pct_after_text": "6.57 %",
+   "pct_after": 6.57
+  },
+  {
+   "name": "LZG (BVI) LIMITED",
+   "type": "其他",
+   "pct_after_text": "6.57 %",
+   "pct_after": 6.57
+  }
+ ],
+ "dropped": [],
+ "note": "发行后;多类股(Zhengjun Tao)按Combined Voting Power合计投票权,单类股按Class A持股占比;WXING和ZYHAN公司持股分别通过Xing Wang和Yuhan Zhao在董事部分体现已不重复列"
+}

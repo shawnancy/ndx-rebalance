@@ -1,0 +1,36 @@
+{
+ "t": "PPHC",
+ "form": "424B4",
+ "filed": "2026-01-29",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1903508/000162828026004024/pphc-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Jeffrey Alan Forbes",
+   "type": "创始人",
+   "pct_after_text": "7.8%",
+   "pct_after": 7.8
+  },
+  {
+   "name": "Daniel Clyde Tate, Jr.",
+   "type": "创始人",
+   "pct_after_text": "5.3%",
+   "pct_after": 5.3
+  },
+  {
+   "name": "George Stewart Hall",
+   "type": "高管董事",
+   "pct_after_text": "4.5%",
+   "pct_after": 4.5
+  },
+  {
+   "name": "Zachary Williams",
+   "type": "高管董事",
+   "pct_after_text": "3.3%",
+   "pct_after": 3.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(不行使承销商过配选项),含可行使期权"
+}

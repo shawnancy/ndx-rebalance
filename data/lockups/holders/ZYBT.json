@@ -1,0 +1,24 @@
+{
+ "t": "ZYBT",
+ "form": "424B4",
+ "filed": "2025-01-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1975641/000121390025001670/ea0202845-09.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Zhenfa Han",
+   "type": "高管董事",
+   "pct_after_text": "91.09%",
+   "pct_after": 91.09
+  },
+  {
+   "name": "Securingium Holding Limited",
+   "type": "战略/公司",
+   "pct_after_text": "84.81%",
+   "pct_after": 84.81
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股计算；Securingium Holding Limited 为多层持股结构，最终受益人为 Zhenfa Han"
+}

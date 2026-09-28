@@ -1,0 +1,30 @@
+{
+ "t": "KNRX",
+ "form": "424B4",
+ "filed": "2025-09-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1982960/000149315225016175/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Franklin Capital Enterprise Limited",
+   "type": "战略/公司",
+   "pct_after_text": "14.42%",
+   "pct_after": 14.42
+  },
+  {
+   "name": "Khar Heng Choo",
+   "type": "高管董事",
+   "pct_after_text": "11.26%",
+   "pct_after": 11.26
+  },
+  {
+   "name": "Raffles Venture (Direct) Private Limited",
+   "type": "战略/公司",
+   "pct_after_text": "10.05%",
+   "pct_after": 10.05
+  }
+ ],
+ "note": "发行后、按合计股权占比(%of total ordinary shares，两类股Class A/B)。"
+}

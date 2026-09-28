@@ -1,0 +1,30 @@
+{
+ "t": "LINE",
+ "form": "424B4",
+ "filed": "2024-07-26",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1868159/000119312524185331/d577649d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Adam Forste",
+   "type": "高管董事",
+   "pct_after_text": "76.2%",
+   "pct_after": 76.2
+  },
+  {
+   "name": "Kevin Marchetti",
+   "type": "高管董事",
+   "pct_after_text": "76.2%",
+   "pct_after": 76.2
+  },
+  {
+   "name": "BG Lineage Holdings, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "75.6%",
+   "pct_after": 75.6
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例按普通股+OP单位完全摊薄基础；前两位高管通过BGLH等实体控制"
+}

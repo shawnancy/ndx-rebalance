@@ -1,0 +1,42 @@
+{
+ "t": "INR",
+ "form": "424B4",
+ "filed": "2025-02-03",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2029118/000119312525018576/d826795d424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Investment Funds managed by Pearl Energy Investments, L.P.",
+   "type": "PE",
+   "pct_after_text": "49.1 %",
+   "pct_after": 49.1
+  },
+  {
+   "name": "William J. Quinn",
+   "type": "高管董事",
+   "pct_after_text": "49.1 %",
+   "pct_after": 49.1
+  },
+  {
+   "name": "Investment Funds managed by NGP",
+   "type": "PE",
+   "pct_after_text": "16.4 %",
+   "pct_after": 16.4
+  },
+  {
+   "name": "Zack Arnold",
+   "type": "高管董事",
+   "pct_after_text": "3.1 %",
+   "pct_after": 3.1
+  },
+  {
+   "name": "David Sproule",
+   "type": "高管董事",
+   "pct_after_text": "3.1 %",
+   "pct_after": 3.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股，多类股取总股本比例；Pearl基金和Quinn的28,894,732股为同一"
+}

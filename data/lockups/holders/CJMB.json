@@ -1,0 +1,24 @@
+{
+ "t": "CJMB",
+ "form": "424B4",
+ "filed": "2025-02-06",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2032545/000149315225005135/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Wayne Williams",
+   "type": "高管董事",
+   "pct_after_text": "52 %",
+   "pct_after": 52
+  },
+  {
+   "name": "David J. Croyle, M.D.",
+   "type": "高管董事",
+   "pct_after_text": "18 %",
+   "pct_after": 18
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按普通股总股本口径；基于 4,280,000 股发行后总股数"
+}

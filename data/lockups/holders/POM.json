@@ -1,0 +1,48 @@
+{
+ "t": "POM",
+ "form": "424B4",
+ "filed": "2025-10-09",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1877971/000121390025097580/ea0200019-24.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Zhenyang Shi",
+   "type": "创始人",
+   "pct_after_text": "29.0%",
+   "pct_after": 29.0
+  },
+  {
+   "name": "HEALTHYSEVEN LIMITED",
+   "type": "战略/公司",
+   "pct_after_text": "17.8%",
+   "pct_after": 17.8
+  },
+  {
+   "name": "Dan Hong (H.K.) Technology Limited",
+   "type": "战略/公司",
+   "pct_after_text": "15.0%",
+   "pct_after": 15.0
+  },
+  {
+   "name": "Nova Compass Investment Limited",
+   "type": "PE",
+   "pct_after_text": "9.9%",
+   "pct_after": 9.9
+  },
+  {
+   "name": "Beijing Gaotejia Technology Partnership (Limited Partnership)",
+   "type": "其他",
+   "pct_after_text": "6.9%",
+   "pct_after": 6.9
+  },
+  {
+   "name": "Li Xu",
+   "type": "高管董事",
+   "pct_after_text": "4.1%",
+   "pct_after": 4.1
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例，按总股本百分比；Li Xu为≥1%董事高管"
+}

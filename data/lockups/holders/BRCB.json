@@ -1,0 +1,54 @@
+{
+ "t": "BRCB",
+ "form": "424B4",
+ "filed": "2025-09-15",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2068577/000206857725000031/blackrockcoffee-424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Daniel Brand",
+   "type": "创始人",
+   "pct_after_text": "80.2%",
+   "pct_after": 80.2
+  },
+  {
+   "name": "Viking Cake BR, LLC",
+   "type": "战略/公司",
+   "pct_after_text": "45.9%",
+   "pct_after": 45.9
+  },
+  {
+   "name": "Jeff Hernandez",
+   "type": "创始人",
+   "pct_after_text": "45.9%",
+   "pct_after": 45.9
+  },
+  {
+   "name": "Jake Spellmeyer",
+   "type": "创始人",
+   "pct_after_text": "45.9%",
+   "pct_after": 45.9
+  },
+  {
+   "name": "Bryan Pereboom",
+   "type": "创始人",
+   "pct_after_text": "45.9%",
+   "pct_after": 45.9
+  },
+  {
+   "name": "Entities affiliated with Daniel Brand",
+   "type": "其他",
+   "pct_after_text": "9.6%",
+   "pct_after": 9.6
+  },
+  {
+   "name": "Andrew Braithwaite",
+   "type": "高管董事",
+   "pct_after_text": "3.2%",
+   "pct_after": 3.2
+  }
+ ],
+ "dropped": [],
+ "note": "发行后按合计投票权(Class A、B各1票,Class C 10票)统计;部分持股通过相关实体或信托持有;Entities affiliated with The Cynosure Group发行后投票权3.2%<5%,由代理人Andrew Braithwaite入选"
+}

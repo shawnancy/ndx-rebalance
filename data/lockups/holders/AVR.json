@@ -1,0 +1,30 @@
+{
+ "t": "AVR",
+ "form": "424B4",
+ "filed": "2024-12-13",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2011514/000110465924128451/tm245520-26_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "L1 Capital Pty Ltd",
+   "type": "其他",
+   "pct_after_text": "12.0%",
+   "pct_after": 12.0
+  },
+  {
+   "name": "Perceptive Advisors LLC",
+   "type": "PE",
+   "pct_after_text": "6.7%",
+   "pct_after": 6.7
+  },
+  {
+   "name": "W. Paterson",
+   "type": "高管董事",
+   "pct_after_text": "2.3%",
+   "pct_after": 2.3
+  }
+ ],
+ "dropped": [],
+ "note": "发行后（不行使期权）持股比例；W. Paterson为董事。"
+}

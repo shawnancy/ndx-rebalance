@@ -1,0 +1,35 @@
+{
+  "t": "REF",
+  "cik": 1787117,
+  "form": "424B4",
+  "filed": "2026-07-30",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1787117/000110465926088733/tm2513004-17_424b4.htm",
+  "listed_shares_m": null,
+  "float_base_m": null,
+  "unlocks": [],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:11:53Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 0,
+    "sum_le_listed": null
+  },
+  "confidence": "low",
+  "warnings": [
+    "原文摘录为招股书风险因素及公司治理章节，不包含标准的解禁释放表（Earliest Date/Approximate Number of Shares两列格式的逐行明细）",
+    "虽然提到存在180天锁定期协议（lock-up agreement）和45,013,708股限制性股票在锁定期满后可解禁，但未给出prospectus具体日期或解禁的具体历法日，无法构建解禁时间表",
+    "缺少IPO发行量（float_base）和上市后发行总股数的明确数据"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      320663,
+      335663
+    ],
+    "n_lockup_windows_total": 8,
+    "n_extra_windows_included": 0,
+    "excerpt_chars": 15000,
+    "html_flat_chars": 946222
+  }
+}

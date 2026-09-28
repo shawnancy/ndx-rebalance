@@ -1,0 +1,24 @@
+{
+ "t": "ZJK",
+ "form": "424B4",
+ "filed": "2024-09-30",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1941506/000173112224001512/e5994_424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Ning Ding",
+   "type": "创始人",
+   "pct_after_text": "63.12%",
+   "pct_after": 63.12
+  },
+  {
+   "name": "Kai Huang",
+   "type": "高管董事",
+   "pct_after_text": "19.14%",
+   "pct_after": 19.14
+  }
+ ],
+ "dropped": [],
+ "note": "发行后普通股占比(基于61,250,000股);Ning Ding通过DNR Technology Co., Ltd.间接持股,Kai Huang通过Vimisci Holding Limited间接持股"
+}

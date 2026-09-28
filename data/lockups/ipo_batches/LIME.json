@@ -1,0 +1,43 @@
+{
+  "t": "LIME",
+  "cik": 1699963,
+  "form": "424B4",
+  "filed": "2026-07-02",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1699963/000162828026046635/neutronholdingsinc-424b4.htm",
+  "listed_shares_m": 64.03,
+  "float_base_m": null,
+  "unlocks": [
+    {
+      "d": "2026-12-28",
+      "sh_m": 43.1,
+      "note": "160天锁定期满，解禁除Uber外的全部股份",
+      "d_estimated": true
+    }
+  ],
+  "extracted_by": "claude-haiku-4-5-20251001",
+  "extracted_at": "2026-09-27T09:12:02Z",
+  "checks": {
+    "monotonic": true,
+    "all_positive": true,
+    "sum_m": 43.1,
+    "sum_le_listed": true
+  },
+  "confidence": "medium",
+  "warnings": [
+    "原文未给出招股书发行日期，所有日期基于Uber Lock-Up修订日期(2026-06-21)推断，160天截止日期计算为2026-12-28(±3天)",
+    "IPO发行股数(float_base_m)未明确说明，仅知IPO后总股数64M",
+    "Uber持有股份具体数量未披露，原文提及Uber Lock-Up三阶段限制(1年后50%可售/18个月后75%可售/2年后完全解禁)但无法量化",
+    "锁定期内约0.1M股RSU行权可通过sell-to-cover解禁缴税，为可选项且无具体日期"
+  ],
+  "_extract_meta": {
+    "section_found": true,
+    "section_range": [
+      723126,
+      737142
+    ],
+    "n_lockup_windows_total": 12,
+    "n_extra_windows_included": 1,
+    "excerpt_chars": 15021,
+    "html_flat_chars": 966262
+  }
+}

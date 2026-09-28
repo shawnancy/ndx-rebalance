@@ -1,0 +1,60 @@
+{
+ "t": "FRBT",
+ "form": "424B4",
+ "filed": "2026-06-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1925062/000162828026042580/forbright-424b.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "John K. Delaney",
+   "type": "高管董事",
+   "pct_after_text": "15.6%",
+   "pct_after": 15.6
+  },
+  {
+   "name": "GPC Partners Investments (Elevate) LP",
+   "type": "PE",
+   "pct_after_text": "7.2%",
+   "pct_after": 7.2
+  },
+  {
+   "name": "CB Elevate Aggregator",
+   "type": "PE",
+   "pct_after_text": "7.2%",
+   "pct_after": 7.2
+  },
+  {
+   "name": "Lewis A. Sachs",
+   "type": "高管董事",
+   "pct_after_text": "7.1%",
+   "pct_after": 7.1
+  },
+  {
+   "name": "Entities affiliated with Bayview",
+   "type": "PE",
+   "pct_after_text": "6.3%",
+   "pct_after": 6.3
+  },
+  {
+   "name": "Forbright STRT Investor LLC",
+   "type": "其他",
+   "pct_after_text": "6.0%",
+   "pct_after": 6.0
+  },
+  {
+   "name": "Jason M. Fish",
+   "type": "高管董事",
+   "pct_after_text": "5.9%",
+   "pct_after": 5.9
+  },
+  {
+   "name": "Joseph R. Schubel Jr.",
+   "type": "其他",
+   "pct_after_text": "5.8%",
+   "pct_after": 5.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后数据；多类股结构（Class A投票，Class B非投票），比例为投票权。"
+}

@@ -1,0 +1,36 @@
+{
+ "t": "LFTO",
+ "form": "424B4",
+ "filed": "2026-06-04",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1850351/000119312526257410/iron_424b4_round_2.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": true,
+ "holders": [
+  {
+   "name": "Blackstone",
+   "type": "PE",
+   "pct_after_text": "50.4 %",
+   "pct_after": 50.4
+  },
+  {
+   "name": "General Atlantic",
+   "type": "VC",
+   "pct_after_text": "14.4 %",
+   "pct_after": 14.4
+  },
+  {
+   "name": "Mark Ellis",
+   "type": "高管董事",
+   "pct_after_text": "6.0 %",
+   "pct_after": 6.0
+  },
+  {
+   "name": "Harry Robertson",
+   "type": "高管董事",
+   "pct_after_text": "5.8 %",
+   "pct_after": 5.8
+  }
+ ],
+ "dropped": [],
+ "note": "发行后持股比例(不行使承销商认股权),按总股本比例,仅列>=5%股东;另有数名高管持股<1%"
+}

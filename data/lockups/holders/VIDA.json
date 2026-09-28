@@ -1,0 +1,36 @@
+{
+ "t": "VIDA",
+ "form": "424B4",
+ "filed": "2026-05-18",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1973062/000149315226024102/form424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "ok": false,
+ "holders": [],
+ "dropped": [
+  {
+   "name": "Lyle Pratt",
+   "type": "创始人",
+   "pct_after_text": "49.8%",
+   "pct_after": 49.8
+  },
+  {
+   "name": "Brandon Robinson",
+   "type": "高管董事",
+   "pct_after_text": "18.1%",
+   "pct_after": 18.1
+  },
+  {
+   "name": "Timothy Noah Hayes",
+   "type": "高管董事",
+   "pct_after_text": "18.1%",
+   "pct_after": 18.1
+  },
+  {
+   "name": "Christopher Calicott",
+   "type": "高管董事",
+   "pct_after_text": "5.5%",
+   "pct_after": 5.5
+  }
+ ],
+ "note": "发行后投票权比例，多类股采用综合投票权，Christopher Calicott 的持股含对 TVP 两只基金的有益所有权。"
+}

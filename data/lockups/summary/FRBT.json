@@ -1,0 +1,23 @@
+{
+ "t": "FRBT",
+ "cik": 1925062,
+ "form": "424B4",
+ "filed": "2026-06-11",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1925062/000162828026042580/forbright-424b.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 49687568,
+ "shares_offered": null,
+ "shares_locked": 33396775,
+ "shares_locked_text": "33,396,775",
+ "lockup_days": null,
+ "evidence": "21,039,391 shares of our Class A common stock and 20,748,177 shares of our Class B common stock outstanding after this offering will be \"restricted securities\" as that term is defined in Rule 144 of the Securities Act of which 33,396,775 of these restricted securities will be subject to lock-up agreements.",
+ "listed_elsewhere": false,
+ "substantially_all_locked": false,
+ "staged": "",
+ "note": "Class A和B股分别处理；总受限股份41.8M中仅33.4M受lock-up约束、8.4M仅受Rule 144限制；B股需满足转换条件才能转为A股；原文未明确lock-up天数、指向Underwriting章节",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}

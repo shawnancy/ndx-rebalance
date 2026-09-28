@@ -1,0 +1,23 @@
+{
+ "t": "HAWK",
+ "cik": 1750704,
+ "form": "424B4",
+ "filed": "2026-05-07",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1750704/000162828026032207/hawkeye360424b4.htm",
+ "extracted_by": "claude-haiku-4-5-20251001",
+ "prospectus_date": null,
+ "shares_outstanding_after": 93084412,
+ "shares_offered": null,
+ "shares_locked": 77084412,
+ "shares_locked_text": "77,084,412",
+ "lockup_days": 180,
+ "evidence": "The remaining 77,084,412 shares of common stock held by existing stockholders are \"restricted securities,\" as that term is defined in Rule 144 under the Securities Act, or certain shares sold pursuant to our directed share program that are subject to \"lock-up\" restrictions as described under \"—Lock-up Agreements\" below and in the section titled \"Underwriting—Directed Share Program\".",
+ "listed_elsewhere": false,
+ "substantially_all_locked": true,
+ "staged": "",
+ "note": "IPO 发行股全部自由交易（affiliates 除外）；现有股东的 77M+ 股受禁售约束；董事高管在本次发行中购买的股票也受约束；多数员工 Rule 701 股票也受约束但具体数字未明",
+ "valid": false,
+ "reasons": [
+  "证据句不是摘录原文子串"
+ ]
+}
